@@ -1,0 +1,31 @@
+═══════════════════════════════════════════════════════════
+QUICK START - Copy and paste these commands in terminal:
+═══════════════════════════════════════════════════════════
+
+cd /Users/aaron/pushdemoNew
+
+# Remove corrupted MySQL connector
+rm -f WebContent/WEB-INF/lib/mysql-connector-java-8.0.33.jar
+rm -f WebContent/WEB-INF/lib/mysql-connector-java-5.0.8-bin.jar
+
+# Download MySQL connector (2.5MB file)
+curl -L https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.33/mysql-connector-java-8.0.33.jar \
+  -o WebContent/WEB-INF/lib/mysql-connector-java-8.0.33.jar
+
+# Rebuild and start
+docker-compose build tomcat
+docker-compose up -d
+
+# Wait 30 seconds
+sleep 30
+
+# Check status
+docker-compose ps
+
+# Access application
+open http://localhost:8080/pushdemo
+
+═══════════════════════════════════════════════════════════
+
+
+

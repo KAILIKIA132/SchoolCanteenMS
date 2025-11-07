@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="iclock" location="50,50" size="170,471">
+    <action name="deviceAction" location="10,20" size="150,41">
+      <result name="deviceList">
+        <resourceEdge source="deviceList" routing="0" target="deviceList.jsp" />
+      </result>
+      <result name="edit">
+        <resourceEdge source="edit" routing="0" target="editDevice.jsp" />
+      </result>
+    </action>
+    <action name="userAction" location="10,120" size="150,41">
+      <result name="userList">
+        <resourceEdge source="userList" routing="0" target="userList.jsp" />
+      </result>
+    </action>
+    <action name="attAction" location="10,220" size="150,41">
+      <result name="attLogList">
+        <resourceEdge source="attLogList" routing="0" target="attlogList.jsp" />
+      </result>
+    </action>
+    <action name="cmdAction" location="10,320" size="150,41">
+      <result name="cmdList">
+        <resourceEdge source="cmdList" routing="0" target="devCmdList.jsp" />
+      </result>
+      <result name="viewCmd">
+        <resourceEdge source="viewCmd" routing="0" target="viewCmd.jsp" />
+      </result>
+    </action>
+    <action name="devLogAction" location="10,420" size="150,41">
+      <result name="deviceLogList">
+        <resourceEdge source="deviceLogList" routing="0" target="oplogList.jsp" />
+      </result>
+    </action>
+    <action name="smsAction" location="0,0" size="0,0">
+      <result name="smsList">
+        <resourceEdge source="smsList" routing="0" target="smsList.jsp" />
+      </result>
+      <result name="newSms">
+        <resourceEdge source="newSms" routing="0" target="addSms.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="deviceList.jsp" path="/deviceList.jsp" location="350,50" size="150,55" />
+  <webResource name="userList.jsp" path="/userList.jsp" location="500,50" size="150,55" />
+  <webResource name="attlogList.jsp" path="/attlogList.jsp" location="50,200" size="150,55" />
+  <webResource name="devCmdList.jsp" path="/devCmdList.jsp" location="200,200" size="150,55" />
+  <webResource name="oplogList.jsp" path="/oplogList.jsp" location="350,200" size="150,55" />
+  <webResource name="smsList.jsp" path="/smsList.jsp" location="0,0" size="0,0" />
+  <webResource name="addSms.jsp" path="/addSms.jsp" location="0,0" size="0,0" />
+  <webResource name="editDevice.jsp" path="/editDevice.jsp" location="0,0" size="0,0" />
+  <webResource name="viewCmd.jsp" path="/viewCmd.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.multipart.maxSize" value="5000000000" />
+	<constant name="struts.devMode" value="false"></constant>
+	<constant name="struts.action.extension" value="do,action,tg"></constant>
+	<constant name="struts.i18n.encoding" value="utf-8"></constant>
+	<constant name="struts.convention.action.scan" value="false"></constant>
+	<constant name="struts.convention.package.locators" value=""></constant>
+	<package name="iclock"  extends="struts-default" >
+		
+		<!-- Configure the actions mappings -->
+		<action name="deviceAction" class="com.zk.action.DeviceAction">
+			<result name="deviceList">/deviceList.jsp</result>
+			<result name="edit">/editDevice.jsp</result>
+		</action>
+		<action name="userAction" class="com.zk.action.UserAction">
+			<result name="userList">/userList.jsp</result>
+			<result name="redirectToUserList" type="redirect">userAction!userList.action</result>
+			<result name="newUser">/addUser.jsp</result>
+		</action>
+		<action name="attAction" class="com.zk.action.AttLogAction">
+			<result name="attLogList">/attlogList.jsp</result>
+			<result name="verificationList">/verificationList.jsp</result>
+			<result name="jsonResult">/jsonResponse.jsp</result>
+		</action>
+		<action name="cmdAction" class="com.zk.action.DeviceCommandAction">
+			<result name="cmdList">/devCmdList.jsp</result>
+			<result name="viewCmd">/viewCmd.jsp</result>
+		</action>
+		
+		<action name="devLogAction" class="com.zk.action.DeviceLogAction">
+			<result name="deviceLogList">/oplogList.jsp</result>
+		</action>
+		<action name="smsAction" class="com.zk.action.MessageAction">
+			<result name="smsList">/smsList.jsp</result>
+			<result name="newSms">/addSms.jsp</result>
+		</action>
+		<action name="monitorAction" class="com.zk.action.MonitorAction">
+			<result name="monitorList">/monitor.jsp</result>
+		</action>
+		<action name="meetAction" class="com.zk.action.MeetAction">
+			<result name="meetList">/meetList.jsp</result>
+			<result name="newMeet">/addMeet.jsp</result>
+		</action>
+		
+		<action name="advAction" class="com.zk.action.AdvAction">
+			<result name="advList">/advList.jsp</result>
+			<result name="redirectAdvList" type="redirect">advAction!advList.action</result>
+			<result name="newAdv">/addAdv.jsp</result>
+		</action>
+		<action name="commandAction" class="com.zk.action.CommandAction">
+			<result name="command">/deviceCommand.jsp</result>
+		</action>
+	
+	</package>
+</struts>    

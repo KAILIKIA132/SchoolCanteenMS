@@ -1,0 +1,53 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: pushdemo-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: pushdemo
+      MYSQL_USER: pushdemo
+      MYSQL_PASSWORD: pushdemo
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./docker/mysql/init:/docker-entrypoint-initdb.d
+    command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    networks:
+      - pushdemo-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  tomcat:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pushdemo-tomcat
+    ports:
+      - "8080:8080"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    volumes:
+      - ./WebContent:/usr/local/tomcat/webapps/ROOT
+      - ./WebContent/WEB-INF/classes:/usr/local/tomcat/webapps/ROOT/WEB-INF/classes
+      - ./WebContent/WEB-INF/lib:/usr/local/tomcat/webapps/ROOT/WEB-INF/lib
+    networks:
+      - pushdemo-network
+    environment:
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_NAME=pushdemo
+      - DB_USER=root
+      - DB_PASSWORD=root
+
+volumes:
+  mysql_data:
+
+networks:
+  pushdemo-network:
+    driver: bridge
+
