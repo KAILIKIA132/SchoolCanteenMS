@@ -1,0 +1,6 @@
+userPin,userName,userCard,userPassword,deviceSn,privilege,category
+1001,John Doe,1234567890,1234,TDBD250100333,0,0
+1002,Jane Smith,,5678,TDBD250100333,0,1
+1003,Bob Johnson,1122334455,9012,TDBD250100333,0,0
+1004,Alice Williams,2233445566,3456,TDBD250100333,2,0
+

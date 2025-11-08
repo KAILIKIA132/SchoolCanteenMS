@@ -248,6 +248,10 @@ function editUser(userId) {
 			<input type="button" align="right" class="input_add l"
 				value='<s:text name="user.operate.add.user"/>'
 				onclick="location.href='<%=basePath + "userAction!newUser.action?act=new"%>'" />
+			<input type="button" align="right" class="input_add l"
+				value="Bulk Import Users"
+				onclick="location.href='<%=basePath + "userAction!showBulkImport.action"%>'" 
+				style="margin-left: 10px;" />
 		</div>
 
 		<div class="l zk_Search">

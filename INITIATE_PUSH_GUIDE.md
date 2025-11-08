@@ -188,3 +188,6 @@ Once push is working correctly:
 
 **Note**: The server is already configured correctly. The main requirement is that the device must have attendance logs stored on it (`ATTLOGStamp > 0`) before it can push them. Perform verifications on the device first, then trigger the push.
 
+
+
+

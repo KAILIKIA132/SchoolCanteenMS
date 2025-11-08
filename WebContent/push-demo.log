@@ -10407,3 +10407,1383 @@ USER PIN=1002	Name=kailikia	Pri=14	Passwd=	Card=	Grp=1	TZ=0000000100000000	Verif
 834693 INFO  2025-11-07 14:21:02670 DownloadProcess:59 - get cmd list over and begin contact:0
 864994 INFO  2025-11-07 14:21:32971 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.253.98:8080/iclock/getrequest?SN=TDBD250100333
 865435 INFO  2025-11-07 14:21:33412 DownloadProcess:59 - get cmd list over and begin contact:0
+898087 INFO  2025-11-07 14:22:0664 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.253.98:8080/iclock/getrequest?SN=TDBD250100333
+898091 INFO  2025-11-07 14:22:0668 DownloadProcess:59 - get cmd list over and begin contact:0
+928598 INFO  2025-11-07 14:22:36575 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.253.98:8080/iclock/getrequest?SN=TDBD250100333
+928677 INFO  2025-11-07 14:22:36654 DownloadProcess:59 - get cmd list over and begin contact:0
+959076 INFO  2025-11-07 14:23:0753 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.253.98:8080/iclock/getrequest?SN=TDBD250100333
+959084 INFO  2025-11-07 14:23:0761 DownloadProcess:59 - get cmd list over and begin contact:0
+989066 INFO  2025-11-07 14:23:3743 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.253.98:8080/iclock/getrequest?SN=TDBD250100333
+989168 INFO  2025-11-07 14:23:37145 DownloadProcess:59 - get cmd list over and begin contact:0
+1020007 INFO  2025-11-07 14:24:07984 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.253.98:8080/iclock/getrequest?SN=TDBD250100333
+1020122 INFO  2025-11-07 14:24:0899 DownloadProcess:59 - get cmd list over and begin contact:0
+1050304 INFO  2025-11-07 14:24:38281 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.253.98:8080/iclock/getrequest?SN=TDBD250100333
+1050369 INFO  2025-11-07 14:24:38346 DownloadProcess:59 - get cmd list over and begin contact:0
+1080957 INFO  2025-11-07 14:25:08934 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.253.98:8080/iclock/getrequest?SN=TDBD250100333
+1080962 INFO  2025-11-07 14:25:08939 DownloadProcess:59 - get cmd list over and begin contact:0
+1110982 INFO  2025-11-07 14:25:38959 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.253.98:8080/iclock/getrequest?SN=TDBD250100333
+1110988 INFO  2025-11-07 14:25:38965 DownloadProcess:59 - get cmd list over and begin contact:0
+1142546 INFO  2025-11-07 14:26:10523 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.253.98:8080/iclock/getrequest?SN=TDBD250100333
+1142551 INFO  2025-11-07 14:26:10528 DownloadProcess:59 - get cmd list over and begin contact:0
+1172081 INFO  2025-11-07 14:26:4058 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.253.98:8080/iclock/getrequest?SN=TDBD250100333
+1172177 INFO  2025-11-07 14:26:40154 DownloadProcess:59 - get cmd list over and begin contact:0
+1203279 INFO  2025-11-07 14:27:11256 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.253.98:8080/iclock/getrequest?SN=TDBD250100333
+1203296 INFO  2025-11-07 14:27:11273 DownloadProcess:59 - get cmd list over and begin contact:0
+1233453 INFO  2025-11-07 14:27:41430 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.253.98:8080/iclock/getrequest?SN=TDBD250100333
+1233730 INFO  2025-11-07 14:27:41707 DownloadProcess:59 - get cmd list over and begin contact:0
+1267563 INFO  2025-11-07 14:28:15540 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.253.98:8080/iclock/getrequest?SN=TDBD250100333
+1267588 INFO  2025-11-07 14:28:15565 DownloadProcess:59 - get cmd list over and begin contact:0
+59894 INFO  2025-11-07 16:34:1558 BaseDao:96 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+201058 INFO  2025-11-08 06:45:5279 BaseDao:96 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+365550 INFO  2025-11-08 06:48:36571 UploadProcess:63 - get request and make the device options :192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&options=all&language=69&pushver=2.4.1&DeviceType=att&PushOptionsFlag=1
+365659 INFO  2025-11-08 06:48:36680 UploadProcess:90 - GET OPTION FROM: TDBD250100333
+ATTLOGStamp=9999
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+366085 INFO  2025-11-08 06:48:37106 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=options
+366129 INFO  2025-11-08 06:48:37150 UploadProcess:266 - update device stamp end and get stream.
+366141 INFO  2025-11-08 06:48:37162 UploadProcess:323 - data:~DeviceName=SpeedFace-V3L,MAC=00:17:61:11:09:4f,TransactionCount=19,~MaxAttLogCount=20,UserCount=2,~MaxUserCount=30,PhotoFunOn=0,~MaxUserPhotoCount=0,FingerFunOn=1,FPVersion=10,~MaxFingerCount=30,FPCount=0,FaceFunOn=1,FaceVersion=35,~MaxFaceCount=500,FaceCount=2,FvFunOn=0,FvVersion=3,~MaxFvCount=10,FvCount=0,PvFunOn=0,PvVersion=12,~MaxPvCount=,PvCount=0,Language=69,IPAddress=192.168.0.103,~Platform=ZMM510_TFT,~OEMVendor=ZKTECO CO., LTD.,FWVersion=ZMM510-NF24VB-Ver1.3.13,PushVersion=Ver 2.0.33S-20220623,RegDeviceType=,VisilightFun=1,MultiBioDataSupport=0:1:0:0:0:0:0:0:0:1,MultiBioPhotoSupport=0:0:0:0:0:0:0:0:0:1,IRTempDetectionFunOn=,MaskDetectionFunOn=,UserPicURLFunOn=1,VisualIntercomFunOn=0,VideoTID=,QRCodeDecryptFunList=,VideoProtocol=4,IsSupportQRcode=,QRCodeEnable=,SubcontractingUpgradeFunOn=1
+366142 INFO  2025-11-08 06:48:37163 UploadProcess:324 - end get stream and process data
+366145 INFO  2025-11-08 06:48:37166 UploadProcess:327 - end process data and return msg to device
+366150 INFO  2025-11-08 06:48:37171 UploadProcess:331 - return msg to device and request over OK
+367593 INFO  2025-11-08 06:48:38614 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333&INFO=ZMM510-NF24VB-Ver1.3.13,2,0,19,192.168.0.103,10,35,12,2,11110,0,0,0
+367634 INFO  2025-11-08 06:48:38655 DownloadProcess:59 - get cmd list over and begin contact:0
+367635 INFO  2025-11-08 06:48:38656 DownloadProcess:94 - INFO:ZMM510-NF24VB-Ver1.3.13,2,0,19,192.168.0.103,10,35,12,2,11110,0,0,0
+368611 INFO  2025-11-08 06:48:39632 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=ATTLOG&Stamp=9999
+368620 INFO  2025-11-08 06:48:39641 UploadProcess:266 - update device stamp end and get stream.
+368622 INFO  2025-11-08 06:48:39643 UploadProcess:323 - data:1002	2025-11-09 02:42:17	0	15	0	0	0	0	0	0	
+1002	2025-11-09 02:46:10	0	15	0	0	0	0	0	0	
+
+368622 INFO  2025-11-08 06:48:39643 UploadProcess:324 - end get stream and process data
+368623 INFO  2025-11-08 06:48:39644 UploadProcess:523 - begin parse op attlog
+368640 INFO  2025-11-08 06:48:39661 AttLogManager:101 - === EXTERNAL API: Attendance logs saved, starting external API calls ===
+368641 INFO  2025-11-08 06:48:39662 AttLogManager:102 - EXTERNAL API: Processing 1 verification(s)
+368643 INFO  2025-11-08 06:48:39664 AttLogManager:106 - EXTERNAL API: Processing verification - User PIN: 1002, User Name: null, Timestamp: 2025-11-09 02:42:17
+368644 INFO  2025-11-08 06:48:39665 AttLogManager:110 - EXTERNAL API: Calling notifyVerification for User ID: 1002
+368651 INFO  2025-11-08 06:48:39672 ExternalApiUtil:40 - === EXTERNAL API: notifyVerification called with userId: 1002 ===
+368652 INFO  2025-11-08 06:48:39673 ExternalApiUtil:47 - EXTERNAL API: Submitting async task for userId: 1002
+368657 INFO  2025-11-08 06:48:39678 ExternalApiUtil:58 - EXTERNAL API: Async task submitted for userId: 1002
+368659 INFO  2025-11-08 06:48:39680 AttLogManager:112 - EXTERNAL API: notifyVerification called for User ID: 1002, Timestamp: 2025-11-09 02:42:17
+368660 INFO  2025-11-08 06:48:39681 AttLogManager:119 - === EXTERNAL API: Finished processing all verifications ===
+368657 INFO  2025-11-08 06:48:39678 ExternalApiUtil:53 - EXTERNAL API: Async task started for userId: 1002
+368660 INFO  2025-11-08 06:48:39681 UploadProcess:412 - attlog size:1
+368662 INFO  2025-11-08 06:48:39683 UploadProcess:525 - end parse op attlog
+368662 INFO  2025-11-08 06:48:39683 UploadProcess:523 - begin parse op attlog
+368661 INFO  2025-11-08 06:48:39682 ExternalApiUtil:67 - === EXTERNAL API: callExternalApi started for userId: 1002 ===
+368666 INFO  2025-11-08 06:48:39687 ExternalApiUtil:68 - EXTERNAL API: URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+368667 INFO  2025-11-08 06:48:39688 ExternalApiUtil:72 - EXTERNAL API: Creating connection to: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+368674 INFO  2025-11-08 06:48:39695 AttLogManager:101 - === EXTERNAL API: Attendance logs saved, starting external API calls ===
+368675 INFO  2025-11-08 06:48:39696 AttLogManager:102 - EXTERNAL API: Processing 1 verification(s)
+368676 INFO  2025-11-08 06:48:39697 AttLogManager:106 - EXTERNAL API: Processing verification - User PIN: 1002, User Name: null, Timestamp: 2025-11-09 02:46:10
+368678 INFO  2025-11-08 06:48:39699 AttLogManager:110 - EXTERNAL API: Calling notifyVerification for User ID: 1002
+368681 INFO  2025-11-08 06:48:39702 ExternalApiUtil:40 - === EXTERNAL API: notifyVerification called with userId: 1002 ===
+368682 INFO  2025-11-08 06:48:39703 ExternalApiUtil:47 - EXTERNAL API: Submitting async task for userId: 1002
+368684 INFO  2025-11-08 06:48:39705 ExternalApiUtil:58 - EXTERNAL API: Async task submitted for userId: 1002
+368685 INFO  2025-11-08 06:48:39706 AttLogManager:112 - EXTERNAL API: notifyVerification called for User ID: 1002, Timestamp: 2025-11-09 02:46:10
+368686 INFO  2025-11-08 06:48:39707 AttLogManager:119 - === EXTERNAL API: Finished processing all verifications ===
+368688 INFO  2025-11-08 06:48:39709 UploadProcess:412 - attlog size:1
+368689 INFO  2025-11-08 06:48:39710 UploadProcess:525 - end parse op attlog
+368689 INFO  2025-11-08 06:48:39710 UploadProcess:327 - end process data and return msg to device
+368690 INFO  2025-11-08 06:48:39711 UploadProcess:331 - return msg to device and request over OK
+368684 INFO  2025-11-08 06:48:39705 ExternalApiUtil:53 - EXTERNAL API: Async task started for userId: 1002
+368692 INFO  2025-11-08 06:48:39713 ExternalApiUtil:67 - === EXTERNAL API: callExternalApi started for userId: 1002 ===
+368694 INFO  2025-11-08 06:48:39715 ExternalApiUtil:68 - EXTERNAL API: URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+368694 INFO  2025-11-08 06:48:39715 ExternalApiUtil:72 - EXTERNAL API: Creating connection to: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+368688 INFO  2025-11-08 06:48:39709 ExternalApiUtil:82 - EXTERNAL API: Connection configured, formatting student ID...
+368697 INFO  2025-11-08 06:48:39718 ExternalApiUtil:82 - EXTERNAL API: Connection configured, formatting student ID...
+368701 INFO  2025-11-08 06:48:39722 ExternalApiUtil:86 - EXTERNAL API: Student ID formatted - Original: 1002, Formatted: 1002
+368701 INFO  2025-11-08 06:48:39722 ExternalApiUtil:90 - EXTERNAL API: Request body: {"student_id": "1002", "meal_type": "lunch"}
+368702 INFO  2025-11-08 06:48:39723 ExternalApiUtil:93 - EXTERNAL API: Writing request body to connection...
+368701 INFO  2025-11-08 06:48:39722 ExternalApiUtil:86 - EXTERNAL API: Student ID formatted - Original: 1002, Formatted: 1002
+368705 INFO  2025-11-08 06:48:39726 ExternalApiUtil:90 - EXTERNAL API: Request body: {"student_id": "1002", "meal_type": "lunch"}
+368706 INFO  2025-11-08 06:48:39727 ExternalApiUtil:93 - EXTERNAL API: Writing request body to connection...
+368912 INFO  2025-11-08 06:48:39933 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=OPERLOG&Stamp=9999
+368917 INFO  2025-11-08 06:48:39938 UploadProcess:266 - update device stamp end and get stream.
+368919 INFO  2025-11-08 06:48:39940 UploadProcess:323 - data:OPLOG 0	0	2025-11-09 02:40:56	0	0	0	0
+OPLOG 3	0	2025-11-09 02:41:02	55	0	0	0
+OPLOG 3	0	2025-11-09 02:41:02	55	0	0	0
+OPLOG 4	1002	2025-11-09 02:46:29	1002	0	0	0
+OPLOG 82	1002	2025-11-09 02:48:27	add adms address	0	0	0
+
+368919 INFO  2025-11-08 06:48:39940 UploadProcess:324 - end get stream and process data
+368920 INFO  2025-11-08 06:48:39941 UploadProcess:474 - begin parse op log
+368949 INFO  2025-11-08 06:48:39970 UploadProcess:235 - oplog size:1
+368950 INFO  2025-11-08 06:48:39971 UploadProcess:476 - end parse op log
+368950 INFO  2025-11-08 06:48:39971 UploadProcess:474 - begin parse op log
+368965 INFO  2025-11-08 06:48:39986 UploadProcess:235 - oplog size:1
+368965 INFO  2025-11-08 06:48:39986 UploadProcess:476 - end parse op log
+368966 INFO  2025-11-08 06:48:39987 UploadProcess:474 - begin parse op log
+368977 INFO  2025-11-08 06:48:39998 UploadProcess:235 - oplog size:1
+368977 INFO  2025-11-08 06:48:39998 UploadProcess:476 - end parse op log
+368978 INFO  2025-11-08 06:48:39999 UploadProcess:474 - begin parse op log
+368986 INFO  2025-11-08 06:48:407 UploadProcess:235 - oplog size:1
+368987 INFO  2025-11-08 06:48:408 UploadProcess:476 - end parse op log
+368988 INFO  2025-11-08 06:48:409 UploadProcess:474 - begin parse op log
+369001 INFO  2025-11-08 06:48:4022 UploadProcess:235 - oplog size:1
+369003 INFO  2025-11-08 06:48:4024 UploadProcess:476 - end parse op log
+369004 INFO  2025-11-08 06:48:4025 UploadProcess:327 - end process data and return msg to device
+369005 INFO  2025-11-08 06:48:4026 UploadProcess:331 - return msg to device and request over OK
+369125 INFO  2025-11-08 06:48:40146 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+369129 INFO  2025-11-08 06:48:40150 DownloadProcess:59 - get cmd list over and begin contact:0
+371989 INFO  2025-11-08 06:48:4310 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+371991 INFO  2025-11-08 06:48:4312 DownloadProcess:59 - get cmd list over and begin contact:0
+373770 ERROR 2025-11-08 06:48:44791 ExternalApiUtil:127 - Error calling external API for student_id: 1002, URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check, Error: connect timed out
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:465)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:560)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:359)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1245)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1179)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1073)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1007)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1359)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1334)
+	at com.zk.util.ExternalApiUtil.callExternalApi(ExternalApiUtil.java:94)
+	at com.zk.util.ExternalApiUtil.access$100(ExternalApiUtil.java:17)
+	at com.zk.util.ExternalApiUtil$1.run(ExternalApiUtil.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+373770 ERROR 2025-11-08 06:48:44791 ExternalApiUtil:127 - Error calling external API for student_id: 1002, URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check, Error: connect timed out
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:465)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:560)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:359)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1245)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1179)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1073)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1007)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1359)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1334)
+	at com.zk.util.ExternalApiUtil.callExternalApi(ExternalApiUtil.java:94)
+	at com.zk.util.ExternalApiUtil.access$100(ExternalApiUtil.java:17)
+	at com.zk.util.ExternalApiUtil$1.run(ExternalApiUtil.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+376265 INFO  2025-11-08 06:48:47286 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333&INFO=ZMM510-NF24VB-Ver1.3.13,2,0,20,192.168.0.103,10,35,12,2,11110,0,0,0
+376268 INFO  2025-11-08 06:48:47289 DownloadProcess:59 - get cmd list over and begin contact:0
+376269 INFO  2025-11-08 06:48:47290 DownloadProcess:94 - INFO:ZMM510-NF24VB-Ver1.3.13,2,0,20,192.168.0.103,10,35,12,2,11110,0,0,0
+376462 INFO  2025-11-08 06:48:47483 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=ATTLOG&Stamp=9999
+376472 INFO  2025-11-08 06:48:47493 UploadProcess:266 - update device stamp end and get stream.
+376473 INFO  2025-11-08 06:48:47494 UploadProcess:323 - data:1002	2025-11-09 02:48:46	0	15	0	0	0	0	0	0	
+
+376474 INFO  2025-11-08 06:48:47495 UploadProcess:324 - end get stream and process data
+376474 INFO  2025-11-08 06:48:47495 UploadProcess:523 - begin parse op attlog
+376482 INFO  2025-11-08 06:48:47503 AttLogManager:101 - === EXTERNAL API: Attendance logs saved, starting external API calls ===
+376483 INFO  2025-11-08 06:48:47504 AttLogManager:102 - EXTERNAL API: Processing 1 verification(s)
+376483 INFO  2025-11-08 06:48:47504 AttLogManager:106 - EXTERNAL API: Processing verification - User PIN: 1002, User Name: null, Timestamp: 2025-11-09 02:48:46
+376484 INFO  2025-11-08 06:48:47505 AttLogManager:110 - EXTERNAL API: Calling notifyVerification for User ID: 1002
+376485 INFO  2025-11-08 06:48:47506 ExternalApiUtil:40 - === EXTERNAL API: notifyVerification called with userId: 1002 ===
+376486 INFO  2025-11-08 06:48:47507 ExternalApiUtil:47 - EXTERNAL API: Submitting async task for userId: 1002
+376487 INFO  2025-11-08 06:48:47508 ExternalApiUtil:58 - EXTERNAL API: Async task submitted for userId: 1002
+376488 INFO  2025-11-08 06:48:47509 AttLogManager:112 - EXTERNAL API: notifyVerification called for User ID: 1002, Timestamp: 2025-11-09 02:48:46
+376489 INFO  2025-11-08 06:48:47510 AttLogManager:119 - === EXTERNAL API: Finished processing all verifications ===
+376490 INFO  2025-11-08 06:48:47511 UploadProcess:412 - attlog size:1
+376490 INFO  2025-11-08 06:48:47511 UploadProcess:525 - end parse op attlog
+376491 INFO  2025-11-08 06:48:47512 UploadProcess:327 - end process data and return msg to device
+376488 INFO  2025-11-08 06:48:47509 ExternalApiUtil:53 - EXTERNAL API: Async task started for userId: 1002
+376492 INFO  2025-11-08 06:48:47513 ExternalApiUtil:67 - === EXTERNAL API: callExternalApi started for userId: 1002 ===
+376493 INFO  2025-11-08 06:48:47514 ExternalApiUtil:68 - EXTERNAL API: URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+376493 INFO  2025-11-08 06:48:47514 ExternalApiUtil:72 - EXTERNAL API: Creating connection to: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+376492 INFO  2025-11-08 06:48:47513 UploadProcess:331 - return msg to device and request over OK
+376493 INFO  2025-11-08 06:48:47514 ExternalApiUtil:82 - EXTERNAL API: Connection configured, formatting student ID...
+376495 INFO  2025-11-08 06:48:47516 ExternalApiUtil:86 - EXTERNAL API: Student ID formatted - Original: 1002, Formatted: 1002
+376495 INFO  2025-11-08 06:48:47516 ExternalApiUtil:90 - EXTERNAL API: Request body: {"student_id": "1002", "meal_type": "lunch"}
+376496 INFO  2025-11-08 06:48:47517 ExternalApiUtil:93 - EXTERNAL API: Writing request body to connection...
+381504 ERROR 2025-11-08 06:48:52525 ExternalApiUtil:127 - Error calling external API for student_id: 1002, URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check, Error: connect timed out
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:465)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:560)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:359)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1245)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1179)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1073)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1007)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1359)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1334)
+	at com.zk.util.ExternalApiUtil.callExternalApi(ExternalApiUtil.java:94)
+	at com.zk.util.ExternalApiUtil.access$100(ExternalApiUtil.java:17)
+	at com.zk.util.ExternalApiUtil$1.run(ExternalApiUtil.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+381907 INFO  2025-11-08 06:48:52928 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+381909 INFO  2025-11-08 06:48:52930 DownloadProcess:59 - get cmd list over and begin contact:0
+388914 INFO  2025-11-08 06:48:59935 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+388919 INFO  2025-11-08 06:48:59940 DownloadProcess:59 - get cmd list over and begin contact:0
+398100 INFO  2025-11-08 06:49:09121 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+398102 INFO  2025-11-08 06:49:09123 DownloadProcess:59 - get cmd list over and begin contact:0
+407941 INFO  2025-11-08 06:49:18962 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+407944 INFO  2025-11-08 06:49:18965 DownloadProcess:59 - get cmd list over and begin contact:0
+419912 INFO  2025-11-08 06:49:30933 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+419918 INFO  2025-11-08 06:49:30939 DownloadProcess:59 - get cmd list over and begin contact:0
+434040 INFO  2025-11-08 06:49:4561 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+434055 INFO  2025-11-08 06:49:4576 DownloadProcess:59 - get cmd list over and begin contact:0
+449096 INFO  2025-11-08 06:50:00117 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+449098 INFO  2025-11-08 06:50:00119 DownloadProcess:59 - get cmd list over and begin contact:0
+465072 INFO  2025-11-08 06:50:1693 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+465076 INFO  2025-11-08 06:50:1697 DownloadProcess:59 - get cmd list over and begin contact:0
+482930 INFO  2025-11-08 06:50:33951 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+482933 INFO  2025-11-08 06:50:33954 DownloadProcess:59 - get cmd list over and begin contact:0
+494561 INFO  2025-11-08 06:50:45582 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=ATTLOG&Stamp=9999
+494645 INFO  2025-11-08 06:50:45666 UploadProcess:266 - update device stamp end and get stream.
+494647 INFO  2025-11-08 06:50:45668 UploadProcess:323 - data:1002	2025-11-09 02:50:44	0	15	0	0	0	0	0	0	
+
+494647 INFO  2025-11-08 06:50:45668 UploadProcess:324 - end get stream and process data
+494648 INFO  2025-11-08 06:50:45669 UploadProcess:523 - begin parse op attlog
+494704 INFO  2025-11-08 06:50:45725 AttLogManager:101 - === EXTERNAL API: Attendance logs saved, starting external API calls ===
+494706 INFO  2025-11-08 06:50:45727 AttLogManager:102 - EXTERNAL API: Processing 1 verification(s)
+494709 INFO  2025-11-08 06:50:45730 AttLogManager:106 - EXTERNAL API: Processing verification - User PIN: 1002, User Name: null, Timestamp: 2025-11-09 02:50:44
+494710 INFO  2025-11-08 06:50:45731 AttLogManager:110 - EXTERNAL API: Calling notifyVerification for User ID: 1002
+494710 INFO  2025-11-08 06:50:45731 ExternalApiUtil:40 - === EXTERNAL API: notifyVerification called with userId: 1002 ===
+494710 INFO  2025-11-08 06:50:45731 ExternalApiUtil:47 - EXTERNAL API: Submitting async task for userId: 1002
+494711 INFO  2025-11-08 06:50:45732 ExternalApiUtil:58 - EXTERNAL API: Async task submitted for userId: 1002
+494712 INFO  2025-11-08 06:50:45733 AttLogManager:112 - EXTERNAL API: notifyVerification called for User ID: 1002, Timestamp: 2025-11-09 02:50:44
+494713 INFO  2025-11-08 06:50:45734 AttLogManager:119 - === EXTERNAL API: Finished processing all verifications ===
+494714 INFO  2025-11-08 06:50:45735 UploadProcess:412 - attlog size:1
+494715 INFO  2025-11-08 06:50:45736 UploadProcess:525 - end parse op attlog
+494715 INFO  2025-11-08 06:50:45736 UploadProcess:327 - end process data and return msg to device
+494711 INFO  2025-11-08 06:50:45732 ExternalApiUtil:53 - EXTERNAL API: Async task started for userId: 1002
+494716 INFO  2025-11-08 06:50:45737 ExternalApiUtil:67 - === EXTERNAL API: callExternalApi started for userId: 1002 ===
+494717 INFO  2025-11-08 06:50:45738 ExternalApiUtil:68 - EXTERNAL API: URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+494717 INFO  2025-11-08 06:50:45738 ExternalApiUtil:72 - EXTERNAL API: Creating connection to: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+494716 INFO  2025-11-08 06:50:45737 UploadProcess:331 - return msg to device and request over OK
+494718 INFO  2025-11-08 06:50:45739 ExternalApiUtil:82 - EXTERNAL API: Connection configured, formatting student ID...
+494719 INFO  2025-11-08 06:50:45740 ExternalApiUtil:86 - EXTERNAL API: Student ID formatted - Original: 1002, Formatted: 1002
+494720 INFO  2025-11-08 06:50:45741 ExternalApiUtil:90 - EXTERNAL API: Request body: {"student_id": "1002", "meal_type": "lunch"}
+494721 INFO  2025-11-08 06:50:45742 ExternalApiUtil:93 - EXTERNAL API: Writing request body to connection...
+499729 ERROR 2025-11-08 06:50:50750 ExternalApiUtil:127 - Error calling external API for student_id: 1002, URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check, Error: connect timed out
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:465)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:560)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:359)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1245)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1179)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1073)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1007)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1359)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1334)
+	at com.zk.util.ExternalApiUtil.callExternalApi(ExternalApiUtil.java:94)
+	at com.zk.util.ExternalApiUtil.access$100(ExternalApiUtil.java:17)
+	at com.zk.util.ExternalApiUtil$1.run(ExternalApiUtil.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+506032 INFO  2025-11-08 06:50:5753 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333&INFO=ZMM510-NF24VB-Ver1.3.13,2,0,21,0.0.0.0,10,35,12,2,11110,0,0,0
+506037 INFO  2025-11-08 06:50:5758 DownloadProcess:59 - get cmd list over and begin contact:0
+506037 INFO  2025-11-08 06:50:5758 DownloadProcess:94 - INFO:ZMM510-NF24VB-Ver1.3.13,2,0,21,0.0.0.0,10,35,12,2,11110,0,0,0
+526209 INFO  2025-11-08 06:51:17230 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+526211 INFO  2025-11-08 06:51:17232 DownloadProcess:59 - get cmd list over and begin contact:0
+549722 INFO  2025-11-08 06:51:40743 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+549729 INFO  2025-11-08 06:51:40750 DownloadProcess:59 - get cmd list over and begin contact:0
+572841 INFO  2025-11-08 06:52:03862 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+572847 INFO  2025-11-08 06:52:03868 DownloadProcess:59 - get cmd list over and begin contact:0
+598094 INFO  2025-11-08 06:52:29115 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+598096 INFO  2025-11-08 06:52:29117 DownloadProcess:59 - get cmd list over and begin contact:0
+626050 INFO  2025-11-08 06:52:5771 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+626052 INFO  2025-11-08 06:52:5773 DownloadProcess:59 - get cmd list over and begin contact:0
+654025 INFO  2025-11-08 06:53:2546 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+654074 INFO  2025-11-08 06:53:2595 DownloadProcess:59 - get cmd list over and begin contact:0
+684853 INFO  2025-11-08 06:53:55874 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+684861 INFO  2025-11-08 06:53:55882 DownloadProcess:59 - get cmd list over and begin contact:0
+714922 INFO  2025-11-08 06:54:25943 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+714925 INFO  2025-11-08 06:54:25946 DownloadProcess:59 - get cmd list over and begin contact:0
+730630 INFO  2025-11-08 06:54:41651 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=ATTLOG&Stamp=9999
+730674 INFO  2025-11-08 06:54:41695 UploadProcess:266 - update device stamp end and get stream.
+730687 INFO  2025-11-08 06:54:41708 UploadProcess:323 - data:1002	2025-11-09 02:54:40	0	15	0	0	0	0	0	0	
+
+730692 INFO  2025-11-08 06:54:41713 UploadProcess:324 - end get stream and process data
+730696 INFO  2025-11-08 06:54:41717 UploadProcess:523 - begin parse op attlog
+730716 INFO  2025-11-08 06:54:41737 AttLogManager:101 - === EXTERNAL API: Attendance logs saved, starting external API calls ===
+730717 INFO  2025-11-08 06:54:41738 AttLogManager:102 - EXTERNAL API: Processing 1 verification(s)
+730718 INFO  2025-11-08 06:54:41739 AttLogManager:106 - EXTERNAL API: Processing verification - User PIN: 1002, User Name: null, Timestamp: 2025-11-09 02:54:40
+730720 INFO  2025-11-08 06:54:41741 AttLogManager:110 - EXTERNAL API: Calling notifyVerification for User ID: 1002
+730721 INFO  2025-11-08 06:54:41742 ExternalApiUtil:40 - === EXTERNAL API: notifyVerification called with userId: 1002 ===
+730722 INFO  2025-11-08 06:54:41743 ExternalApiUtil:47 - EXTERNAL API: Submitting async task for userId: 1002
+730724 INFO  2025-11-08 06:54:41745 ExternalApiUtil:58 - EXTERNAL API: Async task submitted for userId: 1002
+730784 INFO  2025-11-08 06:54:41805 AttLogManager:112 - EXTERNAL API: notifyVerification called for User ID: 1002, Timestamp: 2025-11-09 02:54:40
+730785 INFO  2025-11-08 06:54:41806 AttLogManager:119 - === EXTERNAL API: Finished processing all verifications ===
+730786 INFO  2025-11-08 06:54:41807 UploadProcess:412 - attlog size:1
+730787 INFO  2025-11-08 06:54:41808 UploadProcess:525 - end parse op attlog
+730788 INFO  2025-11-08 06:54:41809 UploadProcess:327 - end process data and return msg to device
+730725 INFO  2025-11-08 06:54:41746 ExternalApiUtil:53 - EXTERNAL API: Async task started for userId: 1002
+730790 INFO  2025-11-08 06:54:41811 ExternalApiUtil:67 - === EXTERNAL API: callExternalApi started for userId: 1002 ===
+730789 INFO  2025-11-08 06:54:41810 UploadProcess:331 - return msg to device and request over OK
+730792 INFO  2025-11-08 06:54:41813 ExternalApiUtil:68 - EXTERNAL API: URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+730796 INFO  2025-11-08 06:54:41817 ExternalApiUtil:72 - EXTERNAL API: Creating connection to: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+730797 INFO  2025-11-08 06:54:41818 ExternalApiUtil:82 - EXTERNAL API: Connection configured, formatting student ID...
+730799 INFO  2025-11-08 06:54:41820 ExternalApiUtil:86 - EXTERNAL API: Student ID formatted - Original: 1002, Formatted: 1002
+730800 INFO  2025-11-08 06:54:41821 ExternalApiUtil:90 - EXTERNAL API: Request body: {"student_id": "1002", "meal_type": "lunch"}
+730801 INFO  2025-11-08 06:54:41822 ExternalApiUtil:93 - EXTERNAL API: Writing request body to connection...
+735808 ERROR 2025-11-08 06:54:46829 ExternalApiUtil:127 - Error calling external API for student_id: 1002, URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check, Error: connect timed out
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:465)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:560)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:359)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1245)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1179)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1073)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1007)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1359)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1334)
+	at com.zk.util.ExternalApiUtil.callExternalApi(ExternalApiUtil.java:94)
+	at com.zk.util.ExternalApiUtil.access$100(ExternalApiUtil.java:17)
+	at com.zk.util.ExternalApiUtil$1.run(ExternalApiUtil.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+746050 INFO  2025-11-08 06:54:5771 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333&INFO=ZMM510-NF24VB-Ver1.3.13,2,0,22,192.168.0.103,10,35,12,2,11110,0,0,0
+746055 INFO  2025-11-08 06:54:5776 DownloadProcess:59 - get cmd list over and begin contact:0
+746057 INFO  2025-11-08 06:54:5778 DownloadProcess:94 - INFO:ZMM510-NF24VB-Ver1.3.13,2,0,22,192.168.0.103,10,35,12,2,11110,0,0,0
+775969 INFO  2025-11-08 06:55:26990 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+775972 INFO  2025-11-08 06:55:26993 DownloadProcess:59 - get cmd list over and begin contact:0
+806997 INFO  2025-11-08 06:55:5818 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+807000 INFO  2025-11-08 06:55:5821 DownloadProcess:59 - get cmd list over and begin contact:0
+837122 INFO  2025-11-08 06:56:28143 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+837126 INFO  2025-11-08 06:56:28147 DownloadProcess:59 - get cmd list over and begin contact:0
+868098 INFO  2025-11-08 06:56:59119 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+868101 INFO  2025-11-08 06:56:59122 DownloadProcess:59 - get cmd list over and begin contact:0
+897909 INFO  2025-11-08 06:57:28930 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+897915 INFO  2025-11-08 06:57:28936 DownloadProcess:59 - get cmd list over and begin contact:0
+928959 INFO  2025-11-08 06:57:59980 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+928963 INFO  2025-11-08 06:57:59984 DownloadProcess:59 - get cmd list over and begin contact:0
+958973 INFO  2025-11-08 06:58:29994 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+958985 INFO  2025-11-08 06:58:306 DownloadProcess:59 - get cmd list over and begin contact:0
+990146 INFO  2025-11-08 06:59:01167 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+990150 INFO  2025-11-08 06:59:01171 DownloadProcess:59 - get cmd list over and begin contact:0
+1019904 INFO  2025-11-08 06:59:30925 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1019906 INFO  2025-11-08 06:59:30927 DownloadProcess:59 - get cmd list over and begin contact:0
+1051091 INFO  2025-11-08 07:00:02112 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1051120 INFO  2025-11-08 07:00:02141 DownloadProcess:59 - get cmd list over and begin contact:0
+1081334 INFO  2025-11-08 07:00:32355 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1081336 INFO  2025-11-08 07:00:32357 DownloadProcess:59 - get cmd list over and begin contact:0
+1112115 INFO  2025-11-08 07:01:03136 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1112117 INFO  2025-11-08 07:01:03138 DownloadProcess:59 - get cmd list over and begin contact:0
+1142373 INFO  2025-11-08 07:01:33394 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1142375 INFO  2025-11-08 07:01:33396 DownloadProcess:59 - get cmd list over and begin contact:0
+1173137 INFO  2025-11-08 07:02:04158 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1173145 INFO  2025-11-08 07:02:04166 DownloadProcess:59 - get cmd list over and begin contact:0
+1203297 INFO  2025-11-08 07:02:34318 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1203315 INFO  2025-11-08 07:02:34336 DownloadProcess:59 - get cmd list over and begin contact:0
+1234186 INFO  2025-11-08 07:03:05207 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1234190 INFO  2025-11-08 07:03:05211 DownloadProcess:59 - get cmd list over and begin contact:0
+1264144 INFO  2025-11-08 07:03:35165 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1264147 INFO  2025-11-08 07:03:35168 DownloadProcess:59 - get cmd list over and begin contact:0
+1295177 INFO  2025-11-08 07:04:06198 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1295180 INFO  2025-11-08 07:04:06201 DownloadProcess:59 - get cmd list over and begin contact:0
+1300360 INFO  2025-11-08 07:04:11381 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=OPERLOG&Stamp=9999
+1300378 INFO  2025-11-08 07:04:11399 UploadProcess:266 - update device stamp end and get stream.
+1300384 INFO  2025-11-08 07:04:11405 UploadProcess:323 - data:OPLOG 4	1002	2025-11-09 03:04:10	1002	0	0	0
+
+1300387 INFO  2025-11-08 07:04:11408 UploadProcess:324 - end get stream and process data
+1300389 INFO  2025-11-08 07:04:11410 UploadProcess:474 - begin parse op log
+1300410 INFO  2025-11-08 07:04:11431 UploadProcess:235 - oplog size:1
+1300412 INFO  2025-11-08 07:04:11433 UploadProcess:476 - end parse op log
+1300413 INFO  2025-11-08 07:04:11434 UploadProcess:327 - end process data and return msg to device
+1300414 INFO  2025-11-08 07:04:11435 UploadProcess:331 - return msg to device and request over OK
+1325180 INFO  2025-11-08 07:04:36201 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1325182 INFO  2025-11-08 07:04:36203 DownloadProcess:59 - get cmd list over and begin contact:0
+1356169 INFO  2025-11-08 07:05:07190 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1356172 INFO  2025-11-08 07:05:07193 DownloadProcess:59 - get cmd list over and begin contact:0
+1386191 INFO  2025-11-08 07:05:37212 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1386194 INFO  2025-11-08 07:05:37215 DownloadProcess:59 - get cmd list over and begin contact:0
+1417128 INFO  2025-11-08 07:06:08149 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1417133 INFO  2025-11-08 07:06:08154 DownloadProcess:59 - get cmd list over and begin contact:0
+1447183 INFO  2025-11-08 07:06:38204 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1447185 INFO  2025-11-08 07:06:38206 DownloadProcess:59 - get cmd list over and begin contact:0
+1479118 INFO  2025-11-08 07:07:10139 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1479123 INFO  2025-11-08 07:07:10144 DownloadProcess:59 - get cmd list over and begin contact:0
+1509524 INFO  2025-11-08 07:07:40545 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1509528 INFO  2025-11-08 07:07:40549 DownloadProcess:59 - get cmd list over and begin contact:0
+1539177 INFO  2025-11-08 07:08:10198 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1539180 INFO  2025-11-08 07:08:10201 DownloadProcess:59 - get cmd list over and begin contact:0
+1570140 INFO  2025-11-08 07:08:41161 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1570142 INFO  2025-11-08 07:08:41163 DownloadProcess:59 - get cmd list over and begin contact:0
+1600217 INFO  2025-11-08 07:09:11238 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1600221 INFO  2025-11-08 07:09:11242 DownloadProcess:59 - get cmd list over and begin contact:0
+1631171 INFO  2025-11-08 07:09:42192 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1631174 INFO  2025-11-08 07:09:42195 DownloadProcess:59 - get cmd list over and begin contact:0
+1661170 INFO  2025-11-08 07:10:12191 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1661174 INFO  2025-11-08 07:10:12195 DownloadProcess:59 - get cmd list over and begin contact:0
+1692183 INFO  2025-11-08 07:10:43204 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1692189 INFO  2025-11-08 07:10:43210 DownloadProcess:59 - get cmd list over and begin contact:0
+1722218 INFO  2025-11-08 07:11:13239 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1722223 INFO  2025-11-08 07:11:13244 DownloadProcess:59 - get cmd list over and begin contact:0
+1753176 INFO  2025-11-08 07:11:44197 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1753260 INFO  2025-11-08 07:11:44281 DownloadProcess:59 - get cmd list over and begin contact:0
+1783148 INFO  2025-11-08 07:12:14169 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1783153 INFO  2025-11-08 07:12:14174 DownloadProcess:59 - get cmd list over and begin contact:0
+1814138 INFO  2025-11-08 07:12:45159 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1814144 INFO  2025-11-08 07:12:45165 DownloadProcess:59 - get cmd list over and begin contact:0
+1844153 INFO  2025-11-08 07:13:15174 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1844155 INFO  2025-11-08 07:13:15176 DownloadProcess:59 - get cmd list over and begin contact:0
+1875144 INFO  2025-11-08 07:13:46165 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1875146 INFO  2025-11-08 07:13:46167 DownloadProcess:59 - get cmd list over and begin contact:0
+1905138 INFO  2025-11-08 07:14:16159 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1905146 INFO  2025-11-08 07:14:16167 DownloadProcess:59 - get cmd list over and begin contact:0
+1936098 INFO  2025-11-08 07:14:47119 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1936101 INFO  2025-11-08 07:14:47122 DownloadProcess:59 - get cmd list over and begin contact:0
+1966161 INFO  2025-11-08 07:15:17182 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1966163 INFO  2025-11-08 07:15:17184 DownloadProcess:59 - get cmd list over and begin contact:0
+1997163 INFO  2025-11-08 07:15:48184 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1997167 INFO  2025-11-08 07:15:48188 DownloadProcess:59 - get cmd list over and begin contact:0
+2027137 INFO  2025-11-08 07:16:18158 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+2027142 INFO  2025-11-08 07:16:18163 DownloadProcess:59 - get cmd list over and begin contact:0
+2058181 INFO  2025-11-08 07:16:49202 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+2058185 INFO  2025-11-08 07:16:49206 DownloadProcess:59 - get cmd list over and begin contact:0
+2088177 INFO  2025-11-08 07:17:19198 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+2088181 INFO  2025-11-08 07:17:19202 DownloadProcess:59 - get cmd list over and begin contact:0
+2119103 INFO  2025-11-08 07:17:50124 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+2119106 INFO  2025-11-08 07:17:50127 DownloadProcess:59 - get cmd list over and begin contact:0
+2149166 INFO  2025-11-08 07:18:20187 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+2149168 INFO  2025-11-08 07:18:20189 DownloadProcess:59 - get cmd list over and begin contact:0
+2180130 INFO  2025-11-08 07:18:51151 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+2180132 INFO  2025-11-08 07:18:51153 DownloadProcess:59 - get cmd list over and begin contact:0
+2210102 INFO  2025-11-08 07:19:21123 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+2210104 INFO  2025-11-08 07:19:21125 DownloadProcess:59 - get cmd list over and begin contact:0
+2241120 INFO  2025-11-08 07:19:52141 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+2241123 INFO  2025-11-08 07:19:52144 DownloadProcess:59 - get cmd list over and begin contact:0
+2271172 INFO  2025-11-08 07:20:22193 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+2271180 INFO  2025-11-08 07:20:22201 DownloadProcess:59 - get cmd list over and begin contact:0
+2302162 INFO  2025-11-08 07:20:53183 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+2302165 INFO  2025-11-08 07:20:53186 DownloadProcess:59 - get cmd list over and begin contact:0
+2332169 INFO  2025-11-08 07:21:23190 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+2332196 INFO  2025-11-08 07:21:23217 DownloadProcess:59 - get cmd list over and begin contact:0
+2363172 INFO  2025-11-08 07:21:54193 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+2363175 INFO  2025-11-08 07:21:54196 DownloadProcess:59 - get cmd list over and begin contact:0
+2393134 INFO  2025-11-08 07:22:24155 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+2393137 INFO  2025-11-08 07:22:24158 DownloadProcess:59 - get cmd list over and begin contact:0
+2424215 INFO  2025-11-08 07:22:55236 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+2424234 INFO  2025-11-08 07:22:55255 DownloadProcess:59 - get cmd list over and begin contact:0
+2454182 INFO  2025-11-08 07:23:25203 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+2454223 INFO  2025-11-08 07:23:25244 DownloadProcess:59 - get cmd list over and begin contact:0
+2485177 INFO  2025-11-08 07:23:56198 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+2485184 INFO  2025-11-08 07:23:56205 DownloadProcess:59 - get cmd list over and begin contact:0
+2515106 INFO  2025-11-08 07:24:26127 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+2515109 INFO  2025-11-08 07:24:26130 DownloadProcess:59 - get cmd list over and begin contact:0
+29782444 INFO  2025-11-08 14:58:53465 UploadProcess:63 - get request and make the device options :192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&options=all&language=69&pushver=2.4.1&DeviceType=att&PushOptionsFlag=1
+29783082 INFO  2025-11-08 14:58:54103 UploadProcess:90 - GET OPTION FROM: TDBD250100333
+ATTLOGStamp=9999
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+29783535 INFO  2025-11-08 14:58:54556 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=options
+29783679 INFO  2025-11-08 14:58:54700 UploadProcess:266 - update device stamp end and get stream.
+29783775 INFO  2025-11-08 14:58:54796 UploadProcess:323 - data:~DeviceName=SpeedFace-V3L,MAC=00:17:61:11:09:4f,TransactionCount=23,~MaxAttLogCount=20,UserCount=2,~MaxUserCount=30,PhotoFunOn=0,~MaxUserPhotoCount=0,FingerFunOn=1,FPVersion=10,~MaxFingerCount=30,FPCount=0,FaceFunOn=1,FaceVersion=35,~MaxFaceCount=500,FaceCount=2,FvFunOn=0,FvVersion=3,~MaxFvCount=10,FvCount=0,PvFunOn=0,PvVersion=12,~MaxPvCount=,PvCount=0,Language=69,IPAddress=192.168.0.103,~Platform=ZMM510_TFT,~OEMVendor=ZKTECO CO., LTD.,FWVersion=ZMM510-NF24VB-Ver1.3.13,PushVersion=Ver 2.0.33S-20220623,RegDeviceType=,VisilightFun=1,MultiBioDataSupport=0:1:0:0:0:0:0:0:0:1,MultiBioPhotoSupport=0:0:0:0:0:0:0:0:0:1,IRTempDetectionFunOn=,MaskDetectionFunOn=,UserPicURLFunOn=1,VisualIntercomFunOn=0,VideoTID=,QRCodeDecryptFunList=,VideoProtocol=4,IsSupportQRcode=,QRCodeEnable=,SubcontractingUpgradeFunOn=1
+29783779 INFO  2025-11-08 14:58:54800 UploadProcess:324 - end get stream and process data
+29783823 INFO  2025-11-08 14:58:54844 UploadProcess:327 - end process data and return msg to device
+29783834 INFO  2025-11-08 14:58:54855 UploadProcess:331 - return msg to device and request over OK
+29785198 INFO  2025-11-08 14:58:56219 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333&INFO=ZMM510-NF24VB-Ver1.3.13,2,0,23,192.168.0.103,10,35,12,2,11110,0,0,0
+29785305 INFO  2025-11-08 14:58:56326 DownloadProcess:59 - get cmd list over and begin contact:0
+29785312 INFO  2025-11-08 14:58:56333 DownloadProcess:94 - INFO:ZMM510-NF24VB-Ver1.3.13,2,0,23,192.168.0.103,10,35,12,2,11110,0,0,0
+29786977 INFO  2025-11-08 14:58:57998 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+29787098 INFO  2025-11-08 14:58:58119 DownloadProcess:59 - get cmd list over and begin contact:0
+29789072 INFO  2025-11-08 14:59:0093 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+29789126 INFO  2025-11-08 14:59:00147 DownloadProcess:59 - get cmd list over and begin contact:0
+29793106 INFO  2025-11-08 14:59:04127 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+29793114 INFO  2025-11-08 14:59:04135 DownloadProcess:59 - get cmd list over and begin contact:0
+29799171 INFO  2025-11-08 14:59:10192 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+29799178 INFO  2025-11-08 14:59:10199 DownloadProcess:59 - get cmd list over and begin contact:0
+29806299 INFO  2025-11-08 14:59:17320 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+29806378 INFO  2025-11-08 14:59:17399 DownloadProcess:59 - get cmd list over and begin contact:0
+29815176 INFO  2025-11-08 14:59:26197 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+29815178 INFO  2025-11-08 14:59:26199 DownloadProcess:59 - get cmd list over and begin contact:0
+29825106 INFO  2025-11-08 14:59:36127 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+29825114 INFO  2025-11-08 14:59:36135 DownloadProcess:59 - get cmd list over and begin contact:0
+29825536 INFO  2025-11-08 14:59:36557 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=ATTLOG&Stamp=9999
+29825556 INFO  2025-11-08 14:59:36577 UploadProcess:266 - update device stamp end and get stream.
+29825562 INFO  2025-11-08 14:59:36583 UploadProcess:323 - data:1002	2025-11-09 10:58:40	0	15	0	0	0	0	0	0	
+
+29825564 INFO  2025-11-08 14:59:36585 UploadProcess:324 - end get stream and process data
+29825566 INFO  2025-11-08 14:59:36587 UploadProcess:523 - begin parse op attlog
+29825595 INFO  2025-11-08 14:59:36616 AttLogManager:101 - === EXTERNAL API: Attendance logs saved, starting external API calls ===
+29825599 INFO  2025-11-08 14:59:36620 AttLogManager:102 - EXTERNAL API: Processing 1 verification(s)
+29825602 INFO  2025-11-08 14:59:36623 AttLogManager:106 - EXTERNAL API: Processing verification - User PIN: 1002, User Name: null, Timestamp: 2025-11-09 10:58:40
+29825605 INFO  2025-11-08 14:59:36626 AttLogManager:110 - EXTERNAL API: Calling notifyVerification for User ID: 1002
+29825616 INFO  2025-11-08 14:59:36637 ExternalApiUtil:40 - === EXTERNAL API: notifyVerification called with userId: 1002 ===
+29825619 INFO  2025-11-08 14:59:36640 ExternalApiUtil:47 - EXTERNAL API: Submitting async task for userId: 1002
+29825626 INFO  2025-11-08 14:59:36647 ExternalApiUtil:58 - EXTERNAL API: Async task submitted for userId: 1002
+29826036 INFO  2025-11-08 14:59:3757 AttLogManager:112 - EXTERNAL API: notifyVerification called for User ID: 1002, Timestamp: 2025-11-09 10:58:40
+29826043 INFO  2025-11-08 14:59:3764 AttLogManager:119 - === EXTERNAL API: Finished processing all verifications ===
+29826370 INFO  2025-11-08 14:59:37391 UploadProcess:412 - attlog size:1
+29826379 INFO  2025-11-08 14:59:37400 UploadProcess:525 - end parse op attlog
+29826381 INFO  2025-11-08 14:59:37402 UploadProcess:327 - end process data and return msg to device
+29826383 INFO  2025-11-08 14:59:37404 UploadProcess:331 - return msg to device and request over OK
+29826032 INFO  2025-11-08 14:59:3753 ExternalApiUtil:53 - EXTERNAL API: Async task started for userId: 1002
+29826493 INFO  2025-11-08 14:59:37514 ExternalApiUtil:67 - === EXTERNAL API: callExternalApi started for userId: 1002 ===
+29826494 INFO  2025-11-08 14:59:37515 ExternalApiUtil:68 - EXTERNAL API: URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+29826496 INFO  2025-11-08 14:59:37517 ExternalApiUtil:72 - EXTERNAL API: Creating connection to: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+29826516 INFO  2025-11-08 14:59:37537 ExternalApiUtil:82 - EXTERNAL API: Connection configured, formatting student ID...
+29826637 INFO  2025-11-08 14:59:37658 ExternalApiUtil:86 - EXTERNAL API: Student ID formatted - Original: 1002, Formatted: 1002
+29826663 INFO  2025-11-08 14:59:37684 ExternalApiUtil:90 - EXTERNAL API: Request body: {"student_id": "1002", "meal_type": "lunch"}
+29826667 INFO  2025-11-08 14:59:37688 ExternalApiUtil:93 - EXTERNAL API: Writing request body to connection...
+29826753 INFO  2025-11-08 14:59:37774 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=OPERLOG&Stamp=9999
+29826771 INFO  2025-11-08 14:59:37792 UploadProcess:266 - update device stamp end and get stream.
+29826776 INFO  2025-11-08 14:59:37797 UploadProcess:323 - data:OPLOG 0	0	2025-11-09 10:58:31	0	0	0	0
+OPLOG 3	0	2025-11-09 10:58:37	54	0	0	0
+OPLOG 3	0	2025-11-09 10:58:37	54	0	0	0
+OPLOG 3	0	2025-11-09 10:58:38	54	0	0	0
+
+29826778 INFO  2025-11-08 14:59:37799 UploadProcess:324 - end get stream and process data
+29826780 INFO  2025-11-08 14:59:37801 UploadProcess:474 - begin parse op log
+29826796 INFO  2025-11-08 14:59:37817 UploadProcess:235 - oplog size:1
+29826802 INFO  2025-11-08 14:59:37823 UploadProcess:476 - end parse op log
+29826807 INFO  2025-11-08 14:59:37828 UploadProcess:474 - begin parse op log
+29826840 INFO  2025-11-08 14:59:37861 UploadProcess:235 - oplog size:1
+29826852 INFO  2025-11-08 14:59:37873 UploadProcess:476 - end parse op log
+29826857 INFO  2025-11-08 14:59:37878 UploadProcess:474 - begin parse op log
+29826875 INFO  2025-11-08 14:59:37896 UploadProcess:235 - oplog size:1
+29826880 INFO  2025-11-08 14:59:37901 UploadProcess:476 - end parse op log
+29826881 INFO  2025-11-08 14:59:37902 UploadProcess:474 - begin parse op log
+29826892 INFO  2025-11-08 14:59:37913 UploadProcess:235 - oplog size:1
+29826895 INFO  2025-11-08 14:59:37916 UploadProcess:476 - end parse op log
+29826897 INFO  2025-11-08 14:59:37918 UploadProcess:327 - end process data and return msg to device
+29826901 INFO  2025-11-08 14:59:37922 UploadProcess:331 - return msg to device and request over OK
+29831735 ERROR 2025-11-08 14:59:42756 ExternalApiUtil:127 - Error calling external API for student_id: 1002, URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check, Error: connect timed out
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:465)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:560)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:359)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1245)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1179)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1073)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1007)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1359)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1334)
+	at com.zk.util.ExternalApiUtil.callExternalApi(ExternalApiUtil.java:94)
+	at com.zk.util.ExternalApiUtil.access$100(ExternalApiUtil.java:17)
+	at com.zk.util.ExternalApiUtil$1.run(ExternalApiUtil.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+29837295 INFO  2025-11-08 14:59:48316 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+29837307 INFO  2025-11-08 14:59:48328 DownloadProcess:59 - get cmd list over and begin contact:0
+29850172 INFO  2025-11-08 15:00:01193 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+29850179 INFO  2025-11-08 15:00:01200 DownloadProcess:59 - get cmd list over and begin contact:0
+29908188 INFO  2025-11-08 15:00:59209 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=ATTLOG&Stamp=9999
+29908223 INFO  2025-11-08 15:00:59244 UploadProcess:266 - update device stamp end and get stream.
+29908227 INFO  2025-11-08 15:00:59248 UploadProcess:323 - data:1002	2025-11-09 11:00:16	0	15	0	0	0	0	0	0	
+
+29908235 INFO  2025-11-08 15:00:59256 UploadProcess:324 - end get stream and process data
+29908239 INFO  2025-11-08 15:00:59260 UploadProcess:523 - begin parse op attlog
+29908262 INFO  2025-11-08 15:00:59283 AttLogManager:101 - === EXTERNAL API: Attendance logs saved, starting external API calls ===
+29908266 INFO  2025-11-08 15:00:59287 AttLogManager:102 - EXTERNAL API: Processing 1 verification(s)
+29908309 INFO  2025-11-08 15:00:59330 AttLogManager:106 - EXTERNAL API: Processing verification - User PIN: 1002, User Name: null, Timestamp: 2025-11-09 11:00:16
+29908317 INFO  2025-11-08 15:00:59338 AttLogManager:110 - EXTERNAL API: Calling notifyVerification for User ID: 1002
+29908320 INFO  2025-11-08 15:00:59341 ExternalApiUtil:40 - === EXTERNAL API: notifyVerification called with userId: 1002 ===
+29908323 INFO  2025-11-08 15:00:59344 ExternalApiUtil:47 - EXTERNAL API: Submitting async task for userId: 1002
+29908328 INFO  2025-11-08 15:00:59349 ExternalApiUtil:58 - EXTERNAL API: Async task submitted for userId: 1002
+29908331 INFO  2025-11-08 15:00:59352 AttLogManager:112 - EXTERNAL API: notifyVerification called for User ID: 1002, Timestamp: 2025-11-09 11:00:16
+29908335 INFO  2025-11-08 15:00:59356 AttLogManager:119 - === EXTERNAL API: Finished processing all verifications ===
+29908338 INFO  2025-11-08 15:00:59359 UploadProcess:412 - attlog size:1
+29908340 INFO  2025-11-08 15:00:59361 UploadProcess:525 - end parse op attlog
+29908342 INFO  2025-11-08 15:00:59363 UploadProcess:327 - end process data and return msg to device
+29908340 INFO  2025-11-08 15:00:59361 ExternalApiUtil:53 - EXTERNAL API: Async task started for userId: 1002
+29908365 INFO  2025-11-08 15:00:59386 ExternalApiUtil:67 - === EXTERNAL API: callExternalApi started for userId: 1002 ===
+29908366 INFO  2025-11-08 15:00:59387 ExternalApiUtil:68 - EXTERNAL API: URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+29908366 INFO  2025-11-08 15:00:59387 ExternalApiUtil:72 - EXTERNAL API: Creating connection to: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+29908368 INFO  2025-11-08 15:00:59389 ExternalApiUtil:82 - EXTERNAL API: Connection configured, formatting student ID...
+29908362 INFO  2025-11-08 15:00:59383 UploadProcess:331 - return msg to device and request over OK
+29908373 INFO  2025-11-08 15:00:59394 ExternalApiUtil:86 - EXTERNAL API: Student ID formatted - Original: 1002, Formatted: 1002
+29908375 INFO  2025-11-08 15:00:59396 ExternalApiUtil:90 - EXTERNAL API: Request body: {"student_id": "1002", "meal_type": "lunch"}
+29908377 INFO  2025-11-08 15:00:59398 ExternalApiUtil:93 - EXTERNAL API: Writing request body to connection...
+29909388 INFO  2025-11-08 15:01:00409 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=OPERLOG&Stamp=9999
+29909403 INFO  2025-11-08 15:01:00424 UploadProcess:266 - update device stamp end and get stream.
+29909407 INFO  2025-11-08 15:01:00428 UploadProcess:323 - data:OPLOG 4	1002	2025-11-09 11:00:26	1002	0	0	0
+
+29909410 INFO  2025-11-08 15:01:00431 UploadProcess:324 - end get stream and process data
+29909410 INFO  2025-11-08 15:01:00431 UploadProcess:474 - begin parse op log
+29909422 INFO  2025-11-08 15:01:00443 UploadProcess:235 - oplog size:1
+29909425 INFO  2025-11-08 15:01:00446 UploadProcess:476 - end parse op log
+29909433 INFO  2025-11-08 15:01:00454 UploadProcess:327 - end process data and return msg to device
+29909436 INFO  2025-11-08 15:01:00457 UploadProcess:331 - return msg to device and request over OK
+29913381 ERROR 2025-11-08 15:01:04402 ExternalApiUtil:127 - Error calling external API for student_id: 1002, URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check, Error: connect timed out
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:465)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:560)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:359)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1245)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1179)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1073)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1007)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1359)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1334)
+	at com.zk.util.ExternalApiUtil.callExternalApi(ExternalApiUtil.java:94)
+	at com.zk.util.ExternalApiUtil.access$100(ExternalApiUtil.java:17)
+	at com.zk.util.ExternalApiUtil$1.run(ExternalApiUtil.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+29918401 INFO  2025-11-08 15:01:09422 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333&INFO=ZMM510-NF24VB-Ver1.3.13,2,0,24,192.168.0.103,10,35,12,2,11110,0,0,0
+29918412 INFO  2025-11-08 15:01:09433 DownloadProcess:59 - get cmd list over and begin contact:0
+29918418 INFO  2025-11-08 15:01:09439 DownloadProcess:94 - INFO:ZMM510-NF24VB-Ver1.3.13,2,0,24,192.168.0.103,10,35,12,2,11110,0,0,0
+29928674 INFO  2025-11-08 15:01:19695 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=ATTLOG&Stamp=9999
+29928692 INFO  2025-11-08 15:01:19713 UploadProcess:266 - update device stamp end and get stream.
+29928695 INFO  2025-11-08 15:01:19716 UploadProcess:323 - data:1002	2025-11-09 11:01:18	0	15	0	0	0	0	0	0	
+
+29928698 INFO  2025-11-08 15:01:19719 UploadProcess:324 - end get stream and process data
+29928702 INFO  2025-11-08 15:01:19723 UploadProcess:523 - begin parse op attlog
+29928727 INFO  2025-11-08 15:01:19748 AttLogManager:101 - === EXTERNAL API: Attendance logs saved, starting external API calls ===
+29928737 INFO  2025-11-08 15:01:19758 AttLogManager:102 - EXTERNAL API: Processing 1 verification(s)
+29928743 INFO  2025-11-08 15:01:19764 AttLogManager:106 - EXTERNAL API: Processing verification - User PIN: 1002, User Name: null, Timestamp: 2025-11-09 11:01:18
+29928747 INFO  2025-11-08 15:01:19768 AttLogManager:110 - EXTERNAL API: Calling notifyVerification for User ID: 1002
+29929029 INFO  2025-11-08 15:01:2050 ExternalApiUtil:40 - === EXTERNAL API: notifyVerification called with userId: 1002 ===
+29929036 INFO  2025-11-08 15:01:2057 ExternalApiUtil:47 - EXTERNAL API: Submitting async task for userId: 1002
+29929038 INFO  2025-11-08 15:01:2059 ExternalApiUtil:58 - EXTERNAL API: Async task submitted for userId: 1002
+29929041 INFO  2025-11-08 15:01:2062 AttLogManager:112 - EXTERNAL API: notifyVerification called for User ID: 1002, Timestamp: 2025-11-09 11:01:18
+29929042 INFO  2025-11-08 15:01:2063 AttLogManager:119 - === EXTERNAL API: Finished processing all verifications ===
+29929043 INFO  2025-11-08 15:01:2064 UploadProcess:412 - attlog size:1
+29929044 INFO  2025-11-08 15:01:2065 UploadProcess:525 - end parse op attlog
+29929047 INFO  2025-11-08 15:01:2068 UploadProcess:327 - end process data and return msg to device
+29929051 INFO  2025-11-08 15:01:2072 ExternalApiUtil:53 - EXTERNAL API: Async task started for userId: 1002
+29929056 INFO  2025-11-08 15:01:2077 ExternalApiUtil:67 - === EXTERNAL API: callExternalApi started for userId: 1002 ===
+29929056 INFO  2025-11-08 15:01:2077 ExternalApiUtil:68 - EXTERNAL API: URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+29929058 INFO  2025-11-08 15:01:2079 ExternalApiUtil:72 - EXTERNAL API: Creating connection to: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+29929059 INFO  2025-11-08 15:01:2080 ExternalApiUtil:82 - EXTERNAL API: Connection configured, formatting student ID...
+29929062 INFO  2025-11-08 15:01:2083 ExternalApiUtil:86 - EXTERNAL API: Student ID formatted - Original: 1002, Formatted: 1002
+29929053 INFO  2025-11-08 15:01:2074 UploadProcess:331 - return msg to device and request over OK
+29929066 INFO  2025-11-08 15:01:2087 ExternalApiUtil:90 - EXTERNAL API: Request body: {"student_id": "1002", "meal_type": "lunch"}
+29929072 INFO  2025-11-08 15:01:2093 ExternalApiUtil:93 - EXTERNAL API: Writing request body to connection...
+29934181 ERROR 2025-11-08 15:01:25202 ExternalApiUtil:127 - Error calling external API for student_id: 1002, URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check, Error: connect timed out
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:465)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:560)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:359)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1245)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1179)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1073)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1007)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1359)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1334)
+	at com.zk.util.ExternalApiUtil.callExternalApi(ExternalApiUtil.java:94)
+	at com.zk.util.ExternalApiUtil.access$100(ExternalApiUtil.java:17)
+	at com.zk.util.ExternalApiUtil$1.run(ExternalApiUtil.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+29938676 INFO  2025-11-08 15:01:29697 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333&INFO=ZMM510-NF24VB-Ver1.3.13,2,0,25,192.168.0.103,10,35,12,2,11110,0,0,0
+29938681 INFO  2025-11-08 15:01:29702 DownloadProcess:59 - get cmd list over and begin contact:0
+29938684 INFO  2025-11-08 15:01:29705 DownloadProcess:94 - INFO:ZMM510-NF24VB-Ver1.3.13,2,0,25,192.168.0.103,10,35,12,2,11110,0,0,0
+29961317 INFO  2025-11-08 15:01:52338 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+29961328 INFO  2025-11-08 15:01:52349 DownloadProcess:59 - get cmd list over and begin contact:0
+29984328 INFO  2025-11-08 15:02:15349 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+29984381 INFO  2025-11-08 15:02:15402 DownloadProcess:59 - get cmd list over and begin contact:0
+30010277 INFO  2025-11-08 15:02:41298 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30010280 INFO  2025-11-08 15:02:41301 DownloadProcess:59 - get cmd list over and begin contact:0
+30036328 INFO  2025-11-08 15:03:07349 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30036332 INFO  2025-11-08 15:03:07353 DownloadProcess:59 - get cmd list over and begin contact:0
+30064271 INFO  2025-11-08 15:03:35292 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30064276 INFO  2025-11-08 15:03:35297 DownloadProcess:59 - get cmd list over and begin contact:0
+30094433 INFO  2025-11-08 15:04:05454 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30094446 INFO  2025-11-08 15:04:05467 DownloadProcess:59 - get cmd list over and begin contact:0
+30124537 INFO  2025-11-08 15:04:35558 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30124539 INFO  2025-11-08 15:04:35560 DownloadProcess:59 - get cmd list over and begin contact:0
+30155387 INFO  2025-11-08 15:05:06408 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30155391 INFO  2025-11-08 15:05:06412 DownloadProcess:59 - get cmd list over and begin contact:0
+30186694 INFO  2025-11-08 15:05:37715 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30186740 INFO  2025-11-08 15:05:37761 DownloadProcess:59 - get cmd list over and begin contact:0
+30216332 INFO  2025-11-08 15:06:07353 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30216334 INFO  2025-11-08 15:06:07355 DownloadProcess:59 - get cmd list over and begin contact:0
+30247421 INFO  2025-11-08 15:06:38442 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30247426 INFO  2025-11-08 15:06:38447 DownloadProcess:59 - get cmd list over and begin contact:0
+30277318 INFO  2025-11-08 15:07:08339 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30277329 INFO  2025-11-08 15:07:08350 DownloadProcess:59 - get cmd list over and begin contact:0
+30308381 INFO  2025-11-08 15:07:39402 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30308386 INFO  2025-11-08 15:07:39407 DownloadProcess:59 - get cmd list over and begin contact:0
+30338372 INFO  2025-11-08 15:08:09393 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30338387 INFO  2025-11-08 15:08:09408 DownloadProcess:59 - get cmd list over and begin contact:0
+30369394 INFO  2025-11-08 15:08:40415 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30369404 INFO  2025-11-08 15:08:40425 DownloadProcess:59 - get cmd list over and begin contact:0
+30399362 INFO  2025-11-08 15:09:10383 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30399372 INFO  2025-11-08 15:09:10393 DownloadProcess:59 - get cmd list over and begin contact:0
+30430284 INFO  2025-11-08 15:09:41305 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30430292 INFO  2025-11-08 15:09:41313 DownloadProcess:59 - get cmd list over and begin contact:0
+30460351 INFO  2025-11-08 15:10:11372 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30460369 INFO  2025-11-08 15:10:11390 DownloadProcess:59 - get cmd list over and begin contact:0
+30491351 INFO  2025-11-08 15:10:42372 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30491435 INFO  2025-11-08 15:10:42456 DownloadProcess:59 - get cmd list over and begin contact:0
+30521123 INFO  2025-11-08 15:11:12144 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30521126 INFO  2025-11-08 15:11:12147 DownloadProcess:59 - get cmd list over and begin contact:0
+30552114 INFO  2025-11-08 15:11:43135 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30552129 INFO  2025-11-08 15:11:43150 DownloadProcess:59 - get cmd list over and begin contact:0
+30582176 INFO  2025-11-08 15:12:13197 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30582571 INFO  2025-11-08 15:12:13592 DownloadProcess:59 - get cmd list over and begin contact:0
+30613258 INFO  2025-11-08 15:12:44279 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30613263 INFO  2025-11-08 15:12:44284 DownloadProcess:59 - get cmd list over and begin contact:0
+30643293 INFO  2025-11-08 15:13:14314 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30643297 INFO  2025-11-08 15:13:14318 DownloadProcess:59 - get cmd list over and begin contact:0
+30674297 INFO  2025-11-08 15:13:45318 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30674355 INFO  2025-11-08 15:13:45376 DownloadProcess:59 - get cmd list over and begin contact:0
+30704102 INFO  2025-11-08 15:14:15123 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30704111 INFO  2025-11-08 15:14:15132 DownloadProcess:59 - get cmd list over and begin contact:0
+30735149 INFO  2025-11-08 15:14:46170 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30735156 INFO  2025-11-08 15:14:46177 DownloadProcess:59 - get cmd list over and begin contact:0
+30781026 INFO  2025-11-08 15:15:3247 UploadProcess:63 - get request and make the device options :192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&options=all&language=69&pushver=2.4.1&DeviceType=att&PushOptionsFlag=1
+30781045 INFO  2025-11-08 15:15:3266 UploadProcess:90 - GET OPTION FROM: TDBD250100333
+ATTLOGStamp=9999
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+30781638 INFO  2025-11-08 15:15:32659 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=options
+30781657 INFO  2025-11-08 15:15:32678 UploadProcess:266 - update device stamp end and get stream.
+30781680 INFO  2025-11-08 15:15:32701 UploadProcess:323 - data:~DeviceName=SpeedFace-V3L,MAC=00:17:61:11:09:4f,TransactionCount=25,~MaxAttLogCount=20,UserCount=2,~MaxUserCount=30,PhotoFunOn=0,~MaxUserPhotoCount=0,FingerFunOn=1,FPVersion=10,~MaxFingerCount=30,FPCount=0,FaceFunOn=1,FaceVersion=35,~MaxFaceCount=500,FaceCount=2,FvFunOn=0,FvVersion=3,~MaxFvCount=10,FvCount=0,PvFunOn=0,PvVersion=12,~MaxPvCount=,PvCount=0,Language=69,IPAddress=192.168.0.103,~Platform=ZMM510_TFT,~OEMVendor=ZKTECO CO., LTD.,FWVersion=ZMM510-NF24VB-Ver1.3.13,PushVersion=Ver 2.0.33S-20220623,RegDeviceType=,VisilightFun=1,MultiBioDataSupport=0:1:0:0:0:0:0:0:0:1,MultiBioPhotoSupport=0:0:0:0:0:0:0:0:0:1,IRTempDetectionFunOn=,MaskDetectionFunOn=,UserPicURLFunOn=1,VisualIntercomFunOn=0,VideoTID=,QRCodeDecryptFunList=,VideoProtocol=4,IsSupportQRcode=,QRCodeEnable=,SubcontractingUpgradeFunOn=1
+30781687 INFO  2025-11-08 15:15:32708 UploadProcess:324 - end get stream and process data
+30781696 INFO  2025-11-08 15:15:32717 UploadProcess:327 - end process data and return msg to device
+30781699 INFO  2025-11-08 15:15:32720 UploadProcess:331 - return msg to device and request over OK
+30782334 INFO  2025-11-08 15:15:33355 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333&INFO=ZMM510-NF24VB-Ver1.3.13,2,0,25,192.168.0.103,10,35,12,2,11110,0,0,0
+30782346 INFO  2025-11-08 15:15:33367 DownloadProcess:59 - get cmd list over and begin contact:0
+30782355 INFO  2025-11-08 15:15:33376 DownloadProcess:94 - INFO:ZMM510-NF24VB-Ver1.3.13,2,0,25,192.168.0.103,10,35,12,2,11110,0,0,0
+30782710 INFO  2025-11-08 15:15:33731 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30782715 INFO  2025-11-08 15:15:33736 DownloadProcess:59 - get cmd list over and begin contact:0
+30785574 INFO  2025-11-08 15:15:36595 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30785580 INFO  2025-11-08 15:15:36601 DownloadProcess:59 - get cmd list over and begin contact:0
+30789582 INFO  2025-11-08 15:15:40603 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30789587 INFO  2025-11-08 15:15:40608 DownloadProcess:59 - get cmd list over and begin contact:0
+30795714 INFO  2025-11-08 15:15:46735 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30795717 INFO  2025-11-08 15:15:46738 DownloadProcess:59 - get cmd list over and begin contact:0
+30802732 INFO  2025-11-08 15:15:53753 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30802736 INFO  2025-11-08 15:15:53757 DownloadProcess:59 - get cmd list over and begin contact:0
+30811626 INFO  2025-11-08 15:16:02647 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30811634 INFO  2025-11-08 15:16:02655 DownloadProcess:59 - get cmd list over and begin contact:0
+30821607 INFO  2025-11-08 15:16:12628 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30821613 INFO  2025-11-08 15:16:12634 DownloadProcess:59 - get cmd list over and begin contact:0
+30833756 INFO  2025-11-08 15:16:24777 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30833774 INFO  2025-11-08 15:16:24795 DownloadProcess:59 - get cmd list over and begin contact:0
+30838357 INFO  2025-11-08 15:16:29378 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=OPERLOG&Stamp=9999
+30838373 INFO  2025-11-08 15:16:29394 UploadProcess:266 - update device stamp end and get stream.
+30838378 INFO  2025-11-08 15:16:29399 UploadProcess:323 - data:OPLOG 0	0	2025-11-09 11:15:24	0	0	0	0
+OPLOG 3	0	2025-11-09 11:15:31	55	0	0	0
+OPLOG 3	0	2025-11-09 11:15:31	55	0	0	0
+
+30838385 INFO  2025-11-08 15:16:29406 UploadProcess:324 - end get stream and process data
+30838390 INFO  2025-11-08 15:16:29411 UploadProcess:474 - begin parse op log
+30838405 INFO  2025-11-08 15:16:29426 UploadProcess:235 - oplog size:1
+30838407 INFO  2025-11-08 15:16:29428 UploadProcess:476 - end parse op log
+30838408 INFO  2025-11-08 15:16:29429 UploadProcess:474 - begin parse op log
+30838417 INFO  2025-11-08 15:16:29438 UploadProcess:235 - oplog size:1
+30838418 INFO  2025-11-08 15:16:29439 UploadProcess:476 - end parse op log
+30838419 INFO  2025-11-08 15:16:29440 UploadProcess:474 - begin parse op log
+30838428 INFO  2025-11-08 15:16:29449 UploadProcess:235 - oplog size:1
+30838435 INFO  2025-11-08 15:16:29456 UploadProcess:476 - end parse op log
+30838439 INFO  2025-11-08 15:16:29460 UploadProcess:327 - end process data and return msg to device
+30838442 INFO  2025-11-08 15:16:29463 UploadProcess:331 - return msg to device and request over OK
+30846606 INFO  2025-11-08 15:16:37627 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30846612 INFO  2025-11-08 15:16:37633 DownloadProcess:59 - get cmd list over and begin contact:0
+30861578 INFO  2025-11-08 15:16:52599 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30861582 INFO  2025-11-08 15:16:52603 DownloadProcess:59 - get cmd list over and begin contact:0
+30877684 INFO  2025-11-08 15:17:08705 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30877697 INFO  2025-11-08 15:17:08718 DownloadProcess:59 - get cmd list over and begin contact:0
+30895821 INFO  2025-11-08 15:17:26842 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30895829 INFO  2025-11-08 15:17:26850 DownloadProcess:59 - get cmd list over and begin contact:0
+30915585 INFO  2025-11-08 15:17:46606 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30915587 INFO  2025-11-08 15:17:46608 DownloadProcess:59 - get cmd list over and begin contact:0
+30936642 INFO  2025-11-08 15:18:07663 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30936653 INFO  2025-11-08 15:18:07674 DownloadProcess:59 - get cmd list over and begin contact:0
+30959710 INFO  2025-11-08 15:18:30731 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30959767 INFO  2025-11-08 15:18:30788 DownloadProcess:59 - get cmd list over and begin contact:0
+30983693 INFO  2025-11-08 15:18:54714 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+30983700 INFO  2025-11-08 15:18:54721 DownloadProcess:59 - get cmd list over and begin contact:0
+31008617 INFO  2025-11-08 15:19:19638 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+31008625 INFO  2025-11-08 15:19:19646 DownloadProcess:59 - get cmd list over and begin contact:0
+31036622 INFO  2025-11-08 15:19:47643 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+31036627 INFO  2025-11-08 15:19:47648 DownloadProcess:59 - get cmd list over and begin contact:0
+31064727 INFO  2025-11-08 15:20:15748 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+31064741 INFO  2025-11-08 15:20:15762 DownloadProcess:59 - get cmd list over and begin contact:0
+31095850 INFO  2025-11-08 15:20:46871 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+31095854 INFO  2025-11-08 15:20:46875 DownloadProcess:59 - get cmd list over and begin contact:0
+31125952 INFO  2025-11-08 15:21:16973 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+31125960 INFO  2025-11-08 15:21:16981 DownloadProcess:59 - get cmd list over and begin contact:0
+31156652 INFO  2025-11-08 15:21:47673 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+31156677 INFO  2025-11-08 15:21:47698 DownloadProcess:59 - get cmd list over and begin contact:0
+31186669 INFO  2025-11-08 15:22:17690 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+31186671 INFO  2025-11-08 15:22:17692 DownloadProcess:59 - get cmd list over and begin contact:0
+31217637 INFO  2025-11-08 15:22:48658 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+31217647 INFO  2025-11-08 15:22:48668 DownloadProcess:59 - get cmd list over and begin contact:0
+31247866 INFO  2025-11-08 15:23:18887 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+31247882 INFO  2025-11-08 15:23:18903 DownloadProcess:59 - get cmd list over and begin contact:0
+31278601 INFO  2025-11-08 15:23:49622 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+31278620 INFO  2025-11-08 15:23:49641 DownloadProcess:59 - get cmd list over and begin contact:0
+31308743 INFO  2025-11-08 15:24:19764 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+31308747 INFO  2025-11-08 15:24:19768 DownloadProcess:59 - get cmd list over and begin contact:0
+31339619 INFO  2025-11-08 15:24:50640 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+31339624 INFO  2025-11-08 15:24:50645 DownloadProcess:59 - get cmd list over and begin contact:0
+19783 INFO  2025-11-08 15:32:59176 BaseDao:96 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+21788 INFO  2025-11-08 15:33:01181 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+21801 INFO  2025-11-08 15:33:01194 DownloadProcess:59 - get cmd list over and begin contact:0
+51432 INFO  2025-11-08 15:33:30825 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+51440 INFO  2025-11-08 15:33:30833 DownloadProcess:59 - get cmd list over and begin contact:0
+81201 INFO  2025-11-08 15:34:00594 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+81206 INFO  2025-11-08 15:34:00599 DownloadProcess:59 - get cmd list over and begin contact:0
+112283 INFO  2025-11-08 15:34:31676 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+112286 INFO  2025-11-08 15:34:31679 DownloadProcess:59 - get cmd list over and begin contact:0
+142389 INFO  2025-11-08 15:35:01782 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+142398 INFO  2025-11-08 15:35:01791 DownloadProcess:59 - get cmd list over and begin contact:0
+173204 INFO  2025-11-08 15:35:32597 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+173207 INFO  2025-11-08 15:35:32600 DownloadProcess:59 - get cmd list over and begin contact:0
+203278 INFO  2025-11-08 15:36:02671 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+203284 INFO  2025-11-08 15:36:02677 DownloadProcess:59 - get cmd list over and begin contact:0
+227916 INFO  2025-11-08 15:36:27309 Dispatcher:31 - Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+228148 ERROR 2025-11-08 15:36:27541 UserInfoDao:237 - java.sql.BatchUpdateException: Duplicate entry '1001-TDBD250100333' for key 'user_info.USER_PIN'
+228460 ERROR 2025-11-08 15:36:27853 UserInfoDao:237 - java.sql.BatchUpdateException: Duplicate entry '1002-TDBD250100333' for key 'user_info.USER_PIN'
+228693 INFO  2025-11-08 15:36:2886 FileUploadInterceptor:31 - Removing file bulkImportFile /usr/local/tomcat/work/Catalina/localhost/ROOT/upload__702f0e80_19a641c9a1b__8000_00000000.tmp
+234555 INFO  2025-11-08 15:36:33948 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+234558 INFO  2025-11-08 15:36:33951 DownloadProcess:59 - get cmd list over and begin contact:0
+264366 INFO  2025-11-08 15:37:03759 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+264373 INFO  2025-11-08 15:37:03766 DownloadProcess:59 - get cmd list over and begin contact:0
+295377 INFO  2025-11-08 15:37:34770 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+295380 INFO  2025-11-08 15:37:34773 DownloadProcess:59 - get cmd list over and begin contact:0
+318113 INFO  2025-11-08 15:37:57506 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=OPERLOG&Stamp=9999
+318125 INFO  2025-11-08 15:37:57518 UploadProcess:266 - update device stamp end and get stream.
+318127 INFO  2025-11-08 15:37:57520 UploadProcess:323 - data:OPLOG 4	1002	2025-11-09 11:37:56	1002	0	0	0
+
+318128 INFO  2025-11-08 15:37:57521 UploadProcess:324 - end get stream and process data
+318129 INFO  2025-11-08 15:37:57522 UploadProcess:474 - begin parse op log
+318142 INFO  2025-11-08 15:37:57535 UploadProcess:235 - oplog size:1
+318143 INFO  2025-11-08 15:37:57536 UploadProcess:476 - end parse op log
+318144 INFO  2025-11-08 15:37:57537 UploadProcess:327 - end process data and return msg to device
+318146 INFO  2025-11-08 15:37:57539 UploadProcess:331 - return msg to device and request over OK
+325506 INFO  2025-11-08 15:38:04899 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+325511 INFO  2025-11-08 15:38:04904 DownloadProcess:59 - get cmd list over and begin contact:0
+356510 INFO  2025-11-08 15:38:35903 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+356514 INFO  2025-11-08 15:38:35907 DownloadProcess:59 - get cmd list over and begin contact:0
+386195 INFO  2025-11-08 15:39:05588 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+386198 INFO  2025-11-08 15:39:05591 DownloadProcess:59 - get cmd list over and begin contact:0
+417395 INFO  2025-11-08 15:39:36788 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+417402 INFO  2025-11-08 15:39:36795 DownloadProcess:59 - get cmd list over and begin contact:0
+447189 INFO  2025-11-08 15:40:06582 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+447192 INFO  2025-11-08 15:40:06585 DownloadProcess:59 - get cmd list over and begin contact:0
+478218 INFO  2025-11-08 15:40:37611 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+478222 INFO  2025-11-08 15:40:37615 DownloadProcess:59 - get cmd list over and begin contact:0
+508252 INFO  2025-11-08 15:41:07645 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+508256 INFO  2025-11-08 15:41:07649 DownloadProcess:59 - get cmd list over and begin contact:0
+539299 INFO  2025-11-08 15:41:38692 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+539302 INFO  2025-11-08 15:41:38695 DownloadProcess:59 - get cmd list over and begin contact:0
+569417 INFO  2025-11-08 15:42:08810 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+569420 INFO  2025-11-08 15:42:08813 DownloadProcess:59 - get cmd list over and begin contact:0
+600443 INFO  2025-11-08 15:42:39836 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+600446 INFO  2025-11-08 15:42:39839 DownloadProcess:59 - get cmd list over and begin contact:0
+630250 INFO  2025-11-08 15:43:09643 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+630432 INFO  2025-11-08 15:43:09825 DownloadProcess:59 - get cmd list over and begin contact:0
+661292 INFO  2025-11-08 15:43:40685 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+661295 INFO  2025-11-08 15:43:40688 DownloadProcess:59 - get cmd list over and begin contact:0
+691369 INFO  2025-11-08 15:44:10762 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+691372 INFO  2025-11-08 15:44:10765 DownloadProcess:59 - get cmd list over and begin contact:0
+722295 INFO  2025-11-08 15:44:41688 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+722297 INFO  2025-11-08 15:44:41690 DownloadProcess:59 - get cmd list over and begin contact:0
+752292 INFO  2025-11-08 15:45:11685 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+752316 INFO  2025-11-08 15:45:11709 DownloadProcess:59 - get cmd list over and begin contact:0
+783228 INFO  2025-11-08 15:45:42621 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+783232 INFO  2025-11-08 15:45:42625 DownloadProcess:59 - get cmd list over and begin contact:0
+813280 INFO  2025-11-08 15:46:12673 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+813317 INFO  2025-11-08 15:46:12710 DownloadProcess:59 - get cmd list over and begin contact:0
+844358 INFO  2025-11-08 15:46:43751 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+844360 INFO  2025-11-08 15:46:43753 DownloadProcess:59 - get cmd list over and begin contact:0
+874461 INFO  2025-11-08 15:47:13854 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+874470 INFO  2025-11-08 15:47:13863 DownloadProcess:59 - get cmd list over and begin contact:0
+905186 INFO  2025-11-08 15:47:44579 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+905190 INFO  2025-11-08 15:47:44583 DownloadProcess:59 - get cmd list over and begin contact:0
+935310 INFO  2025-11-08 15:48:14703 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+935318 INFO  2025-11-08 15:48:14711 DownloadProcess:59 - get cmd list over and begin contact:0
+966316 INFO  2025-11-08 15:48:45709 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+966321 INFO  2025-11-08 15:48:45714 DownloadProcess:59 - get cmd list over and begin contact:0
+996194 INFO  2025-11-08 15:49:15587 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+996199 INFO  2025-11-08 15:49:15592 DownloadProcess:59 - get cmd list over and begin contact:2
+996200 INFO  2025-11-08 15:49:15593 DownloadProcess:71 - SN:TDBD250100333cmdSize:65536
+996201 INFO  2025-11-08 15:49:15594 DownloadProcess:71 - SN:TDBD250100333cmdSize:65536
+996210 INFO  2025-11-08 15:49:15603 DownloadProcess:85 - contact cmd and send list:2
+996210 INFO  2025-11-08 15:49:15603 DownloadProcess:86 - cmd info:C:191:DATA UPDATE USERINFO PIN=1003	Name=Bob Johnson	Pri=0	Passwd=9012	Card=1122334455	Grp=0	TZ=null	Category=0
+C:192:DATA UPDATE USERINFO PIN=1004	Name=Alice Williams	Pri=2	Passwd=3456	Card=2233445566	Grp=0	TZ=null	Category=0
+
+996824 INFO  2025-11-08 15:49:16217 DownloadProcess:191 - get request and begin process cmd return.192.168.65.1;http://192.168.0.101:8080/iclock/devicecmd?SN=TDBD250100333
+996825 INFO  2025-11-08 15:49:16218 DownloadProcess:193 - content-length:50
+996829 INFO  2025-11-08 15:49:16222 DownloadProcess:231 - DEV CMD RETURN:
+ID=191&Return=0&CMD=DATA
+ID=192&Return=0&CMD=DATA
+
+996830 INFO  2025-11-08 15:49:16223 DownloadProcess:232 - update cmd return begin
+996850 INFO  2025-11-08 15:49:16243 DownloadProcess:239 - update cmd return end
+997348 INFO  2025-11-08 15:49:16741 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333&INFO=ZMM510-NF24VB-Ver1.3.13,4,0,25,192.168.0.103,10,35,12,2,11110,2,0,0
+997350 INFO  2025-11-08 15:49:16743 DownloadProcess:59 - get cmd list over and begin contact:0
+997351 INFO  2025-11-08 15:49:16744 DownloadProcess:94 - INFO:ZMM510-NF24VB-Ver1.3.13,4,0,25,192.168.0.103,10,35,12,2,11110,2,0,0
+998575 INFO  2025-11-08 15:49:17968 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333&INFO=ZMM510-NF24VB-Ver1.3.13,4,0,25,192.168.0.103,10,35,12,2,11110,2,0,0
+998578 INFO  2025-11-08 15:49:17971 DownloadProcess:59 - get cmd list over and begin contact:0
+998579 INFO  2025-11-08 15:49:17972 DownloadProcess:94 - INFO:ZMM510-NF24VB-Ver1.3.13,4,0,25,192.168.0.103,10,35,12,2,11110,2,0,0
+1001338 INFO  2025-11-08 15:49:20731 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1001341 INFO  2025-11-08 15:49:20734 DownloadProcess:59 - get cmd list over and begin contact:0
+1006277 INFO  2025-11-08 15:49:25670 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1006280 INFO  2025-11-08 15:49:25673 DownloadProcess:59 - get cmd list over and begin contact:0
+1009328 INFO  2025-11-08 15:49:28721 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=OPERLOG&Stamp=9999
+1009340 INFO  2025-11-08 15:49:28733 UploadProcess:266 - update device stamp end and get stream.
+1009342 INFO  2025-11-08 15:49:28735 UploadProcess:323 - data:OPLOG 4	1002	2025-11-09 11:49:26	1002	0	0	0
+
+1009343 INFO  2025-11-08 15:49:28736 UploadProcess:324 - end get stream and process data
+1009344 INFO  2025-11-08 15:49:28737 UploadProcess:474 - begin parse op log
+1009353 INFO  2025-11-08 15:49:28746 UploadProcess:235 - oplog size:1
+1009354 INFO  2025-11-08 15:49:28747 UploadProcess:476 - end parse op log
+1009355 INFO  2025-11-08 15:49:28748 UploadProcess:327 - end process data and return msg to device
+1009356 INFO  2025-11-08 15:49:28749 UploadProcess:331 - return msg to device and request over OK
+1013323 INFO  2025-11-08 15:49:32716 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1013325 INFO  2025-11-08 15:49:32718 DownloadProcess:59 - get cmd list over and begin contact:0
+1021213 INFO  2025-11-08 15:49:40606 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1021215 INFO  2025-11-08 15:49:40608 DownloadProcess:59 - get cmd list over and begin contact:0
+1030194 INFO  2025-11-08 15:49:49587 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1030198 INFO  2025-11-08 15:49:49591 DownloadProcess:59 - get cmd list over and begin contact:0
+1041274 INFO  2025-11-08 15:50:00667 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1041278 INFO  2025-11-08 15:50:00671 DownloadProcess:59 - get cmd list over and begin contact:0
+1053255 INFO  2025-11-08 15:50:12648 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1053260 INFO  2025-11-08 15:50:12653 DownloadProcess:59 - get cmd list over and begin contact:0
+1067390 INFO  2025-11-08 15:50:26783 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1067394 INFO  2025-11-08 15:50:26787 DownloadProcess:59 - get cmd list over and begin contact:0
+1083232 INFO  2025-11-08 15:50:42625 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1083234 INFO  2025-11-08 15:50:42627 DownloadProcess:59 - get cmd list over and begin contact:0
+1100263 INFO  2025-11-08 15:50:59656 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1100267 INFO  2025-11-08 15:50:59660 DownloadProcess:59 - get cmd list over and begin contact:0
+1118389 INFO  2025-11-08 15:51:17782 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1118391 INFO  2025-11-08 15:51:17784 DownloadProcess:59 - get cmd list over and begin contact:0
+1139276 INFO  2025-11-08 15:51:38669 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1139279 INFO  2025-11-08 15:51:38672 DownloadProcess:59 - get cmd list over and begin contact:0
+1160482 INFO  2025-11-08 15:51:59875 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1160499 INFO  2025-11-08 15:51:59892 DownloadProcess:59 - get cmd list over and begin contact:0
+1183226 INFO  2025-11-08 15:52:22619 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1183230 INFO  2025-11-08 15:52:22623 DownloadProcess:59 - get cmd list over and begin contact:0
+1208261 INFO  2025-11-08 15:52:47654 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1208264 INFO  2025-11-08 15:52:47657 DownloadProcess:59 - get cmd list over and begin contact:0
+1234284 INFO  2025-11-08 15:53:13677 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1234287 INFO  2025-11-08 15:53:13680 DownloadProcess:59 - get cmd list over and begin contact:0
+1262229 INFO  2025-11-08 15:53:41622 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1262233 INFO  2025-11-08 15:53:41626 DownloadProcess:59 - get cmd list over and begin contact:0
+1291355 INFO  2025-11-08 15:54:10748 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1291363 INFO  2025-11-08 15:54:10756 DownloadProcess:59 - get cmd list over and begin contact:0
+1311333 INFO  2025-11-08 15:54:30726 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=ATTLOG&Stamp=9999
+1311351 INFO  2025-11-08 15:54:30744 UploadProcess:266 - update device stamp end and get stream.
+1311353 INFO  2025-11-08 15:54:30746 UploadProcess:323 - data:1002	2025-11-09 11:54:29	0	15	0	0	0	0	0	0	
+
+1311354 INFO  2025-11-08 15:54:30747 UploadProcess:324 - end get stream and process data
+1311354 INFO  2025-11-08 15:54:30747 UploadProcess:523 - begin parse op attlog
+1311366 INFO  2025-11-08 15:54:30759 AttLogManager:101 - === EXTERNAL API: Attendance logs saved, starting external API calls ===
+1311367 INFO  2025-11-08 15:54:30760 AttLogManager:102 - EXTERNAL API: Processing 1 verification(s)
+1311368 INFO  2025-11-08 15:54:30761 AttLogManager:106 - EXTERNAL API: Processing verification - User PIN: 1002, User Name: null, Timestamp: 2025-11-09 11:54:29
+1311369 INFO  2025-11-08 15:54:30762 AttLogManager:110 - EXTERNAL API: Calling notifyVerification for User ID: 1002
+1311378 INFO  2025-11-08 15:54:30771 ExternalApiUtil:40 - === EXTERNAL API: notifyVerification called with userId: 1002 ===
+1311379 INFO  2025-11-08 15:54:30772 ExternalApiUtil:47 - EXTERNAL API: Submitting async task for userId: 1002
+1311384 INFO  2025-11-08 15:54:30777 ExternalApiUtil:58 - EXTERNAL API: Async task submitted for userId: 1002
+1311385 INFO  2025-11-08 15:54:30778 AttLogManager:112 - EXTERNAL API: notifyVerification called for User ID: 1002, Timestamp: 2025-11-09 11:54:29
+1311386 INFO  2025-11-08 15:54:30779 AttLogManager:119 - === EXTERNAL API: Finished processing all verifications ===
+1311387 INFO  2025-11-08 15:54:30780 UploadProcess:412 - attlog size:1
+1311387 INFO  2025-11-08 15:54:30780 UploadProcess:525 - end parse op attlog
+1311388 INFO  2025-11-08 15:54:30781 UploadProcess:327 - end process data and return msg to device
+1311389 INFO  2025-11-08 15:54:30782 UploadProcess:331 - return msg to device and request over OK
+1311384 INFO  2025-11-08 15:54:30777 ExternalApiUtil:53 - EXTERNAL API: Async task started for userId: 1002
+1311390 INFO  2025-11-08 15:54:30783 ExternalApiUtil:67 - === EXTERNAL API: callExternalApi started for userId: 1002 ===
+1311394 INFO  2025-11-08 15:54:30787 ExternalApiUtil:68 - EXTERNAL API: URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+1311394 INFO  2025-11-08 15:54:30787 ExternalApiUtil:72 - EXTERNAL API: Creating connection to: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+1311484 INFO  2025-11-08 15:54:30877 ExternalApiUtil:82 - EXTERNAL API: Connection configured, formatting student ID...
+1311499 INFO  2025-11-08 15:54:30892 ExternalApiUtil:86 - EXTERNAL API: Student ID formatted - Original: 1002, Formatted: 1002
+1311500 INFO  2025-11-08 15:54:30893 ExternalApiUtil:90 - EXTERNAL API: Request body: {"student_id": "1002", "meal_type": "lunch"}
+1311500 INFO  2025-11-08 15:54:30893 ExternalApiUtil:93 - EXTERNAL API: Writing request body to connection...
+1316555 ERROR 2025-11-08 15:54:35948 ExternalApiUtil:127 - Error calling external API for student_id: 1002, URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check, Error: connect timed out
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:465)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:560)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:359)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1245)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1179)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1073)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1007)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1359)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1334)
+	at com.zk.util.ExternalApiUtil.callExternalApi(ExternalApiUtil.java:94)
+	at com.zk.util.ExternalApiUtil.access$100(ExternalApiUtil.java:17)
+	at com.zk.util.ExternalApiUtil$1.run(ExternalApiUtil.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+1322368 INFO  2025-11-08 15:54:41761 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333&INFO=ZMM510-NF24VB-Ver1.3.13,4,0,26,192.168.0.103,10,35,12,2,11110,2,0,0
+1322370 INFO  2025-11-08 15:54:41763 DownloadProcess:59 - get cmd list over and begin contact:0
+1322371 INFO  2025-11-08 15:54:41764 DownloadProcess:94 - INFO:ZMM510-NF24VB-Ver1.3.13,4,0,26,192.168.0.103,10,35,12,2,11110,2,0,0
+1322441 INFO  2025-11-08 15:54:41834 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=OPERLOG&Stamp=9999
+1322456 INFO  2025-11-08 15:54:41849 UploadProcess:266 - update device stamp end and get stream.
+1322457 INFO  2025-11-08 15:54:41850 UploadProcess:323 - data:OPLOG 4	1002	2025-11-09 11:54:40	1002	0	0	0
+
+1322459 INFO  2025-11-08 15:54:41852 UploadProcess:324 - end get stream and process data
+1322460 INFO  2025-11-08 15:54:41853 UploadProcess:474 - begin parse op log
+1322471 INFO  2025-11-08 15:54:41864 UploadProcess:235 - oplog size:1
+1322473 INFO  2025-11-08 15:54:41866 UploadProcess:476 - end parse op log
+1322473 INFO  2025-11-08 15:54:41866 UploadProcess:327 - end process data and return msg to device
+1322474 INFO  2025-11-08 15:54:41867 UploadProcess:331 - return msg to device and request over OK
+1352500 INFO  2025-11-08 15:55:11893 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1352503 INFO  2025-11-08 15:55:11896 DownloadProcess:59 - get cmd list over and begin contact:0
+1368642 INFO  2025-11-08 15:55:2835 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=OPERLOG&Stamp=9999
+1368656 INFO  2025-11-08 15:55:2849 UploadProcess:266 - update device stamp end and get stream.
+1368658 INFO  2025-11-08 15:55:2851 UploadProcess:323 - data:USER PIN=1003	Name=Bob Johnson	Pri=0	Passwd=9012	Card=1122334455	Grp=1	TZ=0000000100000000	Verify=-1	ViceCard=	StartDatetime=0	EndDatetime=0
+
+1368658 INFO  2025-11-08 15:55:2851 UploadProcess:324 - end get stream and process data
+1368660 INFO  2025-11-08 15:55:2853 UploadProcess:482 - begin parse op user
+1368662 INFO  2025-11-08 15:55:2855 UploadProcess:275 - user data:
+USER PIN=1003	Name=Bob Johnson	Pri=0	Passwd=9012	Card=1122334455	Grp=1	TZ=0000000100000000	Verify=-1	ViceCard=	StartDatetime=0	EndDatetime=0
+1368670 ERROR 2025-11-08 15:55:2863 UserInfoDao:237 - java.sql.BatchUpdateException: Duplicate entry '1003-TDBD250100333' for key 'user_info.USER_PIN'
+1368687 INFO  2025-11-08 15:55:2880 UploadProcess:289 - user size:USER PIN=1003	Name=Bob Johnson	Pri=0	Passwd=9012	Card=1122334455	Grp=1	TZ=0000000100000000	Verify=-1	ViceCard=	StartDatetime=0	EndDatetime=0
+1368688 INFO  2025-11-08 15:55:2881 UploadProcess:484 - end parse op user
+1368688 INFO  2025-11-08 15:55:2881 UploadProcess:327 - end process data and return msg to device
+1368689 INFO  2025-11-08 15:55:2882 UploadProcess:331 - return msg to device and request over OK
+1369703 INFO  2025-11-08 15:55:2996 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=OPERLOG&Stamp=9999
+1369718 INFO  2025-11-08 15:55:29111 UploadProcess:266 - update device stamp end and get stream.
+1369721 INFO  2025-11-08 15:55:29114 UploadProcess:323 - data:OPLOG 114	0	2025-11-09 11:55:27	1003	0	0	0
+
+1369722 INFO  2025-11-08 15:55:29115 UploadProcess:324 - end get stream and process data
+1369722 INFO  2025-11-08 15:55:29115 UploadProcess:474 - begin parse op log
+1369733 INFO  2025-11-08 15:55:29126 UploadProcess:235 - oplog size:1
+1369736 INFO  2025-11-08 15:55:29129 UploadProcess:476 - end parse op log
+1369738 INFO  2025-11-08 15:55:29131 UploadProcess:327 - end process data and return msg to device
+1369739 INFO  2025-11-08 15:55:29132 UploadProcess:331 - return msg to device and request over OK
+1370755 INFO  2025-11-08 15:55:30148 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=OPERLOG&Stamp=9999
+1370770 INFO  2025-11-08 15:55:30163 UploadProcess:266 - update device stamp end and get stream.
+1370774 INFO  2025-11-08 15:55:30167 UploadProcess:323 - data:BIOPHOTO PIN=1003	FileName=1003.jpg	Type=9	Size=15860	Content=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
+
+1370777 INFO  2025-11-08 15:55:30170 UploadProcess:324 - end get stream and process data
+1370779 INFO  2025-11-08 15:55:30172 UploadProcess:511 - begin parse biophoto
+1370815 INFO  2025-11-08 15:55:30208 UploadProcess:159 - userpic size:1
+1370816 INFO  2025-11-08 15:55:30209 UploadProcess:513 - end parse biophoto
+1370817 INFO  2025-11-08 15:55:30210 UploadProcess:327 - end process data and return msg to device
+1370818 INFO  2025-11-08 15:55:30211 UploadProcess:331 - return msg to device and request over OK
+1371832 INFO  2025-11-08 15:55:31225 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=OPERLOG&Stamp=9999
+1371844 INFO  2025-11-08 15:55:31237 UploadProcess:266 - update device stamp end and get stream.
+1371848 INFO  2025-11-08 15:55:31241 UploadProcess:323 - data:OPLOG 101	0	2025-11-09 11:55:27	1003	0	0	0
+
+1371849 INFO  2025-11-08 15:55:31242 UploadProcess:324 - end get stream and process data
+1371850 INFO  2025-11-08 15:55:31243 UploadProcess:474 - begin parse op log
+1371858 INFO  2025-11-08 15:55:31251 UploadProcess:235 - oplog size:1
+1371858 INFO  2025-11-08 15:55:31251 UploadProcess:476 - end parse op log
+1371859 INFO  2025-11-08 15:55:31252 UploadProcess:327 - end process data and return msg to device
+1371861 INFO  2025-11-08 15:55:31254 UploadProcess:331 - return msg to device and request over OK
+1372881 INFO  2025-11-08 15:55:32274 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=BIODATA&Stamp=9999
+1372890 INFO  2025-11-08 15:55:32283 UploadProcess:266 - update device stamp end and get stream.
+1372891 INFO  2025-11-08 15:55:32284 UploadProcess:323 - data:BIODATA Pin=1003	No=0	Index=0	Valid=1	Duress=0	Type=9	MajorVer=35	MinorVer=4	Format=0	Tmp=apUBEDACuYMJACMEAV9mAHpqbmUXCx4nKCkqKywvLi8wMTIzNDU2Nzg5Ojs8PaD5HjSEOuACEWKPMtsk59g6zSBicTXeK+bYKj44wdImhidIYQAeSjrXntgZF1sX4AAT6CirH+DFXcmt9bHqHs+01vMGN88X6L4sLr8TwsUgls/pBPgPOeHYUtgJ5fgbJB4YEdC4FCfFIDAM3w3/0/ILL3llOuQLde/CKtUuXKf928kLg7JP/1uwtF1ISGOkaZB51mJcrF+pVH5bXWpCun53neuXt7LBYIhBjmSelJqUPrFmgWJFqmaSlFhDm5ant2iTg3+FeklzWDuEUIiaVrCVYJxslkg3tmRYk549i66Z10FOO3qytbkBqXQaXqq9MJxNoKiOS7GZcpT/ol2tpX36Y9rL8hgkNXzQ3cjP7cgwjsxtIcbcINKf0in5XcA/OPIa9R9YOcH15MQu7OkbLEIK0frFNVf8vvEPFCJ6thsN7PcsGw8w4v8Czuz4G/BvAx4/NfoD7O/zNxkPFjsX61XMuRMHIiXTypISftg9K/sX2RDrENyrYsZ2fA48wyLQyfT0V1G6R0Kw/L/vifWwQ0BlW7KdU7mlf+qUcZchWjmvCX+1qHzTQKB1rkR+Rox0oZegyUZ4WHqeSY6ZmKaeaF+AyWcaWJ9wYlpold2clCtiqXiZa7Z3iEt6vM2M+nCbuHRuoJK/YRgshLVkrOpMqY26rIy5qKEBloxnm0O0TVuRWbU=
+
+1372891 INFO  2025-11-08 15:55:32284 UploadProcess:324 - end get stream and process data
+1372892 INFO  2025-11-08 15:55:32285 UploadProcess:517 - begin parse op fp
+1372894 INFO  2025-11-08 15:55:32287 UploadProcess:423 - finger data:
+BIODATA Pin=1003	No=0	Index=0	Valid=1	Duress=0	Type=9	MajorVer=35	MinorVer=4	Format=0	Tmp=apUBEDACuYMJACMEAV9mAHpqbmUXCx4nKCkqKywvLi8wMTIzNDU2Nzg5Ojs8PaD5HjSEOuACEWKPMtsk59g6zSBicTXeK+bYKj44wdImhidIYQAeSjrXntgZF1sX4AAT6CirH+DFXcmt9bHqHs+01vMGN88X6L4sLr8TwsUgls/pBPgPOeHYUtgJ5fgbJB4YEdC4FCfFIDAM3w3/0/ILL3llOuQLde/CKtUuXKf928kLg7JP/1uwtF1ISGOkaZB51mJcrF+pVH5bXWpCun53neuXt7LBYIhBjmSelJqUPrFmgWJFqmaSlFhDm5ant2iTg3+FeklzWDuEUIiaVrCVYJxslkg3tmRYk549i66Z10FOO3qytbkBqXQaXqq9MJxNoKiOS7GZcpT/ol2tpX36Y9rL8hgkNXzQ3cjP7cgwjsxtIcbcINKf0in5XcA/OPIa9R9YOcH15MQu7OkbLEIK0frFNVf8vvEPFCJ6thsN7PcsGw8w4v8Czuz4G/BvAx4/NfoD7O/zNxkPFjsX61XMuRMHIiXTypISftg9K/sX2RDrENyrYsZ2fA48wyLQyfT0V1G6R0Kw/L/vifWwQ0BlW7KdU7mlf+qUcZchWjmvCX+1qHzTQKB1rkR+Rox0oZegyUZ4WHqeSY6ZmKaeaF+AyWcaWJ9wYlpold2clCtiqXiZa7Z3iEt6vM2M+nCbuHRuoJK/YRgshLVkrOpMqY26rIy5qKEBloxnm0O0TVuRWbU=
+1372917 INFO  2025-11-08 15:55:32310 UploadProcess:444 - fp size:1
+1372918 INFO  2025-11-08 15:55:32311 UploadProcess:519 - end parse op fp
+1372919 INFO  2025-11-08 15:55:32312 UploadProcess:327 - end process data and return msg to device
+1372920 INFO  2025-11-08 15:55:32313 UploadProcess:331 - return msg to device and request over OK
+1383313 INFO  2025-11-08 15:55:42706 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333&INFO=ZMM510-NF24VB-Ver1.3.13,4,0,26,192.168.0.103,10,35,12,3,11110,2,0,0
+1383327 INFO  2025-11-08 15:55:42720 DownloadProcess:59 - get cmd list over and begin contact:0
+1383329 INFO  2025-11-08 15:55:42722 DownloadProcess:94 - INFO:ZMM510-NF24VB-Ver1.3.13,4,0,26,192.168.0.103,10,35,12,3,11110,2,0,0
+1413246 INFO  2025-11-08 15:56:12639 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1413249 INFO  2025-11-08 15:56:12642 DownloadProcess:59 - get cmd list over and begin contact:0
+1703 INFO  2025-11-08 15:56:44479 BaseDao:96 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+2697 INFO  2025-11-08 15:56:45473 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+2710 INFO  2025-11-08 15:56:45486 DownloadProcess:59 - get cmd list over and begin contact:0
+31846 INFO  2025-11-08 15:57:14622 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+31854 INFO  2025-11-08 15:57:14630 DownloadProcess:59 - get cmd list over and begin contact:0
+62804 INFO  2025-11-08 15:57:45580 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+62812 INFO  2025-11-08 15:57:45588 DownloadProcess:59 - get cmd list over and begin contact:0
+92815 INFO  2025-11-08 15:58:15591 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+92826 INFO  2025-11-08 15:58:15602 DownloadProcess:59 - get cmd list over and begin contact:0
+123865 INFO  2025-11-08 15:58:46641 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+123868 INFO  2025-11-08 15:58:46644 DownloadProcess:59 - get cmd list over and begin contact:0
+153847 INFO  2025-11-08 15:59:16623 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+153854 INFO  2025-11-08 15:59:16630 DownloadProcess:59 - get cmd list over and begin contact:0
+184803 INFO  2025-11-08 15:59:47579 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+184806 INFO  2025-11-08 15:59:47582 DownloadProcess:59 - get cmd list over and begin contact:0
+214834 INFO  2025-11-08 16:00:17610 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+214841 INFO  2025-11-08 16:00:17617 DownloadProcess:59 - get cmd list over and begin contact:0
+246088 INFO  2025-11-08 16:00:48864 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+246092 INFO  2025-11-08 16:00:48868 DownloadProcess:59 - get cmd list over and begin contact:0
+276090 INFO  2025-11-08 16:01:18866 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+276096 INFO  2025-11-08 16:01:18872 DownloadProcess:59 - get cmd list over and begin contact:0
+307094 INFO  2025-11-08 16:01:49870 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+307097 INFO  2025-11-08 16:01:49873 DownloadProcess:59 - get cmd list over and begin contact:0
+337052 INFO  2025-11-08 16:02:19828 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+337058 INFO  2025-11-08 16:02:19834 DownloadProcess:59 - get cmd list over and begin contact:0
+368083 INFO  2025-11-08 16:02:50859 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+368087 INFO  2025-11-08 16:02:50863 DownloadProcess:59 - get cmd list over and begin contact:0
+398034 INFO  2025-11-08 16:03:20810 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+398037 INFO  2025-11-08 16:03:20813 DownloadProcess:59 - get cmd list over and begin contact:0
+429050 INFO  2025-11-08 16:03:51826 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+429103 INFO  2025-11-08 16:03:51879 DownloadProcess:59 - get cmd list over and begin contact:0
+459097 INFO  2025-11-08 16:04:21873 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+459102 INFO  2025-11-08 16:04:21878 DownloadProcess:59 - get cmd list over and begin contact:0
+490030 INFO  2025-11-08 16:04:52806 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+490033 INFO  2025-11-08 16:04:52809 DownloadProcess:59 - get cmd list over and begin contact:0
+520060 INFO  2025-11-08 16:05:22836 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+520064 INFO  2025-11-08 16:05:22840 DownloadProcess:59 - get cmd list over and begin contact:0
+551079 INFO  2025-11-08 16:05:53855 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+551083 INFO  2025-11-08 16:05:53859 DownloadProcess:59 - get cmd list over and begin contact:0
+581012 INFO  2025-11-08 16:06:23788 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+581014 INFO  2025-11-08 16:06:23790 DownloadProcess:59 - get cmd list over and begin contact:0
+612154 INFO  2025-11-08 16:06:54930 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+612163 INFO  2025-11-08 16:06:54939 DownloadProcess:59 - get cmd list over and begin contact:0
+642117 INFO  2025-11-08 16:07:24893 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+642122 INFO  2025-11-08 16:07:24898 DownloadProcess:59 - get cmd list over and begin contact:0
+667774 INFO  2025-11-08 16:07:50550 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=ATTLOG&Stamp=9999
+667795 INFO  2025-11-08 16:07:50571 UploadProcess:266 - update device stamp end and get stream.
+667805 INFO  2025-11-08 16:07:50581 UploadProcess:323 - data:1002	2025-11-09 12:07:48	0	15	0	0	0	0	0	0	
+
+667807 INFO  2025-11-08 16:07:50583 UploadProcess:324 - end get stream and process data
+667810 INFO  2025-11-08 16:07:50586 UploadProcess:523 - begin parse op attlog
+667841 INFO  2025-11-08 16:07:50617 AttLogManager:101 - === EXTERNAL API: Attendance logs saved, starting external API calls ===
+667842 INFO  2025-11-08 16:07:50618 AttLogManager:102 - EXTERNAL API: Processing 1 verification(s)
+667844 INFO  2025-11-08 16:07:50620 AttLogManager:106 - EXTERNAL API: Processing verification - User PIN: 1002, User Name: null, Timestamp: 2025-11-09 12:07:48
+667845 INFO  2025-11-08 16:07:50621 AttLogManager:110 - EXTERNAL API: Calling notifyVerification for User ID: 1002
+667854 INFO  2025-11-08 16:07:50630 ExternalApiUtil:40 - === EXTERNAL API: notifyVerification called with userId: 1002 ===
+667857 INFO  2025-11-08 16:07:50633 ExternalApiUtil:47 - EXTERNAL API: Submitting async task for userId: 1002
+667862 INFO  2025-11-08 16:07:50638 ExternalApiUtil:58 - EXTERNAL API: Async task submitted for userId: 1002
+667995 INFO  2025-11-08 16:07:50771 AttLogManager:112 - EXTERNAL API: notifyVerification called for User ID: 1002, Timestamp: 2025-11-09 12:07:48
+667996 INFO  2025-11-08 16:07:50772 AttLogManager:119 - === EXTERNAL API: Finished processing all verifications ===
+667999 INFO  2025-11-08 16:07:50775 UploadProcess:412 - attlog size:1
+668006 INFO  2025-11-08 16:07:50782 UploadProcess:525 - end parse op attlog
+668012 INFO  2025-11-08 16:07:50788 UploadProcess:327 - end process data and return msg to device
+668014 INFO  2025-11-08 16:07:50790 UploadProcess:331 - return msg to device and request over OK
+667866 INFO  2025-11-08 16:07:50642 ExternalApiUtil:53 - EXTERNAL API: Async task started for userId: 1002
+668035 INFO  2025-11-08 16:07:50811 ExternalApiUtil:67 - === EXTERNAL API: callExternalApi started for userId: 1002 ===
+668036 INFO  2025-11-08 16:07:50812 ExternalApiUtil:68 - EXTERNAL API: URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+668040 INFO  2025-11-08 16:07:50816 ExternalApiUtil:72 - EXTERNAL API: Creating connection to: http://192.168.253.45:8001/api/meal-cards/generate-with-check
+668055 INFO  2025-11-08 16:07:50831 ExternalApiUtil:82 - EXTERNAL API: Connection configured, formatting student ID...
+668059 INFO  2025-11-08 16:07:50835 ExternalApiUtil:86 - EXTERNAL API: Student ID formatted - Original: 1002, Formatted: 1002
+668062 INFO  2025-11-08 16:07:50838 ExternalApiUtil:90 - EXTERNAL API: Request body: {"student_id": "1002", "meal_type": "lunch"}
+668062 INFO  2025-11-08 16:07:50838 ExternalApiUtil:93 - EXTERNAL API: Writing request body to connection...
+673092 ERROR 2025-11-08 16:07:55868 ExternalApiUtil:127 - Error calling external API for student_id: 1002, URL: http://192.168.253.45:8001/api/meal-cards/generate-with-check, Error: connect timed out
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:465)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:560)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:359)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1245)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1179)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1073)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1007)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1359)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1334)
+	at com.zk.util.ExternalApiUtil.callExternalApi(ExternalApiUtil.java:94)
+	at com.zk.util.ExternalApiUtil.access$100(ExternalApiUtil.java:17)
+	at com.zk.util.ExternalApiUtil$1.run(ExternalApiUtil.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+674454 INFO  2025-11-08 16:07:57230 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333&INFO=ZMM510-NF24VB-Ver1.3.13,4,0,27,192.168.0.103,10,35,12,3,11110,2,0,0
+674456 INFO  2025-11-08 16:07:57232 DownloadProcess:59 - get cmd list over and begin contact:0
+674457 INFO  2025-11-08 16:07:57233 DownloadProcess:94 - INFO:ZMM510-NF24VB-Ver1.3.13,4,0,27,192.168.0.103,10,35,12,3,11110,2,0,0
+680089 INFO  2025-11-08 16:08:02865 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=OPERLOG&Stamp=9999
+680100 INFO  2025-11-08 16:08:02876 UploadProcess:266 - update device stamp end and get stream.
+680102 INFO  2025-11-08 16:08:02878 UploadProcess:323 - data:OPLOG 4	1002	2025-11-09 12:08:01	1002	0	0	0
+
+680103 INFO  2025-11-08 16:08:02879 UploadProcess:324 - end get stream and process data
+680103 INFO  2025-11-08 16:08:02879 UploadProcess:474 - begin parse op log
+680117 INFO  2025-11-08 16:08:02893 UploadProcess:235 - oplog size:1
+680118 INFO  2025-11-08 16:08:02894 UploadProcess:476 - end parse op log
+680119 INFO  2025-11-08 16:08:02895 UploadProcess:327 - end process data and return msg to device
+680120 INFO  2025-11-08 16:08:02896 UploadProcess:331 - return msg to device and request over OK
+703061 INFO  2025-11-08 16:08:25837 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+703064 INFO  2025-11-08 16:08:25840 DownloadProcess:59 - get cmd list over and begin contact:0
+734009 INFO  2025-11-08 16:08:56785 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+734012 INFO  2025-11-08 16:08:56788 DownloadProcess:59 - get cmd list over and begin contact:0
+739196 INFO  2025-11-08 16:09:01972 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=OPERLOG&Stamp=9999
+739208 INFO  2025-11-08 16:09:01984 UploadProcess:266 - update device stamp end and get stream.
+739210 INFO  2025-11-08 16:09:01986 UploadProcess:323 - data:OPLOG 70	0	2025-11-09 12:09:00	1002	0	0	0
+
+739211 INFO  2025-11-08 16:09:01987 UploadProcess:324 - end get stream and process data
+739212 INFO  2025-11-08 16:09:01988 UploadProcess:474 - begin parse op log
+739219 INFO  2025-11-08 16:09:01995 UploadProcess:235 - oplog size:1
+739220 INFO  2025-11-08 16:09:01996 UploadProcess:476 - end parse op log
+739222 INFO  2025-11-08 16:09:01998 UploadProcess:327 - end process data and return msg to device
+739222 INFO  2025-11-08 16:09:01998 UploadProcess:331 - return msg to device and request over OK
+763999 INFO  2025-11-08 16:09:26775 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+764002 INFO  2025-11-08 16:09:26778 DownloadProcess:59 - get cmd list over and begin contact:0
+795078 INFO  2025-11-08 16:09:57854 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+795080 INFO  2025-11-08 16:09:57856 DownloadProcess:59 - get cmd list over and begin contact:0
+799292 INFO  2025-11-08 16:10:0268 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=OPERLOG&Stamp=9999
+799304 INFO  2025-11-08 16:10:0280 UploadProcess:266 - update device stamp end and get stream.
+799310 INFO  2025-11-08 16:10:0286 UploadProcess:323 - data:USER PIN=1002	Name=kailikia AARON	Pri=14	Passwd=	Card=	Grp=1	TZ=0000000100000000	Verify=-1	ViceCard=	StartDatetime=0	EndDatetime=0
+
+799311 INFO  2025-11-08 16:10:0287 UploadProcess:324 - end get stream and process data
+799311 INFO  2025-11-08 16:10:0287 UploadProcess:482 - begin parse op user
+799312 INFO  2025-11-08 16:10:0288 UploadProcess:275 - user data:
+USER PIN=1002	Name=kailikia AARON	Pri=14	Passwd=	Card=	Grp=1	TZ=0000000100000000	Verify=-1	ViceCard=	StartDatetime=0	EndDatetime=0
+799435 ERROR 2025-11-08 16:10:02211 UserInfoDao:237 - java.sql.BatchUpdateException: Duplicate entry '1002-TDBD250100333' for key 'user_info.USER_PIN'
+799450 INFO  2025-11-08 16:10:02226 UploadProcess:289 - user size:USER PIN=1002	Name=kailikia AARON	Pri=14	Passwd=	Card=	Grp=1	TZ=0000000100000000	Verify=-1	ViceCard=	StartDatetime=0	EndDatetime=0
+799451 INFO  2025-11-08 16:10:02227 UploadProcess:484 - end parse op user
+799452 INFO  2025-11-08 16:10:02228 UploadProcess:327 - end process data and return msg to device
+799452 INFO  2025-11-08 16:10:02228 UploadProcess:331 - return msg to device and request over OK
+800472 INFO  2025-11-08 16:10:03248 UploadProcess:255 - device language:null,get request and begin update device stamp:192.168.65.1;http://192.168.0.101:8080/iclock/cdata?SN=TDBD250100333&table=OPERLOG&Stamp=9999
+800482 INFO  2025-11-08 16:10:03258 UploadProcess:266 - update device stamp end and get stream.
+800484 INFO  2025-11-08 16:10:03260 UploadProcess:323 - data:OPLOG 70	0	2025-11-09 12:10:00	1002	0	0	0
+
+800485 INFO  2025-11-08 16:10:03261 UploadProcess:324 - end get stream and process data
+800485 INFO  2025-11-08 16:10:03261 UploadProcess:474 - begin parse op log
+800493 INFO  2025-11-08 16:10:03269 UploadProcess:235 - oplog size:1
+800494 INFO  2025-11-08 16:10:03270 UploadProcess:476 - end parse op log
+800494 INFO  2025-11-08 16:10:03270 UploadProcess:327 - end process data and return msg to device
+800495 INFO  2025-11-08 16:10:03271 UploadProcess:331 - return msg to device and request over OK
+825148 INFO  2025-11-08 16:10:27924 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333&INFO=ZMM510-NF24VB-Ver1.3.13,4,0,27,192.168.0.103,10,35,12,3,11110,2,0,0
+825153 INFO  2025-11-08 16:10:27929 DownloadProcess:59 - get cmd list over and begin contact:0
+825155 INFO  2025-11-08 16:10:27931 DownloadProcess:94 - INFO:ZMM510-NF24VB-Ver1.3.13,4,0,27,192.168.0.103,10,35,12,3,11110,2,0,0
+856048 INFO  2025-11-08 16:10:58824 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+856053 INFO  2025-11-08 16:10:58829 DownloadProcess:59 - get cmd list over and begin contact:0
+887360 INFO  2025-11-08 16:11:30136 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+887364 INFO  2025-11-08 16:11:30140 DownloadProcess:59 - get cmd list over and begin contact:0
+917072 INFO  2025-11-08 16:11:59848 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+917076 INFO  2025-11-08 16:11:59852 DownloadProcess:59 - get cmd list over and begin contact:0
+948098 INFO  2025-11-08 16:12:30874 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+948103 INFO  2025-11-08 16:12:30879 DownloadProcess:59 - get cmd list over and begin contact:0
+978099 INFO  2025-11-08 16:13:00875 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+978101 INFO  2025-11-08 16:13:00877 DownloadProcess:59 - get cmd list over and begin contact:0
+1009259 INFO  2025-11-08 16:13:3235 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1009264 INFO  2025-11-08 16:13:3240 DownloadProcess:59 - get cmd list over and begin contact:0
+1039055 INFO  2025-11-08 16:14:01831 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1039058 INFO  2025-11-08 16:14:01834 DownloadProcess:59 - get cmd list over and begin contact:0
+1069997 INFO  2025-11-08 16:14:32773 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1070073 INFO  2025-11-08 16:14:32849 DownloadProcess:59 - get cmd list over and begin contact:0
+1100051 INFO  2025-11-08 16:15:02827 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1100054 INFO  2025-11-08 16:15:02830 DownloadProcess:59 - get cmd list over and begin contact:0
+1131086 INFO  2025-11-08 16:15:33862 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://192.168.0.101:8080/iclock/getrequest?SN=TDBD250100333
+1131088 INFO  2025-11-08 16:15:33864 DownloadProcess:59 - get cmd list over and begin contact:0

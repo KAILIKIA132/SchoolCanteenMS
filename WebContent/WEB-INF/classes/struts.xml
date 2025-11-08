@@ -18,6 +18,7 @@
 			<result name="userList">/userList.jsp</result>
 			<result name="redirectToUserList" type="redirect">userAction!userList.action</result>
 			<result name="newUser">/addUser.jsp</result>
+			<result name="bulkImportUser">/bulkImportUser.jsp</result>
 		</action>
 		<action name="attAction" class="com.zk.action.AttLogAction">
 			<result name="attLogList">/attlogList.jsp</result>

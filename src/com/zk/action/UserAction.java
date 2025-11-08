@@ -39,7 +39,9 @@ public class UserAction implements ServletRequestAware,ServletResponseAware{
 		this.response = response;
 	}
 	
-	private File userPic; // myFileå±žæ€§ç”¨æ�¥å°�è£…ä¸Šä¼ çš„æ–‡ä»¶
+	private File userPic;
+	private File bulkImportFile; // CSV file for bulk import
+	private String bulkImportFileFileName; // Original filename // myFileå±žæ€§ç”¨æ�¥å°�è£…ä¸Šä¼ çš„æ–‡ä»¶
 	
 	/**
 	 * Get User Information List
@@ -441,5 +443,199 @@ public class UserAction implements ServletRequestAware,ServletResponseAware{
 
 	public void setUserPic(File userPic) {
 		this.userPic = userPic;
+	}
+	
+	public File getBulkImportFile() {
+		return bulkImportFile;
+	}
+
+	public void setBulkImportFile(File bulkImportFile) {
+		this.bulkImportFile = bulkImportFile;
+	}
+
+	public String getBulkImportFileFileName() {
+		return bulkImportFileFileName;
+	}
+
+	public void setBulkImportFileFileName(String bulkImportFileFileName) {
+		this.bulkImportFileFileName = bulkImportFileFileName;
+	}
+	
+	/**
+	 * Show bulk import page
+	 * @return
+	 */
+	public String showBulkImport() {
+		request.setAttribute("devList", PushUtil.getDeviceList());
+		return "bulkImportUser";
+	}
+	
+	/**
+	 * Process bulk import from CSV file
+	 * CSV format: userPin,userName,userCard,userPassword,deviceSn,privilege,category
+	 * @return
+	 */
+	public String bulkImportUser() {
+		int successCount = 0;
+		int failureCount = 0;
+		StringBuilder errors = new StringBuilder();
+		
+		if (bulkImportFile == null || !bulkImportFile.exists()) {
+			request.setAttribute("error", "No file uploaded or file does not exist.");
+			request.setAttribute("devList", PushUtil.getDeviceList());
+			return "bulkImportUser";
+		}
+		
+		try {
+			java.io.BufferedReader reader = new java.io.BufferedReader(
+				new java.io.InputStreamReader(new FileInputStream(bulkImportFile), "UTF-8"));
+			
+			String line;
+			int lineNumber = 0;
+			List<UserInfo> userList = new ArrayList<UserInfo>();
+			
+			// Read CSV file line by line
+			while ((line = reader.readLine()) != null) {
+				lineNumber++;
+				line = line.trim();
+				
+				// Skip empty lines and header row
+				if (line.isEmpty() || lineNumber == 1) {
+					continue;
+				}
+				
+				// Parse CSV line (handle quoted fields)
+				String[] fields = parseCSVLine(line);
+				
+				if (fields.length < 7) {
+					failureCount++;
+					errors.append("Line ").append(lineNumber).append(": Insufficient fields. Expected 7 fields (userPin,userName,userCard,userPassword,deviceSn,privilege,category). Note: userCard is optional and can be empty.<br/>");
+					continue;
+				}
+				
+				try {
+					String userPin = fields[0].trim();
+					String userName = fields[1].trim();
+					String userCard = fields.length > 2 ? fields[2].trim() : ""; // userCard is optional
+					String userPassword = fields[3].trim();
+					String deviceSn = fields[4].trim();
+					String privilegeStr = fields.length > 5 ? fields[5].trim() : "";
+					String categoryStr = fields.length > 6 ? fields[6].trim() : "";
+					
+					// Validate required fields (userCard is now optional)
+					if (userPin.isEmpty() || userName.isEmpty() 
+							|| userPassword.isEmpty() || deviceSn.isEmpty()) {
+						failureCount++;
+						errors.append("Line ").append(lineNumber).append(": Missing required fields (userPin, userName, userPassword, or deviceSn).<br/>");
+						continue;
+					}
+					
+					// Parse privilege and category with defaults
+					int privilege = 0;
+					int category = 0;
+					try {
+						if (!privilegeStr.isEmpty()) {
+							privilege = Integer.parseInt(privilegeStr);
+						}
+					} catch (NumberFormatException e) {
+						privilege = 0; // Default to ordinary
+					}
+					
+					try {
+						if (!categoryStr.isEmpty()) {
+							category = Integer.parseInt(categoryStr);
+						}
+					} catch (NumberFormatException e) {
+						category = 0; // Default to ordinary
+					}
+					
+					// Create UserInfo object
+					UserInfo info = new UserInfo();
+					info.setUserPin(userPin);
+					info.setName(userName);
+					// userCard is optional - set to empty string if not provided
+					info.setMainCard(userCard != null ? userCard : "");
+					info.setPassword(userPassword);
+					info.setDeviceSn(deviceSn);
+					info.setPrivilege(privilege);
+					info.setCategory(category);
+					// No image - will be added later from device
+					info.setPhotoIdContent(null);
+					info.setPhotoIdName(null);
+					info.setPhotoIdSize(0);
+					
+					userList.add(info);
+					
+				} catch (Exception e) {
+					failureCount++;
+					errors.append("Line ").append(lineNumber).append(": ").append(e.getMessage()).append("<br/>");
+					logger.error("Error processing line " + lineNumber, e);
+				}
+			}
+			
+			reader.close();
+			
+			// Create users in batch
+			if (!userList.isEmpty()) {
+				try {
+					ManagerFactory.getUserInfoManager().createUserInfo(userList);
+					successCount = userList.size();
+				} catch (Exception e) {
+					failureCount += userList.size();
+					successCount = 0;
+					errors.append("Database error: ").append(e.getMessage()).append("<br/>");
+					logger.error("Error creating users", e);
+				}
+			}
+			
+		} catch (Exception e) {
+			errors.append("File processing error: ").append(e.getMessage()).append("<br/>");
+			logger.error("Error processing bulk import file", e);
+		}
+		
+		// Set result attributes
+		request.setAttribute("successCount", successCount);
+		request.setAttribute("failureCount", failureCount);
+		request.setAttribute("errors", errors.toString());
+		request.setAttribute("devList", PushUtil.getDeviceList());
+		
+		return "bulkImportUser";
+	}
+	
+	/**
+	 * Parse CSV line handling quoted fields
+	 * @param line CSV line
+	 * @return Array of fields
+	 */
+	private String[] parseCSVLine(String line) {
+		java.util.List<String> fields = new java.util.ArrayList<String>();
+		boolean inQuotes = false;
+		StringBuilder currentField = new StringBuilder();
+		
+		for (int i = 0; i < line.length(); i++) {
+			char c = line.charAt(i);
+			
+			if (c == '"') {
+				if (inQuotes && i + 1 < line.length() && line.charAt(i + 1) == '"') {
+					// Escaped quote
+					currentField.append('"');
+					i++;
+				} else {
+					// Toggle quote state
+					inQuotes = !inQuotes;
+				}
+			} else if (c == ',' && !inQuotes) {
+				// Field separator
+				fields.add(currentField.toString());
+				currentField = new StringBuilder();
+			} else {
+				currentField.append(c);
+			}
+		}
+		
+		// Add last field
+		fields.add(currentField.toString());
+		
+		return fields.toArray(new String[fields.size()]);
 	}
 }
