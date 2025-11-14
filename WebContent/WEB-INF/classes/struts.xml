@@ -53,6 +53,13 @@
 		<action name="commandAction" class="com.zk.action.CommandAction">
 			<result name="command">/deviceCommand.jsp</result>
 		</action>
+		
+		<action name="verificationReportAction" class="com.zk.action.VerificationReportAction">
+			<result name="reportList">/verificationReportList.jsp</result>
+			<result name="success" type="plainText">
+				<param name="charSet">UTF-8</param>
+			</result>
+		</action>
 	
 	</package>
 </struts>    

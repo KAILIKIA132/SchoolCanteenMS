@@ -305,6 +305,33 @@ public class DeviceAction implements ServletRequestAware,ServletResponseAware{
 	}
 	
 	/**
+	 * Get all users from the device and sync them to the webapp database.
+	 * Sends CHECK command with checkNew=yes to retrieve all user data from the device.
+	 * @return
+	 */
+	public String getAllUsersFromDevice() {
+		logger.info("Getting all users from device - request received");
+		final String sn = request.getParameter("sn");
+		if (null == sn || sn.isEmpty()) {
+			responseWebPage("error: No device selected");
+			return deviceList;
+		}
+		String[] sns = sn.split(",");
+		for (final String deviceSn : sns) {
+			new Thread(new Runnable() {
+				public void run() {
+					logger.info("Sending CHECK command to device: " + deviceSn + " to get all users");
+					// Send CHECK command with checkNew=yes to get all new data including users
+					ManagerFactory.getCommandManager().createCheckCommand(deviceSn, false);
+					logger.info("CHECK command sent to device: " + deviceSn);
+				}
+			}).start();
+		}
+		responseWebPage("success: CHECK command sent. Users will be synced when device responds.");
+		return deviceList;
+	}
+	
+	/**
 	 * According to the list of device serial numbers from pages,Query attendance records from the specified device.
 	 * Corresponding to the "DATA QUERY ATTLOG" command.
 	 * @return

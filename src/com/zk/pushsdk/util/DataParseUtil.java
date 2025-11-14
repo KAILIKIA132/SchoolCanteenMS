@@ -334,10 +334,26 @@ public class DataParseUtil {
 	 * @return
 	 */
 	public static int parseAttlog(String data, String deviceSn) {
+		logger.info("═══════════════════════════════════════════════════════════");
+		logger.info("🔍 PARSING ATTENDANCE LOG DATA");
+		logger.info("═══════════════════════════════════════════════════════════");
+		logger.info("Device SN: " + deviceSn);
+		logger.info("Data received: " + (data != null ? data.length() + " characters" : "NULL"));
+		if (data == null || data.isEmpty()) {
+			logger.warn("⚠️  WARNING: parseAttlog called with NULL or EMPTY data!");
+			logger.info("═══════════════════════════════════════════════════════════");
+			return 0;
+		}
+		logger.info("Data content: " + (data.length() > 500 ? data.substring(0, 500) + "..." : data));
 		List<AttLog> list = new ArrayList<AttLog>();
-		if (null != data && !"".equals(data)) {
-			String[] attLogs = data.split("\n");
-			for (String string : attLogs) {
+		String[] attLogs = data.split("\n");
+		logger.info("Number of log lines: " + attLogs.length);
+		for (String string : attLogs) {
+			if (string == null || string.trim().isEmpty()) {
+				logger.debug("Skipping empty line");
+				continue;
+			}
+			logger.info("Processing log line: " + string);
 				String[] attValues = string.split("\t");
 				AttLog log = new AttLog();
 				
@@ -406,10 +422,14 @@ public class DataParseUtil {
 					PushUtil.monitorList.remove(0);
 				}
 				list.add(log);
-			}
+		}
+		logger.info("Total AttLog objects created: " + list.size());
+		if (list.isEmpty()) {
+			logger.warn("⚠️  WARNING: No AttLog objects were created from the data!");
 		}
 		int ret = ManagerFactory.getAttLogManager().createAttLog(list);
-		logger.info("attlog size:" + list.size());
+		logger.info("createAttLog returned: " + ret + ", attlog size:" + list.size());
+		logger.info("═══════════════════════════════════════════════════════════");
 		return ret;
 	}
 	

@@ -5,10 +5,15 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Date;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import org.apache.log4j.Logger;
+
+import com.zk.dao.impl.ApiVerificationReport;
+import com.zk.dao.impl.ApiVerificationReportDao;
+import com.zk.exception.DaoException;
 
 /**
  * Utility class for calling external APIs when verifications occur
@@ -23,20 +28,38 @@ public class ExternalApiUtil {
 	 * Base URL for external API
 	 * Configure this in your config file or environment variable
 	 */
-	private static final String EXTERNAL_API_URL = "http://192.168.253.45:8001/api/meal-cards/generate-with-check";
+	private static final String EXTERNAL_API_URL = "http://192.168.192.45:8001/api/meal-cards/generate-with-check";
 	
 	/**
-	 * Meal type to send in the request
+	 * Get meal type based on current time
+	 * - 6am to 11am: "mid morning"
+	 * - 11am to 3pm: "lunch"
+	 * 
+	 * @return Meal type string
 	 */
-	private static final String MEAL_TYPE = "lunch";
+	private static String getMealType() {
+		java.util.Calendar cal = java.util.Calendar.getInstance();
+		int hour = cal.get(java.util.Calendar.HOUR_OF_DAY);
+		
+		if (hour >= 6 && hour < 11) {
+			return "mid morning";
+		} else if (hour >= 11 && hour < 15) {
+			return "lunch";
+		} else {
+			// Default to lunch if outside these hours
+			return "lunch";
+		}
+	}
 	
 	/**
 	 * Call external API when a verification occurs
 	 * This method runs asynchronously to avoid blocking the main processing
 	 * 
 	 * @param userId The user ID (userPin) from the verification
+	 * @param verificationTime The verification timestamp
+	 * @param userName The user name from the verification
 	 */
-	public static void notifyVerification(String userId) {
+	public static void notifyVerification(String userId, String verificationTime, String userName) {
 		logger.info("=== EXTERNAL API: notifyVerification called with userId: " + userId + " ===");
 		
 		if (userId == null || userId.isEmpty()) {
@@ -51,7 +74,7 @@ public class ExternalApiUtil {
 			@Override
 			public void run() {
 				logger.info("EXTERNAL API: Async task started for userId: " + userId);
-				callExternalApi(userId);
+				callExternalApi(userId, verificationTime, userName);
 			}
 		});
 		
@@ -59,13 +82,37 @@ public class ExternalApiUtil {
 	}
 	
 	/**
+	 * Call external API when a verification occurs (backward compatibility)
+	 * @param userId The user ID (userPin) from the verification
+	 * @param verificationTime The verification timestamp
+	 */
+	public static void notifyVerification(String userId, String verificationTime) {
+		notifyVerification(userId, verificationTime, null);
+	}
+	
+	/**
+	 * Call external API when a verification occurs (backward compatibility)
+	 * @param userId The user ID (userPin) from the verification
+	 */
+	public static void notifyVerification(String userId) {
+		notifyVerification(userId, null, null);
+	}
+	
+	/**
 	 * Make HTTP POST request to external API with JSON body
 	 * 
 	 * @param userId The user ID (student_id) to pass to the API
+	 * @param verificationTime The verification timestamp
+	 * @param userName The user name from verification
 	 */
-	private static void callExternalApi(String userId) {
-		logger.info("=== EXTERNAL API: callExternalApi started for userId: " + userId + " ===");
+	private static void callExternalApi(String userId, String verificationTime, String userName) {
+		logger.info("═══════════════════════════════════════════════════════════");
+		logger.info("🚀 EXTERNAL API CALL INITIATED");
+		logger.info("═══════════════════════════════════════════════════════════");
+		logger.info("EXTERNAL API: User ID: " + userId);
 		logger.info("EXTERNAL API: URL: " + EXTERNAL_API_URL);
+		logger.info("EXTERNAL API: Method: POST");
+		logger.info("EXTERNAL API: Timestamp: " + new java.util.Date());
 		
 		HttpURLConnection connection = null;
 		try {
@@ -85,8 +132,15 @@ public class ExternalApiUtil {
 			String formattedStudentId = formatStudentId(userId);
 			logger.info("EXTERNAL API: Student ID formatted - Original: " + userId + ", Formatted: " + formattedStudentId);
 			
+			// Determine meal type based on current time
+			String mealType = getMealType();
+			java.util.Calendar cal = java.util.Calendar.getInstance();
+			int hour = cal.get(java.util.Calendar.HOUR_OF_DAY);
+			int minute = cal.get(java.util.Calendar.MINUTE);
+			logger.info("EXTERNAL API: Current time: " + String.format("%02d:%02d", hour, minute) + " - Meal type determined: " + mealType);
+			
 			// Build JSON request body (matching exact curl format)
-			String jsonBody = "{\"student_id\": \"" + formattedStudentId + "\", \"meal_type\": \"" + MEAL_TYPE + "\"}";
+			String jsonBody = "{\"student_id\": \"" + formattedStudentId + "\", \"meal_type\": \"" + mealType + "\"}";
 			logger.info("EXTERNAL API: Request body: " + jsonBody);
 			
 			// Write request body
@@ -115,17 +169,71 @@ public class ExternalApiUtil {
 			}
 			in.close();
 			
+			// Save report to database
+			ApiVerificationReport report = new ApiVerificationReport();
+			report.setUserPin(userId);
+			report.setUserName(userName != null ? userName : "");
+			report.setStudentId(formattedStudentId);
+			report.setVerificationTime(verificationTime != null ? verificationTime : "");
+			report.setApiCallTime(new Date());
+			report.setMealType(mealType);
+			report.setApiUrl(EXTERNAL_API_URL);
+			
 			if (responseCode >= 200 && responseCode < 300) {
-				logger.info("External API call successful for student_id: " + formattedStudentId + 
-					" (original: " + userId + "), Response Code: " + responseCode + ", Response: " + response.toString());
+				logger.info("═══════════════════════════════════════════════════════════");
+				logger.info("✅ EXTERNAL API CALL SUCCESSFUL");
+				logger.info("═══════════════════════════════════════════════════════════");
+				logger.info("EXTERNAL API: Student ID: " + formattedStudentId + " (original: " + userId + ")");
+				logger.info("EXTERNAL API: Response Code: " + responseCode);
+				logger.info("EXTERNAL API: Response: " + response.toString());
+				logger.info("═══════════════════════════════════════════════════════════");
+				
+				report.setStatus("SUCCESS");
+				report.setResponseCode(responseCode);
+				report.setResponseMessage(response.toString());
 			} else {
-				logger.warn("External API call returned status code: " + responseCode + 
-					" for student_id: " + formattedStudentId + " (original: " + userId + "), Response: " + response.toString());
+				logger.warn("═══════════════════════════════════════════════════════════");
+				logger.warn("⚠️  EXTERNAL API CALL RETURNED ERROR STATUS");
+				logger.warn("═══════════════════════════════════════════════════════════");
+				logger.warn("EXTERNAL API: Student ID: " + formattedStudentId + " (original: " + userId + ")");
+				logger.warn("EXTERNAL API: Response Code: " + responseCode);
+				logger.warn("EXTERNAL API: Response: " + response.toString());
+				logger.warn("═══════════════════════════════════════════════════════════");
+				
+				report.setStatus("FAILED");
+				report.setResponseCode(responseCode);
+				report.setResponseMessage(response.toString());
 			}
 			
+			saveReport(report);
+			
 		} catch (Exception e) {
-			logger.error("Error calling external API for student_id: " + userId + 
-				", URL: " + EXTERNAL_API_URL + ", Error: " + e.getMessage(), e);
+			logger.error("═══════════════════════════════════════════════════════════");
+			logger.error("❌ EXTERNAL API CALL FAILED");
+			logger.error("═══════════════════════════════════════════════════════════");
+			logger.error("EXTERNAL API: Student ID: " + userId);
+			logger.error("EXTERNAL API: URL: " + EXTERNAL_API_URL);
+			logger.error("EXTERNAL API: Error: " + e.getMessage());
+			logger.error("EXTERNAL API: Exception: " + e.getClass().getName());
+			logger.error("═══════════════════════════════════════════════════════════");
+			logger.error("Full stack trace:", e);
+			
+			// Save failed report to database
+			try {
+				ApiVerificationReport report = new ApiVerificationReport();
+				report.setUserPin(userId);
+				report.setUserName(userName != null ? userName : "");
+				report.setStudentId(formatStudentId(userId));
+				report.setVerificationTime(verificationTime != null ? verificationTime : "");
+				report.setApiCallTime(new Date());
+				report.setMealType(getMealType());
+				report.setStatus("FAILED");
+				report.setErrorMessage(e.getMessage());
+				report.setApiUrl(EXTERNAL_API_URL);
+				saveReport(report);
+			} catch (Exception ex) {
+				logger.error("Failed to save error report to database: " + ex.getMessage());
+			}
 		} finally {
 			if (connection != null) {
 				connection.disconnect();
@@ -152,6 +260,24 @@ public class ExternalApiUtil {
 			// If not a number, return as-is or default to 001
 			logger.warn("User ID is not a number: " + userId + ", using as-is");
 			return userId;
+		}
+	}
+	
+	/**
+	 * Save verification report to database
+	 * @param report The verification report to save
+	 */
+	private static void saveReport(ApiVerificationReport report) {
+		try {
+			ApiVerificationReportDao dao = new ApiVerificationReportDao();
+			dao.add(report);
+			dao.commit();
+			dao.close();
+			logger.info("EXTERNAL API: Report saved to database - Status: " + report.getStatus() + ", User: " + report.getUserPin());
+		} catch (DaoException e) {
+			logger.error("Failed to save verification report to database: " + e.getMessage(), e);
+		} catch (Exception e) {
+			logger.error("Unexpected error saving verification report: " + e.getMessage(), e);
 		}
 	}
 	

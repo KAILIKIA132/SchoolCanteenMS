@@ -65,9 +65,15 @@ public class UserAction implements ServletRequestAware,ServletResponseAware{
 		/**Search record lists based on page conditions and page information*/
 		List<UserInfo> list = ManagerFactory.getUserInfoManager().fatchAllUser(deviceSn, userPin, startRec, PagenitionUtil.getPageSize());
 		/**Set the user's face total number of data*/
+		if (list != null) {
 		for (UserInfo userInfo : list) {
+				if (userInfo != null) {
 			userInfo.setUserFaceCount(userInfo.getUserFaceCount());
 			//userInfo.setUserPalmCount(userInfo.getUserPalmCount());
+				}
+			}
+		} else {
+			list = new ArrayList<UserInfo>();
 		}
 		/**Set interface parameters*/
 		request.setAttribute("curPage", curPage);

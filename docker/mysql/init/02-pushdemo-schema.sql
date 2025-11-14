@@ -229,6 +229,30 @@ CREATE TABLE `user_info`  (
 ) ENGINE = InnoDB AUTO_INCREMENT = 64 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
+-- Table structure for api_verification_report
+-- ----------------------------
+DROP TABLE IF EXISTS `api_verification_report`;
+CREATE TABLE `api_verification_report`  (
+  `report_id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_pin` varchar(24) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `user_name` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `student_id` varchar(24) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `verification_time` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `api_call_time` datetime NOT NULL,
+  `meal_type` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `status` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL COMMENT 'SUCCESS or FAILED',
+  `response_code` int(11) NULL DEFAULT NULL,
+  `response_message` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL,
+  `error_message` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL,
+  `api_url` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`report_id`) USING BTREE,
+  INDEX `idx_user_pin`(`user_pin`) USING BTREE,
+  INDEX `idx_verification_time`(`verification_time`) USING BTREE,
+  INDEX `idx_status`(`status`) USING BTREE,
+  INDEX `idx_api_call_time`(`api_call_time`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
 
 
 
@@ -257,7 +281,8 @@ set sqlstr ='select device_id , device_sn , device_name, alias_name, dept_id,
 
 							(select count(*) from pers_bio_template where DEVICE_SN=a.device_sn and bio_type=2 and template_no=0) act_face_count,
 							
-							(select count(*) from att_log where device_sn=a.device_sn) act_att_count, mask, temperature, palm
+							(select count(*) from att_log where device_sn=a.device_sn) act_att_count, mask, temperature, palm,
+							time_zone, bioData_Stamp, idCard_Stamp, errorLog_Stamp
 
 							from device_info a where 1=1 ';
 

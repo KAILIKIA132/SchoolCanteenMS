@@ -252,6 +252,10 @@ function editUser(userId) {
 				value="Bulk Import Users"
 				onclick="location.href='<%=basePath + "userAction!showBulkImport.action"%>'" 
 				style="margin-left: 10px;" />
+			<input type="button" align="right" class="input_add l"
+				value="Verification Reports"
+				onclick="location.href='<%=basePath + "verificationReportAction!reportList.action"%>'" 
+				style="margin-left: 10px;" />
 		</div>
 
 		<div class="l zk_Search">

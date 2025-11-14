@@ -222,6 +222,12 @@ function operateDevice(operate)
 	    	url = "deviceAction!unalarm.action?sn=" + temp;
 	    } else if ("syncDevice" == operate) {
 	    	url = "deviceAction!syncDevice.action?sn=" + temp;
+	    } else if ("getAllUsers" == operate) {
+	    	if (confirm("This will retrieve all users from the selected device(s) and sync them to the webapp. Continue?")) {
+	    		url = "deviceAction!getAllUsersFromDevice.action?sn=" + temp;
+	    	} else {
+	    		return;
+	    	}
 	    }
 	    dealData(url);
 	} else {
@@ -285,6 +291,7 @@ function selAll()
 					<ul>
 						<li><a href="#" id="toNewDeviceOpen" onclick="location.href='javascript:void()'"><s:text name="device.operate.backupdata.tootherdevice"/></a></li>
 						<li><a href="#" onclick="operateDevice('restore')"><s:text name="device.operate.restoreuserinfo"/></a></li>
+						<li><a href="#" onclick="operateDevice('getAllUsers')">Get All Users from Device</a></li>
 						<li><a href="#" id="queryAttLogOpen" onclick="location.href='javascript:void()'"><s:text name="device.operate.query.att.log"/></a></li>
 						<li><a href="#" id="queryAttPhotoOpen" onclick="location.href='javascript:void()'"><s:text name="device.operate.query.att.photo"/></a></li>
 						<li><a href="#" id="queryUserInfoOpen" onclick="location.href='javascript:void()'"><s:text name="device.operate.query.user.info"/></a></li>

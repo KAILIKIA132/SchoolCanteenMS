@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 import com.zk.dao.impl.AttLogDao;
 import com.zk.exception.DaoException;
 import com.zk.pushsdk.po.AttLog;
+import com.zk.pushsdk.po.UserInfo;
 import com.zk.util.ExternalApiUtil;
 
 /**
@@ -94,7 +95,25 @@ public class AttLogManager {
 		}
 		AttLogDao attLogDao = new AttLogDao();
 		try {
+			// Look up user names for all AttLog entries before saving
 			for (AttLog attLog : list) {
+				// If userName is not set, look it up from UserInfo table
+				if ((attLog.getUserName() == null || attLog.getUserName().isEmpty()) 
+						&& attLog.getUserPin() != null && !attLog.getUserPin().isEmpty()
+						&& attLog.getDeviceSn() != null && !attLog.getDeviceSn().isEmpty()) {
+					try {
+						UserInfo userInfo = ManagerFactory.getUserInfoManager().getUserInfoByPinAndSn(
+							attLog.getUserPin(), attLog.getDeviceSn());
+						if (userInfo != null && userInfo.getName() != null) {
+							attLog.setUserName(userInfo.getName());
+							logger.debug("Found user name for PIN " + attLog.getUserPin() + ": " + userInfo.getName());
+						} else {
+							logger.warn("User not found for PIN: " + attLog.getUserPin() + ", Device: " + attLog.getDeviceSn());
+						}
+					} catch (Exception e) {
+						logger.warn("Error looking up user name for PIN " + attLog.getUserPin() + ": " + e.getMessage());
+					}
+				}
 				attLogDao.addOrUpdate(attLog);
 			}
 			attLogDao.commit();
@@ -104,11 +123,13 @@ public class AttLogManager {
 			// Notify external API for each verification
 			for (AttLog attLog : list) {
 				logger.info("EXTERNAL API: Processing verification - User PIN: " + attLog.getUserPin() + 
-					", User Name: " + attLog.getUserName() + ", Timestamp: " + attLog.getVerifyTime());
+					", User Name: " + (attLog.getUserName() != null ? attLog.getUserName() : "N/A") + 
+					", Timestamp: " + attLog.getVerifyTime());
 				
 				if (attLog.getUserPin() != null && !attLog.getUserPin().isEmpty()) {
 					logger.info("EXTERNAL API: Calling notifyVerification for User ID: " + attLog.getUserPin());
-					ExternalApiUtil.notifyVerification(attLog.getUserPin());
+					ExternalApiUtil.notifyVerification(attLog.getUserPin(), attLog.getVerifyTime(), 
+						attLog.getUserName() != null ? attLog.getUserName() : "");
 					logger.info("EXTERNAL API: notifyVerification called for User ID: " + attLog.getUserPin() + 
 						", Timestamp: " + attLog.getVerifyTime());
 				} else {

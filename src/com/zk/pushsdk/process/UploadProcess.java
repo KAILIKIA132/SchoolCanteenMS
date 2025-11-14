@@ -253,9 +253,10 @@ public class UploadProcess {
 		String lang = PushUtil.getDeviceLangBySn(deviceSn);
 		
 		logger.info("device language:"+ lang 
-				+ ",get request and begin update device stamp:" 
+				+ ",POST request and begin update device stamp:" 
 				+ request.getRemoteAddr()+";"
 				+ request.getRequestURL() + "?" + request.getQueryString());
+		logger.info("POST REQUEST - Table: " + table + ", Device SN: " + deviceSn);
 		try {
 			/**update the device stamp for current table.*/
 			int re = updateDeviceStamp(deviceSn, request);
@@ -316,6 +317,20 @@ public class UploadProcess {
 				fileOS.close();
 			}
 			String data = bufferData.toString();
+			logger.info("POST DATA RECEIVED - Table: " + table + ", Data length: " + data.length() + " bytes");
+			if ("ATTLOG".equals(table)) {
+				logger.info("═══════════════════════════════════════════════════════════");
+				logger.info("📥 ATTENDANCE LOG POST DATA RECEIVED");
+				logger.info("═══════════════════════════════════════════════════════════");
+				logger.info("Device SN: " + deviceSn);
+				logger.info("Data length: " + data.length() + " characters");
+				if (data.isEmpty()) {
+					logger.warn("⚠️  WARNING: ATTLOG data is EMPTY! Device may not be sending log data.");
+				} else {
+					logger.info("Data preview (first 200 chars): " + (data.length() > 200 ? data.substring(0, 200) : data));
+				}
+				logger.info("═══════════════════════════════════════════════════════════");
+			}
 			if(table.equals("options")) {
 				updateDevInfo(data, deviceSn);
 			}
@@ -520,9 +535,20 @@ public class UploadProcess {
 //				return 0;
 				
 			} else if ("ATTLOG".equals(table)) {
+				logger.info("═══════════════════════════════════════════════════════════");
+				logger.info("🔄 PROCESSING ATTLOG TABLE DATA");
+				logger.info("═══════════════════════════════════════════════════════════");
+				logger.info("Device SN: " + deviceSn);
+				logger.info("Data length: " + (data != null ? data.length() : 0) + " characters");
+				if (data == null || data.isEmpty()) {
+					logger.warn("⚠️  WARNING: ATTLOG data is NULL or EMPTY in processDatas!");
+				} else {
+					logger.info("Data preview: " + (data.length() > 200 ? data.substring(0, 200) + "..." : data));
+				}
 				logger.info("begin parse op attlog");
 				DataParseUtil.parseAttlog(data, deviceSn);
 				logger.info("end parse op attlog");
+				logger.info("═══════════════════════════════════════════════════════════");
 //				return 0;
 			}
 		}
