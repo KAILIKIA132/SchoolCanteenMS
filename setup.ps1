@@ -21,8 +21,8 @@
 .PARAMETER JavaVersion
     Java version to download (default: 8.0.392)
 .EXAMPLE
-    .\setup-windows-server.ps1
-    .\setup-windows-server.ps1 -InstallPath "D:\SchoolCanteen" -MySQLRootPassword "MySecurePassword123"
+    .\setup.ps1
+    .\setup.ps1 -InstallPath "D:\SchoolCanteen" -MySQLRootPassword "MySecurePassword123"
 .NOTES
     Author: Generated for Push Demo Project
     Requires: PowerShell 5.1+, Administrator privileges
@@ -51,6 +51,13 @@ function Write-ColorOutput($ForegroundColor) {
 
 # Global variables
 $ScriptPath = $PSScriptRoot
+
+# Auto-detect if running inside the repository
+if (Test-Path "$PSScriptRoot\.git") {
+    $InstallPath = $PSScriptRoot
+    Write-Host "Detected running inside repository. Setting InstallPath to $InstallPath"
+}
+
 $LogPath = "$InstallPath\setup.log"
 $TempPath = "$env:TEMP\pushdemo_setup"
 $JavaInstallPath = "C:\Program Files\Eclipse Adoptium"
@@ -306,23 +313,29 @@ function Install-Tomcat {
 
 # Function to clone and setup project
 function Setup-Project {
-    Write-Log "Cloning project from $GitUrl..."
-    
-    # Remove existing directory if it exists
-    if (Test-Path $InstallPath) {
-        Write-Log "Removing existing installation directory..."
-        Remove-Item -Path $InstallPath -Recurse -Force
+    # Check if we are running INSIDE the InstallPath or if we detected we are already in the repo
+    if ($InstallPath -eq $PSScriptRoot) {
+        Write-Log "Running from installation directory. Skipping clone."
     }
-    
-    # Clone repository
-    try {
-        git clone $GitUrl $InstallPath
-        Set-Location $InstallPath
-        Write-Log "Project cloned successfully"
-    }
-    catch {
-        Write-Log "Failed to clone repository: $($_.Exception.Message)" "ERROR"
-        throw
+    else {
+        Write-Log "Cloning project from $GitUrl..."
+        
+        # Remove existing directory if it exists
+        if (Test-Path $InstallPath) {
+            Write-Log "Removing existing installation directory..."
+            Remove-Item -Path $InstallPath -Recurse -Force
+        }
+        
+        # Clone repository
+        try {
+            git clone $GitUrl $InstallPath
+            Set-Location $InstallPath
+            Write-Log "Project cloned successfully"
+        }
+        catch {
+            Write-Log "Failed to clone repository: $($_.Exception.Message)" "ERROR"
+            throw
+        }
     }
     
     # Setup Python virtual environment
