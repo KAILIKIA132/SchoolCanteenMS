@@ -51,12 +51,12 @@ function Write-ColorOutput($ForegroundColor) {
 
 # Global variables
 $ScriptPath = $PSScriptRoot
-$LogPath = "$InstallPath\setup.log"
+$LogPath = "${InstallPath}\setup.log"
 $TempPath = "$env:TEMP\pushdemo_setup"
 $JavaInstallPath = "C:\Program Files\Eclipse Adoptium"
-$TomcatInstallPath = "C:\apache-tomcat-$TomcatVersion"
+$TomcatInstallPath = "C:\apache-tomcat-${TomcatVersion}"
 $MySQLInstallPath = "$env:ProgramFiles\MySQL\MySQL Server 8.0"
-$PythonPath = "$InstallPath\venv"
+$PythonPath = "${InstallPath}\venv"
 
 # Create log directory
 if (-not (Test-Path (Split-Path $LogPath -Parent))) {
@@ -71,10 +71,10 @@ Write-Host "=========================================="
 Write-Host "  Push Demo Project Setup for Windows Server"
 Write-Host "=========================================="
 Write-Host ""
-Write-Host "Installation Path: $InstallPath"
-Write-Host "Git Repository: $GitUrl"
-Write-Host "Tomcat Version: $TomcatVersion"
-Write-Host "Java Version: $JavaVersion"
+Write-Host "Installation Path: ${InstallPath}"
+Write-Host "Git Repository: ${GitUrl}"
+Write-Host "Tomcat Version: ${TomcatVersion}"
+Write-Host "Java Version: ${JavaVersion}"
 Write-Host "=========================================="
 Write-Host ""
 
@@ -114,7 +114,7 @@ function Invoke-DownloadAndExtract {
     
     $filePath = Join-Path $TempPath $FileName
     
-    Write-Log "Downloading $FileName from $Url..."
+    Write-Log "Downloading ${FileName} from ${Url}..."
     try {
         Invoke-WebRequest -Uri $Url -OutFile $filePath -UseBasicParsing
         Write-Log "Download completed: $filePath"
@@ -126,7 +126,7 @@ function Invoke-DownloadAndExtract {
     
     # Extract if it's a zip file
     if ($FileName -like "*.zip") {
-        Write-Log "Extracting $FileName..."
+        Write-Log "Extracting ${FileName}..."
         try {
             Expand-Archive -Path $filePath -DestinationPath $DestinationPath -Force
             Write-Log "Extraction completed"
@@ -148,7 +148,7 @@ function Install-Java {
         return
     }
     
-    Write-Log "Installing Java $JavaVersion..."
+    Write-Log "Installing Java ${JavaVersion}..."
     
     # Download Java
     $javaUrl = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u$($JavaVersion.Substring(2).Replace('.', ''))/OpenJDK8U-jdk_x64_windows_hotspot_$($JavaVersion.Replace('.', 'u')).msi"
@@ -160,7 +160,7 @@ function Install-Java {
         Write-Log "Installing Java MSI..."
         $installArgs = @(
             "/i", "$TempPath\$javaInstaller"
-            "/quiet", "INSTALLDIR=`"$JavaInstallPath`""
+            "/quiet", "INSTALLDIR=`"${JavaInstallPath}`""
             "ADDLOCAL=FeatureMain,FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome"
         )
         
@@ -171,9 +171,9 @@ function Install-Java {
         $env:JAVA_HOME = $JavaInstallPath
         
         $currentPath = [Environment]::GetEnvironmentVariable("PATH", "Machine")
-        if ($currentPath -notlike "*$JavaInstallPath\bin*") {
-            [Environment]::SetEnvironmentVariable("PATH", "$currentPath;$JavaInstallPath\bin", "Machine")
-            $env:PATH = "$env:PATH;$JavaInstallPath\bin"
+        if ($currentPath -notlike "*${JavaInstallPath}\bin*") {
+            [Environment]::SetEnvironmentVariable("PATH", "${currentPath};${JavaInstallPath}\bin", "Machine")
+            $env:PATH = "${env:PATH};${JavaInstallPath}\bin"
         }
         
         Write-Log "Java installation completed"
@@ -218,7 +218,7 @@ function Install-MySQL {
         Write-Log "Installing MySQL..."
         $installArgs = @(
             "/i", "$TempPath\$mysqlInstaller"
-            "/quiet", "INSTALLDIR=`"$MySQLInstallPath`""
+            "/quiet", "INSTALLDIR=`"${MySQLInstallPath}`""
         )
         
         Start-Process -FilePath "msiexec.exe" -ArgumentList $installArgs -Wait -NoNewWindow
@@ -236,21 +236,11 @@ default-storage-engine=INNODB
 sql-mode=`"STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION`"
 "@
         
-        $configScript | Out-File -FilePath "$MySQLInstallPath\my.ini" -Encoding ASCII
+        $configScript | Out-File -FilePath "${MySQLInstallPath}\my.ini" -Encoding ASCII
         
         # Start MySQL service
         Start-Service -Name "MySQL80" -ErrorAction SilentlyContinue
         Set-Service -Name "MySQL80" -StartupType Automatic
-        
-        # Set root password
-        Write-Log "Setting MySQL root password..."
-        $mysqlCmd = "$MySQLInstallPath\bin\mysql.exe"
-        $secureInstallCmd = @"
-ALTER USER 'root'@'localhost' IDENTIFIED BY '$MySQLRootPassword';
-FLUSH PRIVILEGES;
-"@
-        
-        echo $secureInstallCmd | & $mysqlCmd -u root --skip-password
         
         Write-Log "MySQL installation completed"
     }
@@ -265,15 +255,15 @@ function Install-Tomcat {
     Write-Log "Checking Tomcat installation..."
     
     if (Test-Path $TomcatInstallPath) {
-        Write-Log "Tomcat already installed at $TomcatInstallPath"
+        Write-Log "Tomcat already installed at ${TomcatInstallPath}"
         return
     }
     
-    Write-Log "Installing Apache Tomcat $TomcatVersion..."
+    Write-Log "Installing Apache Tomcat ${TomcatVersion}..."
     
     # Download Tomcat
-    $tomcatUrl = "https://archive.apache.org/dist/tomcat/tomcat-9/v$TomcatVersion/bin/apache-tomcat-$TomcatVersion-windows-x64.zip"
-    $tomcatZip = "apache-tomcat-$TomcatVersion-windows-x64.zip"
+    $tomcatUrl = "https://archive.apache.org/dist/tomcat/tomcat-9/v${TomcatVersion}/bin/apache-tomcat-${TomcatVersion}-windows-x64.zip"
+    $tomcatZip = "apache-tomcat-${TomcatVersion}-windows-x64.zip"
     
     try {
         Invoke-DownloadAndExtract -Url $tomcatUrl -DestinationPath "C:\" -FileName $tomcatZip
@@ -283,14 +273,14 @@ function Install-Tomcat {
         $env:CATALINA_HOME = $TomcatInstallPath
         
         $currentPath = [Environment]::GetEnvironmentVariable("PATH", "Machine")
-        if ($currentPath -notlike "*$TomcatInstallPath\bin*") {
-            [Environment]::SetEnvironmentVariable("PATH", "$currentPath;$TomcatInstallPath\bin", "Machine")
-            $env:PATH = "$env:PATH;$TomcatInstallPath\bin"
+        if ($currentPath -notlike "*${TomcatInstallPath}\bin*") {
+            [Environment]::SetEnvironmentVariable("PATH", "${currentPath};${TomcatInstallPath}\bin", "Machine")
+            $env:PATH = "${env:PATH};${TomcatInstallPath}\bin"
         }
         
         # Install as Windows service
         Write-Log "Installing Tomcat as Windows service..."
-        Set-Location "$TomcatInstallPath\bin"
+        Set-Location "${TomcatInstallPath}\bin"
         .\service.bat install TomcatPushDemo
         
         # Configure service
@@ -306,7 +296,7 @@ function Install-Tomcat {
 
 # Function to clone and setup project
 function Setup-Project {
-    Write-Log "Cloning project from $GitUrl..."
+    Write-Log "Cloning project from ${GitUrl}..."
     
     # Remove existing directory if it exists
     if (Test-Path $InstallPath) {
@@ -338,17 +328,17 @@ function Setup-Project {
         Write-Log "Python virtual environment created"
         
         # Activate virtual environment and install dependencies
-        $activateScript = "$PythonPath\Scripts\Activate.ps1"
+        $activateScript = "${PythonPath}\Scripts\Activate.ps1"
         if (Test-Path $activateScript) {
             & $activateScript
         }
         
         # Install Python dependencies if requirements.txt exists
-        if (Test-Path "$InstallPath\requirements.txt") {
-            pip install -r "$InstallPath\requirements.txt"
+        if (Test-Path "${InstallPath}\requirements.txt") {
+            pip install -r "${InstallPath}\requirements.txt"
             Write-Log "Python dependencies installed"
         }
-        elseif (Test-Path "$InstallPath\proxy-api.py") {
+        elseif (Test-Path "${InstallPath}\proxy-api.py") {
             # Install basic dependencies for the proxy API
             pip install flask requests
             Write-Log "Installed Flask and requests for proxy API"
@@ -365,7 +355,7 @@ function Setup-Project {
 function Setup-Database {
     Write-Log "Setting up database..."
     
-    $mysqlCmd = "$MySQLInstallPath\bin\mysql.exe"
+    $mysqlCmd = "${MySQLInstallPath}\bin\mysql.exe"
     
     try {
         # Create database
@@ -373,8 +363,9 @@ function Setup-Database {
         echo $createDbCmd | & $mysqlCmd -u root -p$MySQLRootPassword
         
         # Import schema
-        if (Test-Path "$InstallPath\doc\pushdemo.sql") {
-            $result = & $mysqlCmd -u root -p$MySQLRootPassword pushdemo -e "source $InstallPath\doc\pushdemo.sql" 2>&1
+        if (Test-Path "${InstallPath}\doc\pushdemo.sql") {
+            # Use source command instead of redirection operator
+            $result = & $mysqlCmd -u root -p$MySQLRootPassword pushdemo -e "source ${InstallPath}\doc\pushdemo.sql" 2>&1
             if ($LASTEXITCODE -ne 0) {
                 Write-Log "Failed to import database schema: $($result -join ' ')" "ERROR"
                 throw $result
@@ -398,7 +389,7 @@ function Configure-Application {
     Write-Log "Configuring application..."
     
     # Update config.xml with MySQL credentials
-    $configPath = "$InstallPath\WebContent\WEB-INF\classes\config.xml"
+    $configPath = "${InstallPath}\WebContent\WEB-INF\classes\config.xml"
     if (Test-Path $configPath) {
         [xml]$config = Get-Content $configPath
         $config.root.databaseconnect.user = "root"
@@ -408,16 +399,16 @@ function Configure-Application {
     }
     
     # Copy MySQL connector to Tomcat lib
-    $mysqlConnector = "$InstallPath\WebContent\WEB-INF\lib\mysql-connector-java-8.0.33.jar"
+    $mysqlConnector = "${InstallPath}\WebContent\WEB-INF\lib\mysql-connector-java-8.0.33.jar"
     if (Test-Path $mysqlConnector) {
-        Copy-Item $mysqlConnector "$TomcatInstallPath\lib\" -Force
+        Copy-Item $mysqlConnector "${TomcatInstallPath}\lib\" -Force
         Write-Log "MySQL connector copied to Tomcat lib directory"
     }
     else {
         Write-Log "MySQL connector not found. Downloading..." "WARN"
         try {
             $connectorUrl = "https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.33/mysql-connector-java-8.0.33.jar"
-            Invoke-WebRequest -Uri $connectorUrl -OutFile "$TomcatInstallPath\lib\mysql-connector-java-8.0.33.jar" -UseBasicParsing
+            Invoke-WebRequest -Uri $connectorUrl -OutFile "${TomcatInstallPath}\lib\mysql-connector-java-8.0.33.jar" -UseBasicParsing
             Write-Log "MySQL connector downloaded and installed"
         }
         catch {
@@ -427,14 +418,14 @@ function Configure-Application {
     }
     
     # Deploy application to Tomcat
-    $webappsPath = "$TomcatInstallPath\webapps"
-    $appPath = "$webappsPath\pushdemo"
+    $webappsPath = "${TomcatInstallPath}\webapps"
+    $appPath = "${webappsPath}\pushdemo"
     
     if (Test-Path $appPath) {
         Remove-Item $appPath -Recurse -Force
     }
     
-    Copy-Item "$InstallPath\WebContent" $appPath -Recurse -Force
+    Copy-Item "${InstallPath}\WebContent" $appPath -Recurse -Force
     Write-Log "Application deployed to Tomcat"
     
     Write-Log "Application configuration completed"
@@ -475,7 +466,7 @@ echo.
 pause
 "@
     
-    $startScript | Out-File -FilePath "$InstallPath\start-services.bat" -Encoding ASCII
+    $startScript | Out-File -FilePath "${InstallPath}\start-services.bat" -Encoding ASCII
     
     # Create stop script
     $stopScript = @"
@@ -505,17 +496,17 @@ echo.
 pause
 "@
     
-    $stopScript | Out-File -FilePath "$InstallPath\stop-services.bat" -Encoding ASCII
+    $stopScript | Out-File -FilePath "${InstallPath}\stop-services.bat" -Encoding ASCII
     
     # Create Python start script
     $pythonStartScript = @"
 @echo off
-set VIRTUAL_ENV=$PythonPath
+set VIRTUAL_ENV=${PythonPath}
 set PATH=%VIRTUAL_ENV%\Scripts;%PATH%
 
 if exist "%VIRTUAL_ENV%\Scripts\python.exe" (
     echo Starting Python proxy API...
-    cd /d "$InstallPath"
+    cd /d "${InstallPath}"
     "%VIRTUAL_ENV%\Scripts\python.exe" proxy-api.py
 ) else (
     echo Python virtual environment not found. Please run setup again.
@@ -523,7 +514,7 @@ if exist "%VIRTUAL_ENV%\Scripts\python.exe" (
 )
 "@
     
-    $pythonStartScript | Out-File -FilePath "$InstallPath\start-proxy-api.bat" -Encoding ASCII
+    $pythonStartScript | Out-File -FilePath "${InstallPath}\start-proxy-api.bat" -Encoding ASCII
     
     Write-Log "Startup scripts created"
 }
@@ -578,19 +569,19 @@ try {
     Write-Host "  Setup Completed Successfully!"
     Write-Host "=========================================="
     Write-Host ""
-    Write-Host "Installation Path: $InstallPath"
-    Write-Host "MySQL Root Password: $MySQLRootPassword"
-    Write-Host "Tomcat Path: $TomcatInstallPath"
-    Write-Host "Python Virtual Environment: $PythonPath"
+    Write-Host "Installation Path: ${InstallPath}"
+    Write-Host "MySQL Root Password: ${MySQLRootPassword}"
+    Write-Host "Tomcat Path: ${TomcatInstallPath}"
+    Write-Host "Python Virtual Environment: ${PythonPath}"
     Write-Host ""
     Write-Host "Access the application at: http://localhost:8080/pushdemo"
     Write-Host ""
     Write-Host "Startup Scripts:"
-    Write-Host "  - $InstallPath\start-services.bat"
-    Write-Host "  - $InstallPath\stop-services.bat"
-    Write-Host "  - $InstallPath\start-proxy-api.bat"
+    Write-Host "  - ${InstallPath}\start-services.bat"
+    Write-Host "  - ${InstallPath}\stop-services.bat"
+    Write-Host "  - ${InstallPath}\start-proxy-api.bat"
     Write-Host ""
-    Write-Host "Log file: $LogPath"
+    Write-Host "Log file: ${LogPath}"
     Write-Host "=========================================="
     Write-Host ""
 }
@@ -601,7 +592,7 @@ catch {
     Write-Host "  Setup Failed!"
     Write-Host "=========================================="
     Write-Host "Error: $($_.Exception.Message)"
-    Write-Host "Please check the log file: $LogPath"
+    Write-Host "Please check the log file: ${LogPath}"
     Write-Host "=========================================="
     Write-Host ""
     exit 1
