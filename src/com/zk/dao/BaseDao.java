@@ -85,8 +85,13 @@ public class BaseDao {
 
 	private void connectionBase() {
 		try {
-			Class.forName(ConfigUtil.getInstance().getValue(
-					Constants.DATABASE_DRIVER));
+			String driver = ConfigUtil.getInstance().getValue(
+					Constants.DATABASE_DRIVER);
+			if (driver == null || driver.trim().isEmpty()) {
+				logger.error("Database driver not found in config. Check config.xml file.");
+				throw new RuntimeException("Database driver configuration is missing");
+			}
+			Class.forName(driver);
 			String url = ConfigUtil.getInstance().getValue(
 					Constants.DATABASE_URL);
 			String user = ConfigUtil.getInstance().getValue(

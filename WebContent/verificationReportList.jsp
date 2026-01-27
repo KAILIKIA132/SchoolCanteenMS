@@ -142,7 +142,8 @@
 							<td>${report.studentId}</td>
 							<td>${report.verificationTime}</td>
 							<td>
-								<fmt:formatDate value="${report.apiCallTime}" pattern="yyyy-MM-dd HH:mm:ss" />
+								<fmt:setTimeZone value="Africa/Nairobi" />
+								<fmt:formatDate value="${report.apiCallTime}" pattern="yyyy-MM-dd HH:mm:ss" timeZone="Africa/Nairobi" />
 							</td>
 							<td>${report.mealType}</td>
 							<td>
