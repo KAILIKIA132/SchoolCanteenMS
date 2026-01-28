@@ -62,8 +62,8 @@ $LogPath = "$InstallPath\setup.log"
 $TempPath = "$env:TEMP\pushdemo_setup"
 $JavaInstallPath = "C:\Program Files\Eclipse Adoptium"
 $TomcatInstallPath = "C:\apache-tomcat-$TomcatVersion"
-$MySQLInstallPath = "$env:ProgramFiles\MySQL\MySQL-8.0"
-$MySQLBinPath = "$env:ProgramFiles\MySQL\MySQL-8.0\bin"
+$MySQLInstallPath = "$env:ProgramFiles\MySQL\MySQL Server 8.0"
+$MySQLBinPath = "$env:ProgramFiles\MySQL\MySQL Server 8.0\bin"
 $PythonPath = "$InstallPath\venv"
 
 # Create log directory
@@ -222,7 +222,7 @@ function Install-MySQL {
         "https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.36-winx64.zip"
     )
     $mysqlZip = "mysql-8.0.36-winx64.zip"
-    $MySQLInstallPath = "$env:ProgramFiles\MySQL\MySQL-8.0"
+    $MySQLInstallPath = "$env:ProgramFiles\MySQL\MySQL Server 8.0"
     
     $downloadSuccess = $false
     foreach ($url in $mysqlUrls) {
