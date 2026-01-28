@@ -48,7 +48,7 @@ for /f "tokens=1 delims=?" %%a in ("%DB_NAME%") do set DB_NAME=%%a
 echo Testing connection to database: %DB_NAME%
 echo.
 
-%MYSQL_PATH% -u %DB_USER% -p%DB_PASS% -e "SELECT '✓ Connection successful' as Status, DATABASE() as Current_Database, VERSION() as MySQL_Version;" %DB_NAME% 2>nul
+%MYSQL_PATH% -u %DB_USER% -p%DB_PASS% -e "SELECT 'Connection successful' as Status, DATABASE() as Current_Database, VERSION() as MySQL_Version;" %DB_NAME% 2>nul
 
 if %errorlevel% equ 0 (
     echo.
