@@ -5,48 +5,50 @@ echo   Database Content Check
 echo ==========================================
 echo.
 
-set CONFIG_PATH=C:\Meal_Management\SchoolCanteenMS\WebContent\WEB-INF\classes\config.xml
 set MYSQL_PATH="C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe"
 
-echo Checking database content...
+echo Checking database content with direct connection...
 echo.
 
-REM Parse config
-for /f "tokens=3 delims=<>" %%a in ('findstr "url" "%CONFIG_PATH%"') do set DB_URL=%%a
-for /f "tokens=3 delims=<>" %%a in ('findstr "user" "%CONFIG_PATH%"') do set DB_USER=%%a
-for /f "tokens=3 delims=<>" %%a in ('findstr "password" "%CONFIG_PATH%"') do set DB_PASS=%%a
+echo Testing connection to pushdemo database:
+%MYSQL_PATH% -u root -pCanteen@2026 -e "SELECT 'Connection OK' as status, VERSION() as mysql_version;" pushdemo 2>nul
 
-REM Extract database name
-for /f "tokens=4 delims=/" %%a in ("%DB_URL%") do set DB_NAME=%%a
-for /f "tokens=1 delims=?" %%a in ("%DB_NAME%") do set DB_NAME=%%a
+if %errorlevel% equ 0 (
+    echo.
+    echo ==========================================
+    echo   Database Connection Successful
+    echo ==========================================
+    echo.
+    
+    echo Checking tables in pushdemo database:
+    %MYSQL_PATH% -u root -pCanteen@2026 -e "SHOW TABLES;" pushdemo 2>nul
+    echo.
+    
+    echo Checking device table:
+    %MYSQL_PATH% -u root -pCanteen@2026 -e "SELECT COUNT(*) as device_count FROM device_info;" pushdemo 2>nul
+    echo.
+    
+    echo Checking user table:
+    %MYSQL_PATH% -u root -pCanteen@2026 -e "SELECT COUNT(*) as user_count FROM user_info;" pushdemo 2>nul
+    echo.
+    
+    echo Checking if devices exist:
+    %MYSQL_PATH% -u root -pCanteen@2026 -e "SELECT device_sn, device_name, state, last_activity FROM device_info LIMIT 5;" pushdemo 2>nul
+    echo.
+    
+) else (
+    echo.
+    echo ==========================================
+    echo   Database Connection Failed
+    echo ==========================================
+    echo.
+    echo Could not connect to pushdemo database.
+    echo Please verify:
+    echo 1. MySQL service is running
+    echo 2. Credentials are correct
+    echo 3. Database 'pushdemo' exists
+    echo.
+)
 
-echo Database: %DB_NAME%
-echo.
-
-echo Checking device table...
-%MYSQL_PATH% -u %DB_USER% -p%DB_PASS% -e "SELECT COUNT(*) as device_count FROM device_info;" %DB_NAME% 2>nul
-echo.
-
-echo Checking user table...
-%MYSQL_PATH% -u %DB_USER% -p%DB_PASS% -e "SELECT COUNT(*) as user_count FROM user_info;" %DB_NAME% 2>nul
-echo.
-
-echo Checking if any devices exist...
-%MYSQL_PATH% -u %DB_USER% -p%DB_PASS% -e "SELECT device_sn, device_name, state FROM device_info LIMIT 5;" %DB_NAME% 2>nul
-echo.
-
-echo Checking if any users exist...
-%MYSQL_PATH% -u %DB_USER% -p%DB_PASS% -e "SELECT user_pin, name, device_sn FROM user_info LIMIT 5;" %DB_NAME% 2>nul
-echo.
-
-echo ==========================================
-echo   Database Schema Check
-echo ==========================================
-echo.
-
-echo Checking all tables...
-%MYSQL_PATH% -u %DB_USER% -p%DB_PASS% -e "SHOW TABLES;" %DB_NAME% 2>nul
-
-echo.
 echo Press any key to exit...
 pause >nul
