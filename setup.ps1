@@ -330,7 +330,7 @@ default-character-set=utf8mb4
             
             # Execute the password change command using the temporary password
             try {
-                echo $changePasswordCmd | & $mysqlCmd -u root -p$tempPassword --connect-expired-password
+                echo $changePasswordCmd | & $mysqlCmd -u root "--password=$tempPassword" --connect-expired-password
                 Write-Log "Password changed successfully using temporary password"
             } catch {
                 Write-Log "Failed to change password using temporary password: $($_.Exception.Message)" -Level WARN
@@ -490,18 +490,46 @@ function Setup-Database {
         Start-Sleep -Seconds 5
         
         # Test connection first
-        Write-Log "Testing MySQL connection..."
-        $testResult = & $mysqlCmd -u root -p$MySQLRootPassword -e "SELECT 1;" 2>&1
+        Write-Log "Testing MySQL connection with password: $MySQLRootPassword"
+        # Use --password parameter instead of -p to avoid issues with special characters
+        $testResult = & $mysqlCmd -u root "--password=$MySQLRootPassword" -e "SELECT 1;" 2>&1
         if ($LASTEXITCODE -ne 0) {
             Write-Log "MySQL connection test failed: $($testResult -join ' ')" "ERROR"
-            throw "Cannot connect to MySQL with provided password"
+            Write-Log "Please verify that the MySQL root password is correct" "WARN"
+            Write-Log "You can test manually by running: $mysqlCmd -u root -p" "WARN"
+            
+            # Give user a chance to re-enter the password
+            $retry = Read-Host "Would you like to try a different password? (y/n)"
+            if ($retry -eq "y" -or $retry -eq "Y") {
+                do {
+                    $MySQLRootPassword = Read-Host "Enter MySQL root password (minimum 8 characters)"
+                } while ($MySQLRootPassword.Length -lt 8)
+                
+                $confirmPassword = Read-Host "Confirm MySQL root password"
+                if ($MySQLRootPassword -ne $confirmPassword) {
+                    Write-Log "Passwords do not match. Exiting." "ERROR"
+                    exit 1
+                }
+                
+                # Retry the connection test
+                Write-Log "Retrying MySQL connection with new password: $MySQLRootPassword"
+                $testResult = & $mysqlCmd -u root "--password=$MySQLRootPassword" -e "SELECT 1;" 2>&1
+                if ($LASTEXITCODE -ne 0) {
+                    Write-Log "MySQL connection still failed with new password: $($testResult -join ' ')" "ERROR"
+                    throw "Cannot connect to MySQL with provided password after retry"
+                }
+                Write-Log "MySQL connection successful with new password"
+            } else {
+                throw "Cannot connect to MySQL with provided password"
+            }
+        } else {
+            Write-Log "MySQL connection successful"
         }
-        Write-Log "MySQL connection successful"
         
         # Create database
         Write-Log "Creating database..."
         $createDbCmd = "CREATE DATABASE IF NOT EXISTS pushdemo DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;"
-        $result = & $mysqlCmd -u root -p$MySQLRootPassword -e $createDbCmd 2>&1
+        $result = & $mysqlCmd -u root "--password=$MySQLRootPassword" -e $createDbCmd 2>&1
         if ($LASTEXITCODE -ne 0) {
             Write-Log "Failed to create database: $($result -join ' ')" "ERROR"
             throw "Database creation failed"
@@ -511,7 +539,7 @@ function Setup-Database {
         # Import schema
         if (Test-Path "$InstallPath\doc\pushdemo.sql") {
             Write-Log "Importing database schema..."
-            $result = & $mysqlCmd -u root -p$MySQLRootPassword pushdemo -e "source $InstallPath\doc\pushdemo.sql" 2>&1
+            $result = & $mysqlCmd -u root "--password=$MySQLRootPassword" pushdemo -e "source $InstallPath\doc\pushdemo.sql" 2>&1
             if ($LASTEXITCODE -ne 0) {
                 Write-Log "Failed to import database schema: $($result -join ' ')" "ERROR"
                 throw "Schema import failed"
