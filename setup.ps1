@@ -203,17 +203,10 @@ function Install-MySQL {
     
     Write-Log "Installing MySQL 8.0..."
     
-    # Prompt for MySQL root password if not provided
+    # Set MySQL root password automatically
     if (-not $MySQLRootPassword) {
-        do {
-            $MySQLRootPassword = Read-Host "Enter MySQL root password (minimum 8 characters)"
-        } while ($MySQLRootPassword.Length -lt 8)
-        
-        $confirmPassword = Read-Host "Confirm MySQL root password"
-        if ($MySQLRootPassword -ne $confirmPassword) {
-            Write-Log "Passwords do not match. Exiting." "ERROR"
-            exit 1
-        }
+        $MySQLRootPassword = "Canteen@2026"
+        Write-Log "Setting MySQL root password to: $MySQLRootPassword"
     }
     
     # Download MySQL ZIP archive instead of installer (more reliable)
