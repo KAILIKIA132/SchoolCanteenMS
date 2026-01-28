@@ -1,131 +1,112 @@
-#requires -version 5.1
-<#
-.SYNOPSIS
-    Database connection test script for Push Demo application
-.DESCRIPTION
-    Tests MySQL database connectivity and verifies configuration settings.
-.PARAMETER ConfigPath
-    Path to config.xml file (defaults to standard location)
-.PARAMETER Verbose
-    Show detailed connection information
-.EXAMPLE
-    .\test-database-connection.ps1
-    .\test-database-connection.ps1 -Verbose
-.NOTES
-    Author: Generated for Push Demo Project
-    Requires: PowerShell 5.1+
-#>
+# Database Connection Test Script for Push Demo
+# Tests MySQL connectivity and configuration
 
 param(
-    [string]$ConfigPath = "C:\Meal_Management\SchoolCanteenMS\WebContent\WEB-INF\classes\config.xml",
-    [switch]$Verbose
+    [string]$ConfigPath = "C:\Meal_Management\SchoolCanteenMS\WebContent\WEB-INF\classes\config.xml"
 )
 
-# Colors for output
-function Write-ColorOutput($ForegroundColor, $Message) {
-    $host.UI.RawUI.ForegroundColor = $ForegroundColor
-    Write-Host $Message
-    $host.UI.RawUI.ForegroundColor = "White"
+function Write-Status {
+    param([string]$Message, [string]$Type = "INFO")
+    
+    switch ($Type) {
+        "SUCCESS" { Write-Host "✓ $Message" -ForegroundColor Green }
+        "ERROR" { Write-Host "✗ $Message" -ForegroundColor Red }
+        "WARNING" { Write-Host "⚠ $Message" -ForegroundColor Yellow }
+        "INFO" { Write-Host "  $Message" -ForegroundColor Cyan }
+        default { Write-Host "  $Message" }
+    }
 }
 
-# Main execution
-Write-ColorOutput Green "=========================================="
-Write-ColorOutput Green "  Database Connection Test"
-Write-ColorOutput Green "=========================================="
+Write-Host "==========================================" -ForegroundColor Green
+Write-Host "  Database Connection Test" -ForegroundColor Green
+Write-Host "==========================================" -ForegroundColor Green
 Write-Host ""
 
-# Check if config file exists
+# Check config file
 if (-not (Test-Path $ConfigPath)) {
-    Write-ColorOutput Red "✗ Config file not found: $ConfigPath"
-    Write-Host "Please specify the correct path to config.xml"
+    Write-Status "Config file not found: $ConfigPath" "ERROR"
+    Write-Host "Please check the path and try again."
     exit 1
 }
 
-Write-ColorOutput Cyan "Reading configuration from: $ConfigPath"
+Write-Status "Config file found" "SUCCESS"
 Write-Host ""
 
-# Parse config.xml
 try {
+    # Parse config.xml
     [xml]$config = Get-Content $ConfigPath
-    
-    $driver = $config.root.databaseconnect.driverclass
     $url = $config.root.databaseconnect.url
     $username = $config.root.databaseconnect.user
     $password = $config.root.databaseconnect.password
     
-    Write-ColorOutput Green "Configuration loaded successfully"
+    Write-Status "Configuration loaded successfully" "SUCCESS"
     Write-Host ""
     
-    if ($Verbose) {
-        Write-Host "Driver: $driver"
-        Write-Host "URL: $url" 
-        Write-Host "Username: $username"
-        Write-Host "Password: $($password.Substring(0, [Math]::Min(3, $password.Length)))***"
-        Write-Host ""
-    }
-    
-    # Extract database name from URL
+    # Extract database name
     if ($url -match "jdbc:mysql://[^/]+/([^?]+)") {
         $database = $matches[1]
-        Write-ColorOutput Cyan "Testing connection to database: $database"
+        Write-Status "Testing connection to database: $database" "INFO"
         Write-Host ""
         
-        # Test MySQL connection using command line
+        # Test MySQL connection
         $mysqlPath = "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe"
         
         if (Test-Path $mysqlPath) {
-            Write-ColorOutput Cyan "Testing with MySQL command line..."
+            Write-Status "Testing with MySQL command line..." "INFO"
             
             # Test basic connection
-            $testResult = & $mysqlPath -u $username -p$password -e "SELECT 'Connection successful' as status, DATABASE() as current_db;" $database 2>$null
+            $testCmd = "& `"$mysqlPath`" -u $username -p$password -e `"SELECT 'Connection successful' as status, DATABASE() as current_db;`" $database 2>`$null"
+            $result = Invoke-Expression $testCmd
             
             if ($LASTEXITCODE -eq 0) {
-                Write-ColorOutput Green "✓ Database connection successful"
-                Write-ColorOutput Green "✓ Connected to database: $database"
+                Write-Status "Database connection successful" "SUCCESS"
+                Write-Status "Connected to database: $database" "SUCCESS"
                 
                 # Test table existence
-                $tableResult = & $mysqlPath -u $username -p$password -e "SHOW TABLES LIKE 'user_info';" $database 2>$null
-                if ($tableResult -and $tableResult -match "user_info") {
-                    Write-ColorOutput Green "✓ Required tables exist"
+                $tableCmd = "& `"$mysqlPath`" -u $username -p$password -e `"SHOW TABLES LIKE 'user_info';`" $database 2>`$null"
+                $tableResult = Invoke-Expression $tableCmd
+                
+                if ($tableResult -and ($tableResult -join "`n") -match "user_info") {
+                    Write-Status "Required tables exist" "SUCCESS"
                 } else {
-                    Write-ColorOutput Yellow "⚠ Required tables may be missing"
+                    Write-Status "Required tables may be missing" "WARNING"
                 }
                 
                 Write-Host ""
-                Write-ColorOutput Green "=========================================="
-                Write-ColorOutput Green "  Database Connection Test PASSED"
-                Write-ColorOutput Green "=========================================="
+                Write-Host "==========================================" -ForegroundColor Green
+                Write-Host "  Database Connection Test PASSED" -ForegroundColor Green
+                Write-Host "==========================================" -ForegroundColor Green
                 Write-Host ""
                 Write-Host "Your database configuration is working correctly."
                 Write-Host "The Push Demo application should be able to connect."
             } else {
-                Write-ColorOutput Red "✗ Database connection failed"
-                throw "Connection test failed"
+                throw "Database connection failed"
             }
         } else {
-            Write-ColorOutput Red "✗ MySQL command line tool not found at: $mysqlPath"
+            Write-Status "MySQL command line tool not found at: $mysqlPath" "ERROR"
             Write-Host "Please verify MySQL installation path."
             exit 1
         }
     } else {
-        Write-ColorOutput Red "✗ Could not parse database name from URL: $url"
+        Write-Status "Could not parse database name from URL: $url" "ERROR"
+        exit 1
     }
 }
 catch {
     Write-Host ""
-    Write-ColorOutput Red "=========================================="
-    Write-ColorOutput Red "  Database Connection Test FAILED"
-    Write-ColorOutput Red "=========================================="
+    Write-Host "==========================================" -ForegroundColor Red
+    Write-Host "  Database Connection Test FAILED" -ForegroundColor Red
+    Write-Host "==========================================" -ForegroundColor Red
     Write-Host ""
     Write-Host "Error: $($_.Exception.Message)"
     Write-Host ""
     Write-Host "Please check your database configuration:"
-    Write-Host "1. Verify MySQL service is running"
+    Write-Host "1. Verify MySQL service is running (net start MySQL80)"
     Write-Host "2. Check database credentials in config.xml"
-    Write-Host "3. Ensure database '$database' exists"
+    Write-Host "3. Ensure database exists"
     Write-Host "4. Verify MySQL is accessible on localhost:3306"
 }
 
 Write-Host ""
-Write-ColorOutput Gray "Press any key to exit..."
+Write-Host "Press any key to exit..." -ForegroundColor Gray
 $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
