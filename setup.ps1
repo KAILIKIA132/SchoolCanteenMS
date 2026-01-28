@@ -289,28 +289,58 @@ default-character-set=utf8mb4
         Set-Service -Name "MySQL80" -StartupType Automatic
         
         # Wait a moment for MySQL service to be ready
-        Start-Sleep -Seconds 5
+        Start-Sleep -Seconds 10
         
         # Set root password - with ZIP distribution, we need to connect with the auto-generated temp password first
         Write-Log "Setting MySQL root password..."
         
         # First, find the temporary password from the error log
-        $tempPassword = Get-Content "$dataDir\$env:COMPUTERNAME.err" | Select-String "temporary password" | ForEach-Object { ($_ -split "root@localhost: ")[1] }
+        $errorLogPath = "$dataDir\$env:COMPUTERNAME.err"
+        Write-Log "Looking for temporary password in: $errorLogPath"
+        
+        if (Test-Path $errorLogPath) {
+            $tempPassword = Get-Content $errorLogPath | Select-String "temporary password" | ForEach-Object { ($_ -split "root@localhost: ")[1] }
+        }
+        
+        $mysqlCmd = "$MySQLBinPath\mysql.exe"
         
         if ($tempPassword) {
             Write-Log "Found temporary password, changing to user-specified password..."
-            $mysqlCmd = "$MySQLBinPath\mysql.exe"
             $changePasswordCmd = "ALTER USER 'root'@'localhost' IDENTIFIED BY '$MySQLRootPassword'; FLUSH PRIVILEGES;"
             
             # Execute the password change command using the temporary password
-            echo $changePasswordCmd | & $mysqlCmd -u root -p$tempPassword --connect-expired-password
-        } else {
+            try {
+                echo $changePasswordCmd | & $mysqlCmd -u root -p$tempPassword --connect-expired-password
+                Write-Log "Password changed successfully using temporary password"
+            } catch {
+                Write-Log "Failed to change password using temporary password: $($_.Exception.Message)" -Level WARN
+                $tempPassword = $null  # Reset to try --skip-password method
+            }
+        }
+        
+        if (-not $tempPassword) {
             Write-Log "Could not find temporary password, attempting with --skip-password..." -Level WARN
             $secureInstallCmd = @"
 ALTER USER 'root'@'localhost' IDENTIFIED BY '$MySQLRootPassword';
 FLUSH PRIVILEGES;
 "@
-            echo $secureInstallCmd | & $mysqlCmd -u root --skip-password
+            try {
+                echo $secureInstallCmd | & $mysqlCmd -u root --skip-password
+                Write-Log "Password set successfully using --skip-password"
+            } catch {
+                Write-Log "Failed to set password using --skip-password: $($_.Exception.Message)" -Level ERROR
+                throw "Failed to set MySQL root password"
+            }
+        }
+        
+        # Test the connection with the new password
+        Write-Log "Testing MySQL connection with new password..."
+        try {
+            & $mysqlCmd -u root -p$MySQLRootPassword -e "SELECT 1;" | Out-Null
+            Write-Log "MySQL connection test successful"
+        } catch {
+            Write-Log "MySQL connection test failed: $($_.Exception.Message)" -Level ERROR
+            throw "Failed to verify MySQL root password"
         }
         
         Write-Log "MySQL installation completed"
@@ -435,24 +465,44 @@ function Setup-Database {
     $mysqlCmd = "$MySQLBinPath\mysql.exe"
     
     try {
+        # Wait for MySQL service to be fully ready
+        Write-Log "Waiting for MySQL service to be ready..."
+        Start-Sleep -Seconds 5
+        
+        # Test connection first
+        Write-Log "Testing MySQL connection..."
+        $testResult = & $mysqlCmd -u root -p$MySQLRootPassword -e "SELECT 1;" 2>&1
+        if ($LASTEXITCODE -ne 0) {
+            Write-Log "MySQL connection test failed: $($testResult -join ' ')" "ERROR"
+            throw "Cannot connect to MySQL with provided password"
+        }
+        Write-Log "MySQL connection successful"
+        
         # Create database
+        Write-Log "Creating database..."
         $createDbCmd = "CREATE DATABASE IF NOT EXISTS pushdemo DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;"
-        echo $createDbCmd | & $mysqlCmd -u root -p$MySQLRootPassword
+        $result = & $mysqlCmd -u root -p$MySQLRootPassword -e $createDbCmd 2>&1
+        if ($LASTEXITCODE -ne 0) {
+            Write-Log "Failed to create database: $($result -join ' ')" "ERROR"
+            throw "Database creation failed"
+        }
+        Write-Log "Database created successfully"
         
         # Import schema
         if (Test-Path "$InstallPath\doc\pushdemo.sql") {
+            Write-Log "Importing database schema..."
             $result = & $mysqlCmd -u root -p$MySQLRootPassword pushdemo -e "source $InstallPath\doc\pushdemo.sql" 2>&1
             if ($LASTEXITCODE -ne 0) {
                 Write-Log "Failed to import database schema: $($result -join ' ')" "ERROR"
-                throw $result
+                throw "Schema import failed"
             }
-            Write-Log "Database schema imported"
+            Write-Log "Database schema imported successfully"
         }
         else {
             Write-Log "Database schema file not found, skipping import" "WARN"
         }
         
-        Write-Log "Database setup completed"
+        Write-Log "Database setup completed successfully"
     }
     catch {
         Write-Log "Database setup failed: $($_.Exception.Message)" "ERROR"
