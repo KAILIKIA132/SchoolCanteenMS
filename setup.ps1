@@ -599,14 +599,7 @@ function Configure-Application {
         Remove-Item $appPath -Recurse -Force
     }
     
-    # Deploy application to Tomcat with crawfordcanteen name instead of pushdemo
-    $crawfordCanteenPath = "$webappsPath\crawfordcanteen"
-    
-    if (Test-Path $crawfordCanteenPath) {
-        Remove-Item $crawfordCanteenPath -Recurse -Force
-    }
-    
-    Copy-Item "$InstallPath\WebContent" $crawfordCanteenPath -Recurse -Force
+    Copy-Item "$InstallPath\WebContent" $appPath -Recurse -Force
     Write-Log "Application deployed to Tomcat"
     
     Write-Log "Application configuration completed"
@@ -755,7 +748,7 @@ try {
     Write-Host "Tomcat Path: $TomcatInstallPath"
     Write-Host "Python Virtual Environment: $PythonPath"
     Write-Host ""
-    Write-Host "Access the application at: http://localhost:8080/crawfordcanteen"
+    Write-Host "Access the application at: http://localhost:8080/pushdemo"
     Write-Host ""
     Write-Host "Startup Scripts:"
     Write-Host "  - $InstallPath\start-services.bat"
