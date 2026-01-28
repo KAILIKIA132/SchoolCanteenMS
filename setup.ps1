@@ -62,7 +62,8 @@ $LogPath = "$InstallPath\setup.log"
 $TempPath = "$env:TEMP\pushdemo_setup"
 $JavaInstallPath = "C:\Program Files\Eclipse Adoptium"
 $TomcatInstallPath = "C:\apache-tomcat-$TomcatVersion"
-$MySQLInstallPath = "$env:ProgramFiles\MySQL\MySQL Server 8.0"
+$MySQLInstallPath = "$env:ProgramFiles\MySQL\MySQL-8.0"
+$MySQLBinPath = "$env:ProgramFiles\MySQL\MySQL-8.0\bin"
 $PythonPath = "$InstallPath\venv"
 
 # Create log directory
@@ -158,8 +159,8 @@ function Install-Java {
     Write-Log "Installing Java $JavaVersion..."
     
     # Download Java
-    $javaUrl = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u$($JavaVersion.Substring(2).Replace('.', ''))/OpenJDK8U-jdk_x64_windows_hotspot_$($JavaVersion.Replace('.', 'u')).msi"
-    $javaInstaller = "OpenJDK8U-jdk_x64_windows_hotspot_$($JavaVersion.Replace('.', 'u')).msi"
+    $javaUrl = "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u$($JavaVersion.Split('.')[2])-b08/OpenJDK8U-jdk_x64_windows_hotspot_$($JavaVersion.Replace('.', 'u'))b08.msi"
+    $javaInstaller = "OpenJDK8U-jdk_x64_windows_hotspot_$($JavaVersion.Replace('.', 'u'))b08.msi"
     
     try {
         Invoke-DownloadAndExtract -Url $javaUrl -DestinationPath $TempPath -FileName $javaInstaller
@@ -215,49 +216,109 @@ function Install-MySQL {
         }
     }
     
-    # Download MySQL
-    $mysqlUrl = "https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-8.0.35.0.msi"
-    $mysqlInstaller = "mysql-installer-community-8.0.35.0.msi"
+    # Download MySQL ZIP archive instead of installer (more reliable)
+    $mysqlUrls = @(
+        "https://cdn.mysql.com/archives/mysql-8.0/mysql-8.0.36-winx64.zip",
+        "https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.36-winx64.zip"
+    )
+    $mysqlZip = "mysql-8.0.36-winx64.zip"
+    $MySQLInstallPath = "$env:ProgramFiles\MySQL\MySQL-8.0"
+    
+    $downloadSuccess = $false
+    foreach ($url in $mysqlUrls) {
+        try {
+            Write-Log "Attempting to download MySQL from: $url"
+            $mysqlUrl = $url
+            Invoke-DownloadAndExtract -Url $mysqlUrl -DestinationPath $TempPath -FileName $mysqlZip
+            $downloadSuccess = $true
+            break
+        }
+        catch {
+            Write-Log "Failed to download from: $url. Trying next URL..." -Level WARN
+            continue
+        }
+    }
+    
+    if (-not $downloadSuccess) {
+        throw "All MySQL download URLs failed. Please download MySQL manually and place it in the TempPath."
+    }
     
     try {
-        Invoke-DownloadAndExtract -Url $mysqlUrl -DestinationPath $TempPath -FileName $mysqlInstaller
         
-        Write-Log "Installing MySQL..."
-        $installArgs = @(
-            "/i", "$TempPath\$mysqlInstaller"
-            "/quiet", "INSTALLDIR=`"$MySQLInstallPath`""
-        )
-        
-        Start-Process -FilePath "msiexec.exe" -ArgumentList $installArgs -Wait -NoNewWindow
+        # Extract MySQL ZIP to destination
+        Write-Log "Extracting MySQL..."
+        Expand-Archive -Path "$TempPath\$mysqlZip" -DestinationPath "$env:ProgramFiles\MySQL" -Force
+                
+        # Rename extracted folder to match our expected path
+        $extractedFolder = Get-ChildItem "$env:ProgramFiles\MySQL" -Directory | Where-Object { $_.Name -like "mysql-*" }
+        if ($extractedFolder) {
+            Rename-Item -Path $extractedFolder.FullName -NewName "MySQL-8.0"
+        }
         
         # Configure MySQL
-        Write-Log "Configuring MySQL..."
+        $mysqlBinPath = "$MySQLInstallPath\bin"
+        $dataDir = "$MySQLInstallPath\data"
+        
+        # Create data directory
+        if (!(Test-Path $dataDir)) {
+            New-Item -ItemType Directory -Path $dataDir -Force | Out-Null
+        }
+        
         $configScript = @"
-[mysql]
-default-character-set=utf8
-
 [mysqld]
 port=3306
-character-set-server=utf8
-default-storage-engine=INNODB
-sql-mode=`"STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION`"
+datadir=$dataDir
+basedir=$MySQLInstallPath
+character-set-server=utf8mb4
+collation-server=utf8mb4_unicode_ci
+sql-mode="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"
+
+[mysql]
+default-character-set=utf8mb4
+
+[client]
+port=3306
+default-character-set=utf8mb4
 "@
         
         $configScript | Out-File -FilePath "$MySQLInstallPath\my.ini" -Encoding ASCII
+        
+        # Initialize MySQL data directory
+        Write-Log "Initializing MySQL data directory..."
+        Start-Process -FilePath "$mysqlBinPath\mysqld.exe" -ArgumentList "--initialize", "--console", "--datadir=$dataDir", "--basedir=$MySQLInstallPath" -Wait -NoNewWindow
+        
+        # Install MySQL as a Windows service
+        Write-Log "Installing MySQL as Windows service..."
+        Start-Process -FilePath "$mysqlBinPath\mysqld.exe" -ArgumentList "--install", "MySQL80" -Wait -NoNewWindow
         
         # Start MySQL service
         Start-Service -Name "MySQL80" -ErrorAction SilentlyContinue
         Set-Service -Name "MySQL80" -StartupType Automatic
         
-        # Set root password
+        # Wait a moment for MySQL service to be ready
+        Start-Sleep -Seconds 5
+        
+        # Set root password - with ZIP distribution, we need to connect with the auto-generated temp password first
         Write-Log "Setting MySQL root password..."
-        $mysqlCmd = "$MySQLInstallPath\bin\mysql.exe"
-        $secureInstallCmd = @"
+        
+        # First, find the temporary password from the error log
+        $tempPassword = Get-Content "$dataDir\$env:COMPUTERNAME.err" | Select-String "temporary password" | ForEach-Object { ($_ -split "root@localhost: ")[1] }
+        
+        if ($tempPassword) {
+            Write-Log "Found temporary password, changing to user-specified password..."
+            $mysqlCmd = "$MySQLBinPath\mysql.exe"
+            $changePasswordCmd = "ALTER USER 'root'@'localhost' IDENTIFIED BY '$MySQLRootPassword'; FLUSH PRIVILEGES;"
+            
+            # Execute the password change command using the temporary password
+            echo $changePasswordCmd | & $mysqlCmd -u root -p$tempPassword --connect-expired-password
+        } else {
+            Write-Log "Could not find temporary password, attempting with --skip-password..." -Level WARN
+            $secureInstallCmd = @"
 ALTER USER 'root'@'localhost' IDENTIFIED BY '$MySQLRootPassword';
 FLUSH PRIVILEGES;
 "@
-        
-        echo $secureInstallCmd | & $mysqlCmd -u root --skip-password
+            echo $secureInstallCmd | & $mysqlCmd -u root --skip-password
+        }
         
         Write-Log "MySQL installation completed"
     }
@@ -378,7 +439,7 @@ function Setup-Project {
 function Setup-Database {
     Write-Log "Setting up database..."
     
-    $mysqlCmd = "$MySQLInstallPath\bin\mysql.exe"
+    $mysqlCmd = "$MySQLBinPath\mysql.exe"
     
     try {
         # Create database
