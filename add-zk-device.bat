@@ -23,8 +23,8 @@ echo Device SN: %DEVICE_SN%
 echo Device Name: %DEVICE_NAME%
 echo.
 
-REM Insert device into database using direct connection
-%MYSQL_PATH% -u root -pCanteen@2026 -e "INSERT INTO device_info (device_sn, device_name, alias_name, state, last_activity, trans_times, trans_interval) VALUES ('%DEVICE_SN%', '%DEVICE_NAME%', '%DEVICE_NAME%', 'Offline', NOW(), '00:00;12:00', 60) ON DUPLICATE KEY UPDATE device_name='%DEVICE_NAME%', alias_name='%DEVICE_NAME%', last_activity=NOW();" pushdemo 2>nul
+REM Insert device into database with correct column names
+%MYSQL_PATH% -u root -pCanteen@2026 -e "INSERT INTO device_info (DEVICE_SN, DEVICE_NAME, ALIAS_NAME, STATE, IPADDRESS, TRANS_INTERVAL) VALUES ('%DEVICE_SN%', '%DEVICE_NAME%', '%DEVICE_NAME%', 'Offline', '127.0.0.1', 1) ON DUPLICATE KEY UPDATE DEVICE_NAME='%DEVICE_NAME%', ALIAS_NAME='%DEVICE_NAME%', STATE='Offline';" pushdemo 2>nul
 
 if %errorlevel% equ 0 (
     echo.
@@ -36,8 +36,12 @@ if %errorlevel% equ 0 (
     echo.
     echo You can now:
     echo 1. Connect your ZK device to the server
-    echo 2. Restart Tomcat services
-    echo 3. Access the application at http://localhost:8080/pushdemo
+    echo 2. Configure the device to connect to your server IP
+    echo 3. Restart Tomcat services
+    echo 4. Access the application at http://localhost:8080/pushdemo
+    echo.
+    echo To verify the device was added:
+    echo 5. Run: check-database-content.bat
     echo.
 ) else (
     echo.
@@ -46,10 +50,7 @@ if %errorlevel% equ 0 (
     echo ==========================================
     echo.
     echo There was an error adding the device to the database.
-    echo Please check:
-    echo 1. Database connection
-    echo 2. Table structure
-    echo 3. Device serial number format
+    echo Please check the error details above.
     echo.
 )
 
