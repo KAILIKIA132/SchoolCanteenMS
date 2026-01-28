@@ -96,7 +96,7 @@ function Write-Log {
     $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
     $logMessage = "[$timestamp] [$Level] $Message"
     Write-Host $logMessage
-    Add-Content -Path $LogPath -Value $logMessage
+    # Add-Content -Path $LogPath -Value $logMessage  # Disabled to avoid file lock conflict with Start-Transcript
 }
 
 # Function to check if a command exists
