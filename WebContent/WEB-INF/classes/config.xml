@@ -2,9 +2,9 @@
 <root>
     <databaseconnect>
         <driverclass>com.mysql.cj.jdbc.Driver</driverclass>
-		<url>jdbc:mysql://mysql:3306/pushdemo?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true</url>
+		<url>jdbc:mysql://localhost:3306/pushdemo?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true</url>
         <user>root</user>
-        <password>root</password>
+        <password>Canteen@2026</password>
     </databaseconnect>
     <option>
     	<pagesize>10</pagesize>
