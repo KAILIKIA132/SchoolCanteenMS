@@ -198,6 +198,19 @@ function Install-MySQL {
     
     if (Get-Service -Name "MySQL80" -ErrorAction SilentlyContinue) {
         Write-Log "MySQL service already exists"
+        # Even if MySQL exists, we still need to get the root password
+        if (-not $MySQLRootPassword) {
+            Write-Log "MySQL already installed, but root password needed for database setup"
+            do {
+                $MySQLRootPassword = Read-Host "Enter existing MySQL root password (minimum 8 characters)"
+            } while ($MySQLRootPassword.Length -lt 8)
+            
+            $confirmPassword = Read-Host "Confirm MySQL root password"
+            if ($MySQLRootPassword -ne $confirmPassword) {
+                Write-Log "Passwords do not match. Exiting." "ERROR"
+                exit 1
+            }
+        }
         return
     }
     
