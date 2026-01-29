@@ -2,24 +2,7 @@
 <#
 .SYNOPSIS
     Updates an EXISTING Push Demo installation with recent changes.
-
-.DESCRIPTION
-    Use this script if you have already deployed the application and just want to apply
-    the latest changes (Admin Table, Login Page, Security Interceptors).
-
-    Actions:
-    1.  Compiles the latest Java code.
-    2.  Updates the Database (Force resets admin user).
-    3.  Updates the application files in Tomcat.
-    4.  Restarts Tomcat.
-
-.PARAMETER TomcatHome
-    Path to existing Tomcat (e.g. C:\apache-tomcat-9.0.84)
-.PARAMETER MySQLRootPassword
-    MySQL Root Password.
-
-.EXAMPLE
-    .\update_existing_install.ps1 -TomcatHome "C:\apache-tomcat-9.0.84" -MySQLRootPassword "root"
+    FORCES JAVA 8 COMPATIBILITY AND CLEAN BUILD.
 #>
 
 param(
@@ -39,7 +22,13 @@ function Print-Msg {
     Write-Host -ForegroundColor $color "[$((Get-Date).ToString('HH:mm:ss'))] $msg"
 }
 
-Print-Msg "Starting Update Process..." "Green"
+# 0. Clean Inputs
+$TomcatHome = $TomcatHome -replace '"', ''
+if (-not (Test-Path $TomcatHome)) {
+    Write-Error "TomcatHome does not exist: $TomcatHome"
+}
+
+Print-Msg "Starting Update Process (CLEAN BUILD)..." "Green"
 
 # 1. Compile Latest Code
 Print-Msg "Step 1: Compiling Latest Code..."
@@ -48,8 +37,12 @@ $WebInfDir = "$ProjectPath\WebContent\WEB-INF"
 $ClassesDir = "$WebInfDir\classes"
 $LibDir = "$WebInfDir\lib"
 
-# Ensure output directory exists
-if (-not (Test-Path $ClassesDir)) { New-Item -ItemType Directory -Path $ClassesDir | Out-Null }
+# CLEAN: Delete existing classes to prevent version mixing
+if (Test-Path $ClassesDir) {
+    Print-Msg "Cleaning old class files..." "Gray"
+    Remove-Item -Path $ClassesDir -Recurse -Force
+}
+New-Item -ItemType Directory -Path $ClassesDir | Out-Null
 
 # Get Sources
 $fs = Get-ChildItem -Path $SrcDir -Recurse -Filter "*.java"
@@ -63,12 +56,16 @@ $Classpath = ($LibJars -join ";") + ";" + $TomcatJars
 
 Write-Host "Classpath length: $($Classpath.Length)" -ForegroundColor Gray
 
+# Compile
 try {
-    Write-Host "Java Version check:" -ForegroundColor Gray
+    Write-Host "Checking Compiler Version:" -ForegroundColor Gray
     & javac -version
 
-    # Force Java 8 compatibility (source/target 1.8) to prevent version mismatch on Tomcat
+    Print-Msg "Compiling with -source 1.8 -target 1.8 (Java 8 Compatibility)..." "Yellow"
+    
+    # Run Javac
     & javac -source 1.8 -target 1.8 -encoding UTF-8 -cp $Classpath -d $ClassesDir "@$ProjectPath\sources.txt"
+    
     if ($LASTEXITCODE -ne 0) { throw "Javac exited with code $LASTEXITCODE" }
     Print-Msg "Compilation Successful." "Green"
 } catch {
@@ -86,14 +83,14 @@ Get-ChildItem -Path $SrcDir -Recurse -Include "*.xml", "*.properties" | ForEach-
     Copy-Item $_.FullName -Destination $dest -Force
 }
 
-# 1b. Update config.xml with provided credentials
+# 1b. Update config.xml
 Print-Msg "Configuring Database Connection..." "Gray"
 $ConfigXml = "$ClassesDir\config.xml"
 if (Test-Path $ConfigXml) {
     [xml]$xml = Get-Content $ConfigXml
     $xml.root.databaseconnect.user = "root"
     $xml.root.databaseconnect.password = $MySQLRootPassword
-    # Ensure URL points to localhost (fix if coming from docker config)
+    # Fix URL
     $currentUrl = $xml.root.databaseconnect.url
     if ($currentUrl -match "mysql:3306") {
         $xml.root.databaseconnect.url = $currentUrl.Replace("mysql:3306", "localhost:3306")
@@ -105,16 +102,9 @@ if (Test-Path $ConfigXml) {
 # 2. Update Database
 Print-Msg "Step 2: Updating Database Schema..."
 $AdminSql = "$ProjectPath\sql\create_admin_table.sql"
-
-# Strip quotes from TomcatHome if present
-$TomcatHome = $TomcatHome -replace '"', ''
-
-# 2. Update Database
-Print-Msg "Step 2: Updating Database Schema..."
-$AdminSql = "$ProjectPath\sql\create_admin_table.sql"
 $ResetSql = "$ProjectPath\sql\force_reset_user.sql"
 
-# Auto-detect MySQL if not in PATH
+# Auto-detect MySQL
 $MySqlExe = "mysql"
 try { Get-Command mysql -ErrorAction Stop | Out-Null } catch {
     $CommonPaths = @(
@@ -126,7 +116,7 @@ try { Get-Command mysql -ErrorAction Stop | Out-Null } catch {
     }
 }
 
-# Try running Force Reset first
+# Try Force Reset (assumes table exists)
 $ResetSuccess = $false
 if (Test-Path $ResetSql) {
     try {
@@ -135,14 +125,12 @@ if (Test-Path $ResetSql) {
             Print-Msg "Admin User FORCED RESET successfully." "Green"
             $ResetSuccess = $true
         } else {
-            Write-Warning "Force reset failed (Exit Code $($proc.ExitCode)). Attempting to create table..."
+            Write-Warning "Force reset failed. Attempting to create table..."
         }
-    } catch {
-        Write-Warning "Failed to execute SQL command."
-    }
+    } catch { Write-Warning "SQL Error" }
 }
 
-# If reset failed (likely table missing), run Create Table
+# Fallback: Create Table
 if (-not $ResetSuccess -and (Test-Path $AdminSql)) {
     try {
         $proc = Start-Process -FilePath "cmd.exe" -ArgumentList "/c `"$MySqlExe -u root -p$MySQLRootPassword -P 3306 pushdemo < `"$AdminSql`"`"" -Wait -PassThru -NoNewWindow
@@ -151,33 +139,29 @@ if (-not $ResetSuccess -and (Test-Path $AdminSql)) {
         } else {
              Write-Error "Failed to create Admin Table. Check your database connection."
         }
-    } catch {
-         Write-Error "Failed to apply SQL schema."
-    }
+    } catch { Write-Error "Failed to apply SQL schema." }
 }
 
 # 3. Update Tomcat Deployment
 Print-Msg "Step 3: Updating Tomcat Deployment..."
 $WebAppDir = "$TomcatHome\webapps\pushdemo"
 
-# Create directory if it doesn't exist (Full deployment fallback)
 if (-not (Test-Path $WebAppDir)) {
     Print-Msg "Application folder not found. Creating it..." "Gray"
     New-Item -ItemType Directory -Path $WebAppDir -Force | Out-Null
 }
 
-# Overwrite WebContent files (JSPs, CSS, WEB-INF)
+# Overwrite WebContent files
 Print-Msg "Copying new files to $WebAppDir..." "Gray"
 Copy-Item -Path "$ProjectPath\WebContent\*" -Destination $WebAppDir -Recurse -Force
 
 Print-Msg "Step 4: Restarting Tomcat..."
 $Service = Get-Service -Name "TomcatPushDemo" -ErrorAction SilentlyContinue
-
 if ($Service) {
     Restart-Service -Name "TomcatPushDemo"
     Print-Msg "Tomcat Service Restarted." "Green"
 } else {
-    Write-Warning "Tomcat Service 'TomcatPushDemo' not found. You may need to restart Tomcat manually."
+    Write-Warning "Tomcat Service 'TomcatPushDemo' not found. Please restart manually."
 }
 
 Print-Msg "Update Complete! Please refresh your browser." "Green"
