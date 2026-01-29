@@ -32,7 +32,7 @@ public class LoginAction extends ActionSupport implements ServletRequestAware, S
 		// First test database connection
 		BaseDao baseDao = new BaseDao();
 		if (!baseDao.testConnection()) {
-			addActionError("Database connection failed. Please check your database settings.");
+			addActionError("CRITICAL ERROR: Unable to connect to the Database. Check logs.");
 			return "login";
 		}
 		
