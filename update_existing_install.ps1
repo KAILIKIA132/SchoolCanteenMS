@@ -64,7 +64,11 @@ $Classpath = ($LibJars -join ";") + ";" + $TomcatJars
 Write-Host "Classpath length: $($Classpath.Length)" -ForegroundColor Gray
 
 try {
-    & javac -encoding UTF-8 -cp $Classpath -d $ClassesDir "@$ProjectPath\sources.txt"
+    Write-Host "Java Version check:" -ForegroundColor Gray
+    & javac -version
+
+    # Force Java 8 compatibility (source/target 1.8) to prevent version mismatch on Tomcat
+    & javac -source 1.8 -target 1.8 -encoding UTF-8 -cp $Classpath -d $ClassesDir "@$ProjectPath\sources.txt"
     if ($LASTEXITCODE -ne 0) { throw "Javac exited with code $LASTEXITCODE" }
     Print-Msg "Compilation Successful." "Green"
 } catch {
