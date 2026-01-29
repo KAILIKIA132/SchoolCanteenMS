@@ -76,7 +76,44 @@ This guide provides detailed instructions for deploying the Push Demo biometric 
    - Edit the `PATH` system variable
    - Add: `%CATALINA_HOME%\bin`
 
-## 📦 Project Deployment Steps
+## 📦 Automated Deployment (Existing Infrastructure)
+    
+If you already have Java 8, MySQL 8, and Tomcat 9 installed, use the `deploy_preinstalled_env.ps1` script to automate the entire build and deploy process.
+
+**Usage:**
+1. Open PowerShell as Administrator.
+2. Run the script with your paths:
+```powershell
+.\deploy_preinstalled_env.ps1 -TomcatHome "C:\Path\To\Tomcat" -MySQLRootPassword "your_password"
+```
+
+This script will:
+- Compile the Java source code (requires `javac` in PATH).
+- Create the database and tables.
+- Update `config.xml`.
+- Deploy the app to your Tomcat `webapps` folder.
+- Set up the Python virtual environment.
+
+---
+
+## 🔄 Updating Your Existing Deployment
+    
+If you already deployed the application yesterday and just want to apply the latest changes (Login Page, Admin Table, Top Navigation Fixes), use the `update_existing_install.ps1` script.
+
+**Usage:**
+```powershell
+.\update_existing_install.ps1 -TomcatHome "C:\Path\To\Tomcat" -MySQLRootPassword "your_password"
+```
+
+This script will:
+1.  **Run the new SQL** (`create_admin_table.sql`) to add the admin table.
+2.  **Recompile code** to include the new LoginAction and Interceptors.
+3.  **Update JSPs** (login.jsp, top.jsp with the logout fix).
+4.  **Restart Tomcat**.
+
+---
+
+## 📦 Manual Project Deployment Steps
 
 ### 1. Prepare Project Files
 

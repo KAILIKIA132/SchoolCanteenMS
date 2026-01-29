@@ -143,4 +143,13 @@ public class ManagerFactory {
 		
 		return advManager;
 	}
+	
+	private static AdminUserManager adminUserManager = null;
+	
+	public static AdminUserManager getAdminUserManager() {
+		if (null == adminUserManager) {
+			adminUserManager = new AdminUserManager();
+		}
+		return adminUserManager;
+	}
 }

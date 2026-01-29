@@ -7,9 +7,39 @@
 	<constant name="struts.i18n.encoding" value="utf-8"></constant>
 	<constant name="struts.convention.action.scan" value="false"></constant>
 	<constant name="struts.convention.package.locators" value=""></constant>
-	<package name="iclock"  extends="struts-default" >
+	<package name="iclock"  extends="struts-default" namespace="/">
+		
+		<interceptors>
+			<interceptor name="auth" class="com.zk.interceptor.AuthInterceptor"/>
+			<interceptor-stack name="secureStack">
+				<interceptor-ref name="auth"/>
+				<interceptor-ref name="defaultStack"/>
+			</interceptor-stack>
+		</interceptors>
+		
+		<default-interceptor-ref name="secureStack"/>
+		
+		<global-results>
+			<result name="login_required" type="redirect">login.jsp</result>
+		</global-results>
 		
 		<!-- Configure the actions mappings -->
+		<action name="login" class="com.zk.action.LoginAction" method="login">
+			<interceptor-ref name="defaultStack"/>
+			<result name="login">/login.jsp</result>
+		</action>
+		
+		<action name="auth" class="com.zk.action.LoginAction" method="authenticate">
+			<interceptor-ref name="defaultStack"/>
+			<result name="login">/login.jsp</result>
+			<result name="success" type="redirect">deviceAction!deviceList.action</result>
+		</action>
+
+		<action name="logout" class="com.zk.action.LoginAction" method="logout">
+			<interceptor-ref name="defaultStack"/>
+			<result name="login">/login.jsp</result>
+		</action>
+
 		<action name="deviceAction" class="com.zk.action.DeviceAction">
 			<result name="deviceList">/deviceList.jsp</result>
 			<result name="edit">/editDevice.jsp</result>
