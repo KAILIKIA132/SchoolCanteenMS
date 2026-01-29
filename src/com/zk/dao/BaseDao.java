@@ -1,6 +1,7 @@
 package com.zk.dao;
 
 import java.sql.Connection;
+import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -223,6 +224,27 @@ public class BaseDao {
 		}
 
 		return strData;
+	}
+
+	/**
+	 * Test database connection
+	 * @return true if connection is successful, false otherwise
+	 */
+	public boolean testConnection() {
+		try {
+			Connection conn = getConnection(true); // Get fresh connection
+			if (conn != null && !conn.isClosed()) {
+				DatabaseMetaData metaData = conn.getMetaData();
+				logger.info("Database connection test successful. Product: " + metaData.getDatabaseProductName());
+				return true;
+			} else {
+				logger.error("Database connection test failed - connection is null or closed");
+				return false;
+			}
+		} catch (SQLException e) {
+			logger.error("Database connection test failed", e);
+			return false;
+		}
 	}
 
 }

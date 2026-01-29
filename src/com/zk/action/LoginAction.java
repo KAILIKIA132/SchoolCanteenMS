@@ -12,6 +12,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.zk.manager.ManagerFactory;
 import com.zk.po.AdminUser;
 import com.zk.util.SecurityUtil;
+import com.zk.dao.BaseDao;
 
 public class LoginAction extends ActionSupport implements ServletRequestAware, SessionAware {
 	private static final long serialVersionUID = 1L;
@@ -28,6 +29,13 @@ public class LoginAction extends ActionSupport implements ServletRequestAware, S
 	}
 	
 	public String authenticate() {
+		// First test database connection
+		BaseDao baseDao = new BaseDao();
+		if (!baseDao.testConnection()) {
+			addActionError("Database connection failed. Please check your database settings.");
+			return "login";
+		}
+		
 		if (username == null || password == null) {
 			addActionError("Username and password are required");
 			return "login";
