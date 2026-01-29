@@ -29,8 +29,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import com.sun.org.apache.xml.internal.serialize.OutputFormat;
-import com.sun.org.apache.xml.internal.serialize.XMLSerializer;
+// Imports removed for compatibility
 
 public class XMLUtil
 {
@@ -128,95 +127,53 @@ public class XMLUtil
 
     public void ouputXML(String filepath)
     {
-        try
-        {
-            OutputFormat format = new OutputFormat(doc);
-            format.setLineSeparator("\r\n");
-            format.setIndenting(true);
-            format.setEncoding("utf-8");
-            FileWriter fout = new FileWriter(filepath);
-            XMLSerializer serial = new XMLSerializer(fout, format);
-            serial.asDOMSerializer();
-            serial.serialize(doc);
-            fout.close();
-        }
-        catch(Exception e)
-        {
-            e.printStackTrace();
-            logger.error(e);
-        }
+        outputXMLInternal(filepath, "utf-8");
     }
 
     public void ouputXML_ZH(String filepath)
     {
-        try
-        {
-            OutputFormat format = new OutputFormat(doc);
-            format.setLineSeparator("\r\n");
-            format.setIndenting(true);
-            format.setEncoding("GB2312");
-            FileWriter fout = new FileWriter(filepath);
-            XMLSerializer serial = new XMLSerializer(fout, format);
-            serial.asDOMSerializer();
-            serial.serialize(doc);
-            fout.close();
-        }
-        catch(Exception e)
-        {
-            e.printStackTrace();
-            logger.error(e);
-        }
+        outputXMLInternal(filepath, "GB2312");
     }
 
     public void ouputXML_ZH_utf8(String filepath)
     {
-        TransformerFactory trf = TransformerFactory.newInstance();
-        try
-        {
+        outputXMLInternal(filepath, "UTF-8");
+    }
+    
+    private void outputXMLInternal(String filepath, String encoding) {
+        try {
+            TransformerFactory trf = TransformerFactory.newInstance();
             Transformer tf = trf.newTransformer();
             DOMSource source = new DOMSource(doc);
-            tf.setOutputProperty("encoding", "UTF-8");
-            tf.setOutputProperty("indent", "yes");
-            OutputStreamWriter pw = new OutputStreamWriter(new FileOutputStream(filepath), "UTF-8");
+            tf.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, encoding);
+            tf.setOutputProperty(javax.xml.transform.OutputKeys.INDENT, "yes");
+            // Basic indentation settings if supported
+            try {
+                tf.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
+            } catch (IllegalArgumentException ignored) {}
+            
+            OutputStreamWriter pw = new OutputStreamWriter(new FileOutputStream(filepath), encoding);
             StreamResult result = new StreamResult(pw);
             tf.transform(source, result);
-        }
-        catch(TransformerConfigurationException e)
-        {
-            System.out.println(e.getMessage());
-        }
-        catch(IllegalArgumentException e)
-        {
-            System.out.println(e.getMessage());
-        }
-        catch(FileNotFoundException e)
-        {
-            System.out.println(e.getMessage());
-        }
-        catch(TransformerException e)
-        {
-            System.out.println(e.getMessage());
-        }
-        catch(UnsupportedEncodingException e)
-        {
-            System.out.println(e.getMessage());
+            pw.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+            logger.error(e);
         }
     }
 
     public void ouputXML(OutputStream os)
     {
-        try
-        {
-            OutputFormat format = new OutputFormat(doc);
-            format.setLineSeparator("\r\n");
-            format.setIndenting(true);
-            format.setEncoding("utf-8");
-            XMLSerializer serial = new XMLSerializer(os, format);
-            serial.asDOMSerializer();
-            serial.serialize(doc);
-        }
-        catch(Exception e)
-        {
+        try {
+            TransformerFactory trf = TransformerFactory.newInstance();
+            Transformer tf = trf.newTransformer();
+            DOMSource source = new DOMSource(doc);
+            tf.setOutputProperty(javax.xml.transform.OutputKeys.ENCODING, "utf-8");
+            tf.setOutputProperty(javax.xml.transform.OutputKeys.INDENT, "yes");
+            
+            StreamResult result = new StreamResult(os);
+            tf.transform(source, result);
+        } catch (Exception e) {
             logger.error(e);
         }
     }
