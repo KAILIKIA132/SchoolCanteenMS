@@ -119,6 +119,7 @@ public class DeviceAction implements ServletRequestAware,ServletResponseAware{
 			/**Search record lists based on page conditions and page information*/
 			List<DeviceInfo> list = ManagerFactory.getDeviceManager().getDeviceInfoListForPage(deviceSn, startRec, PagenitionUtil.getPageSize());
 			if (null != list) {
+				logger.info("DeviceAction received " + list.size() + " devices");
 				for (DeviceInfo deviceInfo : list) {
 					if (deviceInfo != null) {
 						/**If current time and the last connection time differ more than 10 minutes,update device status to Offline.*/

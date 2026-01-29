@@ -5416,3 +5416,37 @@ There is no Action mapped for namespace / and action name  logout. - [unknown lo
 2163 INFO  2026-01-29 06:02:35510 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/ROOT/WEB-INF/classes/config.xml
 2168 INFO  2026-01-29 06:02:35515 ConfigUtil:25 - Config.xml loaded successfully
 2192 INFO  2026-01-29 06:02:35539 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+84548 INFO  2026-01-29 17:41:39653 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/pushdemo/WEB-INF/classes/config.xml
+84580 INFO  2026-01-29 17:41:39685 ConfigUtil:25 - Config.xml loaded successfully
+84907 INFO  2026-01-29 17:41:4012 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+94998 INFO  2026-01-29 18:08:43350 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/pushdemo/WEB-INF/classes/config.xml
+95003 INFO  2026-01-29 18:08:43355 ConfigUtil:25 - Config.xml loaded successfully
+95025 INFO  2026-01-29 18:08:43377 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+96064 INFO  2026-01-29 18:08:44416 DeviceManager:115 - Dao returned 1 devices.
+316452 INFO  2026-01-29 18:12:24804 DeviceManager:115 - Dao returned 1 devices.
+355510 INFO  2026-01-29 18:13:03862 DeviceManager:115 - Dao returned 1 devices.
+2170 INFO  2026-01-29 18:14:28360 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/pushdemo/WEB-INF/classes/config.xml
+2173 INFO  2026-01-29 18:14:28363 ConfigUtil:25 - Config.xml loaded successfully
+2195 INFO  2026-01-29 18:14:28385 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+2915 INFO  2026-01-29 18:14:29105 DeviceManager:115 - Dao returned 1 devices.
+2918 INFO  2026-01-29 18:14:29108 DeviceAction:122 - DeviceAction received 1 devices
+3123 INFO  2026-01-29 18:14:29313 DeviceManager:115 - Dao returned 1 devices.
+3160 INFO  2026-01-29 18:14:29350 DeviceAction:122 - DeviceAction received 1 devices
+63886 INFO  2026-01-29 18:15:3076 DeviceManager:115 - Dao returned 1 devices.
+63888 INFO  2026-01-29 18:15:3078 DeviceAction:122 - DeviceAction received 1 devices
+124222 INFO  2026-01-29 18:16:30412 DeviceManager:115 - Dao returned 1 devices.
+124257 INFO  2026-01-29 18:16:30447 DeviceAction:122 - DeviceAction received 1 devices
+184640 INFO  2026-01-29 18:17:30830 DeviceManager:115 - Dao returned 1 devices.
+184642 INFO  2026-01-29 18:17:30832 DeviceAction:122 - DeviceAction received 1 devices
+244928 INFO  2026-01-29 18:18:31118 DeviceManager:115 - Dao returned 1 devices.
+244935 INFO  2026-01-29 18:18:31125 DeviceAction:122 - DeviceAction received 1 devices
+305409 INFO  2026-01-29 18:19:31599 DeviceManager:115 - Dao returned 1 devices.
+305421 INFO  2026-01-29 18:19:31611 DeviceAction:122 - DeviceAction received 1 devices
+366201 INFO  2026-01-29 18:20:32391 DeviceManager:115 - Dao returned 1 devices.
+366204 INFO  2026-01-29 18:20:32394 DeviceAction:122 - DeviceAction received 1 devices
+427623 INFO  2026-01-29 18:21:33813 DeviceManager:115 - Dao returned 1 devices.
+427639 INFO  2026-01-29 18:21:33829 DeviceAction:122 - DeviceAction received 1 devices
+491758 INFO  2026-01-29 18:22:37948 DeviceManager:115 - Dao returned 1 devices.
+491764 INFO  2026-01-29 18:22:37954 DeviceAction:122 - DeviceAction received 1 devices
+573220 INFO  2026-01-29 18:23:59410 DeviceManager:115 - Dao returned 1 devices.
+573555 INFO  2026-01-29 18:23:59745 DeviceAction:122 - DeviceAction received 1 devices

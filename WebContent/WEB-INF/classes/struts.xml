@@ -17,7 +17,7 @@
 			</interceptor-stack>
 		</interceptors>
 		
-		<default-interceptor-ref name="secureStack"/>
+		<default-interceptor-ref name="defaultStack"/>
 		
 		<global-results>
 			<result name="login_required" type="redirect">login.jsp</result>

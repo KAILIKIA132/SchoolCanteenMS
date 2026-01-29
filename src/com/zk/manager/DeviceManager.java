@@ -111,8 +111,14 @@ public class DeviceManager {
 				sb.append(" and device_sn='").append(deviceSn).append("' ");
 			}
 			List<DeviceInfo> list = dao.fatchListWithCount(sb.toString(), startRec, pageSize);
+			if (list != null) {
+				logger.info("Dao returned " + list.size() + " devices.");
+			} else {
+				logger.info("Dao returned null list.");
+			}
 			return list;
 		} catch (Exception e) {
+			logger.error("Error getting device list: " + e.getMessage(), e);
 		} finally {
 			dao.close();
 		}
