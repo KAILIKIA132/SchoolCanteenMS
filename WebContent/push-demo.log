@@ -5450,3 +5450,13 @@ There is no Action mapped for namespace / and action name  logout. - [unknown lo
 491764 INFO  2026-01-29 18:22:37954 DeviceAction:122 - DeviceAction received 1 devices
 573220 INFO  2026-01-29 18:23:59410 DeviceManager:115 - Dao returned 1 devices.
 573555 INFO  2026-01-29 18:23:59745 DeviceAction:122 - DeviceAction received 1 devices
+645066 INFO  2026-01-29 18:25:11256 DeviceManager:115 - Dao returned 1 devices.
+645083 INFO  2026-01-29 18:25:11273 DeviceAction:122 - DeviceAction received 1 devices
+724312 INFO  2026-01-29 18:26:30502 DeviceManager:115 - Dao returned 1 devices.
+724662 INFO  2026-01-29 18:26:30852 DeviceAction:122 - DeviceAction received 1 devices
+799242 INFO  2026-01-29 18:27:45432 DeviceManager:115 - Dao returned 1 devices.
+800161 INFO  2026-01-29 18:27:46351 DeviceAction:122 - DeviceAction received 1 devices
+916596 INFO  2026-01-29 18:29:42786 DeviceManager:115 - Dao returned 1 devices.
+916982 INFO  2026-01-29 18:29:43172 DeviceAction:122 - DeviceAction received 1 devices
+1034924 INFO  2026-01-29 18:31:41114 DeviceManager:115 - Dao returned 1 devices.
+1035753 INFO  2026-01-29 18:31:41943 DeviceAction:122 - DeviceAction received 1 devices
