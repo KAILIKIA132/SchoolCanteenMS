@@ -24,7 +24,7 @@ if ([string]::IsNullOrWhiteSpace($MySQLRootPassword)) {
     $MySQLRootPassword = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR)
 }
 
-$NewUsername = ReadHost "Enter New Admin Username"
+$NewUsername = Read-Host "Enter New Admin Username"
 if ([string]::IsNullOrWhiteSpace($NewUsername)) { Write-Error "Username cannot be empty"; exit 1 }
 
 $NewPassword = Read-Host "Enter New Admin Password" -AsSecureString
@@ -34,9 +34,6 @@ $PlainPassword = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($BSTR
 if ([string]::IsNullOrWhiteSpace($PlainPassword)) { Write-Error "Password cannot be empty"; exit 1 }
 
 # 2. Compute SHA-256 Hash to match Java's SecurityUtil
-# Java Implementation:
-# MessageDigest.getInstance("SHA-256")
-# Integer.toString((result[i] & 0xff) + 0x100, 16).substring(1) -> effectively hex string
 function Get-Sha256Hash {
     param($String)
     $StringBuilder = New-Object System.Text.StringBuilder
@@ -62,19 +59,20 @@ try { Get-Command mysql -ErrorAction Stop | Out-Null } catch {
 }
 
 # 4. Insert into Database
-$Query = "INSERT INTO admin_users (username, password, role) VALUES ('$NewUsername', '$HashedPassword', 'ADMIN');"
+# Use INSERT IGNORE or REPLACE depending on if you want to overwrite
+$Query = "INSERT IGNORE INTO admin_users (username, password, role) VALUES ('$NewUsername', '$HashedPassword', 'ADMIN');"
 
 Write-Host "Creating user '$NewUsername'..." -ForegroundColor Cyan
 
 try {
-    # Use cmd /c for reliable redirection/piping
-    cmd /c "$MySqlExe -u root -p$MySQLRootPassword -P 3306 pushdemo -e `"$Query`""
+    # Use Invoke-Expression logic via cmd /c for pipe support
+    $proc = Start-Process -FilePath "cmd.exe" -ArgumentList "/c `"$MySqlExe -u root -p$MySQLRootPassword -P 3306 pushdemo -e `"$Query`"`"" -Wait -PassThru -NoNewWindow
     
-    if ($LASTEXITCODE -eq 0) {
-        Write-Host "User '$NewUsername' created successfully!" -ForegroundColor Green
+    if ($proc.ExitCode -eq 0) {
+        Write-Host "User '$NewUsername' created (or already exists)." -ForegroundColor Green
     } else {
-        Write-Error "Failed to create user. Username '$NewUsername' might already exist."
+        Write-Error "Failed to create user. Exit Code: $($proc.ExitCode)"
     }
 } catch {
-    Write-Error "Database connection failed."
+    Write-Error "Database connection failed. $_"
 }

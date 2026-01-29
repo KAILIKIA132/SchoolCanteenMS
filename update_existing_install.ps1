@@ -59,7 +59,7 @@ $fs.FullName | Out-File "$ProjectPath\sources.txt" -Encoding ascii
 $Classpath = "$TomcatHome\lib\*";"$LibDir\*"
 
 try {
-    & javac -cp $Classpath -d $ClassesDir "@$ProjectPath\sources.txt"
+    & javac -encoding UTF-8 -cp $Classpath -d $ClassesDir "@$ProjectPath\sources.txt"
     if ($LASTEXITCODE -ne 0) { throw "Javac exited with code $LASTEXITCODE" }
     Print-Msg "Compilation Successful." "Green"
 } catch {
