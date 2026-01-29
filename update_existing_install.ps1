@@ -56,7 +56,12 @@ $fs = Get-ChildItem -Path $SrcDir -Recurse -Filter "*.java"
 $fs.FullName | Out-File "$ProjectPath\sources.txt" -Encoding ascii
 
 # Classpath
-$Classpath = "$TomcatHome\lib\*";"$LibDir\*"
+$LibJars = Get-ChildItem "$LibDir" -Filter "*.jar" -Recurse | Select-Object -ExpandProperty FullName
+if (-not $LibJars) { Write-Warning "No JARs found in $LibDir" }
+$TomcatJars = "$TomcatHome\lib\*"
+$Classpath = ($LibJars -join ";") + ";" + $TomcatJars
+
+Write-Host "Classpath length: $($Classpath.Length)" -ForegroundColor Gray
 
 try {
     & javac -encoding UTF-8 -cp $Classpath -d $ClassesDir "@$ProjectPath\sources.txt"
