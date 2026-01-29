@@ -1,16 +1,16 @@
 #requires -version 5.1
 <#
 .SYNOPSIS
-    Updates an EXISTING Push Demo installation with recent changes (Login, Security, UI).
+    Updates an EXISTING Push Demo installation with recent changes.
 
 .DESCRIPTION
     Use this script if you have already deployed the application and just want to apply
     the latest changes (Admin Table, Login Page, Security Interceptors).
 
     Actions:
-    1.  Compiles the latest Java code (AdminUser, LoginAction, etc.).
-    2.  Updates the Database (Creates admin_users table if missing).
-    3.  Updates the application files in Tomcat (Overwrites JSPs and Classes).
+    1.  Compiles the latest Java code.
+    2.  Updates the Database (Force resets admin user).
+    3.  Updates the application files in Tomcat.
     4.  Restarts Tomcat.
 
 .PARAMETER TomcatHome
@@ -98,7 +98,6 @@ Print-Msg "Step 2: Updating Database Schema..."
 $AdminSql = "$ProjectPath\sql\create_admin_table.sql"
 
 if (Test-Path $AdminSql) {
-if (Test-Path $AdminSql) {
     try {
         # Auto-detect MySQL if not in PATH
         $MySqlExe = "mysql"
@@ -112,12 +111,13 @@ if (Test-Path $AdminSql) {
             }
         }
         
-        $MySqlCmd = "$MySqlExe -u root -p$MySQLRootPassword -P 3306 pushdemo"
+        $MySqlCmd = "& $MySqlExe -u root -p$MySQLRootPassword -P 3306 pushdemo"
         
         # Run force reset
         $ResetSql = "$ProjectPath\sql\force_reset_user.sql"
         if (Test-Path $ResetSql) {
-             cmd /c "$MySqlCmd < `"$ResetSql`""
+             # Use cmd /c for redirection
+             cmd /c "$MySqlExe -u root -p$MySQLRootPassword -P 3306 pushdemo < `"$ResetSql`""
              if ($LASTEXITCODE -eq 0) {
                 Print-Msg "Admin User FORCED RESET successfully." "Green"
              } else {
@@ -125,7 +125,7 @@ if (Test-Path $AdminSql) {
              }
         } else {
              # Fallback
-             cmd /c "$MySqlCmd < `"$AdminSql`""
+             cmd /c "$MySqlExe -u root -p$MySQLRootPassword -P 3306 pushdemo < `"$AdminSql`""
              Print-Msg "Admin Table SQL applied." "Green"
         }
     } catch {
