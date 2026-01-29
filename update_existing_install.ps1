@@ -102,50 +102,64 @@ if (Test-Path $ConfigXml) {
 Print-Msg "Step 2: Updating Database Schema..."
 $AdminSql = "$ProjectPath\sql\create_admin_table.sql"
 
-if (Test-Path $AdminSql) {
+# Strip quotes from TomcatHome if present
+$TomcatHome = $TomcatHome -replace '"', ''
+
+# 2. Update Database
+Print-Msg "Step 2: Updating Database Schema..."
+$AdminSql = "$ProjectPath\sql\create_admin_table.sql"
+$ResetSql = "$ProjectPath\sql\force_reset_user.sql"
+
+# Auto-detect MySQL if not in PATH
+$MySqlExe = "mysql"
+try { Get-Command mysql -ErrorAction Stop | Out-Null } catch {
+    $CommonPaths = @(
+        "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe",
+        "C:\Program Files\MySQL\MySQL Server 8.1\bin\mysql.exe"
+    )
+    foreach ($p in $CommonPaths) {
+        if (Test-Path $p) { $MySqlExe = "`"$p`""; break }
+    }
+}
+
+# Try running Force Reset first
+$ResetSuccess = $false
+if (Test-Path $ResetSql) {
     try {
-        # Auto-detect MySQL if not in PATH
-        $MySqlExe = "mysql"
-        try { Get-Command mysql -ErrorAction Stop | Out-Null } catch {
-            $CommonPaths = @(
-                "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe",
-                "C:\Program Files\MySQL\MySQL Server 8.1\bin\mysql.exe"
-            )
-            foreach ($p in $CommonPaths) {
-                if (Test-Path $p) { $MySqlExe = "`"$p`""; break }
-            }
-        }
-        
-        $MySqlCmd = "& $MySqlExe -u root -p$MySQLRootPassword -P 3306 pushdemo"
-        
-        # Run force reset
-        $ResetSql = "$ProjectPath\sql\force_reset_user.sql"
-        if (Test-Path $ResetSql) {
-             # Use cmd /c for redirection
-             cmd /c "$MySqlExe -u root -p$MySQLRootPassword -P 3306 pushdemo < `"$ResetSql`""
-             if ($LASTEXITCODE -eq 0) {
-                Print-Msg "Admin User FORCED RESET successfully." "Green"
-             } else {
-                Write-Warning "SQL Execution failed. Check password/path."
-             }
+        $proc = Start-Process -FilePath "cmd.exe" -ArgumentList "/c `"$MySqlExe -u root -p$MySQLRootPassword -P 3306 pushdemo < `"$ResetSql`"`"" -Wait -PassThru -NoNewWindow
+        if ($proc.ExitCode -eq 0) {
+            Print-Msg "Admin User FORCED RESET successfully." "Green"
+            $ResetSuccess = $true
         } else {
-             # Fallback
-             cmd /c "$MySqlExe -u root -p$MySQLRootPassword -P 3306 pushdemo < `"$AdminSql`""
-             Print-Msg "Admin Table SQL applied." "Green"
+            Write-Warning "Force reset failed (Exit Code $($proc.ExitCode)). Attempting to create table..."
         }
     } catch {
-        Write-Warning "Failed to apply SQL. Please check your MySQL password and ensure MySQL is running."
+        Write-Warning "Failed to execute SQL command."
     }
-} else {
-    Write-Warning "SQL file not found: $AdminSql"
+}
+
+# If reset failed (likely table missing), run Create Table
+if (-not $ResetSuccess -and (Test-Path $AdminSql)) {
+    try {
+        $proc = Start-Process -FilePath "cmd.exe" -ArgumentList "/c `"$MySqlExe -u root -p$MySQLRootPassword -P 3306 pushdemo < `"$AdminSql`"`"" -Wait -PassThru -NoNewWindow
+        if ($proc.ExitCode -eq 0) {
+             Print-Msg "Admin Table Created successfully." "Green"
+        } else {
+             Write-Error "Failed to create Admin Table. Check your database connection."
+        }
+    } catch {
+         Write-Error "Failed to apply SQL schema."
+    }
 }
 
 # 3. Update Tomcat Deployment
 Print-Msg "Step 3: Updating Tomcat Deployment..."
 $WebAppDir = "$TomcatHome\webapps\pushdemo"
 
+# Create directory if it doesn't exist (Full deployment fallback)
 if (-not (Test-Path $WebAppDir)) {
-    Write-Error "Application not found at $WebAppDir. Please run the full deployment first."
+    Print-Msg "Application folder not found. Creating it..." "Gray"
+    New-Item -ItemType Directory -Path $WebAppDir -Force | Out-Null
 }
 
 # Overwrite WebContent files (JSPs, CSS, WEB-INF)
