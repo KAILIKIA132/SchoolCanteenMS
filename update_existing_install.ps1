@@ -99,9 +99,16 @@ $AdminSql = "$ProjectPath\sql\create_admin_table.sql"
 if (Test-Path $AdminSql) {
     try {
         $MySqlCmd = "mysql -u root -p$MySQLRootPassword -P 3306 pushdemo"
-        # Use cmd /c to handle redirection properly in PowerShell
-        cmd /c "$MySqlCmd < `"$AdminSql`""
-        Print-Msg "Admin Table SQL applied successfully." "Green"
+        # Run force reset
+        $ResetSql = "$ProjectPath\sql\force_reset_user.sql"
+        if (Test-Path $ResetSql) {
+             cmd /c "$MySqlCmd < `"$ResetSql`""
+             Print-Msg "Admin User FORCED RESET successfully." "Green"
+        } else {
+             # Fallback
+             cmd /c "$MySqlCmd < `"$AdminSql`""
+             Print-Msg "Admin Table SQL applied." "Green"
+        }
     } catch {
         Write-Warning "Failed to apply SQL. Please check your MySQL password and ensure MySQL is running."
     }
