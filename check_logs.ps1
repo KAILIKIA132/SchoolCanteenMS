@@ -14,10 +14,19 @@ if (-not (Test-Path $LogDir)) {
     exit
 }
 
-# Get latest stdout/catalina/localhost logs
-$LogFiles = Get-ChildItem -Path $LogDir -Filter "*2026*.log" -File | Sort-Object LastWriteTime -Descending | Select-Object -First 3
+# Get latest localhost log specifically (usually contains the stack trace for Filter failures)
+$LocalhostLog = Get-ChildItem -Path $LogDir -Filter "localhost.*.log" -File | Sort-Object LastWriteTime -Descending | Select-Object -First 1
 
-foreach ($file in $LogFiles) {
+if ($LocalhostLog) {
+    Write-Host "`n--- LOG FILE: $($LocalhostLog.Name) ---" -ForegroundColor Yellow
+    Get-Content $LocalhostLog.FullName -Tail 100
+    Write-Host "-----------------------------" -ForegroundColor Yellow
+}
+
+# Get other recent logs
+$OtherLogs = Get-ChildItem -Path $LogDir -Filter "*2026*.log" -File | Where-Object { $_.Name -notlike "localhost*" } | Sort-Object LastWriteTime -Descending | Select-Object -First 2
+
+foreach ($file in $OtherLogs) {
     Write-Host "`n--- LOG FILE: $($file.Name) ---" -ForegroundColor Cyan
     Get-Content $file.FullName -Tail 50
     Write-Host "-----------------------------" -ForegroundColor Cyan
