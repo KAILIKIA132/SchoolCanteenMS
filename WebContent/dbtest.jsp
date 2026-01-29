@@ -62,8 +62,8 @@
             out.println("<p>Database Product: " + conn.getMetaData().getDatabaseProductName() + "</p>");
 
             // 4. Check Tables
-            out.println("<h3>Checking Tables:</h3>
-            <ul>");
+            out.println("<h3>Checking Tables:</h3>");
+            out.println("<ul>");
                 Statement stmt = conn.createStatement();
                 try {
                 ResultSet rs = stmt.executeQuery("SELECT count(*) FROM admin_users");
@@ -93,8 +93,8 @@
                 out.println("<h3>Exception Occurred:</h3>");
                 out.println("
                 <pre>");
-                e.printStackTrace(new java.io.PrintWriter(out));
-                out.println("</pre>");
+            e.printStackTrace(new java.io.PrintWriter(out));
+            out.println("</pre>");
                 out.println("
             </div>");
             } finally {
