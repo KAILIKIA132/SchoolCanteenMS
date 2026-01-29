@@ -34,6 +34,12 @@
                     </div>
 
                     <button type="submit" class="btn-login">Login</button>
+                    <div class="form-group" style="text-align: center; margin-top: 15px;">
+                        <a href="dbtest.jsp" target="_blank"
+                            style="color: #666; font-size: 12px; text-decoration: none;">
+                            <i class="fa fa-wrench"></i> Check Database Connection
+                        </a>
+                    </div>
                 </form>
 
                 <div class="footer">
