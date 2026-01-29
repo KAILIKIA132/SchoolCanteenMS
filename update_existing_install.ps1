@@ -53,13 +53,14 @@ if (-not (Test-Path $ClassesDir)) { New-Item -ItemType Directory -Path $ClassesD
 
 # Get Sources
 $fs = Get-ChildItem -Path $SrcDir -Recurse -Filter "*.java"
-$fs.FullName > "$ProjectPath\sources.txt"
+$fs.FullName | Out-File "$ProjectPath\sources.txt" -Encoding ascii
 
 # Classpath
 $Classpath = "$TomcatHome\lib\*";"$LibDir\*"
 
 try {
-    javac -cp $Classpath -d $ClassesDir "@$ProjectPath\sources.txt"
+    & javac -cp $Classpath -d $ClassesDir "@$ProjectPath\sources.txt"
+    if ($LASTEXITCODE -ne 0) { throw "Javac exited with code $LASTEXITCODE" }
     Print-Msg "Compilation Successful." "Green"
 } catch {
     Write-Error "Compilation Failed. Ensure JDK 8 is installed and javac is in PATH."
@@ -97,13 +98,31 @@ Print-Msg "Step 2: Updating Database Schema..."
 $AdminSql = "$ProjectPath\sql\create_admin_table.sql"
 
 if (Test-Path $AdminSql) {
+if (Test-Path $AdminSql) {
     try {
-        $MySqlCmd = "mysql -u root -p$MySQLRootPassword -P 3306 pushdemo"
+        # Auto-detect MySQL if not in PATH
+        $MySqlExe = "mysql"
+        try { Get-Command mysql -ErrorAction Stop | Out-Null } catch {
+            $CommonPaths = @(
+                "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe",
+                "C:\Program Files\MySQL\MySQL Server 8.1\bin\mysql.exe"
+            )
+            foreach ($p in $CommonPaths) {
+                if (Test-Path $p) { $MySqlExe = "`"$p`""; break }
+            }
+        }
+        
+        $MySqlCmd = "$MySqlExe -u root -p$MySQLRootPassword -P 3306 pushdemo"
+        
         # Run force reset
         $ResetSql = "$ProjectPath\sql\force_reset_user.sql"
         if (Test-Path $ResetSql) {
              cmd /c "$MySqlCmd < `"$ResetSql`""
-             Print-Msg "Admin User FORCED RESET successfully." "Green"
+             if ($LASTEXITCODE -eq 0) {
+                Print-Msg "Admin User FORCED RESET successfully." "Green"
+             } else {
+                Write-Warning "SQL Execution failed. Check password/path."
+             }
         } else {
              # Fallback
              cmd /c "$MySqlCmd < `"$AdminSql`""
