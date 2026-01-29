@@ -9,6 +9,23 @@ param(
 )
 
 $LogDir = "$TomcatHome\logs"
+$WebAppDir = "$TomcatHome\webapps\pushdemo"
+
+Write-Host "--- CHECKING DEPLOYMENT ---" -ForegroundColor Yellow
+if (Test-Path $WebAppDir) {
+    Write-Host "Directory exists: $WebAppDir" -ForegroundColor Green
+    $login = Join-Path $WebAppDir "login.jsp"
+    if (Test-Path $login) {
+        Write-Host "login.jsp FOUND." -ForegroundColor Green
+        Get-Item $login | Select-Object Name, Length, LastWriteTime | Format-Table
+    } else {
+        Write-Error "login.jsp NOT FOUND in $WebAppDir!"
+        Get-ChildItem $WebAppDir | Select-Object Name | Format-Table
+    }
+} else {
+    Write-Error "Directory NOT FOUND: $WebAppDir"
+}
+
 if (-not (Test-Path $LogDir)) {
     Write-Error "Log directory not found: $LogDir"
     exit
