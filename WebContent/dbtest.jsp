@@ -93,8 +93,8 @@
                 out.println("<h3>Exception Occurred:</h3>");
                 out.println("
                 <pre>");
-        e.printStackTrace(new java.io.PrintWriter(out));
-        out.println("</pre>");
+                e.printStackTrace(new java.io.PrintWriter(out));
+                out.println("</pre>");
                 out.println("
             </div>");
             } finally {
