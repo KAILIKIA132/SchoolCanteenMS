@@ -181,3 +181,663 @@ java.net.ConnectException: Connection refused (Connection refused)
 6724660 INFO  2026-01-30 12:07:17735 DownloadProcess:59 - get cmd list over and begin contact:0
 6752621 INFO  2026-01-30 12:07:45696 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
 6752736 INFO  2026-01-30 12:07:45811 DownloadProcess:59 - get cmd list over and begin contact:0
+6782604 INFO  2026-01-30 12:08:15679 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+6782621 INFO  2026-01-30 12:08:15696 DownloadProcess:59 - get cmd list over and begin contact:0
+6800017 INFO  2026-01-30 12:08:3392 UploadProcess:255 - device language:,POST request and begin update device stamp:192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&table=ATTLOG&Stamp=9999
+6800020 INFO  2026-01-30 12:08:3395 UploadProcess:259 - POST REQUEST - Table: ATTLOG, Device SN: TDBD254600293
+6800056 INFO  2026-01-30 12:08:33131 UploadProcess:267 - update device stamp end and get stream.
+6800064 INFO  2026-01-30 12:08:33139 UploadProcess:320 - POST DATA RECEIVED - Table: ATTLOG, Data length: 40 bytes
+6800067 INFO  2026-01-30 12:08:33142 UploadProcess:322 - ═══════════════════════════════════════════════════════════
+6800072 INFO  2026-01-30 12:08:33147 UploadProcess:323 - 📥 ATTENDANCE LOG POST DATA RECEIVED
+6800077 INFO  2026-01-30 12:08:33152 UploadProcess:324 - ═══════════════════════════════════════════════════════════
+6800082 INFO  2026-01-30 12:08:33157 UploadProcess:325 - Device SN: TDBD254600293
+6800087 INFO  2026-01-30 12:08:33162 UploadProcess:326 - Data length: 40 characters
+6800096 INFO  2026-01-30 12:08:33171 UploadProcess:330 - Data preview (first 200 chars): 1	2026-01-31 08:08:32	0	15	0	0	0	0	0	0	
+
+6800099 INFO  2026-01-30 12:08:33174 UploadProcess:332 - ═══════════════════════════════════════════════════════════
+6800102 INFO  2026-01-30 12:08:33177 UploadProcess:338 - data:1	2026-01-31 08:08:32	0	15	0	0	0	0	0	0	
+
+6800124 INFO  2026-01-30 12:08:33199 UploadProcess:339 - end get stream and process data
+6800127 INFO  2026-01-30 12:08:33202 UploadProcess:538 - ═══════════════════════════════════════════════════════════
+6800128 INFO  2026-01-30 12:08:33203 UploadProcess:539 - 🔄 PROCESSING ATTLOG TABLE DATA
+6800209 INFO  2026-01-30 12:08:33284 UploadProcess:540 - ═══════════════════════════════════════════════════════════
+6800212 INFO  2026-01-30 12:08:33287 UploadProcess:541 - Device SN: TDBD254600293
+6800216 INFO  2026-01-30 12:08:33291 UploadProcess:542 - Data length: 39 characters
+6800221 INFO  2026-01-30 12:08:33296 UploadProcess:546 - Data preview: 1	2026-01-31 08:08:32	0	15	0	0	0	0	0	0	
+6800228 INFO  2026-01-30 12:08:33303 UploadProcess:548 - begin parse op attlog
+6800229 INFO  2026-01-30 12:08:33304 UploadProcess:337 - ═══════════════════════════════════════════════════════════
+6800234 INFO  2026-01-30 12:08:33309 UploadProcess:338 - 🔍 PARSING ATTENDANCE LOG DATA
+6800240 INFO  2026-01-30 12:08:33315 UploadProcess:339 - ═══════════════════════════════════════════════════════════
+6800241 INFO  2026-01-30 12:08:33316 UploadProcess:340 - Device SN: TDBD254600293
+6800243 INFO  2026-01-30 12:08:33318 UploadProcess:341 - Data received: 39 characters
+6800248 INFO  2026-01-30 12:08:33323 UploadProcess:347 - Data content: 1	2026-01-31 08:08:32	0	15	0	0	0	0	0	0	
+6800253 INFO  2026-01-30 12:08:33328 UploadProcess:350 - Number of log lines: 1
+6800260 INFO  2026-01-30 12:08:33335 UploadProcess:356 - Processing log line: 1	2026-01-31 08:08:32	0	15	0	0	0	0	0	0	
+6800266 INFO  2026-01-30 12:08:33341 UploadProcess:426 - Total AttLog objects created: 1
+6800285 INFO  2026-01-30 12:08:33360 AttLogManager:120 - === EXTERNAL API: Attendance logs saved, starting external API calls ===
+6800289 INFO  2026-01-30 12:08:33364 AttLogManager:121 - EXTERNAL API: Processing 1 verification(s)
+6800296 INFO  2026-01-30 12:08:33371 AttLogManager:125 - EXTERNAL API: Processing verification - User PIN: 1, User Name: , Timestamp: 2026-01-31 08:08:32
+6800302 INFO  2026-01-30 12:08:33377 AttLogManager:130 - EXTERNAL API: Calling notifyVerification for User ID: 1
+6800305 INFO  2026-01-30 12:08:33380 ExternalApiUtil:120 - ═══════════════════════════════════════════════════════════
+6800315 INFO  2026-01-30 12:08:33390 ExternalApiUtil:121 - 🔔 EXTERNAL API CALL REQUESTED - notifyVerification()
+6800318 INFO  2026-01-30 12:08:33393 ExternalApiUtil:122 - ═══════════════════════════════════════════════════════════
+6800328 INFO  2026-01-30 12:08:33403 ExternalApiUtil:123 - EXTERNAL API: User ID: 1
+6800333 INFO  2026-01-30 12:08:33408 ExternalApiUtil:124 - EXTERNAL API: Verification Time: 2026-01-31 08:08:32
+6800339 INFO  2026-01-30 12:08:33414 ExternalApiUtil:125 - EXTERNAL API: User Name: 
+6800348 INFO  2026-01-30 12:08:33423 ExternalApiUtil:126 - ═══════════════════════════════════════════════════════════
+6800352 INFO  2026-01-30 12:08:33427 ExternalApiUtil:133 - ✅ EXTERNAL API: Submitting async task for userId: 1
+6800360 INFO  2026-01-30 12:08:33435 ExternalApiUtil:144 - EXTERNAL API: Async task submitted for userId: 1
+6800367 INFO  2026-01-30 12:08:33442 AttLogManager:133 - EXTERNAL API: notifyVerification called for User ID: 1, Timestamp: 2026-01-31 08:08:32
+6800375 INFO  2026-01-30 12:08:33450 AttLogManager:140 - === EXTERNAL API: Finished processing all verifications ===
+6800382 INFO  2026-01-30 12:08:33457 UploadProcess:431 - createAttLog returned: 1, attlog size:1
+6800389 INFO  2026-01-30 12:08:33464 UploadProcess:432 - ═══════════════════════════════════════════════════════════
+6800392 INFO  2026-01-30 12:08:33467 UploadProcess:550 - end parse op attlog
+6800396 INFO  2026-01-30 12:08:33471 UploadProcess:551 - ═══════════════════════════════════════════════════════════
+6800360 INFO  2026-01-30 12:08:33435 ExternalApiUtil:139 - EXTERNAL API: Async task started for userId: 1
+6800402 INFO  2026-01-30 12:08:33477 ExternalApiUtil:172 - ═══════════════════════════════════════════════════════════
+6800401 INFO  2026-01-30 12:08:33476 UploadProcess:342 - end process data and return msg to device
+6800410 INFO  2026-01-30 12:08:33485 ExternalApiUtil:173 - 🚀 EXTERNAL API CALL INITIATED
+6800417 INFO  2026-01-30 12:08:33492 ExternalApiUtil:174 - ═══════════════════════════════════════════════════════════
+6800418 INFO  2026-01-30 12:08:33493 ExternalApiUtil:175 - EXTERNAL API: User ID: 1
+6800420 INFO  2026-01-30 12:08:33495 ExternalApiUtil:176 - EXTERNAL API: URL: http://host.docker.internal:8002/api/meal-cards/generate-with-check
+6800427 INFO  2026-01-30 12:08:33502 ExternalApiUtil:177 - EXTERNAL API: Method: POST
+6800417 INFO  2026-01-30 12:08:33492 UploadProcess:346 - return msg to device and request over OK
+6800431 INFO  2026-01-30 12:08:33506 ExternalApiUtil:178 - EXTERNAL API: Timestamp (Nairobi/EAT): Fri Jan 30 15:08:33 EAT 2026
+6800442 INFO  2026-01-30 12:08:33517 ExternalApiUtil:182 - EXTERNAL API: Creating connection to: http://host.docker.internal:8002/api/meal-cards/generate-with-check
+6800445 INFO  2026-01-30 12:08:33520 ExternalApiUtil:191 - EXTERNAL API: Connection configured, formatting student ID...
+6800448 INFO  2026-01-30 12:08:33523 ExternalApiUtil:195 - EXTERNAL API: Student ID formatted - Original: 1, Formatted: 001
+6800454 INFO  2026-01-30 12:08:33529 ExternalApiUtil:202 - EXTERNAL API: Current time (Nairobi/EAT): 15:08 - Meal type determined: lunch
+6800455 INFO  2026-01-30 12:08:33530 ExternalApiUtil:206 - EXTERNAL API: Request body: {"student_id": "001", "meal_type": "lunch"}
+6800457 INFO  2026-01-30 12:08:33532 ExternalApiUtil:209 - EXTERNAL API: Writing request body to connection...
+6800479 ERROR 2026-01-30 12:08:33554 ExternalApiUtil:316 - ═══════════════════════════════════════════════════════════
+6800480 ERROR 2026-01-30 12:08:33555 ExternalApiUtil:317 - ❌ EXTERNAL API CALL FAILED
+6800487 ERROR 2026-01-30 12:08:33562 ExternalApiUtil:318 - ═══════════════════════════════════════════════════════════
+6800491 ERROR 2026-01-30 12:08:33566 ExternalApiUtil:319 - EXTERNAL API: Student ID: 1
+6800498 ERROR 2026-01-30 12:08:33573 ExternalApiUtil:320 - EXTERNAL API: URL: http://host.docker.internal:8002/api/meal-cards/generate-with-check
+6800502 ERROR 2026-01-30 12:08:33577 ExternalApiUtil:321 - EXTERNAL API: Error: Connection refused (Connection refused)
+6800506 ERROR 2026-01-30 12:08:33581 ExternalApiUtil:322 - EXTERNAL API: Exception: java.net.ConnectException
+6800508 ERROR 2026-01-30 12:08:33583 ExternalApiUtil:323 - ═══════════════════════════════════════════════════════════
+6800510 ERROR 2026-01-30 12:08:33585 ExternalApiUtil:324 - Full stack trace:
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:465)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:560)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:359)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1245)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1179)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1073)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1007)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1359)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1334)
+	at com.zk.util.ExternalApiUtil.callExternalApi(ExternalApiUtil.java:210)
+	at com.zk.util.ExternalApiUtil.access$100(ExternalApiUtil.java:22)
+	at com.zk.util.ExternalApiUtil$1.run(ExternalApiUtil.java:140)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+6800535 INFO  2026-01-30 12:08:33610 ExternalApiUtil:381 - EXTERNAL API: Report saved to database - Status: FAILED, User: 1
+6812920 INFO  2026-01-30 12:08:45995 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293&INFO=ZMM510-NF24VB-Ver2.1.4,1,1,3,10.246.242.22,10,35,12,1,11110,0,0,0
+6812924 INFO  2026-01-30 12:08:45999 DownloadProcess:59 - get cmd list over and begin contact:0
+6812928 INFO  2026-01-30 12:08:463 DownloadProcess:94 - INFO:ZMM510-NF24VB-Ver2.1.4,1,1,3,10.246.242.22,10,35,12,1,11110,0,0,0
+6843578 INFO  2026-01-30 12:09:16653 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+6843588 INFO  2026-01-30 12:09:16663 DownloadProcess:59 - get cmd list over and begin contact:0
+6873537 INFO  2026-01-30 12:09:46612 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+6873558 INFO  2026-01-30 12:09:46633 DownloadProcess:59 - get cmd list over and begin contact:0
+6904441 INFO  2026-01-30 12:10:17516 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+6904450 INFO  2026-01-30 12:10:17525 DownloadProcess:59 - get cmd list over and begin contact:0
+6934437 INFO  2026-01-30 12:10:47512 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+6934442 INFO  2026-01-30 12:10:47517 DownloadProcess:59 - get cmd list over and begin contact:0
+6965697 INFO  2026-01-30 12:11:18772 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+6965707 INFO  2026-01-30 12:11:18782 DownloadProcess:59 - get cmd list over and begin contact:0
+6995596 INFO  2026-01-30 12:11:48671 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+6995608 INFO  2026-01-30 12:11:48683 DownloadProcess:59 - get cmd list over and begin contact:0
+7026518 INFO  2026-01-30 12:12:19593 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+7026530 INFO  2026-01-30 12:12:19605 DownloadProcess:59 - get cmd list over and begin contact:0
+7056415 INFO  2026-01-30 12:12:49490 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+7056430 INFO  2026-01-30 12:12:49505 DownloadProcess:59 - get cmd list over and begin contact:0
+7087536 INFO  2026-01-30 12:13:20611 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+7087543 INFO  2026-01-30 12:13:20618 DownloadProcess:59 - get cmd list over and begin contact:0
+7117447 INFO  2026-01-30 12:13:50522 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+7117531 INFO  2026-01-30 12:13:50606 DownloadProcess:59 - get cmd list over and begin contact:0
+7148576 INFO  2026-01-30 12:14:21651 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+7148596 INFO  2026-01-30 12:14:21671 DownloadProcess:59 - get cmd list over and begin contact:0
+7178450 INFO  2026-01-30 12:14:51525 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+7178484 INFO  2026-01-30 12:14:51559 DownloadProcess:59 - get cmd list over and begin contact:0
+7209464 INFO  2026-01-30 12:15:22539 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+7209771 INFO  2026-01-30 12:15:22846 DownloadProcess:59 - get cmd list over and begin contact:0
+7239512 INFO  2026-01-30 12:15:52587 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+7239540 INFO  2026-01-30 12:15:52615 DownloadProcess:59 - get cmd list over and begin contact:0
+7244083 INFO  2026-01-30 12:15:57158 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+7244434 INFO  2026-01-30 12:15:57509 DeviceManager:116 - Dao returned 1 devices.
+7244506 INFO  2026-01-30 12:15:57581 DeviceAction:122 - DeviceAction received 1 devices
+7270426 INFO  2026-01-30 12:16:23501 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+7270441 INFO  2026-01-30 12:16:23516 DownloadProcess:59 - get cmd list over and begin contact:0
+7300537 INFO  2026-01-30 12:16:53612 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+7300547 INFO  2026-01-30 12:16:53622 DownloadProcess:59 - get cmd list over and begin contact:0
+7309977 INFO  2026-01-30 12:17:0352 UploadProcess:255 - device language:,POST request and begin update device stamp:192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&table=ATTLOG&Stamp=9999
+7309979 INFO  2026-01-30 12:17:0354 UploadProcess:259 - POST REQUEST - Table: ATTLOG, Device SN: TDBD254600293
+7310013 INFO  2026-01-30 12:17:0388 UploadProcess:267 - update device stamp end and get stream.
+7310044 INFO  2026-01-30 12:17:03119 UploadProcess:320 - POST DATA RECEIVED - Table: ATTLOG, Data length: 40 bytes
+7310053 INFO  2026-01-30 12:17:03128 UploadProcess:322 - ═══════════════════════════════════════════════════════════
+7310061 INFO  2026-01-30 12:17:03136 UploadProcess:323 - 📥 ATTENDANCE LOG POST DATA RECEIVED
+7310094 INFO  2026-01-30 12:17:03169 UploadProcess:324 - ═══════════════════════════════════════════════════════════
+7310114 INFO  2026-01-30 12:17:03189 UploadProcess:325 - Device SN: TDBD254600293
+7310153 INFO  2026-01-30 12:17:03228 UploadProcess:326 - Data length: 40 characters
+7310157 INFO  2026-01-30 12:17:03232 UploadProcess:330 - Data preview (first 200 chars): 1	2026-01-31 08:17:02	0	15	0	0	0	0	0	0	
+
+7310160 INFO  2026-01-30 12:17:03235 UploadProcess:332 - ═══════════════════════════════════════════════════════════
+7310164 INFO  2026-01-30 12:17:03239 UploadProcess:338 - data:1	2026-01-31 08:17:02	0	15	0	0	0	0	0	0	
+
+7310169 INFO  2026-01-30 12:17:03244 UploadProcess:339 - end get stream and process data
+7310177 INFO  2026-01-30 12:17:03252 UploadProcess:538 - ═══════════════════════════════════════════════════════════
+7310185 INFO  2026-01-30 12:17:03260 UploadProcess:539 - 🔄 PROCESSING ATTLOG TABLE DATA
+7310200 INFO  2026-01-30 12:17:03275 UploadProcess:540 - ═══════════════════════════════════════════════════════════
+7310213 INFO  2026-01-30 12:17:03288 UploadProcess:541 - Device SN: TDBD254600293
+7310220 INFO  2026-01-30 12:17:03295 UploadProcess:542 - Data length: 39 characters
+7310226 INFO  2026-01-30 12:17:03301 UploadProcess:546 - Data preview: 1	2026-01-31 08:17:02	0	15	0	0	0	0	0	0	
+7310229 INFO  2026-01-30 12:17:03304 UploadProcess:548 - begin parse op attlog
+7310238 INFO  2026-01-30 12:17:03313 UploadProcess:337 - ═══════════════════════════════════════════════════════════
+7310242 INFO  2026-01-30 12:17:03317 UploadProcess:338 - 🔍 PARSING ATTENDANCE LOG DATA
+7310256 INFO  2026-01-30 12:17:03331 UploadProcess:339 - ═══════════════════════════════════════════════════════════
+7310295 INFO  2026-01-30 12:17:03370 UploadProcess:340 - Device SN: TDBD254600293
+7310311 INFO  2026-01-30 12:17:03386 UploadProcess:341 - Data received: 39 characters
+7310323 INFO  2026-01-30 12:17:03398 UploadProcess:347 - Data content: 1	2026-01-31 08:17:02	0	15	0	0	0	0	0	0	
+7310338 INFO  2026-01-30 12:17:03413 UploadProcess:350 - Number of log lines: 1
+7310346 INFO  2026-01-30 12:17:03421 UploadProcess:356 - Processing log line: 1	2026-01-31 08:17:02	0	15	0	0	0	0	0	0	
+7310356 INFO  2026-01-30 12:17:03431 UploadProcess:426 - Total AttLog objects created: 1
+7310402 INFO  2026-01-30 12:17:03477 AttLogManager:120 - === EXTERNAL API: Attendance logs saved, starting external API calls ===
+7310407 INFO  2026-01-30 12:17:03482 AttLogManager:121 - EXTERNAL API: Processing 1 verification(s)
+7310417 INFO  2026-01-30 12:17:03492 AttLogManager:125 - EXTERNAL API: Processing verification - User PIN: 1, User Name: , Timestamp: 2026-01-31 08:17:02
+7310421 INFO  2026-01-30 12:17:03496 AttLogManager:130 - EXTERNAL API: Calling notifyVerification for User ID: 1
+7310437 INFO  2026-01-30 12:17:03512 ExternalApiUtil:120 - ═══════════════════════════════════════════════════════════
+7310475 INFO  2026-01-30 12:17:03550 ExternalApiUtil:121 - 🔔 EXTERNAL API CALL REQUESTED - notifyVerification()
+7310480 INFO  2026-01-30 12:17:03555 ExternalApiUtil:122 - ═══════════════════════════════════════════════════════════
+7310486 INFO  2026-01-30 12:17:03561 ExternalApiUtil:123 - EXTERNAL API: User ID: 1
+7310496 INFO  2026-01-30 12:17:03571 ExternalApiUtil:124 - EXTERNAL API: Verification Time: 2026-01-31 08:17:02
+7310504 INFO  2026-01-30 12:17:03579 ExternalApiUtil:125 - EXTERNAL API: User Name: 
+7310511 INFO  2026-01-30 12:17:03586 ExternalApiUtil:126 - ═══════════════════════════════════════════════════════════
+7310518 INFO  2026-01-30 12:17:03593 ExternalApiUtil:133 - ✅ EXTERNAL API: Submitting async task for userId: 1
+7310525 INFO  2026-01-30 12:17:03600 ExternalApiUtil:144 - EXTERNAL API: Async task submitted for userId: 1
+7310533 INFO  2026-01-30 12:17:03608 AttLogManager:133 - EXTERNAL API: notifyVerification called for User ID: 1, Timestamp: 2026-01-31 08:17:02
+7310525 INFO  2026-01-30 12:17:03600 ExternalApiUtil:139 - EXTERNAL API: Async task started for userId: 1
+7310554 INFO  2026-01-30 12:17:03629 ExternalApiUtil:172 - ═══════════════════════════════════════════════════════════
+7310546 INFO  2026-01-30 12:17:03621 AttLogManager:140 - === EXTERNAL API: Finished processing all verifications ===
+7310568 INFO  2026-01-30 12:17:03643 ExternalApiUtil:173 - 🚀 EXTERNAL API CALL INITIATED
+7310587 INFO  2026-01-30 12:17:03662 ExternalApiUtil:174 - ═══════════════════════════════════════════════════════════
+7310596 INFO  2026-01-30 12:17:03671 ExternalApiUtil:175 - EXTERNAL API: User ID: 1
+7310601 INFO  2026-01-30 12:17:03676 ExternalApiUtil:176 - EXTERNAL API: URL: http://host.docker.internal:8002/api/meal-cards/generate-with-check
+7310608 INFO  2026-01-30 12:17:03683 ExternalApiUtil:177 - EXTERNAL API: Method: POST
+7310575 INFO  2026-01-30 12:17:03650 UploadProcess:431 - createAttLog returned: 1, attlog size:1
+7310625 INFO  2026-01-30 12:17:03700 UploadProcess:432 - ═══════════════════════════════════════════════════════════
+7310630 INFO  2026-01-30 12:17:03705 UploadProcess:550 - end parse op attlog
+7310641 INFO  2026-01-30 12:17:03716 UploadProcess:551 - ═══════════════════════════════════════════════════════════
+7310648 INFO  2026-01-30 12:17:03723 UploadProcess:342 - end process data and return msg to device
+7310661 INFO  2026-01-30 12:17:03736 UploadProcess:346 - return msg to device and request over OK
+7310613 INFO  2026-01-30 12:17:03688 ExternalApiUtil:178 - EXTERNAL API: Timestamp (Nairobi/EAT): Fri Jan 30 15:17:03 EAT 2026
+7310677 INFO  2026-01-30 12:17:03752 ExternalApiUtil:182 - EXTERNAL API: Creating connection to: http://host.docker.internal:8002/api/meal-cards/generate-with-check
+7310682 INFO  2026-01-30 12:17:03757 ExternalApiUtil:191 - EXTERNAL API: Connection configured, formatting student ID...
+7310698 INFO  2026-01-30 12:17:03773 ExternalApiUtil:195 - EXTERNAL API: Student ID formatted - Original: 1, Formatted: 001
+7310703 INFO  2026-01-30 12:17:03778 ExternalApiUtil:202 - EXTERNAL API: Current time (Nairobi/EAT): 15:17 - Meal type determined: lunch
+7310713 INFO  2026-01-30 12:17:03788 ExternalApiUtil:206 - EXTERNAL API: Request body: {"student_id": "001", "meal_type": "lunch"}
+7310726 INFO  2026-01-30 12:17:03801 ExternalApiUtil:209 - EXTERNAL API: Writing request body to connection...
+7310755 ERROR 2026-01-30 12:17:03830 ExternalApiUtil:316 - ═══════════════════════════════════════════════════════════
+7310760 ERROR 2026-01-30 12:17:03835 ExternalApiUtil:317 - ❌ EXTERNAL API CALL FAILED
+7310765 ERROR 2026-01-30 12:17:03840 ExternalApiUtil:318 - ═══════════════════════════════════════════════════════════
+7310765 ERROR 2026-01-30 12:17:03840 ExternalApiUtil:319 - EXTERNAL API: Student ID: 1
+7310769 ERROR 2026-01-30 12:17:03844 ExternalApiUtil:320 - EXTERNAL API: URL: http://host.docker.internal:8002/api/meal-cards/generate-with-check
+7310776 ERROR 2026-01-30 12:17:03851 ExternalApiUtil:321 - EXTERNAL API: Error: Connection refused (Connection refused)
+7310780 ERROR 2026-01-30 12:17:03855 ExternalApiUtil:322 - EXTERNAL API: Exception: java.net.ConnectException
+7310783 ERROR 2026-01-30 12:17:03858 ExternalApiUtil:323 - ═══════════════════════════════════════════════════════════
+7310788 ERROR 2026-01-30 12:17:03863 ExternalApiUtil:324 - Full stack trace:
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:465)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:560)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:359)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1245)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1179)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1073)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1007)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1359)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1334)
+	at com.zk.util.ExternalApiUtil.callExternalApi(ExternalApiUtil.java:210)
+	at com.zk.util.ExternalApiUtil.access$100(ExternalApiUtil.java:22)
+	at com.zk.util.ExternalApiUtil$1.run(ExternalApiUtil.java:140)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+7310811 INFO  2026-01-30 12:17:03886 ExternalApiUtil:381 - EXTERNAL API: Report saved to database - Status: FAILED, User: 1
+7316000 INFO  2026-01-30 12:17:0975 UploadProcess:255 - device language:,POST request and begin update device stamp:192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&table=OPERLOG&Stamp=9999
+7316010 INFO  2026-01-30 12:17:0985 UploadProcess:259 - POST REQUEST - Table: OPERLOG, Device SN: TDBD254600293
+7316029 INFO  2026-01-30 12:17:09104 UploadProcess:267 - update device stamp end and get stream.
+7316116 INFO  2026-01-30 12:17:09191 UploadProcess:320 - POST DATA RECEIVED - Table: OPERLOG, Data length: 38 bytes
+7316146 INFO  2026-01-30 12:17:09221 UploadProcess:338 - data:OPLOG 4	0	2026-01-31 08:17:08	0	0	0	0
+
+7316154 INFO  2026-01-30 12:17:09229 UploadProcess:339 - end get stream and process data
+7316162 INFO  2026-01-30 12:17:09237 UploadProcess:489 - begin parse op log
+7316184 INFO  2026-01-30 12:17:09259 UploadProcess:235 - oplog size:1
+7316189 INFO  2026-01-30 12:17:09264 UploadProcess:491 - end parse op log
+7316196 INFO  2026-01-30 12:17:09271 UploadProcess:342 - end process data and return msg to device
+7316200 INFO  2026-01-30 12:17:09275 UploadProcess:346 - return msg to device and request over OK
+7331478 INFO  2026-01-30 12:17:24553 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293&INFO=ZMM510-NF24VB-Ver2.1.4,1,1,4,10.246.242.22,10,35,12,1,11110,0,0,0
+7331496 INFO  2026-01-30 12:17:24571 DownloadProcess:59 - get cmd list over and begin contact:0
+7331510 INFO  2026-01-30 12:17:24585 DownloadProcess:94 - INFO:ZMM510-NF24VB-Ver2.1.4,1,1,4,10.246.242.22,10,35,12,1,11110,0,0,0
+7346823 INFO  2026-01-30 12:17:39898 UploadProcess:255 - device language:,POST request and begin update device stamp:192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&table=OPERLOG&Stamp=9999
+7346828 INFO  2026-01-30 12:17:39903 UploadProcess:259 - POST REQUEST - Table: OPERLOG, Device SN: TDBD254600293
+7346860 INFO  2026-01-30 12:17:39935 UploadProcess:267 - update device stamp end and get stream.
+7346866 INFO  2026-01-30 12:17:39941 UploadProcess:320 - POST DATA RECEIVED - Table: OPERLOG, Data length: 39 bytes
+7346871 INFO  2026-01-30 12:17:39946 UploadProcess:338 - data:OPLOG 70	0	2026-01-31 08:17:39	1	0	0	0
+
+7346876 INFO  2026-01-30 12:17:39951 UploadProcess:339 - end get stream and process data
+7346886 INFO  2026-01-30 12:17:39961 UploadProcess:489 - begin parse op log
+7346929 INFO  2026-01-30 12:17:404 UploadProcess:235 - oplog size:1
+7346932 INFO  2026-01-30 12:17:407 UploadProcess:491 - end parse op log
+7346936 INFO  2026-01-30 12:17:4011 UploadProcess:342 - end process data and return msg to device
+7346938 INFO  2026-01-30 12:17:4013 UploadProcess:346 - return msg to device and request over OK
+7350772 INFO  2026-01-30 12:17:43847 UploadProcess:255 - device language:,POST request and begin update device stamp:192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&table=OPERLOG&Stamp=9999
+7350779 INFO  2026-01-30 12:17:43854 UploadProcess:259 - POST REQUEST - Table: OPERLOG, Device SN: TDBD254600293
+7350801 INFO  2026-01-30 12:17:43876 UploadProcess:267 - update device stamp end and get stream.
+7350807 INFO  2026-01-30 12:17:43882 UploadProcess:320 - POST DATA RECEIVED - Table: OPERLOG, Data length: 39 bytes
+7350812 INFO  2026-01-30 12:17:43887 UploadProcess:338 - data:OPLOG 71	0	2026-01-31 08:17:43	1	0	0	0
+
+7350816 INFO  2026-01-30 12:17:43891 UploadProcess:339 - end get stream and process data
+7350822 INFO  2026-01-30 12:17:43897 UploadProcess:489 - begin parse op log
+7350843 INFO  2026-01-30 12:17:43918 UploadProcess:235 - oplog size:1
+7350850 INFO  2026-01-30 12:17:43925 UploadProcess:491 - end parse op log
+7350857 INFO  2026-01-30 12:17:43932 UploadProcess:342 - end process data and return msg to device
+7350864 INFO  2026-01-30 12:17:43939 UploadProcess:346 - return msg to device and request over OK
+7361568 INFO  2026-01-30 12:17:54643 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+7361573 INFO  2026-01-30 12:17:54648 DownloadProcess:59 - get cmd list over and begin contact:0
+7366961 INFO  2026-01-30 12:18:0036 UploadProcess:255 - device language:,POST request and begin update device stamp:192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&table=OPERLOG&Stamp=9999
+7366969 INFO  2026-01-30 12:18:0044 UploadProcess:259 - POST REQUEST - Table: OPERLOG, Device SN: TDBD254600293
+7367008 INFO  2026-01-30 12:18:0083 UploadProcess:267 - update device stamp end and get stream.
+7367029 INFO  2026-01-30 12:18:00104 UploadProcess:320 - POST DATA RECEIVED - Table: OPERLOG, Data length: 121 bytes
+7367037 INFO  2026-01-30 12:18:00112 UploadProcess:338 - data:USER PIN=1	Name=FRANCIS	Pri=14	Passwd=	Card=	Grp=1	TZ=0000000100000000	Verify=-1	ViceCard=	StartDatetime=0	EndDatetime=0
+
+7367041 INFO  2026-01-30 12:18:00116 UploadProcess:339 - end get stream and process data
+7367047 INFO  2026-01-30 12:18:00122 UploadProcess:497 - begin parse op user
+7367058 INFO  2026-01-30 12:18:00133 UploadProcess:275 - user data:
+USER PIN=1	Name=FRANCIS	Pri=14	Passwd=	Card=	Grp=1	TZ=0000000100000000	Verify=-1	ViceCard=	StartDatetime=0	EndDatetime=0
+7367210 ERROR 2026-01-30 12:18:00285 UserInfoDao:237 - java.sql.BatchUpdateException: Duplicate entry '1-TDBD254600293' for key 'user_info.USER_PIN'
+7367240 INFO  2026-01-30 12:18:00315 UploadProcess:289 - user size:USER PIN=1	Name=FRANCIS	Pri=14	Passwd=	Card=	Grp=1	TZ=0000000100000000	Verify=-1	ViceCard=	StartDatetime=0	EndDatetime=0
+7367248 INFO  2026-01-30 12:18:00323 UploadProcess:499 - end parse op user
+7367255 INFO  2026-01-30 12:18:00330 UploadProcess:342 - end process data and return msg to device
+7367260 INFO  2026-01-30 12:18:00335 UploadProcess:346 - return msg to device and request over OK
+7367725 INFO  2026-01-30 12:18:00800 UploadProcess:255 - device language:,POST request and begin update device stamp:192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&table=OPERLOG&Stamp=9999
+7367729 INFO  2026-01-30 12:18:00804 UploadProcess:259 - POST REQUEST - Table: OPERLOG, Device SN: TDBD254600293
+7367745 INFO  2026-01-30 12:18:00820 UploadProcess:267 - update device stamp end and get stream.
+7367748 INFO  2026-01-30 12:18:00823 UploadProcess:320 - POST DATA RECEIVED - Table: OPERLOG, Data length: 39 bytes
+7367752 INFO  2026-01-30 12:18:00827 UploadProcess:338 - data:OPLOG 70	0	2026-01-31 08:17:59	1	0	0	0
+
+7367758 INFO  2026-01-30 12:18:00833 UploadProcess:339 - end get stream and process data
+7367760 INFO  2026-01-30 12:18:00835 UploadProcess:489 - begin parse op log
+7367810 INFO  2026-01-30 12:18:00885 UploadProcess:235 - oplog size:1
+7367813 INFO  2026-01-30 12:18:00888 UploadProcess:491 - end parse op log
+7367819 INFO  2026-01-30 12:18:00894 UploadProcess:342 - end process data and return msg to device
+7367879 INFO  2026-01-30 12:18:00954 UploadProcess:346 - return msg to device and request over OK
+7380984 INFO  2026-01-30 12:18:1459 UploadProcess:255 - device language:,POST request and begin update device stamp:192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&table=ATTLOG&Stamp=9999
+7381028 INFO  2026-01-30 12:18:14103 UploadProcess:259 - POST REQUEST - Table: ATTLOG, Device SN: TDBD254600293
+7381178 INFO  2026-01-30 12:18:14253 UploadProcess:267 - update device stamp end and get stream.
+7381233 INFO  2026-01-30 12:18:14308 UploadProcess:320 - POST DATA RECEIVED - Table: ATTLOG, Data length: 40 bytes
+7381243 INFO  2026-01-30 12:18:14318 UploadProcess:322 - ═══════════════════════════════════════════════════════════
+7381249 INFO  2026-01-30 12:18:14324 UploadProcess:323 - 📥 ATTENDANCE LOG POST DATA RECEIVED
+7381251 INFO  2026-01-30 12:18:14326 UploadProcess:324 - ═══════════════════════════════════════════════════════════
+7381262 INFO  2026-01-30 12:18:14337 UploadProcess:325 - Device SN: TDBD254600293
+7381272 INFO  2026-01-30 12:18:14347 UploadProcess:326 - Data length: 40 characters
+7381276 INFO  2026-01-30 12:18:14351 UploadProcess:330 - Data preview (first 200 chars): 1	2026-01-31 08:18:13	0	15	0	0	0	0	0	0	
+
+7381286 INFO  2026-01-30 12:18:14361 UploadProcess:332 - ═══════════════════════════════════════════════════════════
+7381291 INFO  2026-01-30 12:18:14366 UploadProcess:338 - data:1	2026-01-31 08:18:13	0	15	0	0	0	0	0	0	
+
+7381299 INFO  2026-01-30 12:18:14374 UploadProcess:339 - end get stream and process data
+7381305 INFO  2026-01-30 12:18:14380 UploadProcess:538 - ═══════════════════════════════════════════════════════════
+7381312 INFO  2026-01-30 12:18:14387 UploadProcess:539 - 🔄 PROCESSING ATTLOG TABLE DATA
+7381320 INFO  2026-01-30 12:18:14395 UploadProcess:540 - ═══════════════════════════════════════════════════════════
+7381325 INFO  2026-01-30 12:18:14400 UploadProcess:541 - Device SN: TDBD254600293
+7381331 INFO  2026-01-30 12:18:14406 UploadProcess:542 - Data length: 39 characters
+7381334 INFO  2026-01-30 12:18:14409 UploadProcess:546 - Data preview: 1	2026-01-31 08:18:13	0	15	0	0	0	0	0	0	
+7381498 INFO  2026-01-30 12:18:14573 UploadProcess:548 - begin parse op attlog
+7381546 INFO  2026-01-30 12:18:14621 UploadProcess:337 - ═══════════════════════════════════════════════════════════
+7381570 INFO  2026-01-30 12:18:14645 UploadProcess:338 - 🔍 PARSING ATTENDANCE LOG DATA
+7381573 INFO  2026-01-30 12:18:14648 UploadProcess:339 - ═══════════════════════════════════════════════════════════
+7381588 INFO  2026-01-30 12:18:14663 UploadProcess:340 - Device SN: TDBD254600293
+7381644 INFO  2026-01-30 12:18:14719 UploadProcess:341 - Data received: 39 characters
+7381654 INFO  2026-01-30 12:18:14729 UploadProcess:347 - Data content: 1	2026-01-31 08:18:13	0	15	0	0	0	0	0	0	
+7381671 INFO  2026-01-30 12:18:14746 UploadProcess:350 - Number of log lines: 1
+7381683 INFO  2026-01-30 12:18:14758 UploadProcess:356 - Processing log line: 1	2026-01-31 08:18:13	0	15	0	0	0	0	0	0	
+7381687 INFO  2026-01-30 12:18:14762 UploadProcess:426 - Total AttLog objects created: 1
+7381928 INFO  2026-01-30 12:18:153 AttLogManager:120 - === EXTERNAL API: Attendance logs saved, starting external API calls ===
+7381992 INFO  2026-01-30 12:18:1567 AttLogManager:121 - EXTERNAL API: Processing 1 verification(s)
+7382276 INFO  2026-01-30 12:18:15351 AttLogManager:125 - EXTERNAL API: Processing verification - User PIN: 1, User Name: FRANCIS, Timestamp: 2026-01-31 08:18:13
+7382608 INFO  2026-01-30 12:18:15683 AttLogManager:130 - EXTERNAL API: Calling notifyVerification for User ID: 1
+7382808 INFO  2026-01-30 12:18:15883 ExternalApiUtil:120 - ═══════════════════════════════════════════════════════════
+7382822 INFO  2026-01-30 12:18:15897 ExternalApiUtil:121 - 🔔 EXTERNAL API CALL REQUESTED - notifyVerification()
+7383058 INFO  2026-01-30 12:18:16133 ExternalApiUtil:122 - ═══════════════════════════════════════════════════════════
+7383060 INFO  2026-01-30 12:18:16135 ExternalApiUtil:123 - EXTERNAL API: User ID: 1
+7383105 INFO  2026-01-30 12:18:16180 ExternalApiUtil:124 - EXTERNAL API: Verification Time: 2026-01-31 08:18:13
+7383134 INFO  2026-01-30 12:18:16209 ExternalApiUtil:125 - EXTERNAL API: User Name: FRANCIS
+7383158 INFO  2026-01-30 12:18:16233 ExternalApiUtil:126 - ═══════════════════════════════════════════════════════════
+7383161 INFO  2026-01-30 12:18:16236 ExternalApiUtil:133 - ✅ EXTERNAL API: Submitting async task for userId: 1
+7383165 INFO  2026-01-30 12:18:16240 ExternalApiUtil:144 - EXTERNAL API: Async task submitted for userId: 1
+7383167 INFO  2026-01-30 12:18:16242 AttLogManager:133 - EXTERNAL API: notifyVerification called for User ID: 1, Timestamp: 2026-01-31 08:18:13
+7383179 INFO  2026-01-30 12:18:16254 AttLogManager:140 - === EXTERNAL API: Finished processing all verifications ===
+7383168 INFO  2026-01-30 12:18:16243 ExternalApiUtil:139 - EXTERNAL API: Async task started for userId: 1
+7383218 INFO  2026-01-30 12:18:16293 ExternalApiUtil:172 - ═══════════════════════════════════════════════════════════
+7383218 INFO  2026-01-30 12:18:16293 UploadProcess:431 - createAttLog returned: 1, attlog size:1
+7383233 INFO  2026-01-30 12:18:16308 ExternalApiUtil:173 - 🚀 EXTERNAL API CALL INITIATED
+7383243 INFO  2026-01-30 12:18:16318 ExternalApiUtil:174 - ═══════════════════════════════════════════════════════════
+7383243 INFO  2026-01-30 12:18:16318 UploadProcess:432 - ═══════════════════════════════════════════════════════════
+7383254 INFO  2026-01-30 12:18:16329 ExternalApiUtil:175 - EXTERNAL API: User ID: 1
+7383261 INFO  2026-01-30 12:18:16336 UploadProcess:550 - end parse op attlog
+7383265 INFO  2026-01-30 12:18:16340 ExternalApiUtil:176 - EXTERNAL API: URL: http://host.docker.internal:8002/api/meal-cards/generate-with-check
+7383279 INFO  2026-01-30 12:18:16354 UploadProcess:551 - ═══════════════════════════════════════════════════════════
+7383283 INFO  2026-01-30 12:18:16358 ExternalApiUtil:177 - EXTERNAL API: Method: POST
+7383300 INFO  2026-01-30 12:18:16375 UploadProcess:342 - end process data and return msg to device
+7383339 INFO  2026-01-30 12:18:16414 UploadProcess:346 - return msg to device and request over OK
+7383331 INFO  2026-01-30 12:18:16406 ExternalApiUtil:178 - EXTERNAL API: Timestamp (Nairobi/EAT): Fri Jan 30 15:18:16 EAT 2026
+7383463 INFO  2026-01-30 12:18:16538 ExternalApiUtil:182 - EXTERNAL API: Creating connection to: http://host.docker.internal:8002/api/meal-cards/generate-with-check
+7383465 INFO  2026-01-30 12:18:16540 ExternalApiUtil:191 - EXTERNAL API: Connection configured, formatting student ID...
+7383479 INFO  2026-01-30 12:18:16554 ExternalApiUtil:195 - EXTERNAL API: Student ID formatted - Original: 1, Formatted: 001
+7383522 INFO  2026-01-30 12:18:16597 ExternalApiUtil:202 - EXTERNAL API: Current time (Nairobi/EAT): 15:18 - Meal type determined: lunch
+7383575 INFO  2026-01-30 12:18:16650 ExternalApiUtil:206 - EXTERNAL API: Request body: {"student_id": "001", "meal_type": "lunch"}
+7383577 INFO  2026-01-30 12:18:16652 ExternalApiUtil:209 - EXTERNAL API: Writing request body to connection...
+7383633 ERROR 2026-01-30 12:18:16708 ExternalApiUtil:316 - ═══════════════════════════════════════════════════════════
+7383636 ERROR 2026-01-30 12:18:16711 ExternalApiUtil:317 - ❌ EXTERNAL API CALL FAILED
+7383639 ERROR 2026-01-30 12:18:16714 ExternalApiUtil:318 - ═══════════════════════════════════════════════════════════
+7383644 ERROR 2026-01-30 12:18:16719 ExternalApiUtil:319 - EXTERNAL API: Student ID: 1
+7383645 ERROR 2026-01-30 12:18:16720 ExternalApiUtil:320 - EXTERNAL API: URL: http://host.docker.internal:8002/api/meal-cards/generate-with-check
+7383651 ERROR 2026-01-30 12:18:16726 ExternalApiUtil:321 - EXTERNAL API: Error: Connection refused (Connection refused)
+7383655 ERROR 2026-01-30 12:18:16730 ExternalApiUtil:322 - EXTERNAL API: Exception: java.net.ConnectException
+7383659 ERROR 2026-01-30 12:18:16734 ExternalApiUtil:323 - ═══════════════════════════════════════════════════════════
+7383670 ERROR 2026-01-30 12:18:16745 ExternalApiUtil:324 - Full stack trace:
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:465)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:560)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:359)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1245)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1179)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1073)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1007)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1359)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1334)
+	at com.zk.util.ExternalApiUtil.callExternalApi(ExternalApiUtil.java:210)
+	at com.zk.util.ExternalApiUtil.access$100(ExternalApiUtil.java:22)
+	at com.zk.util.ExternalApiUtil$1.run(ExternalApiUtil.java:140)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+7383742 INFO  2026-01-30 12:18:16817 ExternalApiUtil:381 - EXTERNAL API: Report saved to database - Status: FAILED, User: 1
+7392743 INFO  2026-01-30 12:18:25818 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293&INFO=ZMM510-NF24VB-Ver2.1.4,1,1,5,10.246.242.22,10,35,12,1,11110,0,0,0
+7392748 INFO  2026-01-30 12:18:25823 DownloadProcess:59 - get cmd list over and begin contact:0
+7392751 INFO  2026-01-30 12:18:25826 DownloadProcess:94 - INFO:ZMM510-NF24VB-Ver2.1.4,1,1,5,10.246.242.22,10,35,12,1,11110,0,0,0
+7422455 INFO  2026-01-30 12:18:55530 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+7422742 INFO  2026-01-30 12:18:55817 DownloadProcess:59 - get cmd list over and begin contact:0
+7439304 INFO  2026-01-30 12:19:12379 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+7439457 INFO  2026-01-30 12:19:12532 DeviceManager:116 - Dao returned 1 devices.
+7439485 INFO  2026-01-30 12:19:12560 DeviceAction:122 - DeviceAction received 1 devices
+7453573 INFO  2026-01-30 12:19:26648 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+7453599 INFO  2026-01-30 12:19:26674 DownloadProcess:59 - get cmd list over and begin contact:0
+7458444 INFO  2026-01-30 12:19:31519 UploadProcess:255 - device language:,POST request and begin update device stamp:192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&table=ATTLOG&Stamp=9999
+7458445 INFO  2026-01-30 12:19:31520 UploadProcess:259 - POST REQUEST - Table: ATTLOG, Device SN: TDBD254600293
+7458463 INFO  2026-01-30 12:19:31538 UploadProcess:267 - update device stamp end and get stream.
+7458468 INFO  2026-01-30 12:19:31543 UploadProcess:320 - POST DATA RECEIVED - Table: ATTLOG, Data length: 40 bytes
+7458472 INFO  2026-01-30 12:19:31547 UploadProcess:322 - ═══════════════════════════════════════════════════════════
+7458473 INFO  2026-01-30 12:19:31548 UploadProcess:323 - 📥 ATTENDANCE LOG POST DATA RECEIVED
+7458480 INFO  2026-01-30 12:19:31555 UploadProcess:324 - ═══════════════════════════════════════════════════════════
+7458485 INFO  2026-01-30 12:19:31560 UploadProcess:325 - Device SN: TDBD254600293
+7458489 INFO  2026-01-30 12:19:31564 UploadProcess:326 - Data length: 40 characters
+7458491 INFO  2026-01-30 12:19:31566 UploadProcess:330 - Data preview (first 200 chars): 1	2026-01-31 08:19:30	0	15	0	0	0	0	0	0	
+
+7458495 INFO  2026-01-30 12:19:31570 UploadProcess:332 - ═══════════════════════════════════════════════════════════
+7458499 INFO  2026-01-30 12:19:31574 UploadProcess:338 - data:1	2026-01-31 08:19:30	0	15	0	0	0	0	0	0	
+
+7458501 INFO  2026-01-30 12:19:31576 UploadProcess:339 - end get stream and process data
+7458503 INFO  2026-01-30 12:19:31578 UploadProcess:538 - ═══════════════════════════════════════════════════════════
+7458505 INFO  2026-01-30 12:19:31580 UploadProcess:539 - 🔄 PROCESSING ATTLOG TABLE DATA
+7458507 INFO  2026-01-30 12:19:31582 UploadProcess:540 - ═══════════════════════════════════════════════════════════
+7458508 INFO  2026-01-30 12:19:31583 UploadProcess:541 - Device SN: TDBD254600293
+7458510 INFO  2026-01-30 12:19:31585 UploadProcess:542 - Data length: 39 characters
+7458512 INFO  2026-01-30 12:19:31587 UploadProcess:546 - Data preview: 1	2026-01-31 08:19:30	0	15	0	0	0	0	0	0	
+7458515 INFO  2026-01-30 12:19:31590 UploadProcess:548 - begin parse op attlog
+7458523 INFO  2026-01-30 12:19:31598 UploadProcess:337 - ═══════════════════════════════════════════════════════════
+7458532 INFO  2026-01-30 12:19:31607 UploadProcess:338 - 🔍 PARSING ATTENDANCE LOG DATA
+7458534 INFO  2026-01-30 12:19:31609 UploadProcess:339 - ═══════════════════════════════════════════════════════════
+7458535 INFO  2026-01-30 12:19:31610 UploadProcess:340 - Device SN: TDBD254600293
+7458537 INFO  2026-01-30 12:19:31612 UploadProcess:341 - Data received: 39 characters
+7458541 INFO  2026-01-30 12:19:31616 UploadProcess:347 - Data content: 1	2026-01-31 08:19:30	0	15	0	0	0	0	0	0	
+7458544 INFO  2026-01-30 12:19:31619 UploadProcess:350 - Number of log lines: 1
+7458548 INFO  2026-01-30 12:19:31623 UploadProcess:356 - Processing log line: 1	2026-01-31 08:19:30	0	15	0	0	0	0	0	0	
+7458551 INFO  2026-01-30 12:19:31626 UploadProcess:426 - Total AttLog objects created: 1
+7458585 INFO  2026-01-30 12:19:31660 AttLogManager:120 - === EXTERNAL API: Attendance logs saved, starting external API calls ===
+7458593 INFO  2026-01-30 12:19:31668 AttLogManager:121 - EXTERNAL API: Processing 1 verification(s)
+7458612 INFO  2026-01-30 12:19:31687 AttLogManager:125 - EXTERNAL API: Processing verification - User PIN: 1, User Name: FRANCIS, Timestamp: 2026-01-31 08:19:30
+7458629 INFO  2026-01-30 12:19:31704 AttLogManager:130 - EXTERNAL API: Calling notifyVerification for User ID: 1
+7458638 INFO  2026-01-30 12:19:31713 ExternalApiUtil:120 - ═══════════════════════════════════════════════════════════
+7458642 INFO  2026-01-30 12:19:31717 ExternalApiUtil:121 - 🔔 EXTERNAL API CALL REQUESTED - notifyVerification()
+7458648 INFO  2026-01-30 12:19:31723 ExternalApiUtil:122 - ═══════════════════════════════════════════════════════════
+7458657 INFO  2026-01-30 12:19:31732 ExternalApiUtil:123 - EXTERNAL API: User ID: 1
+7458661 INFO  2026-01-30 12:19:31736 ExternalApiUtil:124 - EXTERNAL API: Verification Time: 2026-01-31 08:19:30
+7458668 INFO  2026-01-30 12:19:31743 ExternalApiUtil:125 - EXTERNAL API: User Name: FRANCIS
+7458676 INFO  2026-01-30 12:19:31751 ExternalApiUtil:126 - ═══════════════════════════════════════════════════════════
+7458678 INFO  2026-01-30 12:19:31753 ExternalApiUtil:133 - ✅ EXTERNAL API: Submitting async task for userId: 1
+7458684 INFO  2026-01-30 12:19:31759 ExternalApiUtil:144 - EXTERNAL API: Async task submitted for userId: 1
+7458687 INFO  2026-01-30 12:19:31762 AttLogManager:133 - EXTERNAL API: notifyVerification called for User ID: 1, Timestamp: 2026-01-31 08:19:30
+7458689 INFO  2026-01-30 12:19:31764 AttLogManager:140 - === EXTERNAL API: Finished processing all verifications ===
+7458693 INFO  2026-01-30 12:19:31768 UploadProcess:431 - createAttLog returned: 1, attlog size:1
+7458703 INFO  2026-01-30 12:19:31778 UploadProcess:432 - ═══════════════════════════════════════════════════════════
+7458708 INFO  2026-01-30 12:19:31783 UploadProcess:550 - end parse op attlog
+7458710 INFO  2026-01-30 12:19:31785 UploadProcess:551 - ═══════════════════════════════════════════════════════════
+7458716 INFO  2026-01-30 12:19:31791 UploadProcess:342 - end process data and return msg to device
+7458722 INFO  2026-01-30 12:19:31797 UploadProcess:346 - return msg to device and request over OK
+7458685 INFO  2026-01-30 12:19:31760 ExternalApiUtil:139 - EXTERNAL API: Async task started for userId: 1
+7458729 INFO  2026-01-30 12:19:31804 ExternalApiUtil:172 - ═══════════════════════════════════════════════════════════
+7458730 INFO  2026-01-30 12:19:31805 ExternalApiUtil:173 - 🚀 EXTERNAL API CALL INITIATED
+7458731 INFO  2026-01-30 12:19:31806 ExternalApiUtil:174 - ═══════════════════════════════════════════════════════════
+7458732 INFO  2026-01-30 12:19:31807 ExternalApiUtil:175 - EXTERNAL API: User ID: 1
+7458732 INFO  2026-01-30 12:19:31807 ExternalApiUtil:176 - EXTERNAL API: URL: http://host.docker.internal:8002/api/meal-cards/generate-with-check
+7458733 INFO  2026-01-30 12:19:31808 ExternalApiUtil:177 - EXTERNAL API: Method: POST
+7458734 INFO  2026-01-30 12:19:31809 ExternalApiUtil:178 - EXTERNAL API: Timestamp (Nairobi/EAT): Fri Jan 30 15:19:31 EAT 2026
+7458735 INFO  2026-01-30 12:19:31810 ExternalApiUtil:182 - EXTERNAL API: Creating connection to: http://host.docker.internal:8002/api/meal-cards/generate-with-check
+7458737 INFO  2026-01-30 12:19:31812 ExternalApiUtil:191 - EXTERNAL API: Connection configured, formatting student ID...
+7458739 INFO  2026-01-30 12:19:31814 ExternalApiUtil:195 - EXTERNAL API: Student ID formatted - Original: 1, Formatted: 001
+7458741 INFO  2026-01-30 12:19:31816 ExternalApiUtil:202 - EXTERNAL API: Current time (Nairobi/EAT): 15:19 - Meal type determined: lunch
+7458743 INFO  2026-01-30 12:19:31818 ExternalApiUtil:206 - EXTERNAL API: Request body: {"student_id": "001", "meal_type": "lunch"}
+7458744 INFO  2026-01-30 12:19:31819 ExternalApiUtil:209 - EXTERNAL API: Writing request body to connection...
+7458755 ERROR 2026-01-30 12:19:31830 ExternalApiUtil:316 - ═══════════════════════════════════════════════════════════
+7458756 ERROR 2026-01-30 12:19:31831 ExternalApiUtil:317 - ❌ EXTERNAL API CALL FAILED
+7458757 ERROR 2026-01-30 12:19:31832 ExternalApiUtil:318 - ═══════════════════════════════════════════════════════════
+7458759 ERROR 2026-01-30 12:19:31834 ExternalApiUtil:319 - EXTERNAL API: Student ID: 1
+7458761 ERROR 2026-01-30 12:19:31836 ExternalApiUtil:320 - EXTERNAL API: URL: http://host.docker.internal:8002/api/meal-cards/generate-with-check
+7458762 ERROR 2026-01-30 12:19:31837 ExternalApiUtil:321 - EXTERNAL API: Error: Connection refused (Connection refused)
+7458764 ERROR 2026-01-30 12:19:31839 ExternalApiUtil:322 - EXTERNAL API: Exception: java.net.ConnectException
+7458766 ERROR 2026-01-30 12:19:31841 ExternalApiUtil:323 - ═══════════════════════════════════════════════════════════
+7458768 ERROR 2026-01-30 12:19:31843 ExternalApiUtil:324 - Full stack trace:
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:465)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:560)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:359)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1245)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1179)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1073)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1007)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1359)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1334)
+	at com.zk.util.ExternalApiUtil.callExternalApi(ExternalApiUtil.java:210)
+	at com.zk.util.ExternalApiUtil.access$100(ExternalApiUtil.java:22)
+	at com.zk.util.ExternalApiUtil$1.run(ExternalApiUtil.java:140)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+7458789 INFO  2026-01-30 12:19:31864 ExternalApiUtil:381 - EXTERNAL API: Report saved to database - Status: FAILED, User: 1
+7483574 INFO  2026-01-30 12:19:56649 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293&INFO=ZMM510-NF24VB-Ver2.1.4,1,1,6,10.246.242.22,10,35,12,1,11110,0,0,0
+7483577 INFO  2026-01-30 12:19:56652 DownloadProcess:59 - get cmd list over and begin contact:0
+7483578 INFO  2026-01-30 12:19:56653 DownloadProcess:94 - INFO:ZMM510-NF24VB-Ver2.1.4,1,1,6,10.246.242.22,10,35,12,1,11110,0,0,0
+7513041 INFO  2026-01-30 12:20:26116 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+7513115 INFO  2026-01-30 12:20:26190 DeviceManager:116 - Dao returned 1 devices.
+7513122 INFO  2026-01-30 12:20:26197 DeviceAction:122 - DeviceAction received 1 devices
+7514525 INFO  2026-01-30 12:20:27600 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+7514530 INFO  2026-01-30 12:20:27605 DownloadProcess:59 - get cmd list over and begin contact:0
+7522480 INFO  2026-01-30 12:20:35555 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+7522529 INFO  2026-01-30 12:20:35604 DeviceManager:116 - Dao returned 1 devices.
+7522541 INFO  2026-01-30 12:20:35616 DeviceAction:122 - DeviceAction received 1 devices
+7544400 INFO  2026-01-30 12:20:57475 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+7544402 INFO  2026-01-30 12:20:57477 DownloadProcess:59 - get cmd list over and begin contact:0
+7561066 INFO  2026-01-30 12:21:14141 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+7561174 INFO  2026-01-30 12:21:14249 DeviceManager:116 - Dao returned 1 devices.
+7561180 INFO  2026-01-30 12:21:14255 DeviceAction:122 - DeviceAction received 1 devices
+7575583 INFO  2026-01-30 12:21:28658 DownloadProcess:55 - get request and begin get cmd list.192.168.65.1;http://10.246.242.98:8080/iclock/getrequest?SN=TDBD254600293
+7575589 INFO  2026-01-30 12:21:28664 DownloadProcess:59 - get cmd list over and begin contact:0
+7584824 INFO  2026-01-30 12:21:37899 UploadProcess:255 - device language:,POST request and begin update device stamp:192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&table=ATTLOG&Stamp=9999
+7584825 INFO  2026-01-30 12:21:37900 UploadProcess:259 - POST REQUEST - Table: ATTLOG, Device SN: TDBD254600293
+7584846 INFO  2026-01-30 12:21:37921 UploadProcess:267 - update device stamp end and get stream.
+7584852 INFO  2026-01-30 12:21:37927 UploadProcess:320 - POST DATA RECEIVED - Table: ATTLOG, Data length: 40 bytes
+7584855 INFO  2026-01-30 12:21:37930 UploadProcess:322 - ═══════════════════════════════════════════════════════════
+7584856 INFO  2026-01-30 12:21:37931 UploadProcess:323 - 📥 ATTENDANCE LOG POST DATA RECEIVED
+7584858 INFO  2026-01-30 12:21:37933 UploadProcess:324 - ═══════════════════════════════════════════════════════════
+7584860 INFO  2026-01-30 12:21:37935 UploadProcess:325 - Device SN: TDBD254600293
+7584866 INFO  2026-01-30 12:21:37941 UploadProcess:326 - Data length: 40 characters
+7584869 INFO  2026-01-30 12:21:37944 UploadProcess:330 - Data preview (first 200 chars): 1	2026-01-31 08:21:36	0	15	0	0	0	0	0	0	
+
+7584873 INFO  2026-01-30 12:21:37948 UploadProcess:332 - ═══════════════════════════════════════════════════════════
+7584877 INFO  2026-01-30 12:21:37952 UploadProcess:338 - data:1	2026-01-31 08:21:36	0	15	0	0	0	0	0	0	
+
+7584879 INFO  2026-01-30 12:21:37954 UploadProcess:339 - end get stream and process data
+7584881 INFO  2026-01-30 12:21:37956 UploadProcess:538 - ═══════════════════════════════════════════════════════════
+7584884 INFO  2026-01-30 12:21:37959 UploadProcess:539 - 🔄 PROCESSING ATTLOG TABLE DATA
+7584885 INFO  2026-01-30 12:21:37960 UploadProcess:540 - ═══════════════════════════════════════════════════════════
+7584887 INFO  2026-01-30 12:21:37962 UploadProcess:541 - Device SN: TDBD254600293
+7584888 INFO  2026-01-30 12:21:37963 UploadProcess:542 - Data length: 39 characters
+7584892 INFO  2026-01-30 12:21:37967 UploadProcess:546 - Data preview: 1	2026-01-31 08:21:36	0	15	0	0	0	0	0	0	
+7584893 INFO  2026-01-30 12:21:37968 UploadProcess:548 - begin parse op attlog
+7584906 INFO  2026-01-30 12:21:37981 UploadProcess:337 - ═══════════════════════════════════════════════════════════
+7584909 INFO  2026-01-30 12:21:37984 UploadProcess:338 - 🔍 PARSING ATTENDANCE LOG DATA
+7584911 INFO  2026-01-30 12:21:37986 UploadProcess:339 - ═══════════════════════════════════════════════════════════
+7584913 INFO  2026-01-30 12:21:37988 UploadProcess:340 - Device SN: TDBD254600293
+7584916 INFO  2026-01-30 12:21:37991 UploadProcess:341 - Data received: 39 characters
+7584917 INFO  2026-01-30 12:21:37992 UploadProcess:347 - Data content: 1	2026-01-31 08:21:36	0	15	0	0	0	0	0	0	
+7584919 INFO  2026-01-30 12:21:37994 UploadProcess:350 - Number of log lines: 1
+7584920 INFO  2026-01-30 12:21:37995 UploadProcess:356 - Processing log line: 1	2026-01-31 08:21:36	0	15	0	0	0	0	0	0	
+7584922 INFO  2026-01-30 12:21:37997 UploadProcess:426 - Total AttLog objects created: 1
+7584938 INFO  2026-01-30 12:21:3813 AttLogManager:120 - === EXTERNAL API: Attendance logs saved, starting external API calls ===
+7584939 INFO  2026-01-30 12:21:3814 AttLogManager:121 - EXTERNAL API: Processing 1 verification(s)
+7584943 INFO  2026-01-30 12:21:3818 AttLogManager:125 - EXTERNAL API: Processing verification - User PIN: 1, User Name: FRANCIS, Timestamp: 2026-01-31 08:21:36
+7584947 INFO  2026-01-30 12:21:3822 AttLogManager:130 - EXTERNAL API: Calling notifyVerification for User ID: 1
+7584953 INFO  2026-01-30 12:21:3828 ExternalApiUtil:120 - ═══════════════════════════════════════════════════════════
+7584956 INFO  2026-01-30 12:21:3831 ExternalApiUtil:121 - 🔔 EXTERNAL API CALL REQUESTED - notifyVerification()
+7584957 INFO  2026-01-30 12:21:3832 ExternalApiUtil:122 - ═══════════════════════════════════════════════════════════
+7584960 INFO  2026-01-30 12:21:3835 ExternalApiUtil:123 - EXTERNAL API: User ID: 1
+7584961 INFO  2026-01-30 12:21:3836 ExternalApiUtil:124 - EXTERNAL API: Verification Time: 2026-01-31 08:21:36
+7584963 INFO  2026-01-30 12:21:3838 ExternalApiUtil:125 - EXTERNAL API: User Name: FRANCIS
+7584965 INFO  2026-01-30 12:21:3840 ExternalApiUtil:126 - ═══════════════════════════════════════════════════════════
+7584966 INFO  2026-01-30 12:21:3841 ExternalApiUtil:133 - ✅ EXTERNAL API: Submitting async task for userId: 1
+7584968 INFO  2026-01-30 12:21:3843 ExternalApiUtil:144 - EXTERNAL API: Async task submitted for userId: 1
+7584969 INFO  2026-01-30 12:21:3844 AttLogManager:133 - EXTERNAL API: notifyVerification called for User ID: 1, Timestamp: 2026-01-31 08:21:36
+7584970 INFO  2026-01-30 12:21:3845 AttLogManager:140 - === EXTERNAL API: Finished processing all verifications ===
+7584971 INFO  2026-01-30 12:21:3846 UploadProcess:431 - createAttLog returned: 1, attlog size:1
+7584975 INFO  2026-01-30 12:21:3850 UploadProcess:432 - ═══════════════════════════════════════════════════════════
+7584977 INFO  2026-01-30 12:21:3852 UploadProcess:550 - end parse op attlog
+7584978 INFO  2026-01-30 12:21:3853 UploadProcess:551 - ═══════════════════════════════════════════════════════════
+7584981 INFO  2026-01-30 12:21:3856 UploadProcess:342 - end process data and return msg to device
+7584982 INFO  2026-01-30 12:21:3857 UploadProcess:346 - return msg to device and request over OK
+7584968 INFO  2026-01-30 12:21:3843 ExternalApiUtil:139 - EXTERNAL API: Async task started for userId: 1
+7584988 INFO  2026-01-30 12:21:3863 ExternalApiUtil:172 - ═══════════════════════════════════════════════════════════
+7584989 INFO  2026-01-30 12:21:3864 ExternalApiUtil:173 - 🚀 EXTERNAL API CALL INITIATED
+7584990 INFO  2026-01-30 12:21:3865 ExternalApiUtil:174 - ═══════════════════════════════════════════════════════════
+7584991 INFO  2026-01-30 12:21:3866 ExternalApiUtil:175 - EXTERNAL API: User ID: 1
+7584992 INFO  2026-01-30 12:21:3867 ExternalApiUtil:176 - EXTERNAL API: URL: http://host.docker.internal:8002/api/meal-cards/generate-with-check
+7584993 INFO  2026-01-30 12:21:3868 ExternalApiUtil:177 - EXTERNAL API: Method: POST
+7584994 INFO  2026-01-30 12:21:3869 ExternalApiUtil:178 - EXTERNAL API: Timestamp (Nairobi/EAT): Fri Jan 30 15:21:38 EAT 2026
+7584996 INFO  2026-01-30 12:21:3871 ExternalApiUtil:182 - EXTERNAL API: Creating connection to: http://host.docker.internal:8002/api/meal-cards/generate-with-check
+7584997 INFO  2026-01-30 12:21:3872 ExternalApiUtil:191 - EXTERNAL API: Connection configured, formatting student ID...
+7584998 INFO  2026-01-30 12:21:3873 ExternalApiUtil:195 - EXTERNAL API: Student ID formatted - Original: 1, Formatted: 001
+7584999 INFO  2026-01-30 12:21:3874 ExternalApiUtil:202 - EXTERNAL API: Current time (Nairobi/EAT): 15:21 - Meal type determined: lunch
+7585001 INFO  2026-01-30 12:21:3876 ExternalApiUtil:206 - EXTERNAL API: Request body: {"student_id": "001", "meal_type": "lunch"}
+7585002 INFO  2026-01-30 12:21:3877 ExternalApiUtil:209 - EXTERNAL API: Writing request body to connection...
+7585007 ERROR 2026-01-30 12:21:3882 ExternalApiUtil:316 - ═══════════════════════════════════════════════════════════
+7585008 ERROR 2026-01-30 12:21:3883 ExternalApiUtil:317 - ❌ EXTERNAL API CALL FAILED
+7585009 ERROR 2026-01-30 12:21:3884 ExternalApiUtil:318 - ═══════════════════════════════════════════════════════════
+7585010 ERROR 2026-01-30 12:21:3885 ExternalApiUtil:319 - EXTERNAL API: Student ID: 1
+7585011 ERROR 2026-01-30 12:21:3886 ExternalApiUtil:320 - EXTERNAL API: URL: http://host.docker.internal:8002/api/meal-cards/generate-with-check
+7585012 ERROR 2026-01-30 12:21:3887 ExternalApiUtil:321 - EXTERNAL API: Error: Connection refused (Connection refused)
+7585014 ERROR 2026-01-30 12:21:3889 ExternalApiUtil:322 - EXTERNAL API: Exception: java.net.ConnectException
+7585014 ERROR 2026-01-30 12:21:3889 ExternalApiUtil:323 - ═══════════════════════════════════════════════════════════
+7585015 ERROR 2026-01-30 12:21:3890 ExternalApiUtil:324 - Full stack trace:
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:465)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:560)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:246)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:359)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1245)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1179)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1073)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1007)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1359)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1334)
+	at com.zk.util.ExternalApiUtil.callExternalApi(ExternalApiUtil.java:210)
+	at com.zk.util.ExternalApiUtil.access$100(ExternalApiUtil.java:22)
+	at com.zk.util.ExternalApiUtil$1.run(ExternalApiUtil.java:140)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+7585029 INFO  2026-01-30 12:21:38104 ExternalApiUtil:381 - EXTERNAL API: Report saved to database - Status: FAILED, User: 1
+7622419 INFO  2026-01-30 12:22:15494 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+7622498 INFO  2026-01-30 12:22:15573 DeviceManager:116 - Dao returned 1 devices.
+7622503 INFO  2026-01-30 12:22:15578 DeviceAction:122 - DeviceAction received 1 devices
+7684536 INFO  2026-01-30 12:23:17611 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+7684593 INFO  2026-01-30 12:23:17668 DeviceManager:116 - Dao returned 1 devices.
+7684618 INFO  2026-01-30 12:23:17693 DeviceAction:122 - DeviceAction received 1 devices
+7746080 INFO  2026-01-30 12:24:19155 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+7746111 INFO  2026-01-30 12:24:19186 DeviceManager:116 - Dao returned 1 devices.
+7746116 INFO  2026-01-30 12:24:19191 DeviceAction:122 - DeviceAction received 1 devices

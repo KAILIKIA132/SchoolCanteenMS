@@ -97,9 +97,11 @@ a:hover {
 	margin-bottom: 20px;
 }
 
+
 /* --- Tables --- */
 .list_table,
-.push_tab1 {
+.push_tab1,
+.push_tab2 {
 	width: 100%;
 	border-collapse: collapse;
 	margin-top: 15px;
@@ -107,39 +109,56 @@ a:hover {
 	border-radius: 4px;
 	overflow: hidden;
 	box-shadow: var(--shadow-sm);
+	table-layout: fixed;
+	/* Fixes layout to screen */
 }
 
 .list_table thead tr,
 .push_tab1 tr:first-child,
-.push_tab1 th {
+.push_tab1 th,
+.push_tab2 thead tr,
+.push_tab2 th {
 	background-color: var(--primary-red);
 	color: var(--text-white);
 	text-align: left;
 }
 
 .list_table th,
-.push_tab1 th {
-	padding: 12px 15px;
+.push_tab1 th,
+.push_tab2 th {
+	padding: 12px 10px;
+	/* Reduced padding for fit */
 	font-weight: 600;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 11px;
+	/* Slightly smaller font for headers */
 	letter-spacing: 0.5px;
+	white-space: nowrap;
+	/* Prevent wrapping in headers */
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .list_table td,
-.push_tab1 td {
-	padding: 12px 15px;
+.push_tab1 td,
+.push_tab2 td {
+	padding: 10px 10px;
 	border-bottom: 1px solid var(--border-color);
 	color: var(--text-dark);
+	font-size: 13px;
+	word-wrap: break-word;
+	/* Allow content to wrap */
 }
 
 .list_table tr:last-child td,
-.push_tab1 tr:last-child td {
+.push_tab1 tr:last-child td,
+.push_tab2 tr:last-child td {
 	border-bottom: none;
 }
 
 .list_table tr:hover,
-.push_tab1 tr:hover {
+.push_tab1 tr:hover,
+.push_tab2 tbody tr:hover {
 	background-color: #fcebeb;
 	/* Light red tint on hover */
 }
