@@ -6509,3 +6509,2539 @@ There is no Action mapped for namespace / and action name  userAction. - [unknow
 4267859 INFO  2026-01-30 06:24:44438 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
 4267876 INFO  2026-01-30 06:24:44455 DeviceManager:116 - Dao returned 2 devices.
 4267877 INFO  2026-01-30 06:24:44456 DeviceAction:122 - DeviceAction received 2 devices
+89010 WARN  2026-01-30 09:11:40695 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace / and action name  deviceAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+157651 INFO  2026-01-30 09:12:49336 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/pushdemo/WEB-INF/classes/config.xml
+157739 INFO  2026-01-30 09:12:49424 ConfigUtil:25 - Config.xml loaded successfully
+158213 INFO  2026-01-30 09:12:49898 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+176964 INFO  2026-01-30 09:13:08649 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+180901 INFO  2026-01-30 09:13:12586 DeviceManager:116 - Dao returned 2 devices.
+180915 INFO  2026-01-30 09:13:12600 DeviceAction:122 - DeviceAction received 2 devices
+261897 INFO  2026-01-30 09:14:33582 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+262835 INFO  2026-01-30 09:14:34520 DeviceManager:116 - Dao returned 2 devices.
+262853 INFO  2026-01-30 09:14:34538 DeviceAction:122 - DeviceAction received 2 devices
+333821 INFO  2026-01-30 09:15:45506 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+334395 INFO  2026-01-30 09:15:4680 DeviceManager:116 - Dao returned 2 devices.
+334442 INFO  2026-01-30 09:15:46127 DeviceAction:122 - DeviceAction received 2 devices
+396812 INFO  2026-01-30 09:16:48497 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+397045 INFO  2026-01-30 09:16:48730 DeviceManager:116 - Dao returned 2 devices.
+397063 INFO  2026-01-30 09:16:48748 DeviceAction:122 - DeviceAction received 2 devices
+460003 INFO  2026-01-30 09:17:51688 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+460554 INFO  2026-01-30 09:17:52239 DeviceManager:116 - Dao returned 2 devices.
+460562 INFO  2026-01-30 09:17:52247 DeviceAction:122 - DeviceAction received 2 devices
+576339 INFO  2026-01-30 09:19:4824 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+576515 INFO  2026-01-30 09:19:48200 DeviceManager:116 - Dao returned 2 devices.
+576580 INFO  2026-01-30 09:19:48265 DeviceAction:122 - DeviceAction received 2 devices
+639524 INFO  2026-01-30 09:20:51209 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+640296 INFO  2026-01-30 09:20:51981 DeviceManager:116 - Dao returned 2 devices.
+640315 INFO  2026-01-30 09:20:520 DeviceAction:122 - DeviceAction received 2 devices
+702778 INFO  2026-01-30 09:21:54463 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+702969 INFO  2026-01-30 09:21:54654 DeviceManager:116 - Dao returned 2 devices.
+703036 INFO  2026-01-30 09:21:54721 DeviceAction:122 - DeviceAction received 2 devices
+62274 INFO  2026-01-30 09:25:3721 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/pushdemo/WEB-INF/classes/config.xml
+62402 INFO  2026-01-30 09:25:37149 ConfigUtil:25 - Config.xml loaded successfully
+62895 INFO  2026-01-30 09:25:37642 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+80680 INFO  2026-01-30 09:25:55427 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+83128 INFO  2026-01-30 09:25:57875 DeviceManager:116 - Dao returned 2 devices.
+83183 INFO  2026-01-30 09:25:57930 DeviceAction:122 - DeviceAction received 2 devices
+185261 INFO  2026-01-30 09:27:408 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+185363 INFO  2026-01-30 09:27:40110 DeviceManager:116 - Dao returned 2 devices.
+185370 INFO  2026-01-30 09:27:40117 DeviceAction:122 - DeviceAction received 2 devices
+215490 INFO  2026-01-30 09:28:10237 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+215606 INFO  2026-01-30 09:28:10353 DeviceManager:116 - Dao returned 2 devices.
+215619 INFO  2026-01-30 09:28:10366 DeviceAction:122 - DeviceAction received 2 devices
+277977 INFO  2026-01-30 09:29:12724 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+278070 INFO  2026-01-30 09:29:12817 DeviceManager:116 - Dao returned 2 devices.
+278072 INFO  2026-01-30 09:29:12819 DeviceAction:122 - DeviceAction received 2 devices
+339076 INFO  2026-01-30 09:30:13823 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+339242 INFO  2026-01-30 09:30:13989 DeviceManager:116 - Dao returned 2 devices.
+339262 INFO  2026-01-30 09:30:149 DeviceAction:122 - DeviceAction received 2 devices
+400405 INFO  2026-01-30 09:31:15152 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+400496 INFO  2026-01-30 09:31:15243 DeviceManager:116 - Dao returned 2 devices.
+400509 INFO  2026-01-30 09:31:15256 DeviceAction:122 - DeviceAction received 2 devices
+462169 INFO  2026-01-30 09:32:16916 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+462274 INFO  2026-01-30 09:32:1721 DeviceManager:116 - Dao returned 2 devices.
+462278 INFO  2026-01-30 09:32:1725 DeviceAction:122 - DeviceAction received 2 devices
+524266 INFO  2026-01-30 09:33:1913 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+525246 INFO  2026-01-30 09:33:19993 DeviceManager:116 - Dao returned 2 devices.
+525253 INFO  2026-01-30 09:33:200 DeviceAction:122 - DeviceAction received 2 devices
+587711 INFO  2026-01-30 09:34:22458 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+587849 INFO  2026-01-30 09:34:22596 DeviceManager:116 - Dao returned 2 devices.
+587858 INFO  2026-01-30 09:34:22605 DeviceAction:122 - DeviceAction received 2 devices
+39101 INFO  2026-01-30 09:37:22355 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/pushdemo/WEB-INF/classes/config.xml
+39176 INFO  2026-01-30 09:37:22430 ConfigUtil:25 - Config.xml loaded successfully
+39480 INFO  2026-01-30 09:37:22734 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+57117 INFO  2026-01-30 09:37:40371 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+58553 INFO  2026-01-30 09:37:41807 DeviceManager:116 - Dao returned 2 devices.
+58561 INFO  2026-01-30 09:37:41815 DeviceAction:122 - DeviceAction received 2 devices
+148272 INFO  2026-01-30 09:39:11526 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+148464 INFO  2026-01-30 09:39:11718 DeviceManager:116 - Dao returned 2 devices.
+148475 INFO  2026-01-30 09:39:11729 DeviceAction:122 - DeviceAction received 2 devices
+210841 INFO  2026-01-30 09:40:1495 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+210940 INFO  2026-01-30 09:40:14194 DeviceManager:116 - Dao returned 2 devices.
+210953 INFO  2026-01-30 09:40:14207 DeviceAction:122 - DeviceAction received 2 devices
+272012 INFO  2026-01-30 09:41:15266 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+272047 INFO  2026-01-30 09:41:15301 DeviceManager:116 - Dao returned 2 devices.
+272049 INFO  2026-01-30 09:41:15303 DeviceAction:122 - DeviceAction received 2 devices
+332900 INFO  2026-01-30 09:42:16154 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+333485 INFO  2026-01-30 09:42:16739 DeviceManager:116 - Dao returned 2 devices.
+333726 INFO  2026-01-30 09:42:16980 DeviceAction:122 - DeviceAction received 2 devices
+396468 INFO  2026-01-30 09:43:19722 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+396489 INFO  2026-01-30 09:43:19743 DeviceManager:116 - Dao returned 2 devices.
+396491 INFO  2026-01-30 09:43:19745 DeviceAction:122 - DeviceAction received 2 devices
+458084 INFO  2026-01-30 09:44:21338 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+458121 INFO  2026-01-30 09:44:21375 DeviceManager:116 - Dao returned 2 devices.
+458178 INFO  2026-01-30 09:44:21432 DeviceAction:122 - DeviceAction received 2 devices
+519726 INFO  2026-01-30 09:45:22980 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+519850 INFO  2026-01-30 09:45:23104 DeviceManager:116 - Dao returned 2 devices.
+519865 INFO  2026-01-30 09:45:23119 DeviceAction:122 - DeviceAction received 2 devices
+37746 INFO  2026-01-30 09:49:30781 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/pushdemo/WEB-INF/classes/config.xml
+37861 INFO  2026-01-30 09:49:30896 ConfigUtil:25 - Config.xml loaded successfully
+38263 INFO  2026-01-30 09:49:31298 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+47138 INFO  2026-01-30 09:49:40173 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+48082 INFO  2026-01-30 09:49:41117 DeviceManager:116 - Dao returned 2 devices.
+48094 INFO  2026-01-30 09:49:41129 DeviceAction:122 - DeviceAction received 2 devices
+217662 INFO  2026-01-30 09:52:30697 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+218028 INFO  2026-01-30 09:52:3163 DeviceManager:116 - Dao returned 2 devices.
+218037 INFO  2026-01-30 09:52:3172 DeviceAction:122 - DeviceAction received 2 devices
+280749 INFO  2026-01-30 09:53:33784 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+280803 INFO  2026-01-30 09:53:33838 DeviceManager:116 - Dao returned 2 devices.
+280815 INFO  2026-01-30 09:53:33850 DeviceAction:122 - DeviceAction received 2 devices
+321295 INFO  2026-01-30 09:54:14330 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+321413 INFO  2026-01-30 09:54:14448 DeviceManager:116 - Dao returned 2 devices.
+321420 INFO  2026-01-30 09:54:14455 DeviceAction:122 - DeviceAction received 2 devices
+367079 INFO  2026-01-30 09:55:00114 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+367099 INFO  2026-01-30 09:55:00134 DeviceManager:116 - Dao returned 2 devices.
+367100 INFO  2026-01-30 09:55:00135 DeviceAction:122 - DeviceAction received 2 devices
+427620 INFO  2026-01-30 09:56:00655 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+427716 INFO  2026-01-30 09:56:00751 DeviceManager:116 - Dao returned 2 devices.
+427720 INFO  2026-01-30 09:56:00755 DeviceAction:122 - DeviceAction received 2 devices
+489962 INFO  2026-01-30 09:57:02997 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+490402 INFO  2026-01-30 09:57:03437 DeviceManager:116 - Dao returned 2 devices.
+490405 INFO  2026-01-30 09:57:03440 DeviceAction:122 - DeviceAction received 2 devices
+552759 INFO  2026-01-30 09:58:05794 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+552895 INFO  2026-01-30 09:58:05930 DeviceManager:116 - Dao returned 2 devices.
+552920 INFO  2026-01-30 09:58:05955 DeviceAction:122 - DeviceAction received 2 devices
+614756 INFO  2026-01-30 09:59:07791 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+614952 INFO  2026-01-30 09:59:07987 DeviceManager:116 - Dao returned 2 devices.
+614963 INFO  2026-01-30 09:59:07998 DeviceAction:122 - DeviceAction received 2 devices
+676783 INFO  2026-01-30 10:00:09818 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+676836 INFO  2026-01-30 10:00:09871 DeviceManager:116 - Dao returned 2 devices.
+676854 INFO  2026-01-30 10:00:09889 DeviceAction:122 - DeviceAction received 2 devices
+759220 INFO  2026-01-30 10:01:32255 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+759307 INFO  2026-01-30 10:01:32342 DeviceManager:116 - Dao returned 2 devices.
+759312 INFO  2026-01-30 10:01:32347 DeviceAction:122 - DeviceAction received 2 devices
+820738 INFO  2026-01-30 10:02:33773 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+820782 INFO  2026-01-30 10:02:33817 DeviceManager:116 - Dao returned 2 devices.
+820791 INFO  2026-01-30 10:02:33826 DeviceAction:122 - DeviceAction received 2 devices
+881531 INFO  2026-01-30 10:03:34566 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+882011 INFO  2026-01-30 10:03:3546 DeviceManager:116 - Dao returned 2 devices.
+882233 INFO  2026-01-30 10:03:35268 DeviceAction:122 - DeviceAction received 2 devices
+946949 INFO  2026-01-30 10:04:39984 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+949782 INFO  2026-01-30 10:04:42817 DeviceManager:116 - Dao returned 2 devices.
+950284 INFO  2026-01-30 10:04:43319 DeviceAction:122 - DeviceAction received 2 devices
+1016224 INFO  2026-01-30 10:05:49259 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1017546 INFO  2026-01-30 10:05:50581 DeviceManager:116 - Dao returned 2 devices.
+1017895 INFO  2026-01-30 10:05:50930 DeviceAction:122 - DeviceAction received 2 devices
+20523 WARN  2026-01-30 10:15:33598 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace /pushdemo and action name deviceAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+146715 WARN  2026-01-30 10:17:39790 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace /pushdemo and action name deviceAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+158806 WARN  2026-01-30 10:17:51881 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace /iclock and action name deviceAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+178230 INFO  2026-01-30 10:18:11305 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/ROOT/WEB-INF/classes/config.xml
+178256 INFO  2026-01-30 10:18:11331 ConfigUtil:25 - Config.xml loaded successfully
+178528 INFO  2026-01-30 10:18:11603 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+184788 INFO  2026-01-30 10:18:17863 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+185774 INFO  2026-01-30 10:18:18849 DeviceManager:116 - Dao returned 2 devices.
+185793 INFO  2026-01-30 10:18:18868 DeviceAction:122 - DeviceAction received 2 devices
+245928 INFO  2026-01-30 10:19:193 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+246447 INFO  2026-01-30 10:19:19522 DeviceManager:116 - Dao returned 2 devices.
+246451 INFO  2026-01-30 10:19:19526 DeviceAction:122 - DeviceAction received 2 devices
+308283 INFO  2026-01-30 10:20:21358 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+308323 INFO  2026-01-30 10:20:21398 DeviceManager:116 - Dao returned 2 devices.
+308326 INFO  2026-01-30 10:20:21401 DeviceAction:122 - DeviceAction received 2 devices
+335216 INFO  2026-01-30 10:20:48291 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+335271 INFO  2026-01-30 10:20:48346 DeviceManager:116 - Dao returned 2 devices.
+335272 INFO  2026-01-30 10:20:48347 DeviceAction:122 - DeviceAction received 2 devices
+360591 INFO  2026-01-30 10:21:13666 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+360696 INFO  2026-01-30 10:21:13771 DeviceManager:116 - Dao returned 2 devices.
+360749 INFO  2026-01-30 10:21:13824 DeviceAction:122 - DeviceAction received 2 devices
+421985 INFO  2026-01-30 10:22:1560 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+422065 INFO  2026-01-30 10:22:15140 DeviceManager:116 - Dao returned 2 devices.
+422073 INFO  2026-01-30 10:22:15148 DeviceAction:122 - DeviceAction received 2 devices
+483858 INFO  2026-01-30 10:23:16933 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+483892 INFO  2026-01-30 10:23:16967 DeviceManager:116 - Dao returned 2 devices.
+483897 INFO  2026-01-30 10:23:16972 DeviceAction:122 - DeviceAction received 2 devices
+544812 INFO  2026-01-30 10:24:17887 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+544834 INFO  2026-01-30 10:24:17909 DeviceManager:116 - Dao returned 2 devices.
+544837 INFO  2026-01-30 10:24:17912 DeviceAction:122 - DeviceAction received 2 devices
+605555 INFO  2026-01-30 10:25:18630 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+605584 INFO  2026-01-30 10:25:18659 DeviceManager:116 - Dao returned 2 devices.
+605587 INFO  2026-01-30 10:25:18662 DeviceAction:122 - DeviceAction received 2 devices
+665288 INFO  2026-01-30 10:26:18363 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+665358 INFO  2026-01-30 10:26:18433 DeviceManager:116 - Dao returned 2 devices.
+665375 INFO  2026-01-30 10:26:18450 DeviceAction:122 - DeviceAction received 2 devices
+726462 INFO  2026-01-30 10:27:19537 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+726490 INFO  2026-01-30 10:27:19565 DeviceManager:116 - Dao returned 2 devices.
+726495 INFO  2026-01-30 10:27:19570 DeviceAction:122 - DeviceAction received 2 devices
+786927 INFO  2026-01-30 10:28:202 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+786974 INFO  2026-01-30 10:28:2049 DeviceManager:116 - Dao returned 2 devices.
+786981 INFO  2026-01-30 10:28:2056 DeviceAction:122 - DeviceAction received 2 devices
+792788 INFO  2026-01-30 10:28:25863 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+792842 INFO  2026-01-30 10:28:25917 DeviceManager:116 - Dao returned 2 devices.
+792845 INFO  2026-01-30 10:28:25920 DeviceAction:122 - DeviceAction received 2 devices
+827193 INFO  2026-01-30 10:29:00268 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+827232 INFO  2026-01-30 10:29:00307 DeviceManager:116 - Dao returned 2 devices.
+827237 INFO  2026-01-30 10:29:00312 DeviceAction:122 - DeviceAction received 2 devices
+830595 INFO  2026-01-30 10:29:03670 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+830667 INFO  2026-01-30 10:29:03742 DeviceManager:116 - Dao returned 2 devices.
+830676 INFO  2026-01-30 10:29:03751 DeviceAction:122 - DeviceAction received 2 devices
+873673 INFO  2026-01-30 10:29:46748 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+873707 INFO  2026-01-30 10:29:46782 DeviceManager:116 - Dao returned 2 devices.
+873710 INFO  2026-01-30 10:29:46785 DeviceAction:122 - DeviceAction received 2 devices
+886674 INFO  2026-01-30 10:29:59749 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+886800 INFO  2026-01-30 10:29:59875 DeviceManager:116 - Dao returned 2 devices.
+886804 INFO  2026-01-30 10:29:59879 DeviceAction:122 - DeviceAction received 2 devices
+908444 INFO  2026-01-30 10:30:21519 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+908489 INFO  2026-01-30 10:30:21564 DeviceManager:116 - Dao returned 0 devices.
+908503 INFO  2026-01-30 10:30:21578 DeviceAction:122 - DeviceAction received 0 devices
+916621 INFO  2026-01-30 10:30:29696 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+916646 INFO  2026-01-30 10:30:29721 DeviceManager:116 - Dao returned 0 devices.
+916648 INFO  2026-01-30 10:30:29723 DeviceAction:122 - DeviceAction received 0 devices
+966983 INFO  2026-01-30 10:31:2058 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+967004 INFO  2026-01-30 10:31:2079 DeviceManager:116 - Dao returned 0 devices.
+967010 INFO  2026-01-30 10:31:2085 DeviceAction:122 - DeviceAction received 0 devices
+971148 INFO  2026-01-30 10:31:24223 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+971165 INFO  2026-01-30 10:31:24240 DeviceManager:116 - Dao returned 0 devices.
+971173 INFO  2026-01-30 10:31:24248 DeviceAction:122 - DeviceAction received 0 devices
+973773 INFO  2026-01-30 10:31:26848 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+973801 INFO  2026-01-30 10:31:26876 DeviceManager:116 - Dao returned 0 devices.
+973805 INFO  2026-01-30 10:31:26880 DeviceAction:122 - DeviceAction received 0 devices
+977204 INFO  2026-01-30 10:31:30279 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+977237 INFO  2026-01-30 10:31:30312 DeviceManager:116 - Dao returned 0 devices.
+977250 INFO  2026-01-30 10:31:30325 DeviceAction:122 - DeviceAction received 0 devices
+980726 INFO  2026-01-30 10:31:33801 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+980796 INFO  2026-01-30 10:31:33871 DeviceManager:116 - Dao returned 0 devices.
+980801 INFO  2026-01-30 10:31:33876 DeviceAction:122 - DeviceAction received 0 devices
+983924 INFO  2026-01-30 10:31:36999 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+983944 INFO  2026-01-30 10:31:3719 DeviceManager:116 - Dao returned 0 devices.
+983946 INFO  2026-01-30 10:31:3721 DeviceAction:122 - DeviceAction received 0 devices
+986418 INFO  2026-01-30 10:31:39493 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+986435 INFO  2026-01-30 10:31:39510 DeviceManager:116 - Dao returned 0 devices.
+986438 INFO  2026-01-30 10:31:39513 DeviceAction:122 - DeviceAction received 0 devices
+988066 INFO  2026-01-30 10:31:41141 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+988103 INFO  2026-01-30 10:31:41178 DeviceManager:116 - Dao returned 0 devices.
+988108 INFO  2026-01-30 10:31:41183 DeviceAction:122 - DeviceAction received 0 devices
+995953 INFO  2026-01-30 10:31:4928 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+995984 INFO  2026-01-30 10:31:4959 DeviceManager:116 - Dao returned 0 devices.
+995988 INFO  2026-01-30 10:31:4963 DeviceAction:122 - DeviceAction received 0 devices
+1001390 INFO  2026-01-30 10:31:54465 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1001427 INFO  2026-01-30 10:31:54502 DeviceManager:116 - Dao returned 0 devices.
+1001434 INFO  2026-01-30 10:31:54509 DeviceAction:122 - DeviceAction received 0 devices
+1008111 INFO  2026-01-30 10:32:01186 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1008134 INFO  2026-01-30 10:32:01209 DeviceManager:116 - Dao returned 0 devices.
+1008139 INFO  2026-01-30 10:32:01214 DeviceAction:122 - DeviceAction received 0 devices
+1011945 INFO  2026-01-30 10:32:0520 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1011978 INFO  2026-01-30 10:32:0553 DeviceManager:116 - Dao returned 0 devices.
+1011981 INFO  2026-01-30 10:32:0556 DeviceAction:122 - DeviceAction received 0 devices
+1072794 INFO  2026-01-30 10:33:05869 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1072835 INFO  2026-01-30 10:33:05910 DeviceManager:116 - Dao returned 0 devices.
+1072870 INFO  2026-01-30 10:33:05945 DeviceAction:122 - DeviceAction received 0 devices
+1133619 INFO  2026-01-30 10:34:06694 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1133645 INFO  2026-01-30 10:34:06720 DeviceManager:116 - Dao returned 0 devices.
+1133650 INFO  2026-01-30 10:34:06725 DeviceAction:122 - DeviceAction received 0 devices
+1195341 INFO  2026-01-30 10:35:08416 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1195364 INFO  2026-01-30 10:35:08439 DeviceManager:116 - Dao returned 0 devices.
+1195375 INFO  2026-01-30 10:35:08450 DeviceAction:122 - DeviceAction received 0 devices
+1211589 INFO  2026-01-30 10:35:24664 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1211632 INFO  2026-01-30 10:35:24707 DeviceManager:116 - Dao returned 0 devices.
+1211636 INFO  2026-01-30 10:35:24711 DeviceAction:122 - DeviceAction received 0 devices
+1214428 INFO  2026-01-30 10:35:27503 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1214449 INFO  2026-01-30 10:35:27524 DeviceManager:116 - Dao returned 0 devices.
+1214452 INFO  2026-01-30 10:35:27527 DeviceAction:122 - DeviceAction received 0 devices
+1217125 INFO  2026-01-30 10:35:30200 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1217150 INFO  2026-01-30 10:35:30225 DeviceManager:116 - Dao returned 0 devices.
+1217153 INFO  2026-01-30 10:35:30228 DeviceAction:122 - DeviceAction received 0 devices
+1218205 INFO  2026-01-30 10:35:31280 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1218238 INFO  2026-01-30 10:35:31313 DeviceManager:116 - Dao returned 0 devices.
+1218248 INFO  2026-01-30 10:35:31323 DeviceAction:122 - DeviceAction received 0 devices
+1240311 INFO  2026-01-30 10:35:53386 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1240330 INFO  2026-01-30 10:35:53405 DeviceManager:116 - Dao returned 0 devices.
+1240332 INFO  2026-01-30 10:35:53407 DeviceAction:122 - DeviceAction received 0 devices
+1252704 INFO  2026-01-30 10:36:05779 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1252726 INFO  2026-01-30 10:36:05801 DeviceManager:116 - Dao returned 0 devices.
+1252728 INFO  2026-01-30 10:36:05803 DeviceAction:122 - DeviceAction received 0 devices
+1313164 INFO  2026-01-30 10:37:06239 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1313188 INFO  2026-01-30 10:37:06263 DeviceManager:116 - Dao returned 0 devices.
+1313190 INFO  2026-01-30 10:37:06265 DeviceAction:122 - DeviceAction received 0 devices
+1373761 INFO  2026-01-30 10:38:06836 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1373779 INFO  2026-01-30 10:38:06854 DeviceManager:116 - Dao returned 0 devices.
+1373863 INFO  2026-01-30 10:38:06938 DeviceAction:122 - DeviceAction received 0 devices
+1435043 INFO  2026-01-30 10:39:08118 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1435081 INFO  2026-01-30 10:39:08156 DeviceManager:116 - Dao returned 0 devices.
+1435084 INFO  2026-01-30 10:39:08159 DeviceAction:122 - DeviceAction received 0 devices
+1496480 INFO  2026-01-30 10:40:09555 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1496949 INFO  2026-01-30 10:40:1024 DeviceManager:116 - Dao returned 0 devices.
+1496956 INFO  2026-01-30 10:40:1031 DeviceAction:122 - DeviceAction received 0 devices
+1557546 INFO  2026-01-30 10:41:10621 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1557569 INFO  2026-01-30 10:41:10644 DeviceManager:116 - Dao returned 0 devices.
+1557570 INFO  2026-01-30 10:41:10645 DeviceAction:122 - DeviceAction received 0 devices
+1618483 INFO  2026-01-30 10:42:11558 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1618496 INFO  2026-01-30 10:42:11571 DeviceManager:116 - Dao returned 0 devices.
+1618508 INFO  2026-01-30 10:42:11583 DeviceAction:122 - DeviceAction received 0 devices
+1680401 INFO  2026-01-30 10:43:13476 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1680416 INFO  2026-01-30 10:43:13491 DeviceManager:116 - Dao returned 0 devices.
+1680421 INFO  2026-01-30 10:43:13496 DeviceAction:122 - DeviceAction received 0 devices
+1740755 INFO  2026-01-30 10:44:13830 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1740764 INFO  2026-01-30 10:44:13839 DeviceManager:116 - Dao returned 0 devices.
+1740768 INFO  2026-01-30 10:44:13843 DeviceAction:122 - DeviceAction received 0 devices
+1801037 INFO  2026-01-30 10:45:14112 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1801062 INFO  2026-01-30 10:45:14137 DeviceManager:116 - Dao returned 0 devices.
+1801080 INFO  2026-01-30 10:45:14155 DeviceAction:122 - DeviceAction received 0 devices
+1861472 INFO  2026-01-30 10:46:14547 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1861497 INFO  2026-01-30 10:46:14572 DeviceManager:116 - Dao returned 0 devices.
+1861500 INFO  2026-01-30 10:46:14575 DeviceAction:122 - DeviceAction received 0 devices
+1921989 INFO  2026-01-30 10:47:1564 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1921998 INFO  2026-01-30 10:47:1573 DeviceManager:116 - Dao returned 0 devices.
+1921999 INFO  2026-01-30 10:47:1574 DeviceAction:122 - DeviceAction received 0 devices
+1982584 INFO  2026-01-30 10:48:15659 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1982599 INFO  2026-01-30 10:48:15674 DeviceManager:116 - Dao returned 0 devices.
+1982602 INFO  2026-01-30 10:48:15677 DeviceAction:122 - DeviceAction received 0 devices
+2042944 INFO  2026-01-30 10:49:1619 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2042962 INFO  2026-01-30 10:49:1637 DeviceManager:116 - Dao returned 0 devices.
+2042966 INFO  2026-01-30 10:49:1641 DeviceAction:122 - DeviceAction received 0 devices
+2103380 INFO  2026-01-30 10:50:16455 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2103394 INFO  2026-01-30 10:50:16469 DeviceManager:116 - Dao returned 0 devices.
+2103395 INFO  2026-01-30 10:50:16470 DeviceAction:122 - DeviceAction received 0 devices
+2163728 INFO  2026-01-30 10:51:16803 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2163734 INFO  2026-01-30 10:51:16809 DeviceManager:116 - Dao returned 0 devices.
+2163735 INFO  2026-01-30 10:51:16810 DeviceAction:122 - DeviceAction received 0 devices
+2224096 INFO  2026-01-30 10:52:17171 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2224104 INFO  2026-01-30 10:52:17179 DeviceManager:116 - Dao returned 0 devices.
+2224106 INFO  2026-01-30 10:52:17181 DeviceAction:122 - DeviceAction received 0 devices
+2284482 INFO  2026-01-30 10:53:17557 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2284629 INFO  2026-01-30 10:53:17704 DeviceManager:116 - Dao returned 0 devices.
+2284630 INFO  2026-01-30 10:53:17705 DeviceAction:122 - DeviceAction received 0 devices
+2345079 INFO  2026-01-30 10:54:18154 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2345093 INFO  2026-01-30 10:54:18168 DeviceManager:116 - Dao returned 0 devices.
+2345095 INFO  2026-01-30 10:54:18170 DeviceAction:122 - DeviceAction received 0 devices
+2405497 INFO  2026-01-30 10:55:18572 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2405506 INFO  2026-01-30 10:55:18581 DeviceManager:116 - Dao returned 0 devices.
+2405507 INFO  2026-01-30 10:55:18582 DeviceAction:122 - DeviceAction received 0 devices
+2465989 INFO  2026-01-30 10:56:1964 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2466003 INFO  2026-01-30 10:56:1978 DeviceManager:116 - Dao returned 0 devices.
+2466007 INFO  2026-01-30 10:56:1982 DeviceAction:122 - DeviceAction received 0 devices
+2526281 INFO  2026-01-30 10:57:19356 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2526291 INFO  2026-01-30 10:57:19366 DeviceManager:116 - Dao returned 0 devices.
+2526297 INFO  2026-01-30 10:57:19372 DeviceAction:122 - DeviceAction received 0 devices
+2586619 INFO  2026-01-30 10:58:19694 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2587228 INFO  2026-01-30 10:58:20303 DeviceManager:116 - Dao returned 0 devices.
+2587232 INFO  2026-01-30 10:58:20307 DeviceAction:122 - DeviceAction received 0 devices
+2647578 INFO  2026-01-30 10:59:20653 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2647612 INFO  2026-01-30 10:59:20687 DeviceManager:116 - Dao returned 0 devices.
+2647616 INFO  2026-01-30 10:59:20691 DeviceAction:122 - DeviceAction received 0 devices
+2707982 INFO  2026-01-30 11:00:2157 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2708002 INFO  2026-01-30 11:00:2177 DeviceManager:116 - Dao returned 0 devices.
+2708003 INFO  2026-01-30 11:00:2178 DeviceAction:122 - DeviceAction received 0 devices
+2768322 INFO  2026-01-30 11:01:21397 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2768336 INFO  2026-01-30 11:01:21411 DeviceManager:116 - Dao returned 0 devices.
+2768338 INFO  2026-01-30 11:01:21413 DeviceAction:122 - DeviceAction received 0 devices
+2828670 INFO  2026-01-30 11:02:21745 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2828684 INFO  2026-01-30 11:02:21759 DeviceManager:116 - Dao returned 0 devices.
+2828685 INFO  2026-01-30 11:02:21760 DeviceAction:122 - DeviceAction received 0 devices
+2889068 INFO  2026-01-30 11:03:22143 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2889079 INFO  2026-01-30 11:03:22154 DeviceManager:116 - Dao returned 0 devices.
+2889081 INFO  2026-01-30 11:03:22156 DeviceAction:122 - DeviceAction received 0 devices
+2949374 INFO  2026-01-30 11:04:22449 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2949382 INFO  2026-01-30 11:04:22457 DeviceManager:116 - Dao returned 0 devices.
+2949385 INFO  2026-01-30 11:04:22460 DeviceAction:122 - DeviceAction received 0 devices
+3009917 INFO  2026-01-30 11:05:22992 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3009932 INFO  2026-01-30 11:05:237 DeviceManager:116 - Dao returned 0 devices.
+3009934 INFO  2026-01-30 11:05:239 DeviceAction:122 - DeviceAction received 0 devices
+3071400 INFO  2026-01-30 11:06:24475 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3071417 INFO  2026-01-30 11:06:24492 DeviceManager:116 - Dao returned 0 devices.
+3071418 INFO  2026-01-30 11:06:24493 DeviceAction:122 - DeviceAction received 0 devices
+3132863 INFO  2026-01-30 11:07:25938 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3132890 INFO  2026-01-30 11:07:25965 DeviceManager:116 - Dao returned 0 devices.
+3132909 INFO  2026-01-30 11:07:25984 DeviceAction:122 - DeviceAction received 0 devices
+3193225 INFO  2026-01-30 11:08:26300 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3193232 INFO  2026-01-30 11:08:26307 DeviceManager:116 - Dao returned 0 devices.
+3193236 INFO  2026-01-30 11:08:26311 DeviceAction:122 - DeviceAction received 0 devices
+3253557 INFO  2026-01-30 11:09:26632 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3253563 INFO  2026-01-30 11:09:26638 DeviceManager:116 - Dao returned 0 devices.
+3253564 INFO  2026-01-30 11:09:26639 DeviceAction:122 - DeviceAction received 0 devices
+3313853 INFO  2026-01-30 11:10:26928 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3313863 INFO  2026-01-30 11:10:26938 DeviceManager:116 - Dao returned 0 devices.
+3313872 INFO  2026-01-30 11:10:26947 DeviceAction:122 - DeviceAction received 0 devices
+3374182 INFO  2026-01-30 11:11:27257 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3374200 INFO  2026-01-30 11:11:27275 DeviceManager:116 - Dao returned 0 devices.
+3374201 INFO  2026-01-30 11:11:27276 DeviceAction:122 - DeviceAction received 0 devices
+3434996 INFO  2026-01-30 11:12:2871 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3435034 INFO  2026-01-30 11:12:28109 DeviceManager:116 - Dao returned 0 devices.
+3435036 INFO  2026-01-30 11:12:28111 DeviceAction:122 - DeviceAction received 0 devices
+3494145 INFO  2026-01-30 11:13:27220 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3494164 INFO  2026-01-30 11:13:27239 DeviceManager:116 - Dao returned 0 devices.
+3494167 INFO  2026-01-30 11:13:27242 DeviceAction:122 - DeviceAction received 0 devices
+3499105 INFO  2026-01-30 11:13:32180 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3499126 INFO  2026-01-30 11:13:32201 DeviceManager:116 - Dao returned 0 devices.
+3499127 INFO  2026-01-30 11:13:32202 DeviceAction:122 - DeviceAction received 0 devices
+3559299 INFO  2026-01-30 11:14:32374 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3559328 INFO  2026-01-30 11:14:32403 DeviceManager:116 - Dao returned 0 devices.
+3559331 INFO  2026-01-30 11:14:32406 DeviceAction:122 - DeviceAction received 0 devices
+3619853 INFO  2026-01-30 11:15:32928 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3619868 INFO  2026-01-30 11:15:32943 DeviceManager:116 - Dao returned 0 devices.
+3619870 INFO  2026-01-30 11:15:32945 DeviceAction:122 - DeviceAction received 0 devices
+3680435 INFO  2026-01-30 11:16:33510 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3680448 INFO  2026-01-30 11:16:33523 DeviceManager:116 - Dao returned 0 devices.
+3680451 INFO  2026-01-30 11:16:33526 DeviceAction:122 - DeviceAction received 0 devices
+3741154 INFO  2026-01-30 11:17:34229 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3741160 INFO  2026-01-30 11:17:34235 DeviceManager:116 - Dao returned 0 devices.
+3741161 INFO  2026-01-30 11:17:34236 DeviceAction:122 - DeviceAction received 0 devices
+3803921 INFO  2026-01-30 11:18:36996 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3803965 INFO  2026-01-30 11:18:3740 DeviceManager:116 - Dao returned 0 devices.
+3803969 INFO  2026-01-30 11:18:3744 DeviceAction:122 - DeviceAction received 0 devices
+3865511 INFO  2026-01-30 11:19:38586 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3865526 INFO  2026-01-30 11:19:38601 DeviceManager:116 - Dao returned 0 devices.
+3865528 INFO  2026-01-30 11:19:38603 DeviceAction:122 - DeviceAction received 0 devices
+3925971 INFO  2026-01-30 11:20:3946 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3925990 INFO  2026-01-30 11:20:3965 DeviceManager:116 - Dao returned 0 devices.
+3925992 INFO  2026-01-30 11:20:3967 DeviceAction:122 - DeviceAction received 0 devices
+3986345 INFO  2026-01-30 11:21:39420 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3986394 INFO  2026-01-30 11:21:39469 DeviceManager:116 - Dao returned 0 devices.
+3986398 INFO  2026-01-30 11:21:39473 DeviceAction:122 - DeviceAction received 0 devices
+4056994 INFO  2026-01-30 11:22:5069 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+4057018 INFO  2026-01-30 11:22:5093 DeviceManager:116 - Dao returned 0 devices.
+4057021 INFO  2026-01-30 11:22:5096 DeviceAction:122 - DeviceAction received 0 devices
+4117908 INFO  2026-01-30 11:23:50983 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+4117970 INFO  2026-01-30 11:23:5145 DeviceManager:116 - Dao returned 0 devices.
+4118010 INFO  2026-01-30 11:23:5185 DeviceAction:122 - DeviceAction received 0 devices
+4130139 INFO  2026-01-30 11:24:03214 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4130452 INFO  2026-01-30 11:24:03527 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4144174 INFO  2026-01-30 11:24:17249 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4144229 INFO  2026-01-30 11:24:17304 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4158528 INFO  2026-01-30 11:24:31603 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+4158786 INFO  2026-01-30 11:24:31861 DeviceManager:116 - Dao returned 1 devices.
+4158790 INFO  2026-01-30 11:24:31865 DeviceAction:122 - DeviceAction received 1 devices
+4159134 INFO  2026-01-30 11:24:32209 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4159297 INFO  2026-01-30 11:24:32372 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4174074 INFO  2026-01-30 11:24:47149 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4174130 INFO  2026-01-30 11:24:47205 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4189035 INFO  2026-01-30 11:25:02110 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4189053 INFO  2026-01-30 11:25:02128 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4204062 INFO  2026-01-30 11:25:17137 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4204080 INFO  2026-01-30 11:25:17155 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4218956 INFO  2026-01-30 11:25:3231 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4218973 INFO  2026-01-30 11:25:3248 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4234074 INFO  2026-01-30 11:25:47149 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4234419 INFO  2026-01-30 11:25:47494 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4249027 INFO  2026-01-30 11:26:02102 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4249043 INFO  2026-01-30 11:26:02118 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4264082 INFO  2026-01-30 11:26:17157 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4264106 INFO  2026-01-30 11:26:17181 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4279038 INFO  2026-01-30 11:26:32113 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4279058 INFO  2026-01-30 11:26:32133 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4293995 INFO  2026-01-30 11:26:4770 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4294040 INFO  2026-01-30 11:26:47115 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4308878 INFO  2026-01-30 11:27:01953 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4308938 INFO  2026-01-30 11:27:0213 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4323829 INFO  2026-01-30 11:27:16904 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4323881 INFO  2026-01-30 11:27:16956 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4338880 INFO  2026-01-30 11:27:31955 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4338964 INFO  2026-01-30 11:27:3239 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4354264 INFO  2026-01-30 11:27:47339 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4356340 INFO  2026-01-30 11:27:49415 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4368940 INFO  2026-01-30 11:28:0215 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4368977 INFO  2026-01-30 11:28:0252 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4383840 INFO  2026-01-30 11:28:16915 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4383861 INFO  2026-01-30 11:28:16936 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4399055 INFO  2026-01-30 11:28:32130 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4399078 INFO  2026-01-30 11:28:32153 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4413858 INFO  2026-01-30 11:28:46933 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4413878 INFO  2026-01-30 11:28:46953 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4428948 INFO  2026-01-30 11:29:0223 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4429035 INFO  2026-01-30 11:29:02110 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4443900 INFO  2026-01-30 11:29:16975 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4443925 INFO  2026-01-30 11:29:170 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4458951 INFO  2026-01-30 11:29:3226 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4459026 INFO  2026-01-30 11:29:32101 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4474006 INFO  2026-01-30 11:29:4781 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4474044 INFO  2026-01-30 11:29:47119 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4488955 INFO  2026-01-30 11:30:0230 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4488972 INFO  2026-01-30 11:30:0247 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4503814 INFO  2026-01-30 11:30:16889 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4503849 INFO  2026-01-30 11:30:16924 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4519146 INFO  2026-01-30 11:30:32221 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4519172 INFO  2026-01-30 11:30:32247 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4534010 INFO  2026-01-30 11:30:4785 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4534052 INFO  2026-01-30 11:30:47127 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4548958 INFO  2026-01-30 11:31:0233 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4548969 INFO  2026-01-30 11:31:0244 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4563909 INFO  2026-01-30 11:31:16984 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4563931 INFO  2026-01-30 11:31:176 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4579058 INFO  2026-01-30 11:31:32133 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4579074 INFO  2026-01-30 11:31:32149 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4593875 INFO  2026-01-30 11:31:46950 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4593981 INFO  2026-01-30 11:31:4756 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4609105 INFO  2026-01-30 11:32:02180 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4609314 INFO  2026-01-30 11:32:02389 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4623969 INFO  2026-01-30 11:32:1744 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4624133 INFO  2026-01-30 11:32:17208 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4638961 INFO  2026-01-30 11:32:3236 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4639057 INFO  2026-01-30 11:32:32132 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4654080 INFO  2026-01-30 11:32:47155 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4654581 INFO  2026-01-30 11:32:47656 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4668969 INFO  2026-01-30 11:33:0244 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4668983 INFO  2026-01-30 11:33:0258 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4683919 INFO  2026-01-30 11:33:16994 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4683939 INFO  2026-01-30 11:33:1714 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4698890 INFO  2026-01-30 11:33:31965 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4699005 INFO  2026-01-30 11:33:3280 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4714033 INFO  2026-01-30 11:33:47108 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4714150 INFO  2026-01-30 11:33:47225 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4728973 INFO  2026-01-30 11:34:0248 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4729021 INFO  2026-01-30 11:34:0296 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4743926 INFO  2026-01-30 11:34:171 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4743947 INFO  2026-01-30 11:34:1722 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4758876 INFO  2026-01-30 11:34:31951 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4758903 INFO  2026-01-30 11:34:31978 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4774010 INFO  2026-01-30 11:34:4785 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4774026 INFO  2026-01-30 11:34:47101 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4789002 INFO  2026-01-30 11:35:0277 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4789038 INFO  2026-01-30 11:35:02113 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4803930 INFO  2026-01-30 11:35:175 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4804000 INFO  2026-01-30 11:35:1775 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4805278 INFO  2026-01-30 11:35:18353 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+4805352 INFO  2026-01-30 11:35:18427 DeviceManager:116 - Dao returned 1 devices.
+4805373 INFO  2026-01-30 11:35:18448 DeviceAction:122 - DeviceAction received 1 devices
+4818882 INFO  2026-01-30 11:35:31957 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4818902 INFO  2026-01-30 11:35:31977 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4834487 INFO  2026-01-30 11:35:47562 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4835149 INFO  2026-01-30 11:35:48224 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4848987 INFO  2026-01-30 11:36:0262 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4849046 INFO  2026-01-30 11:36:02121 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4863828 INFO  2026-01-30 11:36:16903 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4864571 INFO  2026-01-30 11:36:17646 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4878906 INFO  2026-01-30 11:36:31981 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4878931 INFO  2026-01-30 11:36:326 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4893833 INFO  2026-01-30 11:36:46908 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4893968 INFO  2026-01-30 11:36:4743 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4908992 INFO  2026-01-30 11:37:0267 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4909049 INFO  2026-01-30 11:37:02124 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4916727 INFO  2026-01-30 11:37:09802 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+4916813 INFO  2026-01-30 11:37:09888 DeviceManager:116 - Dao returned 1 devices.
+4916824 INFO  2026-01-30 11:37:09899 DeviceAction:122 - DeviceAction received 1 devices
+4923948 INFO  2026-01-30 11:37:1723 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4924101 INFO  2026-01-30 11:37:17176 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4938882 INFO  2026-01-30 11:37:31957 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4939021 INFO  2026-01-30 11:37:3296 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4953838 INFO  2026-01-30 11:37:46913 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4953855 INFO  2026-01-30 11:37:46930 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4969051 INFO  2026-01-30 11:38:02126 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4969070 INFO  2026-01-30 11:38:02145 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4981660 INFO  2026-01-30 11:38:14735 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+4981889 INFO  2026-01-30 11:38:14964 DeviceManager:116 - Dao returned 1 devices.
+4981934 INFO  2026-01-30 11:38:159 DeviceAction:122 - DeviceAction received 1 devices
+4983961 INFO  2026-01-30 11:38:1736 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4984202 INFO  2026-01-30 11:38:17277 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+4998896 INFO  2026-01-30 11:38:31971 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+4998913 INFO  2026-01-30 11:38:31988 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5013914 INFO  2026-01-30 11:38:46989 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5013987 INFO  2026-01-30 11:38:4762 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5021277 INFO  2026-01-30 11:38:54352 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+5021321 INFO  2026-01-30 11:38:54396 DeviceManager:116 - Dao returned 1 devices.
+5021329 INFO  2026-01-30 11:38:54404 DeviceAction:122 - DeviceAction received 1 devices
+5029031 INFO  2026-01-30 11:39:02106 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5029177 INFO  2026-01-30 11:39:02252 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5043784 INFO  2026-01-30 11:39:16859 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5043815 INFO  2026-01-30 11:39:16890 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5058905 INFO  2026-01-30 11:39:31980 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5058951 INFO  2026-01-30 11:39:3226 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5074055 INFO  2026-01-30 11:39:47130 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5074069 INFO  2026-01-30 11:39:47144 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5081833 INFO  2026-01-30 11:39:54908 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+5081886 INFO  2026-01-30 11:39:54961 DeviceManager:116 - Dao returned 1 devices.
+5081889 INFO  2026-01-30 11:39:54964 DeviceAction:122 - DeviceAction received 1 devices
+5088857 INFO  2026-01-30 11:40:01932 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5088873 INFO  2026-01-30 11:40:01948 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5103866 INFO  2026-01-30 11:40:16941 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5103882 INFO  2026-01-30 11:40:16957 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5120133 INFO  2026-01-30 11:40:33208 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5120276 INFO  2026-01-30 11:40:33351 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5134053 INFO  2026-01-30 11:40:47128 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5134117 INFO  2026-01-30 11:40:47192 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5148836 INFO  2026-01-30 11:41:01911 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5148856 INFO  2026-01-30 11:41:01931 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5163872 INFO  2026-01-30 11:41:16947 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5163936 INFO  2026-01-30 11:41:1711 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5167903 INFO  2026-01-30 11:41:20978 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+5167951 INFO  2026-01-30 11:41:2126 DeviceManager:116 - Dao returned 1 devices.
+5167957 INFO  2026-01-30 11:41:2132 DeviceAction:122 - DeviceAction received 1 devices
+5178859 INFO  2026-01-30 11:41:31934 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5178888 INFO  2026-01-30 11:41:31963 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5193783 INFO  2026-01-30 11:41:46858 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5193819 INFO  2026-01-30 11:41:46894 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5208840 INFO  2026-01-30 11:42:01915 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5208856 INFO  2026-01-30 11:42:01931 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5223838 INFO  2026-01-30 11:42:16913 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5223867 INFO  2026-01-30 11:42:16942 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5229190 INFO  2026-01-30 11:42:22265 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+5229260 INFO  2026-01-30 11:42:22335 DeviceManager:116 - Dao returned 1 devices.
+5229281 INFO  2026-01-30 11:42:22356 DeviceAction:122 - DeviceAction received 1 devices
+5239045 INFO  2026-01-30 11:42:32120 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5239122 INFO  2026-01-30 11:42:32197 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5253860 INFO  2026-01-30 11:42:46935 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5253886 INFO  2026-01-30 11:42:46961 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5268873 INFO  2026-01-30 11:43:01948 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5269078 INFO  2026-01-30 11:43:02153 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5283983 INFO  2026-01-30 11:43:1758 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5284022 INFO  2026-01-30 11:43:1797 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5298849 INFO  2026-01-30 11:43:31924 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5298956 INFO  2026-01-30 11:43:3231 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5313827 INFO  2026-01-30 11:43:46902 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5314147 INFO  2026-01-30 11:43:47222 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5329007 INFO  2026-01-30 11:44:0282 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5329153 INFO  2026-01-30 11:44:02228 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5343844 INFO  2026-01-30 11:44:16919 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5343892 INFO  2026-01-30 11:44:16967 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5358826 INFO  2026-01-30 11:44:31901 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5358867 INFO  2026-01-30 11:44:31942 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5374106 INFO  2026-01-30 11:44:47181 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5374241 INFO  2026-01-30 11:44:47316 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5389008 INFO  2026-01-30 11:45:0283 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5389235 INFO  2026-01-30 11:45:02310 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5404030 INFO  2026-01-30 11:45:17105 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5404077 INFO  2026-01-30 11:45:17152 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5419026 INFO  2026-01-30 11:45:32101 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5419135 INFO  2026-01-30 11:45:32210 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5433838 INFO  2026-01-30 11:45:46913 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5434127 INFO  2026-01-30 11:45:47202 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5448851 INFO  2026-01-30 11:46:01926 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5448901 INFO  2026-01-30 11:46:01976 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5463848 INFO  2026-01-30 11:46:16923 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5463915 INFO  2026-01-30 11:46:16990 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5478980 INFO  2026-01-30 11:46:3255 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5479029 INFO  2026-01-30 11:46:32104 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5493931 INFO  2026-01-30 11:46:476 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5493994 INFO  2026-01-30 11:46:4769 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5508934 INFO  2026-01-30 11:47:029 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5509027 INFO  2026-01-30 11:47:02102 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5521716 INFO  2026-01-30 11:47:14791 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+5521853 INFO  2026-01-30 11:47:14928 DeviceManager:116 - Dao returned 1 devices.
+5521984 INFO  2026-01-30 11:47:1559 DeviceAction:122 - DeviceAction received 1 devices
+5523944 INFO  2026-01-30 11:47:1719 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5525143 INFO  2026-01-30 11:47:18218 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5526467 INFO  2026-01-30 11:47:19542 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+5527320 INFO  2026-01-30 11:47:20395 DeviceManager:116 - Dao returned 1 devices.
+5527340 INFO  2026-01-30 11:47:20415 DeviceAction:122 - DeviceAction received 1 devices
+5538988 INFO  2026-01-30 11:47:3263 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5539107 INFO  2026-01-30 11:47:32182 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5553934 INFO  2026-01-30 11:47:479 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5553986 INFO  2026-01-30 11:47:4761 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5569764 INFO  2026-01-30 11:48:02839 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5570368 INFO  2026-01-30 11:48:03443 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5583890 INFO  2026-01-30 11:48:16965 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5584004 INFO  2026-01-30 11:48:1779 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5598989 INFO  2026-01-30 11:48:3264 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5599023 INFO  2026-01-30 11:48:3298 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5613937 INFO  2026-01-30 11:48:4712 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5613957 INFO  2026-01-30 11:48:4732 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5628895 INFO  2026-01-30 11:49:01970 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5628935 INFO  2026-01-30 11:49:0210 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5643839 INFO  2026-01-30 11:49:16914 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5643909 INFO  2026-01-30 11:49:16984 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5658996 INFO  2026-01-30 11:49:3271 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5659145 INFO  2026-01-30 11:49:32220 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5660330 INFO  2026-01-30 11:49:33405 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+5660362 INFO  2026-01-30 11:49:33437 DeviceManager:116 - Dao returned 1 devices.
+5660380 INFO  2026-01-30 11:49:33455 DeviceAction:122 - DeviceAction received 1 devices
+5673945 INFO  2026-01-30 11:49:4720 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5673997 INFO  2026-01-30 11:49:4772 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5688888 INFO  2026-01-30 11:50:01963 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5688934 INFO  2026-01-30 11:50:029 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5704042 INFO  2026-01-30 11:50:17117 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5704091 INFO  2026-01-30 11:50:17166 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5719000 INFO  2026-01-30 11:50:3275 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5719030 INFO  2026-01-30 11:50:32105 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5733917 INFO  2026-01-30 11:50:46992 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5734497 INFO  2026-01-30 11:50:47572 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5748903 INFO  2026-01-30 11:51:01978 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5748996 INFO  2026-01-30 11:51:0271 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+
+5763824 INFO  2026-01-30 11:51:16899 UploadProcess:63 - get request and make the device options :192.168.65.1;http://10.246.242.98:8080/iclock/cdata?SN=TDBD254600293&options=all&pushver=3.1.2&DeviceType=acc&PushOptionsFlag=1
+5764027 INFO  2026-01-30 11:51:17102 UploadProcess:90 - GET OPTION FROM: TDBD254600293
+ATTLOGStamp=0
+OPERLOGStamp=0
+ATTPHOTOStamp=0
+BIODATAStamp=0
+IDCARDStamp=0
+ERRORLOGStamp=0
+TransFlag=TransData AttLog	OpLog	AttPhoto	EnrollUser	ChgUser	EnrollFP	ChgFP	FPImag	FACE	UserPic	BioPhoto
+ErrorDelay=60
+Delay=30
+transTimes=00:00;14:05
+TransInterval=1
+Realtime=1
+Encrypt=0
+ServerVer=2.2.14
+TimeZone=1200
+

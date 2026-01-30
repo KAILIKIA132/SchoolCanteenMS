@@ -33,9 +33,9 @@ services:
       mysql:
         condition: service_healthy
     volumes:
-      - ./WebContent:/usr/local/tomcat/webapps/pushdemo
-      - ./WebContent/WEB-INF/classes:/usr/local/tomcat/webapps/pushdemo/WEB-INF/classes
-      - ./WebContent/WEB-INF/lib:/usr/local/tomcat/webapps/pushdemo/WEB-INF/lib
+      - ./WebContent:/usr/local/tomcat/webapps/ROOT
+      - ./WebContent/WEB-INF/classes:/usr/local/tomcat/webapps/ROOT/WEB-INF/classes
+      - ./WebContent/WEB-INF/lib:/usr/local/tomcat/webapps/ROOT/WEB-INF/lib
     networks:
       - pushdemo-network
     extra_hosts:
