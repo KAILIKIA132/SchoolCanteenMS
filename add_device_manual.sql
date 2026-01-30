@@ -25,8 +25,8 @@ INSERT INTO device_info (
     mask,
     temperature
 ) VALUES (
-    'TDBD250100333',                    -- Device Serial Number (REQUIRED - must be unique)
-    'TDBD250100333(192.168.1.100)',     -- Device Name (format: SN(IP))
+    'TDBD254600293',                    -- Device Serial Number (REQUIRED - must be unique)
+    'TDBD254600293(192.168.1.100)',     -- Device Name (format: SN(IP))
     '192.168.1.100',                    -- Alias Name (usually IP address)
     1,                                  -- Department ID
     'Online',                           -- State

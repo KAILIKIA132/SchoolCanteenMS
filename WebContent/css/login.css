@@ -1,6 +1,7 @@
 body {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    background-image: linear-gradient(135deg, #f4f6f9 0%, #ffffff 100%);
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,77 +10,86 @@ body {
 }
 
 .login-container {
-    background: rgba(255, 255, 255, 0.95);
-    padding: 2rem 3rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    width: 350px;
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 380px;
     text-align: center;
+    border-top: 4px solid #AB2328;
+    /* Crawford Red */
+}
+
+.login-container img {
+    margin-bottom: 1.5rem;
 }
 
 .login-container h2 {
     color: #333;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     font-weight: 600;
+    font-size: 1.5rem;
 }
 
 .form-group {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
     text-align: left;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    color: #555;
-    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+    font-size: 0.95rem;
 }
 
 .form-group input {
     width: 100%;
-    padding: 0.8rem;
+    padding: 10px 12px;
     border: 1px solid #ddd;
-    border-radius: 6px;
-    box-sizing: border-box; /* Fix padding issue */
+    border-radius: 4px;
+    box-sizing: border-box;
     font-size: 1rem;
-    transition: border-color 0.3s;
+    transition: all 0.2s;
 }
 
 .form-group input:focus {
-    border-color: #667eea;
+    border-color: #AB2328;
     outline: none;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+    box-shadow: 0 0 0 3px rgba(171, 35, 40, 0.1);
 }
 
 .btn-login {
     width: 100%;
-    padding: 0.8rem;
-    background: #667eea;
+    padding: 12px;
+    background: #AB2328;
     color: white;
     border: none;
-    border-radius: 6px;
+    border-radius: 4px;
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s;
     font-weight: 600;
     margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .btn-login:hover {
-    background: #5a6fd1;
+    background: #8a1c22;
 }
 
 .error-message {
-    color: #e74c3c;
-    background: #fdecea;
-    padding: 0.8rem;
-    border-radius: 6px;
-    margin-bottom: 1rem;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
     font-size: 0.9rem;
-    display: none; /* Hidden by default */
+    display: none;
+    border: 1px solid transparent;
 }
 
 .error-message.visible {
@@ -87,7 +97,9 @@ body {
 }
 
 .footer {
-    margin-top: 2rem;
-    color: #888;
-    font-size: 0.8rem;
+    margin-top: 2.5rem;
+    color: #999;
+    font-size: 0.85rem;
+    border-top: 1px solid #eee;
+    padding-top: 1.5rem;
 }

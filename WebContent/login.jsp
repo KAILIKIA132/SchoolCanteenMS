@@ -33,7 +33,7 @@
 
         <body>
             <div class="login-container">
-                <img src="images/crawford-logo.jpg" alt="Logo" style="max-width: 150px; margin-bottom: 20px;">
+                <img src="images/crawford_crest.jpg" alt="Logo" style="max-width: 150px; margin-bottom: 20px;">
                 <h2>Administrator Login</h2>
 
                 <!-- Display database connection status and any errors -->

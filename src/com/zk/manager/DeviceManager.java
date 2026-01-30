@@ -110,6 +110,7 @@ public class DeviceManager {
 			if (null != deviceSn && !deviceSn.isEmpty()) {
 				sb.append(" and device_sn='").append(deviceSn).append("' ");
 			}
+			logger.info("DeviceManager Calling fatchListWithCount with cond: [" + sb.toString() + "], startRec: " + startRec + ", pageSize: " + pageSize);
 			List<DeviceInfo> list = dao.fatchListWithCount(sb.toString(), startRec, pageSize);
 			if (list != null) {
 				logger.info("Dao returned " + list.size() + " devices.");

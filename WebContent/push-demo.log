@@ -5460,3 +5460,1052 @@ There is no Action mapped for namespace / and action name  logout. - [unknown lo
 916982 INFO  2026-01-29 18:29:43172 DeviceAction:122 - DeviceAction received 1 devices
 1034924 INFO  2026-01-29 18:31:41114 DeviceManager:115 - Dao returned 1 devices.
 1035753 INFO  2026-01-29 18:31:41943 DeviceAction:122 - DeviceAction received 1 devices
+1120084 INFO  2026-01-29 18:33:06274 DeviceManager:115 - Dao returned 1 devices.
+1120854 INFO  2026-01-29 18:33:0744 DeviceAction:122 - DeviceAction received 1 devices
+1250867 INFO  2026-01-29 18:35:1757 DeviceManager:115 - Dao returned 1 devices.
+1251608 INFO  2026-01-29 18:35:17798 DeviceAction:122 - DeviceAction received 1 devices
+1360931 INFO  2026-01-29 18:37:07121 DeviceManager:115 - Dao returned 1 devices.
+1361145 INFO  2026-01-29 18:37:07335 DeviceAction:122 - DeviceAction received 1 devices
+1489079 INFO  2026-01-29 18:39:15269 DeviceManager:115 - Dao returned 1 devices.
+1489159 INFO  2026-01-29 18:39:15349 DeviceAction:122 - DeviceAction received 1 devices
+1564363 INFO  2026-01-29 18:40:30553 DeviceManager:115 - Dao returned 1 devices.
+1564460 INFO  2026-01-29 18:40:30650 DeviceAction:122 - DeviceAction received 1 devices
+1642233 INFO  2026-01-29 18:41:48423 DeviceManager:115 - Dao returned 1 devices.
+1642292 INFO  2026-01-29 18:41:48482 DeviceAction:122 - DeviceAction received 1 devices
+1728724 INFO  2026-01-29 18:43:14914 DeviceManager:115 - Dao returned 1 devices.
+1728837 INFO  2026-01-29 18:43:1527 DeviceAction:122 - DeviceAction received 1 devices
+1821025 INFO  2026-01-29 18:44:47215 DeviceManager:115 - Dao returned 1 devices.
+1821118 INFO  2026-01-29 18:44:47308 DeviceAction:122 - DeviceAction received 1 devices
+1939325 INFO  2026-01-29 18:46:45515 DeviceManager:115 - Dao returned 1 devices.
+1940014 INFO  2026-01-29 18:46:46204 DeviceAction:122 - DeviceAction received 1 devices
+2045217 INFO  2026-01-29 18:48:31407 DeviceManager:115 - Dao returned 1 devices.
+2045467 INFO  2026-01-29 18:48:31657 DeviceAction:122 - DeviceAction received 1 devices
+2191176 INFO  2026-01-29 18:50:57366 DeviceManager:115 - Dao returned 1 devices.
+2191395 INFO  2026-01-29 18:50:57585 DeviceAction:122 - DeviceAction received 1 devices
+2269840 INFO  2026-01-29 18:52:1630 DeviceManager:115 - Dao returned 1 devices.
+2270365 INFO  2026-01-29 18:52:16555 DeviceAction:122 - DeviceAction received 1 devices
+2386735 INFO  2026-01-29 18:54:12925 DeviceManager:115 - Dao returned 1 devices.
+2386795 INFO  2026-01-29 18:54:12985 DeviceAction:122 - DeviceAction received 1 devices
+2457271 INFO  2026-01-29 18:55:23461 DeviceManager:115 - Dao returned 1 devices.
+2457302 INFO  2026-01-29 18:55:23492 DeviceAction:122 - DeviceAction received 1 devices
+2522780 INFO  2026-01-29 18:56:28970 DeviceManager:115 - Dao returned 1 devices.
+2522792 INFO  2026-01-29 18:56:28982 DeviceAction:122 - DeviceAction received 1 devices
+2583292 INFO  2026-01-29 18:57:29482 DeviceManager:115 - Dao returned 1 devices.
+2583328 INFO  2026-01-29 18:57:29518 DeviceAction:122 - DeviceAction received 1 devices
+2643922 INFO  2026-01-29 18:58:30112 DeviceManager:115 - Dao returned 1 devices.
+2643933 INFO  2026-01-29 18:58:30123 DeviceAction:122 - DeviceAction received 1 devices
+2704334 INFO  2026-01-29 18:59:30524 DeviceManager:115 - Dao returned 1 devices.
+2704340 INFO  2026-01-29 18:59:30530 DeviceAction:122 - DeviceAction received 1 devices
+2764751 INFO  2026-01-29 19:00:30941 DeviceManager:115 - Dao returned 1 devices.
+2764759 INFO  2026-01-29 19:00:30949 DeviceAction:122 - DeviceAction received 1 devices
+2825331 INFO  2026-01-29 19:01:31521 DeviceManager:115 - Dao returned 1 devices.
+2825335 INFO  2026-01-29 19:01:31525 DeviceAction:122 - DeviceAction received 1 devices
+2885694 INFO  2026-01-29 19:02:31884 DeviceManager:115 - Dao returned 1 devices.
+2885698 INFO  2026-01-29 19:02:31888 DeviceAction:122 - DeviceAction received 1 devices
+2946125 INFO  2026-01-29 19:03:32315 DeviceManager:115 - Dao returned 1 devices.
+2946129 INFO  2026-01-29 19:03:32319 DeviceAction:122 - DeviceAction received 1 devices
+3006546 INFO  2026-01-29 19:04:32736 DeviceManager:115 - Dao returned 1 devices.
+3006551 INFO  2026-01-29 19:04:32741 DeviceAction:122 - DeviceAction received 1 devices
+3067046 INFO  2026-01-29 19:05:33236 DeviceManager:115 - Dao returned 1 devices.
+3067055 INFO  2026-01-29 19:05:33245 DeviceAction:122 - DeviceAction received 1 devices
+3127653 INFO  2026-01-29 19:06:33843 DeviceManager:115 - Dao returned 1 devices.
+3127658 INFO  2026-01-29 19:06:33848 DeviceAction:122 - DeviceAction received 1 devices
+3188095 INFO  2026-01-29 19:07:34285 DeviceManager:115 - Dao returned 1 devices.
+3188100 INFO  2026-01-29 19:07:34290 DeviceAction:122 - DeviceAction received 1 devices
+3248478 INFO  2026-01-29 19:08:34668 DeviceManager:115 - Dao returned 1 devices.
+3248484 INFO  2026-01-29 19:08:34674 DeviceAction:122 - DeviceAction received 1 devices
+3309096 INFO  2026-01-29 19:09:35286 DeviceManager:115 - Dao returned 1 devices.
+3309107 INFO  2026-01-29 19:09:35297 DeviceAction:122 - DeviceAction received 1 devices
+3370358 INFO  2026-01-29 19:10:36548 DeviceManager:115 - Dao returned 1 devices.
+3370384 INFO  2026-01-29 19:10:36574 DeviceAction:122 - DeviceAction received 1 devices
+3430795 INFO  2026-01-29 19:11:36985 DeviceManager:115 - Dao returned 1 devices.
+3430807 INFO  2026-01-29 19:11:36997 DeviceAction:122 - DeviceAction received 1 devices
+3491256 INFO  2026-01-29 19:12:37446 DeviceManager:115 - Dao returned 1 devices.
+3491258 INFO  2026-01-29 19:12:37448 DeviceAction:122 - DeviceAction received 1 devices
+3552827 INFO  2026-01-29 19:13:3917 DeviceManager:115 - Dao returned 1 devices.
+3552845 INFO  2026-01-29 19:13:3935 DeviceAction:122 - DeviceAction received 1 devices
+3613308 INFO  2026-01-29 19:14:39498 DeviceManager:115 - Dao returned 1 devices.
+3613312 INFO  2026-01-29 19:14:39502 DeviceAction:122 - DeviceAction received 1 devices
+3673656 INFO  2026-01-29 19:15:39846 DeviceManager:115 - Dao returned 1 devices.
+3673665 INFO  2026-01-29 19:15:39855 DeviceAction:122 - DeviceAction received 1 devices
+3734164 INFO  2026-01-29 19:16:40354 DeviceManager:115 - Dao returned 1 devices.
+3734166 INFO  2026-01-29 19:16:40356 DeviceAction:122 - DeviceAction received 1 devices
+3794633 INFO  2026-01-29 19:17:40823 DeviceManager:115 - Dao returned 1 devices.
+3794643 INFO  2026-01-29 19:17:40833 DeviceAction:122 - DeviceAction received 1 devices
+3855167 INFO  2026-01-29 19:18:41357 DeviceManager:115 - Dao returned 1 devices.
+3855171 INFO  2026-01-29 19:18:41361 DeviceAction:122 - DeviceAction received 1 devices
+3915659 INFO  2026-01-29 19:19:41849 DeviceManager:115 - Dao returned 1 devices.
+3915664 INFO  2026-01-29 19:19:41854 DeviceAction:122 - DeviceAction received 1 devices
+3976192 INFO  2026-01-29 19:20:42382 DeviceManager:115 - Dao returned 1 devices.
+3976199 INFO  2026-01-29 19:20:42389 DeviceAction:122 - DeviceAction received 1 devices
+4036561 INFO  2026-01-29 19:21:42751 DeviceManager:115 - Dao returned 1 devices.
+4036565 INFO  2026-01-29 19:21:42755 DeviceAction:122 - DeviceAction received 1 devices
+4097442 INFO  2026-01-29 19:22:43632 DeviceManager:115 - Dao returned 1 devices.
+4097449 INFO  2026-01-29 19:22:43639 DeviceAction:122 - DeviceAction received 1 devices
+4157812 INFO  2026-01-29 19:23:442 DeviceManager:115 - Dao returned 1 devices.
+4157818 INFO  2026-01-29 19:23:448 DeviceAction:122 - DeviceAction received 1 devices
+4218226 INFO  2026-01-29 19:24:44416 DeviceManager:115 - Dao returned 1 devices.
+4218233 INFO  2026-01-29 19:24:44423 DeviceAction:122 - DeviceAction received 1 devices
+4278851 INFO  2026-01-29 19:25:4541 DeviceManager:115 - Dao returned 1 devices.
+4278856 INFO  2026-01-29 19:25:4546 DeviceAction:122 - DeviceAction received 1 devices
+4339388 INFO  2026-01-29 19:26:45578 DeviceManager:115 - Dao returned 1 devices.
+4339417 INFO  2026-01-29 19:26:45607 DeviceAction:122 - DeviceAction received 1 devices
+4399964 INFO  2026-01-29 19:27:46154 DeviceManager:115 - Dao returned 1 devices.
+4399970 INFO  2026-01-29 19:27:46160 DeviceAction:122 - DeviceAction received 1 devices
+4460336 INFO  2026-01-29 19:28:46526 DeviceManager:115 - Dao returned 1 devices.
+4460341 INFO  2026-01-29 19:28:46531 DeviceAction:122 - DeviceAction received 1 devices
+4521400 INFO  2026-01-29 19:29:47590 DeviceManager:115 - Dao returned 1 devices.
+4521442 INFO  2026-01-29 19:29:47632 DeviceAction:122 - DeviceAction received 1 devices
+4583700 INFO  2026-01-29 19:30:49890 DeviceManager:115 - Dao returned 1 devices.
+4583708 INFO  2026-01-29 19:30:49898 DeviceAction:122 - DeviceAction received 1 devices
+4649019 INFO  2026-01-29 19:31:55209 DeviceManager:115 - Dao returned 1 devices.
+4649072 INFO  2026-01-29 19:31:55262 DeviceAction:122 - DeviceAction received 1 devices
+4711709 INFO  2026-01-29 19:32:57899 DeviceManager:115 - Dao returned 1 devices.
+4711718 INFO  2026-01-29 19:32:57908 DeviceAction:122 - DeviceAction received 1 devices
+4772971 INFO  2026-01-29 19:33:59161 DeviceManager:115 - Dao returned 1 devices.
+4773709 INFO  2026-01-29 19:33:59899 DeviceAction:122 - DeviceAction received 1 devices
+4834579 INFO  2026-01-29 19:35:00769 DeviceManager:115 - Dao returned 1 devices.
+4834584 INFO  2026-01-29 19:35:00774 DeviceAction:122 - DeviceAction received 1 devices
+4895033 INFO  2026-01-29 19:36:01223 DeviceManager:115 - Dao returned 1 devices.
+4895038 INFO  2026-01-29 19:36:01228 DeviceAction:122 - DeviceAction received 1 devices
+4955453 INFO  2026-01-29 19:37:01643 DeviceManager:115 - Dao returned 1 devices.
+4955490 INFO  2026-01-29 19:37:01680 DeviceAction:122 - DeviceAction received 1 devices
+5015885 INFO  2026-01-29 19:38:0275 DeviceManager:115 - Dao returned 1 devices.
+5015891 INFO  2026-01-29 19:38:0281 DeviceAction:122 - DeviceAction received 1 devices
+5076466 INFO  2026-01-29 19:39:02656 DeviceManager:115 - Dao returned 1 devices.
+5076478 INFO  2026-01-29 19:39:02668 DeviceAction:122 - DeviceAction received 1 devices
+5136900 INFO  2026-01-29 19:40:0390 DeviceManager:115 - Dao returned 1 devices.
+5136904 INFO  2026-01-29 19:40:0394 DeviceAction:122 - DeviceAction received 1 devices
+5197523 INFO  2026-01-29 19:41:03713 DeviceManager:115 - Dao returned 1 devices.
+5197524 INFO  2026-01-29 19:41:03714 DeviceAction:122 - DeviceAction received 1 devices
+5257890 INFO  2026-01-29 19:42:0480 DeviceManager:115 - Dao returned 1 devices.
+5257900 INFO  2026-01-29 19:42:0490 DeviceAction:122 - DeviceAction received 1 devices
+5318321 INFO  2026-01-29 19:43:04511 DeviceManager:115 - Dao returned 1 devices.
+5318327 INFO  2026-01-29 19:43:04517 DeviceAction:122 - DeviceAction received 1 devices
+5378809 INFO  2026-01-29 19:44:04999 DeviceManager:115 - Dao returned 1 devices.
+5378836 INFO  2026-01-29 19:44:0526 DeviceAction:122 - DeviceAction received 1 devices
+5439286 INFO  2026-01-29 19:45:05476 DeviceManager:115 - Dao returned 1 devices.
+5439298 INFO  2026-01-29 19:45:05488 DeviceAction:122 - DeviceAction received 1 devices
+5499730 INFO  2026-01-29 19:46:05920 DeviceManager:115 - Dao returned 1 devices.
+5499737 INFO  2026-01-29 19:46:05927 DeviceAction:122 - DeviceAction received 1 devices
+5560237 INFO  2026-01-29 19:47:06427 DeviceManager:115 - Dao returned 1 devices.
+5560253 INFO  2026-01-29 19:47:06443 DeviceAction:122 - DeviceAction received 1 devices
+5620754 INFO  2026-01-29 19:48:06944 DeviceManager:115 - Dao returned 1 devices.
+5620765 INFO  2026-01-29 19:48:06955 DeviceAction:122 - DeviceAction received 1 devices
+5681232 INFO  2026-01-29 19:49:07422 DeviceManager:115 - Dao returned 1 devices.
+5681239 INFO  2026-01-29 19:49:07429 DeviceAction:122 - DeviceAction received 1 devices
+5743712 INFO  2026-01-29 19:50:09902 DeviceManager:115 - Dao returned 1 devices.
+5743727 INFO  2026-01-29 19:50:09917 DeviceAction:122 - DeviceAction received 1 devices
+5783894 INFO  2026-01-29 19:50:5084 DeviceManager:115 - Dao returned 1 devices.
+5783897 INFO  2026-01-29 19:50:5087 DeviceAction:122 - DeviceAction received 1 devices
+5805778 INFO  2026-01-29 19:51:11968 DeviceManager:115 - Dao returned 1 devices.
+5805780 INFO  2026-01-29 19:51:11970 DeviceAction:122 - DeviceAction received 1 devices
+5846561 INFO  2026-01-29 19:51:52751 DeviceManager:115 - Dao returned 1 devices.
+5846571 INFO  2026-01-29 19:51:52761 DeviceAction:122 - DeviceAction received 1 devices
+5866839 INFO  2026-01-29 19:52:1329 DeviceManager:115 - Dao returned 1 devices.
+5867223 INFO  2026-01-29 19:52:13413 DeviceAction:122 - DeviceAction received 1 devices
+5907238 INFO  2026-01-29 19:52:53428 DeviceManager:115 - Dao returned 1 devices.
+5907241 INFO  2026-01-29 19:52:53431 DeviceAction:122 - DeviceAction received 1 devices
+5928101 INFO  2026-01-29 19:53:14291 DeviceManager:115 - Dao returned 1 devices.
+5928104 INFO  2026-01-29 19:53:14294 DeviceAction:122 - DeviceAction received 1 devices
+5971316 INFO  2026-01-29 19:53:57506 DeviceManager:115 - Dao returned 1 devices.
+5971323 INFO  2026-01-29 19:53:57513 DeviceAction:122 - DeviceAction received 1 devices
+5989984 INFO  2026-01-29 19:54:16174 DeviceManager:115 - Dao returned 1 devices.
+5989999 INFO  2026-01-29 19:54:16189 DeviceAction:122 - DeviceAction received 1 devices
+6035963 INFO  2026-01-29 19:55:02153 DeviceManager:115 - Dao returned 1 devices.
+6035991 INFO  2026-01-29 19:55:02181 DeviceAction:122 - DeviceAction received 1 devices
+6052189 INFO  2026-01-29 19:55:18379 DeviceManager:115 - Dao returned 1 devices.
+6052198 INFO  2026-01-29 19:55:18388 DeviceAction:122 - DeviceAction received 1 devices
+6101201 INFO  2026-01-29 19:56:07391 DeviceManager:115 - Dao returned 1 devices.
+6101219 INFO  2026-01-29 19:56:07409 DeviceAction:122 - DeviceAction received 1 devices
+6113600 INFO  2026-01-29 19:56:19790 DeviceManager:115 - Dao returned 1 devices.
+6113612 INFO  2026-01-29 19:56:19802 DeviceAction:122 - DeviceAction received 1 devices
+6162555 INFO  2026-01-29 19:57:08745 DeviceManager:115 - Dao returned 1 devices.
+6162564 INFO  2026-01-29 19:57:08754 DeviceAction:122 - DeviceAction received 1 devices
+6178796 INFO  2026-01-29 19:57:24986 DeviceManager:115 - Dao returned 1 devices.
+6178801 INFO  2026-01-29 19:57:24991 DeviceAction:122 - DeviceAction received 1 devices
+6225355 INFO  2026-01-29 19:58:11545 DeviceManager:115 - Dao returned 1 devices.
+6225391 INFO  2026-01-29 19:58:11581 DeviceAction:122 - DeviceAction received 1 devices
+114999 INFO  2026-01-29 20:00:29392 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/pushdemo/WEB-INF/classes/config.xml
+115004 INFO  2026-01-29 20:00:29397 ConfigUtil:25 - Config.xml loaded successfully
+115025 INFO  2026-01-29 20:00:29418 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+115888 INFO  2026-01-29 20:00:30281 DeviceManager:115 - Dao returned 1 devices.
+115890 INFO  2026-01-29 20:00:30283 DeviceAction:122 - DeviceAction received 1 devices
+126208 INFO  2026-01-29 20:00:40601 DeviceManager:115 - Dao returned 1 devices.
+126323 INFO  2026-01-29 20:00:40716 DeviceAction:122 - DeviceAction received 1 devices
+135096 INFO  2026-01-29 20:00:49489 DeviceManager:115 - Dao returned 1 devices.
+135098 INFO  2026-01-29 20:00:49491 DeviceAction:122 - DeviceAction received 1 devices
+151257 WARN  2026-01-29 20:01:05650 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace / and action name  deviceAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+156590 WARN  2026-01-29 20:01:10983 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace / and action name  deviceAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+161485 WARN  2026-01-29 20:01:15878 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace / and action name  userAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+186398 INFO  2026-01-29 20:01:40791 DeviceManager:115 - Dao returned 1 devices.
+186411 INFO  2026-01-29 20:01:40804 DeviceAction:122 - DeviceAction received 1 devices
+189356 INFO  2026-01-29 20:01:43749 DeviceManager:115 - Dao returned 1 devices.
+189357 INFO  2026-01-29 20:01:43750 DeviceAction:122 - DeviceAction received 1 devices
+194035 WARN  2026-01-29 20:01:48428 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace / and action name  deviceAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+247969 WARN  2026-01-29 20:02:42362 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace / and action name  logout. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+250051 INFO  2026-01-29 20:02:44444 DeviceManager:115 - Dao returned 1 devices.
+250054 INFO  2026-01-29 20:02:44447 DeviceAction:122 - DeviceAction received 1 devices
+312825 INFO  2026-01-29 20:03:47218 DeviceManager:115 - Dao returned 1 devices.
+312848 INFO  2026-01-29 20:03:47241 DeviceAction:122 - DeviceAction received 1 devices
+2692 INFO  2026-01-29 20:04:51808 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/pushdemo/WEB-INF/classes/config.xml
+2696 INFO  2026-01-29 20:04:51812 ConfigUtil:25 - Config.xml loaded successfully
+2726 INFO  2026-01-29 20:04:51842 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+3632 INFO  2026-01-29 20:04:52748 DeviceManager:115 - Dao returned 1 devices.
+3635 INFO  2026-01-29 20:04:52751 DeviceAction:122 - DeviceAction received 1 devices
+25805 INFO  2026-01-29 20:05:47518 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/pushdemo/WEB-INF/classes/config.xml
+25809 INFO  2026-01-29 20:05:47522 ConfigUtil:25 - Config.xml loaded successfully
+25826 INFO  2026-01-29 20:05:47539 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+26604 INFO  2026-01-29 20:05:48317 DeviceManager:115 - Dao returned 1 devices.
+26610 INFO  2026-01-29 20:05:48323 DeviceAction:122 - DeviceAction received 1 devices
+29538 INFO  2026-01-29 20:05:51251 DeviceManager:115 - Dao returned 1 devices.
+29543 INFO  2026-01-29 20:05:51256 DeviceAction:122 - DeviceAction received 1 devices
+30448 INFO  2026-01-29 20:05:52161 DeviceManager:115 - Dao returned 1 devices.
+30449 INFO  2026-01-29 20:05:52162 DeviceAction:122 - DeviceAction received 1 devices
+32674 WARN  2026-01-29 20:05:54387 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace / and action name  deviceAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+35125 WARN  2026-01-29 20:05:56838 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace / and action name  deviceAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+36126 WARN  2026-01-29 20:05:57839 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace / and action name  deviceAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+38100 INFO  2026-01-29 20:05:59813 DeviceManager:115 - Dao returned 1 devices.
+38102 INFO  2026-01-29 20:05:59815 DeviceAction:122 - DeviceAction received 1 devices
+41314 INFO  2026-01-29 20:06:0327 DeviceManager:115 - Dao returned 1 devices.
+41316 INFO  2026-01-29 20:06:0329 DeviceAction:122 - DeviceAction received 1 devices
+44181 WARN  2026-01-29 20:06:05894 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace / and action name  devLogAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+53894 WARN  2026-01-29 20:06:15607 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace / and action name  deviceAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+55717 WARN  2026-01-29 20:06:17430 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace / and action name  deviceAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+56878 WARN  2026-01-29 20:06:18591 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace / and action name  deviceAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+57105 WARN  2026-01-29 20:06:18818 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace / and action name  deviceAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+61470 WARN  2026-01-29 20:06:23183 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace / and action name  userAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+5554 WARN  2026-01-29 20:10:46372 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace / and action name  userAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+11615 INFO  2026-01-29 20:10:52433 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/pushdemo/WEB-INF/classes/config.xml
+11621 INFO  2026-01-29 20:10:52439 ConfigUtil:25 - Config.xml loaded successfully
+11654 INFO  2026-01-29 20:10:52472 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+12932 INFO  2026-01-29 20:10:53750 DeviceManager:115 - Dao returned 1 devices.
+12934 INFO  2026-01-29 20:10:53752 DeviceAction:122 - DeviceAction received 1 devices
+34907 INFO  2026-01-29 20:11:15725 DeviceManager:115 - Dao returned 1 devices.
+34915 INFO  2026-01-29 20:11:15733 DeviceAction:122 - DeviceAction received 1 devices
+36718 INFO  2026-01-29 20:11:17536 DeviceManager:115 - Dao returned 1 devices.
+36720 INFO  2026-01-29 20:11:17538 DeviceAction:122 - DeviceAction received 1 devices
+58598 INFO  2026-01-29 20:11:39416 DeviceManager:115 - Dao returned 1 devices.
+58613 INFO  2026-01-29 20:11:39431 DeviceAction:122 - DeviceAction received 1 devices
+119419 INFO  2026-01-29 20:12:40237 DeviceManager:115 - Dao returned 1 devices.
+119423 INFO  2026-01-29 20:12:40241 DeviceAction:122 - DeviceAction received 1 devices
+180537 INFO  2026-01-29 20:13:41355 DeviceManager:115 - Dao returned 1 devices.
+180821 INFO  2026-01-29 20:13:41639 DeviceAction:122 - DeviceAction received 1 devices
+242029 INFO  2026-01-29 20:14:42847 DeviceManager:115 - Dao returned 1 devices.
+242032 INFO  2026-01-29 20:14:42850 DeviceAction:122 - DeviceAction received 1 devices
+13862 INFO  2026-01-29 20:15:26423 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/pushdemo/WEB-INF/classes/config.xml
+13868 INFO  2026-01-29 20:15:26429 ConfigUtil:25 - Config.xml loaded successfully
+13899 INFO  2026-01-29 20:15:26460 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+15057 INFO  2026-01-29 20:15:27618 DeviceManager:115 - Dao returned 1 devices.
+15058 INFO  2026-01-29 20:15:27619 DeviceAction:122 - DeviceAction received 1 devices
+48561 INFO  2026-01-29 20:16:01122 DeviceManager:115 - Dao returned 1 devices.
+48582 INFO  2026-01-29 20:16:01143 DeviceAction:122 - DeviceAction received 1 devices
+109010 INFO  2026-01-29 20:17:01571 DeviceManager:115 - Dao returned 1 devices.
+109053 INFO  2026-01-29 20:17:01614 DeviceAction:122 - DeviceAction received 1 devices
+169896 INFO  2026-01-29 20:18:02457 DeviceManager:115 - Dao returned 1 devices.
+169919 INFO  2026-01-29 20:18:02480 DeviceAction:122 - DeviceAction received 1 devices
+230727 INFO  2026-01-29 20:19:03288 DeviceManager:115 - Dao returned 1 devices.
+230731 INFO  2026-01-29 20:19:03292 DeviceAction:122 - DeviceAction received 1 devices
+19109 INFO  2026-01-29 20:19:47728 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/pushdemo/WEB-INF/classes/config.xml
+19116 INFO  2026-01-29 20:19:47735 ConfigUtil:25 - Config.xml loaded successfully
+19141 INFO  2026-01-29 20:19:47760 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+20037 INFO  2026-01-29 20:19:48656 DeviceManager:115 - Dao returned 1 devices.
+20048 INFO  2026-01-29 20:19:48667 DeviceAction:122 - DeviceAction received 1 devices
+117824 INFO  2026-01-29 20:21:26443 DeviceManager:115 - Dao returned 0 devices.
+117841 INFO  2026-01-29 20:21:26460 DeviceAction:122 - DeviceAction received 0 devices
+209095 INFO  2026-01-29 20:22:57714 DeviceManager:115 - Dao returned 0 devices.
+209103 INFO  2026-01-29 20:22:57722 DeviceAction:122 - DeviceAction received 0 devices
+218981 INFO  2026-01-29 20:23:07600 DeviceManager:115 - Dao returned 0 devices.
+219029 INFO  2026-01-29 20:23:07648 DeviceAction:122 - DeviceAction received 0 devices
+620710 INFO  2026-01-29 20:29:49329 DeviceManager:115 - Dao returned 0 devices.
+620754 INFO  2026-01-29 20:29:49373 DeviceAction:122 - DeviceAction received 0 devices
+625463 INFO  2026-01-29 20:29:5482 DeviceManager:115 - Dao returned 0 devices.
+625467 INFO  2026-01-29 20:29:5486 DeviceAction:122 - DeviceAction received 0 devices
+632866 INFO  2026-01-29 20:30:01485 DeviceManager:115 - Dao returned 0 devices.
+632869 INFO  2026-01-29 20:30:01488 DeviceAction:122 - DeviceAction received 0 devices
+640928 INFO  2026-01-29 20:30:09547 DeviceManager:115 - Dao returned 0 devices.
+640933 INFO  2026-01-29 20:30:09552 DeviceAction:122 - DeviceAction received 0 devices
+701408 INFO  2026-01-29 20:31:1027 DeviceManager:115 - Dao returned 0 devices.
+701432 INFO  2026-01-29 20:31:1051 DeviceAction:122 - DeviceAction received 0 devices
+762178 INFO  2026-01-29 20:32:10797 DeviceManager:115 - Dao returned 0 devices.
+762191 INFO  2026-01-29 20:32:10810 DeviceAction:122 - DeviceAction received 0 devices
+822925 INFO  2026-01-29 20:33:11544 DeviceManager:115 - Dao returned 0 devices.
+823027 INFO  2026-01-29 20:33:11646 DeviceAction:122 - DeviceAction received 0 devices
+886641 INFO  2026-01-29 20:34:15260 DeviceManager:115 - Dao returned 0 devices.
+886726 INFO  2026-01-29 20:34:15345 DeviceAction:122 - DeviceAction received 0 devices
+1047127 INFO  2026-01-29 20:36:55746 DeviceManager:115 - Dao returned 0 devices.
+1047135 INFO  2026-01-29 20:36:55754 DeviceAction:122 - DeviceAction received 0 devices
+1050985 INFO  2026-01-29 20:36:59604 DeviceManager:115 - Dao returned 0 devices.
+1050991 INFO  2026-01-29 20:36:59610 DeviceAction:122 - DeviceAction received 0 devices
+1053006 INFO  2026-01-29 20:37:01625 DeviceManager:115 - Dao returned 0 devices.
+1053015 INFO  2026-01-29 20:37:01634 DeviceAction:122 - DeviceAction received 0 devices
+1114228 INFO  2026-01-29 20:38:02847 DeviceManager:115 - Dao returned 0 devices.
+1114238 INFO  2026-01-29 20:38:02857 DeviceAction:122 - DeviceAction received 0 devices
+1125011 INFO  2026-01-29 20:38:13630 DeviceManager:115 - Dao returned 0 devices.
+1125037 INFO  2026-01-29 20:38:13656 DeviceAction:122 - DeviceAction received 0 devices
+2094125 INFO  2026-01-29 20:54:22744 DeviceManager:115 - Dao returned 0 devices.
+2094144 INFO  2026-01-29 20:54:22763 DeviceAction:122 - DeviceAction received 0 devices
+26425 INFO  2026-01-30 04:41:16384 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/pushdemo/WEB-INF/classes/config.xml
+26579 INFO  2026-01-30 04:41:16538 ConfigUtil:25 - Config.xml loaded successfully
+27319 INFO  2026-01-30 04:41:17278 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+27355 INFO  2026-01-30 04:41:17314 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+54947 INFO  2026-01-30 04:41:44906 DeviceManager:115 - Dao returned 0 devices.
+54983 INFO  2026-01-30 04:41:44942 DeviceAction:122 - DeviceAction received 0 devices
+54992 INFO  2026-01-30 04:41:44951 DeviceManager:115 - Dao returned 0 devices.
+55010 INFO  2026-01-30 04:41:44969 DeviceAction:122 - DeviceAction received 0 devices
+51583 INFO  2026-01-30 04:51:31248 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/pushdemo/WEB-INF/classes/config.xml
+51589 INFO  2026-01-30 04:51:31254 ConfigUtil:25 - Config.xml loaded successfully
+51614 INFO  2026-01-30 04:51:31279 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+78444 INFO  2026-01-30 04:51:58109 DeviceManager:115 - Dao returned 0 devices.
+78453 INFO  2026-01-30 04:51:58118 DeviceAction:122 - DeviceAction received 0 devices
+354754 INFO  2026-01-30 04:56:34419 DeviceManager:115 - Dao returned 0 devices.
+354758 INFO  2026-01-30 04:56:34423 DeviceAction:122 - DeviceAction received 0 devices
+414983 INFO  2026-01-30 04:57:34648 DeviceManager:115 - Dao returned 0 devices.
+415028 INFO  2026-01-30 04:57:34693 DeviceAction:122 - DeviceAction received 0 devices
+475844 INFO  2026-01-30 04:58:35509 DeviceManager:115 - Dao returned 0 devices.
+475941 INFO  2026-01-30 04:58:35606 DeviceAction:122 - DeviceAction received 0 devices
+536737 INFO  2026-01-30 04:59:36402 DeviceManager:115 - Dao returned 0 devices.
+536742 INFO  2026-01-30 04:59:36407 DeviceAction:122 - DeviceAction received 0 devices
+582172 INFO  2026-01-30 05:00:21837 DeviceManager:115 - Dao returned 0 devices.
+582216 INFO  2026-01-30 05:00:21881 DeviceAction:122 - DeviceAction received 0 devices
+598216 INFO  2026-01-30 05:00:37881 DeviceManager:115 - Dao returned 0 devices.
+598220 INFO  2026-01-30 05:00:37885 DeviceAction:122 - DeviceAction received 0 devices
+637306 INFO  2026-01-30 05:01:16971 DeviceManager:115 - Dao returned 0 devices.
+637314 INFO  2026-01-30 05:01:16979 DeviceAction:122 - DeviceAction received 0 devices
+643377 INFO  2026-01-30 05:01:2342 DeviceManager:115 - Dao returned 0 devices.
+643397 INFO  2026-01-30 05:01:2362 DeviceAction:122 - DeviceAction received 0 devices
+661097 INFO  2026-01-30 05:01:40762 DeviceManager:115 - Dao returned 0 devices.
+661456 INFO  2026-01-30 05:01:41121 DeviceAction:122 - DeviceAction received 0 devices
+697782 INFO  2026-01-30 05:02:17447 DeviceManager:115 - Dao returned 0 devices.
+697786 INFO  2026-01-30 05:02:17451 DeviceAction:122 - DeviceAction received 0 devices
+704064 INFO  2026-01-30 05:02:23729 DeviceManager:115 - Dao returned 0 devices.
+704066 INFO  2026-01-30 05:02:23731 DeviceAction:122 - DeviceAction received 0 devices
+723397 INFO  2026-01-30 05:02:4362 DeviceManager:115 - Dao returned 0 devices.
+723401 INFO  2026-01-30 05:02:4366 DeviceAction:122 - DeviceAction received 0 devices
+757952 INFO  2026-01-30 05:03:17617 DeviceManager:115 - Dao returned 0 devices.
+757959 INFO  2026-01-30 05:03:17624 DeviceAction:122 - DeviceAction received 0 devices
+764174 INFO  2026-01-30 05:03:23839 DeviceManager:115 - Dao returned 0 devices.
+764177 INFO  2026-01-30 05:03:23842 DeviceAction:122 - DeviceAction received 0 devices
+784624 INFO  2026-01-30 05:03:44289 DeviceManager:115 - Dao returned 0 devices.
+784756 INFO  2026-01-30 05:03:44421 DeviceAction:122 - DeviceAction received 0 devices
+818196 INFO  2026-01-30 05:04:17861 DeviceManager:115 - Dao returned 0 devices.
+818212 INFO  2026-01-30 05:04:17877 DeviceAction:122 - DeviceAction received 0 devices
+824270 INFO  2026-01-30 05:04:23935 DeviceManager:115 - Dao returned 0 devices.
+824284 INFO  2026-01-30 05:04:23949 DeviceAction:122 - DeviceAction received 0 devices
+845799 INFO  2026-01-30 05:04:45464 DeviceManager:115 - Dao returned 0 devices.
+845819 INFO  2026-01-30 05:04:45484 DeviceAction:122 - DeviceAction received 0 devices
+878355 INFO  2026-01-30 05:05:1820 DeviceManager:115 - Dao returned 0 devices.
+878381 INFO  2026-01-30 05:05:1846 DeviceAction:122 - DeviceAction received 0 devices
+884468 INFO  2026-01-30 05:05:24133 DeviceManager:115 - Dao returned 0 devices.
+884470 INFO  2026-01-30 05:05:24135 DeviceAction:122 - DeviceAction received 0 devices
+906851 INFO  2026-01-30 05:05:46516 DeviceManager:115 - Dao returned 0 devices.
+906868 INFO  2026-01-30 05:05:46533 DeviceAction:122 - DeviceAction received 0 devices
+938559 INFO  2026-01-30 05:06:18224 DeviceManager:115 - Dao returned 0 devices.
+938568 INFO  2026-01-30 05:06:18233 DeviceAction:122 - DeviceAction received 0 devices
+944651 INFO  2026-01-30 05:06:24316 DeviceManager:115 - Dao returned 0 devices.
+944762 INFO  2026-01-30 05:06:24427 DeviceAction:122 - DeviceAction received 0 devices
+967800 INFO  2026-01-30 05:06:47465 DeviceManager:115 - Dao returned 0 devices.
+967803 INFO  2026-01-30 05:06:47468 DeviceAction:122 - DeviceAction received 0 devices
+999480 INFO  2026-01-30 05:07:19145 DeviceManager:115 - Dao returned 0 devices.
+999497 INFO  2026-01-30 05:07:19162 DeviceAction:122 - DeviceAction received 0 devices
+1005959 INFO  2026-01-30 05:07:25624 DeviceManager:115 - Dao returned 0 devices.
+1006213 INFO  2026-01-30 05:07:25878 DeviceAction:122 - DeviceAction received 0 devices
+1029570 INFO  2026-01-30 05:07:49235 DeviceManager:115 - Dao returned 0 devices.
+1029579 INFO  2026-01-30 05:07:49244 DeviceAction:122 - DeviceAction received 0 devices
+1061984 INFO  2026-01-30 05:08:21649 DeviceManager:115 - Dao returned 0 devices.
+1061996 INFO  2026-01-30 05:08:21661 DeviceAction:122 - DeviceAction received 0 devices
+1068483 INFO  2026-01-30 05:08:28148 DeviceManager:115 - Dao returned 0 devices.
+1068487 INFO  2026-01-30 05:08:28152 DeviceAction:122 - DeviceAction received 0 devices
+1092471 INFO  2026-01-30 05:08:52136 DeviceManager:115 - Dao returned 0 devices.
+1092489 INFO  2026-01-30 05:08:52154 DeviceAction:122 - DeviceAction received 0 devices
+1123945 INFO  2026-01-30 05:09:23610 DeviceManager:115 - Dao returned 0 devices.
+1123959 INFO  2026-01-30 05:09:23624 DeviceAction:122 - DeviceAction received 0 devices
+1129245 INFO  2026-01-30 05:09:28910 DeviceManager:115 - Dao returned 0 devices.
+1129264 INFO  2026-01-30 05:09:28929 DeviceAction:122 - DeviceAction received 0 devices
+1154650 INFO  2026-01-30 05:09:54315 DeviceManager:115 - Dao returned 0 devices.
+1154699 INFO  2026-01-30 05:09:54364 DeviceAction:122 - DeviceAction received 0 devices
+1187393 INFO  2026-01-30 05:10:2758 DeviceManager:115 - Dao returned 0 devices.
+1187674 INFO  2026-01-30 05:10:27339 DeviceAction:122 - DeviceAction received 0 devices
+1192077 INFO  2026-01-30 05:10:31742 DeviceManager:115 - Dao returned 0 devices.
+1192571 INFO  2026-01-30 05:10:32236 DeviceAction:122 - DeviceAction received 0 devices
+1221006 INFO  2026-01-30 05:11:00671 DeviceManager:115 - Dao returned 0 devices.
+1221121 INFO  2026-01-30 05:11:00786 DeviceAction:122 - DeviceAction received 0 devices
+20001 INFO  2026-01-30 05:11:32680 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/pushdemo/WEB-INF/classes/config.xml
+20027 INFO  2026-01-30 05:11:32706 ConfigUtil:25 - Config.xml loaded successfully
+20145 INFO  2026-01-30 05:11:32824 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+16489 INFO  2026-01-30 05:13:5368 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/pushdemo/WEB-INF/classes/config.xml
+16495 INFO  2026-01-30 05:13:5374 ConfigUtil:25 - Config.xml loaded successfully
+16534 INFO  2026-01-30 05:13:53113 BaseDao:101 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+17744 INFO  2026-01-30 05:13:54323 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+18278 INFO  2026-01-30 05:13:54857 DeviceManager:116 - Dao returned 2 devices.
+18286 INFO  2026-01-30 05:13:54865 DeviceAction:122 - DeviceAction received 2 devices
+44077 INFO  2026-01-30 05:14:20656 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+44144 INFO  2026-01-30 05:14:20723 DeviceManager:116 - Dao returned 2 devices.
+44146 INFO  2026-01-30 05:14:20725 DeviceAction:122 - DeviceAction received 2 devices
+53787 INFO  2026-01-30 05:14:30366 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+53823 INFO  2026-01-30 05:14:30402 DeviceManager:116 - Dao returned 2 devices.
+53824 INFO  2026-01-30 05:14:30403 DeviceAction:122 - DeviceAction received 2 devices
+54835 INFO  2026-01-30 05:14:31414 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+54855 INFO  2026-01-30 05:14:31434 DeviceManager:116 - Dao returned 2 devices.
+54859 INFO  2026-01-30 05:14:31438 DeviceAction:122 - DeviceAction received 2 devices
+80192 INFO  2026-01-30 05:14:56771 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+80223 INFO  2026-01-30 05:14:56802 DeviceManager:116 - Dao returned 2 devices.
+80228 INFO  2026-01-30 05:14:56807 DeviceAction:122 - DeviceAction received 2 devices
+140540 INFO  2026-01-30 05:15:57119 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+140564 INFO  2026-01-30 05:15:57143 DeviceManager:116 - Dao returned 2 devices.
+140567 INFO  2026-01-30 05:15:57146 DeviceAction:122 - DeviceAction received 2 devices
+200989 INFO  2026-01-30 05:16:57568 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+201173 INFO  2026-01-30 05:16:57752 DeviceManager:116 - Dao returned 2 devices.
+201174 INFO  2026-01-30 05:16:57753 DeviceAction:122 - DeviceAction received 2 devices
+261464 INFO  2026-01-30 05:17:5843 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+261694 INFO  2026-01-30 05:17:58273 DeviceManager:116 - Dao returned 2 devices.
+261698 INFO  2026-01-30 05:17:58277 DeviceAction:122 - DeviceAction received 2 devices
+322103 INFO  2026-01-30 05:18:58682 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+322116 INFO  2026-01-30 05:18:58695 DeviceManager:116 - Dao returned 2 devices.
+322118 INFO  2026-01-30 05:18:58697 DeviceAction:122 - DeviceAction received 2 devices
+358025 INFO  2026-01-30 05:19:34604 Dispatcher:31 - Unable to find 'struts.multipart.saveDir' property setting. Defaulting to javax.servlet.context.tempdir
+382511 INFO  2026-01-30 05:19:5990 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+382535 INFO  2026-01-30 05:19:59114 DeviceManager:116 - Dao returned 2 devices.
+382537 INFO  2026-01-30 05:19:59116 DeviceAction:122 - DeviceAction received 2 devices
+443010 INFO  2026-01-30 05:20:59589 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+443114 INFO  2026-01-30 05:20:59693 DeviceManager:116 - Dao returned 2 devices.
+443116 INFO  2026-01-30 05:20:59695 DeviceAction:122 - DeviceAction received 2 devices
+503467 INFO  2026-01-30 05:22:0046 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+503501 INFO  2026-01-30 05:22:0080 DeviceManager:116 - Dao returned 2 devices.
+503503 INFO  2026-01-30 05:22:0082 DeviceAction:122 - DeviceAction received 2 devices
+563686 INFO  2026-01-30 05:23:00265 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+563737 INFO  2026-01-30 05:23:00316 DeviceManager:116 - Dao returned 2 devices.
+563748 INFO  2026-01-30 05:23:00327 DeviceAction:122 - DeviceAction received 2 devices
+624008 INFO  2026-01-30 05:24:00587 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+624036 INFO  2026-01-30 05:24:00615 DeviceManager:116 - Dao returned 2 devices.
+624050 INFO  2026-01-30 05:24:00629 DeviceAction:122 - DeviceAction received 2 devices
+684410 INFO  2026-01-30 05:25:00989 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+684558 INFO  2026-01-30 05:25:01137 DeviceManager:116 - Dao returned 2 devices.
+684595 INFO  2026-01-30 05:25:01174 DeviceAction:122 - DeviceAction received 2 devices
+745509 INFO  2026-01-30 05:26:0288 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+745662 INFO  2026-01-30 05:26:02241 DeviceManager:116 - Dao returned 2 devices.
+745665 INFO  2026-01-30 05:26:02244 DeviceAction:122 - DeviceAction received 2 devices
+806140 INFO  2026-01-30 05:27:02719 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+806168 INFO  2026-01-30 05:27:02747 DeviceManager:116 - Dao returned 2 devices.
+806202 INFO  2026-01-30 05:27:02781 DeviceAction:122 - DeviceAction received 2 devices
+866739 INFO  2026-01-30 05:28:03318 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+867170 INFO  2026-01-30 05:28:03749 DeviceManager:116 - Dao returned 2 devices.
+867218 INFO  2026-01-30 05:28:03797 DeviceAction:122 - DeviceAction received 2 devices
+930393 INFO  2026-01-30 05:29:06972 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+930752 INFO  2026-01-30 05:29:07331 DeviceManager:116 - Dao returned 2 devices.
+930894 INFO  2026-01-30 05:29:07473 DeviceAction:122 - DeviceAction received 2 devices
+991986 INFO  2026-01-30 05:30:08565 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+992357 INFO  2026-01-30 05:30:08936 DeviceManager:116 - Dao returned 2 devices.
+992528 INFO  2026-01-30 05:30:09107 DeviceAction:122 - DeviceAction received 2 devices
+1053713 INFO  2026-01-30 05:31:10292 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1053847 INFO  2026-01-30 05:31:10426 DeviceManager:116 - Dao returned 2 devices.
+1053891 INFO  2026-01-30 05:31:10470 DeviceAction:122 - DeviceAction received 2 devices
+1116149 INFO  2026-01-30 05:32:12728 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1117771 INFO  2026-01-30 05:32:14350 DeviceManager:116 - Dao returned 2 devices.
+1117788 INFO  2026-01-30 05:32:14367 DeviceAction:122 - DeviceAction received 2 devices
+1179910 INFO  2026-01-30 05:33:16489 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1181168 INFO  2026-01-30 05:33:17747 DeviceManager:116 - Dao returned 2 devices.
+1182184 INFO  2026-01-30 05:33:18763 DeviceAction:122 - DeviceAction received 2 devices
+1244754 INFO  2026-01-30 05:34:21333 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1245894 INFO  2026-01-30 05:34:22473 DeviceManager:116 - Dao returned 2 devices.
+1245904 INFO  2026-01-30 05:34:22483 DeviceAction:122 - DeviceAction received 2 devices
+1307527 INFO  2026-01-30 05:35:24106 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1308585 INFO  2026-01-30 05:35:25164 DeviceManager:116 - Dao returned 2 devices.
+1308760 INFO  2026-01-30 05:35:25339 DeviceAction:122 - DeviceAction received 2 devices
+1371053 INFO  2026-01-30 05:36:27632 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1371883 INFO  2026-01-30 05:36:28462 DeviceManager:116 - Dao returned 2 devices.
+1372210 INFO  2026-01-30 05:36:28789 DeviceAction:122 - DeviceAction received 2 devices
+1434242 INFO  2026-01-30 05:37:30821 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1435602 INFO  2026-01-30 05:37:32181 DeviceManager:116 - Dao returned 2 devices.
+1435709 INFO  2026-01-30 05:37:32288 DeviceAction:122 - DeviceAction received 2 devices
+1497642 INFO  2026-01-30 05:38:34221 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1497852 INFO  2026-01-30 05:38:34431 DeviceManager:116 - Dao returned 2 devices.
+1497909 INFO  2026-01-30 05:38:34488 DeviceAction:122 - DeviceAction received 2 devices
+1558197 INFO  2026-01-30 05:39:34776 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1558681 INFO  2026-01-30 05:39:35260 DeviceManager:116 - Dao returned 2 devices.
+1558711 INFO  2026-01-30 05:39:35290 DeviceAction:122 - DeviceAction received 2 devices
+1619085 INFO  2026-01-30 05:40:35664 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1619110 INFO  2026-01-30 05:40:35689 DeviceManager:116 - Dao returned 2 devices.
+1619114 INFO  2026-01-30 05:40:35693 DeviceAction:122 - DeviceAction received 2 devices
+1679208 INFO  2026-01-30 05:41:35787 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1679242 INFO  2026-01-30 05:41:35821 DeviceManager:116 - Dao returned 2 devices.
+1679248 INFO  2026-01-30 05:41:35827 DeviceAction:122 - DeviceAction received 2 devices
+1739352 INFO  2026-01-30 05:42:35931 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1739383 INFO  2026-01-30 05:42:35962 DeviceManager:116 - Dao returned 2 devices.
+1739390 INFO  2026-01-30 05:42:35969 DeviceAction:122 - DeviceAction received 2 devices
+1799566 INFO  2026-01-30 05:43:36145 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1799586 INFO  2026-01-30 05:43:36165 DeviceManager:116 - Dao returned 2 devices.
+1799590 INFO  2026-01-30 05:43:36169 DeviceAction:122 - DeviceAction received 2 devices
+1859757 INFO  2026-01-30 05:44:36336 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1860054 INFO  2026-01-30 05:44:36633 DeviceManager:116 - Dao returned 2 devices.
+1860057 INFO  2026-01-30 05:44:36636 DeviceAction:122 - DeviceAction received 2 devices
+1920185 INFO  2026-01-30 05:45:36764 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1920204 INFO  2026-01-30 05:45:36783 DeviceManager:116 - Dao returned 2 devices.
+1920206 INFO  2026-01-30 05:45:36785 DeviceAction:122 - DeviceAction received 2 devices
+1980350 INFO  2026-01-30 05:46:36929 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1980388 INFO  2026-01-30 05:46:36967 DeviceManager:116 - Dao returned 2 devices.
+1980677 INFO  2026-01-30 05:46:37256 DeviceAction:122 - DeviceAction received 2 devices
+2041447 INFO  2026-01-30 05:47:3826 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2041746 INFO  2026-01-30 05:47:38325 DeviceManager:116 - Dao returned 2 devices.
+2041767 INFO  2026-01-30 05:47:38346 DeviceAction:122 - DeviceAction received 2 devices
+2102063 INFO  2026-01-30 05:48:38642 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2102425 INFO  2026-01-30 05:48:394 DeviceManager:116 - Dao returned 2 devices.
+2102969 INFO  2026-01-30 05:48:39548 DeviceAction:122 - DeviceAction received 2 devices
+2164013 INFO  2026-01-30 05:49:40592 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2164023 INFO  2026-01-30 05:49:40602 DeviceManager:116 - Dao returned 2 devices.
+2164025 INFO  2026-01-30 05:49:40604 DeviceAction:122 - DeviceAction received 2 devices
+2224090 INFO  2026-01-30 05:50:40669 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2224098 INFO  2026-01-30 05:50:40677 DeviceManager:116 - Dao returned 2 devices.
+2224099 INFO  2026-01-30 05:50:40678 DeviceAction:122 - DeviceAction received 2 devices
+2284213 INFO  2026-01-30 05:51:40792 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2284224 INFO  2026-01-30 05:51:40803 DeviceManager:116 - Dao returned 2 devices.
+2284227 INFO  2026-01-30 05:51:40806 DeviceAction:122 - DeviceAction received 2 devices
+2344328 INFO  2026-01-30 05:52:40907 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2344365 INFO  2026-01-30 05:52:40944 DeviceManager:116 - Dao returned 2 devices.
+2344368 INFO  2026-01-30 05:52:40947 DeviceAction:122 - DeviceAction received 2 devices
+2404468 INFO  2026-01-30 05:53:4147 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2404482 INFO  2026-01-30 05:53:4161 DeviceManager:116 - Dao returned 2 devices.
+2404483 INFO  2026-01-30 05:53:4162 DeviceAction:122 - DeviceAction received 2 devices
+2464629 INFO  2026-01-30 05:54:41208 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2464642 INFO  2026-01-30 05:54:41221 DeviceManager:116 - Dao returned 2 devices.
+2464644 INFO  2026-01-30 05:54:41223 DeviceAction:122 - DeviceAction received 2 devices
+2524726 INFO  2026-01-30 05:55:41305 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2524738 INFO  2026-01-30 05:55:41317 DeviceManager:116 - Dao returned 2 devices.
+2524739 INFO  2026-01-30 05:55:41318 DeviceAction:122 - DeviceAction received 2 devices
+2584813 INFO  2026-01-30 05:56:41392 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2584838 INFO  2026-01-30 05:56:41417 DeviceManager:116 - Dao returned 2 devices.
+2584840 INFO  2026-01-30 05:56:41419 DeviceAction:122 - DeviceAction received 2 devices
+2645156 INFO  2026-01-30 05:57:41735 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2645169 INFO  2026-01-30 05:57:41748 DeviceManager:116 - Dao returned 2 devices.
+2645171 INFO  2026-01-30 05:57:41750 DeviceAction:122 - DeviceAction received 2 devices
+2705249 INFO  2026-01-30 05:58:41828 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2705262 INFO  2026-01-30 05:58:41841 DeviceManager:116 - Dao returned 2 devices.
+2705263 INFO  2026-01-30 05:58:41842 DeviceAction:122 - DeviceAction received 2 devices
+2765333 INFO  2026-01-30 05:59:41912 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2765342 INFO  2026-01-30 05:59:41921 DeviceManager:116 - Dao returned 2 devices.
+2765343 INFO  2026-01-30 05:59:41922 DeviceAction:122 - DeviceAction received 2 devices
+2825405 INFO  2026-01-30 06:00:41984 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2825415 INFO  2026-01-30 06:00:41994 DeviceManager:116 - Dao returned 2 devices.
+2825417 INFO  2026-01-30 06:00:41996 DeviceAction:122 - DeviceAction received 2 devices
+2885495 INFO  2026-01-30 06:01:4274 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2885531 INFO  2026-01-30 06:01:42110 DeviceManager:116 - Dao returned 2 devices.
+2885533 INFO  2026-01-30 06:01:42112 DeviceAction:122 - DeviceAction received 2 devices
+2945611 INFO  2026-01-30 06:02:42190 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2945620 INFO  2026-01-30 06:02:42199 DeviceManager:116 - Dao returned 2 devices.
+2945621 INFO  2026-01-30 06:02:42200 DeviceAction:122 - DeviceAction received 2 devices
+3005690 INFO  2026-01-30 06:03:42269 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3005700 INFO  2026-01-30 06:03:42279 DeviceManager:116 - Dao returned 2 devices.
+3005703 INFO  2026-01-30 06:03:42282 DeviceAction:122 - DeviceAction received 2 devices
+3065779 INFO  2026-01-30 06:04:42358 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3065789 INFO  2026-01-30 06:04:42368 DeviceManager:116 - Dao returned 2 devices.
+3065791 INFO  2026-01-30 06:04:42370 DeviceAction:122 - DeviceAction received 2 devices
+3125848 INFO  2026-01-30 06:05:42427 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3125856 INFO  2026-01-30 06:05:42435 DeviceManager:116 - Dao returned 2 devices.
+3125857 INFO  2026-01-30 06:05:42436 DeviceAction:122 - DeviceAction received 2 devices
+3185939 INFO  2026-01-30 06:06:42518 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3185951 INFO  2026-01-30 06:06:42530 DeviceManager:116 - Dao returned 2 devices.
+3185954 INFO  2026-01-30 06:06:42533 DeviceAction:122 - DeviceAction received 2 devices
+3246038 INFO  2026-01-30 06:07:42617 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3246050 INFO  2026-01-30 06:07:42629 DeviceManager:116 - Dao returned 2 devices.
+3246051 INFO  2026-01-30 06:07:42630 DeviceAction:122 - DeviceAction received 2 devices
+3306269 INFO  2026-01-30 06:08:42848 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3306276 INFO  2026-01-30 06:08:42855 DeviceManager:116 - Dao returned 2 devices.
+3306278 INFO  2026-01-30 06:08:42857 DeviceAction:122 - DeviceAction received 2 devices
+3366342 INFO  2026-01-30 06:09:42921 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3366354 INFO  2026-01-30 06:09:42933 DeviceManager:116 - Dao returned 2 devices.
+3366355 INFO  2026-01-30 06:09:42934 DeviceAction:122 - DeviceAction received 2 devices
+3426384 INFO  2026-01-30 06:10:42963 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3426399 INFO  2026-01-30 06:10:42978 DeviceManager:116 - Dao returned 2 devices.
+3426400 INFO  2026-01-30 06:10:42979 DeviceAction:122 - DeviceAction received 2 devices
+3486512 INFO  2026-01-30 06:11:4391 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3486531 INFO  2026-01-30 06:11:43110 DeviceManager:116 - Dao returned 2 devices.
+3486546 INFO  2026-01-30 06:11:43125 DeviceAction:122 - DeviceAction received 2 devices
+3546643 INFO  2026-01-30 06:12:43222 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3546657 INFO  2026-01-30 06:12:43236 DeviceManager:116 - Dao returned 2 devices.
+3546658 INFO  2026-01-30 06:12:43237 DeviceAction:122 - DeviceAction received 2 devices
+3606780 INFO  2026-01-30 06:13:43359 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3606791 INFO  2026-01-30 06:13:43370 DeviceManager:116 - Dao returned 2 devices.
+3606792 INFO  2026-01-30 06:13:43371 DeviceAction:122 - DeviceAction received 2 devices
+3666859 INFO  2026-01-30 06:14:43438 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3666868 INFO  2026-01-30 06:14:43447 DeviceManager:116 - Dao returned 2 devices.
+3666870 INFO  2026-01-30 06:14:43449 DeviceAction:122 - DeviceAction received 2 devices
+3727028 INFO  2026-01-30 06:15:43607 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3727051 INFO  2026-01-30 06:15:43630 DeviceManager:116 - Dao returned 2 devices.
+3727052 INFO  2026-01-30 06:15:43631 DeviceAction:122 - DeviceAction received 2 devices
+3787145 INFO  2026-01-30 06:16:43724 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3787154 INFO  2026-01-30 06:16:43733 DeviceManager:116 - Dao returned 2 devices.
+3787155 INFO  2026-01-30 06:16:43734 DeviceAction:122 - DeviceAction received 2 devices
+3847228 INFO  2026-01-30 06:17:43807 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3847237 INFO  2026-01-30 06:17:43816 DeviceManager:116 - Dao returned 2 devices.
+3847239 INFO  2026-01-30 06:17:43818 DeviceAction:122 - DeviceAction received 2 devices
+3907327 INFO  2026-01-30 06:18:43906 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3907336 INFO  2026-01-30 06:18:43915 DeviceManager:116 - Dao returned 2 devices.
+3907338 INFO  2026-01-30 06:18:43917 DeviceAction:122 - DeviceAction received 2 devices
+3967398 INFO  2026-01-30 06:19:43977 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3967409 INFO  2026-01-30 06:19:43988 DeviceManager:116 - Dao returned 2 devices.
+3967410 INFO  2026-01-30 06:19:43989 DeviceAction:122 - DeviceAction received 2 devices
+4027471 INFO  2026-01-30 06:20:4450 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+4027490 INFO  2026-01-30 06:20:4469 DeviceManager:116 - Dao returned 2 devices.
+4027497 INFO  2026-01-30 06:20:4476 DeviceAction:122 - DeviceAction received 2 devices
+4087619 INFO  2026-01-30 06:21:44198 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+4087630 INFO  2026-01-30 06:21:44209 DeviceManager:116 - Dao returned 2 devices.
+4087631 INFO  2026-01-30 06:21:44210 DeviceAction:122 - DeviceAction received 2 devices
+4147690 INFO  2026-01-30 06:22:44269 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+4147697 INFO  2026-01-30 06:22:44276 DeviceManager:116 - Dao returned 2 devices.
+4147701 INFO  2026-01-30 06:22:44280 DeviceAction:122 - DeviceAction received 2 devices
+4207765 INFO  2026-01-30 06:23:44344 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+4207776 INFO  2026-01-30 06:23:44355 DeviceManager:116 - Dao returned 2 devices.
+4207779 INFO  2026-01-30 06:23:44358 DeviceAction:122 - DeviceAction received 2 devices
+4267859 INFO  2026-01-30 06:24:44438 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+4267876 INFO  2026-01-30 06:24:44455 DeviceManager:116 - Dao returned 2 devices.
+4267877 INFO  2026-01-30 06:24:44456 DeviceAction:122 - DeviceAction received 2 devices
