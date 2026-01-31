@@ -5,83 +5,76 @@ echo   Push Demo Services Restart
 echo ==========================================
 echo.
 
-echo Stopping Push Demo Services...
+REM 1. Prompt for Tomcat Path (Optional)
+echo Please enter the full path to your Tomcat folder (e.g. C:\Program Files\Tomcat)
+echo If you installed Tomcat as a Service (TomcatPushDemo), just press ENTER.
 echo.
+set /p TOMCAT_HOME="Tomcat Path: "
 
-echo Stopping Tomcat service...
-net stop TomcatPushDemo >nul 2>&1
-if %errorlevel% equ 0 (
-    echo ✓ Tomcat service stopped successfully
+echo.
+echo ==========================================
+echo 1. STOPPING SERVICES
+echo ==========================================
+
+echo Stopping Tomcat...
+if "%TOMCAT_HOME%"=="" (
+    net stop TomcatPushDemo >nul 2>&1
+    if %errorlevel% equ 0 echo    [OK] Service Stopped
 ) else (
-    echo ⚠ Tomcat service may already be stopped or not installed
+    if exist "%TOMCAT_HOME%\bin\shutdown.bat" (
+        call "%TOMCAT_HOME%\bin\shutdown.bat"
+        echo    [OK] Shutdown Command Sent
+    ) else (
+        echo    [!] Warning: shutdown.bat not found at provided path.
+    )
 )
 
-echo Stopping MySQL service...
+echo Stopping MySQL...
 net stop MySQL80 >nul 2>&1
-if %errorlevel% equ 0 (
-    echo ✓ MySQL service stopped successfully
-) else (
-    echo ⚠ MySQL service may already be stopped or not installed
-)
+if %errorlevel% equ 0 echo    [OK] MySQL Stopped
 
 echo.
-echo Waiting 5 seconds for services to fully stop...
-timeout /t 5 /nobreak >nul
+echo Waiting 5 seconds (Cleaning up)...
+timeout /t 5 /nobreak
 
 echo.
-echo Starting Push Demo Services...
-echo.
+echo ==========================================
+echo 2. STARTING SERVICES
+echo ==========================================
 
-echo Starting MySQL service...
+echo Starting MySQL...
 net start MySQL80 >nul 2>&1
 if %errorlevel% equ 0 (
-    echo ✓ MySQL service started successfully
+    echo    [OK] MySQL Started
 ) else (
-    echo ✗ MySQL service failed to start
-    echo.
-    echo Troubleshooting:
-    echo 1. Check if MySQL service is installed
-    echo 2. Verify service name is MySQL80
-    echo 3. Run as Administrator
-    echo.
-    goto :end
-)
-
-timeout /t 10 /nobreak >nul
-
-echo Starting Tomcat service...
-net start TomcatPushDemo >nul 2>&1
-if %errorlevel% equ 0 (
-    echo ✓ Tomcat service started successfully
-) else (
-    echo ✗ Tomcat service failed to start
-    echo.
-    echo Troubleshooting:
-    echo 1. Check if Tomcat service is installed
-    echo 2. Verify service name is TomcatPushDemo
-    echo 3. Run as Administrator
-    echo.
-    goto :end
+    echo    [!] MySQL Service failed (or already running)
 )
 
 echo.
-echo Waiting 15 seconds for services to fully initialize...
-timeout /t 15 /nobreak >nul
+echo Waiting 10 seconds (Database Init)...
+timeout /t 10 /nobreak
+
+echo Starting Tomcat...
+if "%TOMCAT_HOME%"=="" (
+    net start TomcatPushDemo >nul 2>&1
+    if %errorlevel% equ 0 ( 
+        echo    [OK] Tomcat Service Started 
+    ) else (
+        echo    [X] Tomcat Service Failed! (Check service name)
+    )
+) else (
+    if exist "%TOMCAT_HOME%\bin\startup.bat" (
+        echo    [OK] Launching Startup Script...
+        call "%TOMCAT_HOME%\bin\startup.bat"
+    ) else (
+        echo    [X] Error: startup.bat not found at: %TOMCAT_HOME%\bin\
+    )
+)
 
 echo.
 echo ==========================================
-echo   Services Restart Complete!
+echo   RESTART COMPLETE
 echo ==========================================
+echo Application URL: http://localhost:8080/
 echo.
-echo Application should be available at:
-echo http://localhost:8080/
-echo.
-echo Current service status:
-sc query TomcatPushDemo | findstr "STATE" 
-sc query MySQL80 | findstr "STATE"
-echo.
-
-:end
-echo.
-echo Press any key to exit...
-pause >nul
+pause
