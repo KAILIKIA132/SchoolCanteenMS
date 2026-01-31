@@ -3,6 +3,8 @@ package com.zk.pushsdk.process;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+public class ConnectProcess {
+
 	public void registry(HttpServletRequest request, HttpServletResponse response) {
 		try {
 			String sn = request.getParameter("SN");
