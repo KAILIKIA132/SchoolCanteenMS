@@ -69,6 +69,18 @@
 						}
 
 						$(function () {
+							console.log("--------------------------------------------------");
+							console.log("Device List Page Loaded");
+
+							var deviceCount = 0;
+							// Iterate over server-side list to count items for client-side logging
+							<c:forEach items="${deviceInfoList}" var="dev">
+								deviceCount++;
+								console.log("Device: ${dev.deviceSn} - ${dev.deviceName} - IP: ${dev.ipAddress}");
+							</c:forEach>
+
+							console.log("Total devices fetched from server: " + deviceCount);
+							console.log("--------------------------------------------------");
 
 							/*Using an id to close the Modal*/
 							$("#close").click(function () {
