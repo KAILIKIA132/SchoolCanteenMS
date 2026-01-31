@@ -74,7 +74,7 @@ echo   Services Restart Complete!
 echo ==========================================
 echo.
 echo Application should be available at:
-echo http://localhost:8080/pushdemo
+echo http://localhost:8080/
 echo.
 echo Current service status:
 sc query TomcatPushDemo | findstr "STATE" 
