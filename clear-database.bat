@@ -1,10 +1,10 @@
 @echo off
-title Clear Database Content
+title Clear Device Info
 echo ==========================================
-echo   Clear Database Content
+echo   Clear Device Info Table
 echo ==========================================
 echo.
-echo WARNING: This will delete ALL data from the 'pushdemo' database.
+echo WARNING: This will delete ALL data from the 'device_info' table.
 echo This action cannot be undone.
 echo.
 
@@ -19,21 +19,21 @@ if /i "%CONFIRM%" neq "Y" goto :EOF
 echo.
 echo Clearing data...
 
-rem Disable FK checks, Truncate tables, Enable FK checks
-%MYSQL_PATH% -u %DB_USER% -p%DB_PASS% -e "SET FOREIGN_KEY_CHECKS = 0; TRUNCATE TABLE att_log; TRUNCATE TABLE user_info; TRUNCATE TABLE device_info; SET FOREIGN_KEY_CHECKS = 1;" %DB_NAME%
+rem Disable FK checks, Truncate table, Enable FK checks
+%MYSQL_PATH% -u %DB_USER% -p%DB_PASS% -e "SET FOREIGN_KEY_CHECKS = 0; TRUNCATE TABLE device_info; SET FOREIGN_KEY_CHECKS = 1;" %DB_NAME%
 
 if %errorlevel% equ 0 (
     echo.
     echo ==========================================
-    echo   Database Cleared Successfully!
+    echo   Device Info Cleared Successfully!
     echo ==========================================
 ) else (
     echo.
     echo ==========================================
-    echo   Failed to Clear Database
+    echo   Failed to Clear Device Info
     echo ==========================================
     echo.
-    echo Please check if the database and tables exist.
+    echo Please check if the database and table exist.
 )
 
 echo.
