@@ -2356,3 +2356,36 @@ Caused by: java.lang.NullPointerException
 36415223 INFO  2026-01-31 17:13:29342 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
 36415305 INFO  2026-01-31 17:13:29424 DeviceManager:116 - Dao returned 0 devices.
 36415315 INFO  2026-01-31 17:13:29434 DeviceAction:122 - DeviceAction received 0 devices
+36475409 INFO  2026-01-31 17:14:29528 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+36475467 INFO  2026-01-31 17:14:29586 DeviceManager:116 - Dao returned 0 devices.
+36475479 INFO  2026-01-31 17:14:29598 DeviceAction:122 - DeviceAction received 0 devices
+36476447 INFO  2026-01-31 17:14:30566 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+36476484 INFO  2026-01-31 17:14:30603 DeviceManager:116 - Dao returned 0 devices.
+36476508 INFO  2026-01-31 17:14:30627 DeviceAction:122 - DeviceAction received 0 devices
+36536155 INFO  2026-01-31 17:15:30274 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+36536191 INFO  2026-01-31 17:15:30310 DeviceManager:116 - Dao returned 0 devices.
+36536202 INFO  2026-01-31 17:15:30321 DeviceAction:122 - DeviceAction received 0 devices
+36538330 INFO  2026-01-31 17:15:32449 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+36538357 INFO  2026-01-31 17:15:32476 DeviceManager:116 - Dao returned 0 devices.
+36538370 INFO  2026-01-31 17:15:32489 DeviceAction:122 - DeviceAction received 0 devices
+36596907 INFO  2026-01-31 17:16:3126 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+36596939 INFO  2026-01-31 17:16:3158 DeviceManager:116 - Dao returned 0 devices.
+36596946 INFO  2026-01-31 17:16:3165 DeviceAction:122 - DeviceAction received 0 devices
+36599032 INFO  2026-01-31 17:16:33151 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+36599065 INFO  2026-01-31 17:16:33184 DeviceManager:116 - Dao returned 0 devices.
+36599075 INFO  2026-01-31 17:16:33194 DeviceAction:122 - DeviceAction received 0 devices
+36657424 INFO  2026-01-31 17:17:31543 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+36657461 INFO  2026-01-31 17:17:31580 DeviceManager:116 - Dao returned 0 devices.
+36657463 INFO  2026-01-31 17:17:31582 DeviceAction:122 - DeviceAction received 0 devices
+36659653 INFO  2026-01-31 17:17:33772 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+36659925 INFO  2026-01-31 17:17:3444 DeviceManager:116 - Dao returned 0 devices.
+36659939 INFO  2026-01-31 17:17:3458 DeviceAction:122 - DeviceAction received 0 devices
+36718801 INFO  2026-01-31 17:18:32920 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+36718835 INFO  2026-01-31 17:18:32954 DeviceManager:116 - Dao returned 0 devices.
+36718853 INFO  2026-01-31 17:18:32972 DeviceAction:122 - DeviceAction received 0 devices
+36721269 INFO  2026-01-31 17:18:35388 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+36721383 INFO  2026-01-31 17:18:35502 DeviceManager:116 - Dao returned 0 devices.
+36721405 INFO  2026-01-31 17:18:35524 DeviceAction:122 - DeviceAction received 0 devices
+36779768 INFO  2026-01-31 17:19:33887 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+36779828 INFO  2026-01-31 17:19:33947 DeviceManager:116 - Dao returned 0 devices.
+36779837 INFO  2026-01-31 17:19:33956 DeviceAction:122 - DeviceAction received 0 devices
