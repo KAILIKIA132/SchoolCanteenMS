@@ -841,3 +841,693 @@ java.net.ConnectException: Connection refused (Connection refused)
 7746080 INFO  2026-01-30 12:24:19155 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
 7746111 INFO  2026-01-30 12:24:19186 DeviceManager:116 - Dao returned 1 devices.
 7746116 INFO  2026-01-30 12:24:19191 DeviceAction:122 - DeviceAction received 1 devices
+9653869 INFO  2026-01-30 12:56:06944 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+9653881 INFO  2026-01-30 12:56:06956 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+9653867 INFO  2026-01-30 12:56:06942 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+9794578 INFO  2026-01-30 12:58:27653 DeviceManager:116 - Dao returned 1 devices.
+9796984 INFO  2026-01-30 12:58:3059 DeviceAction:122 - DeviceAction received 1 devices
+9795269 INFO  2026-01-30 12:58:28344 DeviceManager:116 - Dao returned 1 devices.
+9795268 INFO  2026-01-30 12:58:28343 DeviceManager:116 - Dao returned 1 devices.
+9802284 INFO  2026-01-30 12:58:35359 DeviceAction:122 - DeviceAction received 1 devices
+9799260 INFO  2026-01-30 12:58:32335 DeviceAction:122 - DeviceAction received 1 devices
+9919664 INFO  2026-01-30 13:00:32739 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+9921926 INFO  2026-01-30 13:00:351 DeviceManager:116 - Dao returned 1 devices.
+9922240 INFO  2026-01-30 13:00:35315 DeviceAction:122 - DeviceAction received 1 devices
+10013970 INFO  2026-01-30 13:02:0745 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+10016744 INFO  2026-01-30 13:02:09819 DeviceManager:116 - Dao returned 1 devices.
+10018956 INFO  2026-01-30 13:02:1231 DeviceAction:122 - DeviceAction received 1 devices
+10122729 INFO  2026-01-30 13:03:55804 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+10131689 INFO  2026-01-30 13:04:04764 DeviceManager:116 - Dao returned 1 devices.
+10134920 INFO  2026-01-30 13:04:07995 DeviceAction:122 - DeviceAction received 1 devices
+10216449 INFO  2026-01-30 13:05:29524 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+10217099 INFO  2026-01-30 13:05:30174 DeviceManager:116 - Dao returned 1 devices.
+10218299 INFO  2026-01-30 13:05:31374 DeviceAction:122 - DeviceAction received 1 devices
+10321205 INFO  2026-01-30 13:07:14280 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+10321802 INFO  2026-01-30 13:07:14877 DeviceManager:116 - Dao returned 1 devices.
+10322112 INFO  2026-01-30 13:07:15187 DeviceAction:122 - DeviceAction received 1 devices
+10391225 INFO  2026-01-30 13:08:24300 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+10393350 INFO  2026-01-30 13:08:26425 DeviceManager:116 - Dao returned 1 devices.
+10393860 INFO  2026-01-30 13:08:26935 DeviceAction:122 - DeviceAction received 1 devices
+10472609 INFO  2026-01-30 13:09:45684 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+10474956 INFO  2026-01-30 13:09:4831 DeviceManager:116 - Dao returned 1 devices.
+10475491 INFO  2026-01-30 13:09:48566 DeviceAction:122 - DeviceAction received 1 devices
+10548146 INFO  2026-01-30 13:11:01221 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+10551354 INFO  2026-01-30 13:11:04429 DeviceManager:116 - Dao returned 1 devices.
+10553304 INFO  2026-01-30 13:11:06379 DeviceAction:122 - DeviceAction received 1 devices
+10624715 INFO  2026-01-30 13:12:17790 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+10625465 INFO  2026-01-30 13:12:18540 DeviceManager:116 - Dao returned 1 devices.
+10625665 INFO  2026-01-30 13:12:18740 DeviceAction:122 - DeviceAction received 1 devices
+10696389 INFO  2026-01-30 13:13:29464 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+10702578 INFO  2026-01-30 13:13:35653 DeviceManager:116 - Dao returned 1 devices.
+10702595 INFO  2026-01-30 13:13:35670 DeviceAction:122 - DeviceAction received 1 devices
+10777615 INFO  2026-01-30 13:14:50690 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+10785026 INFO  2026-01-30 13:14:58101 DeviceManager:116 - Dao returned 1 devices.
+10785644 INFO  2026-01-30 13:14:58719 DeviceAction:122 - DeviceAction received 1 devices
+11012213 INFO  2026-01-30 13:18:45288 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+11031539 INFO  2026-01-30 13:19:04614 DeviceManager:116 - Dao returned 1 devices.
+11032277 INFO  2026-01-30 13:19:05352 DeviceAction:122 - DeviceAction received 1 devices
+11122660 INFO  2026-01-30 13:20:35735 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+11126325 INFO  2026-01-30 13:20:39400 DeviceManager:116 - Dao returned 1 devices.
+11126418 INFO  2026-01-30 13:20:39493 DeviceAction:122 - DeviceAction received 1 devices
+11208649 INFO  2026-01-30 13:22:01724 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+11208849 INFO  2026-01-30 13:22:01924 DeviceManager:116 - Dao returned 1 devices.
+11209017 INFO  2026-01-30 13:22:0292 DeviceAction:122 - DeviceAction received 1 devices
+67929 INFO  2026-01-30 13:44:19677 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/ROOT/WEB-INF/classes/config.xml
+67950 INFO  2026-01-30 13:44:19698 ConfigUtil:25 - Config.xml loaded successfully
+68175 INFO  2026-01-30 13:44:19923 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+68185 INFO  2026-01-30 13:44:19933 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+73747 ERROR 2026-01-30 13:44:25495 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+73764 INFO  2026-01-30 13:44:25512 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+73789 ERROR 2026-01-30 13:44:25537 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+73800 ERROR 2026-01-30 13:44:25548 UserInfoDao:172 - java.lang.NullPointerException
+73828 INFO  2026-01-30 13:44:25576 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+73875 ERROR 2026-01-30 13:44:25623 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+73898 INFO  2026-01-30 13:44:25646 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+73917 ERROR 2026-01-30 13:44:25665 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+73933 ERROR 2026-01-30 13:44:25681 UserInfoDao:148 - java.lang.NullPointerException
+73973 ERROR 2026-01-30 13:44:25721 UserInfoManager:138 - com.zk.exception.DaoException: java.lang.NullPointerException
+74130 INFO  2026-01-30 13:44:25878 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+74169 ERROR 2026-01-30 13:44:25917 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+74189 INFO  2026-01-30 13:44:25937 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+74256 ERROR 2026-01-30 13:44:264 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+74273 ERROR 2026-01-30 13:44:2621 DeviceInfoDao:330 - java.lang.NullPointerException
+74275 ERROR 2026-01-30 13:44:2623 DeviceManager:65 - com.zk.exception.DaoException: java.lang.NullPointerException
+74320 INFO  2026-01-30 13:44:2668 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+74365 ERROR 2026-01-30 13:44:26113 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+74379 INFO  2026-01-30 13:44:26127 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+74404 ERROR 2026-01-30 13:44:26152 AttLogDao:224 - java.lang.NullPointerException
+74466 ERROR 2026-01-30 13:44:26214 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+74413 ERROR 2026-01-30 13:44:26161 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+74477 ERROR 2026-01-30 13:44:26225 DeviceInfoDao:330 - java.lang.NullPointerException
+74482 ERROR 2026-01-30 13:44:26230 DeviceManager:65 - com.zk.exception.DaoException: java.lang.NullPointerException
+77843 INFO  2026-01-30 13:44:29591 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+77885 ERROR 2026-01-30 13:44:29633 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+80700 INFO  2026-01-30 13:44:32448 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+80789 ERROR 2026-01-30 13:44:32537 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+80799 ERROR 2026-01-30 13:44:32547 AttLogDao:224 - java.lang.NullPointerException
+80806 ERROR 2026-01-30 13:44:32554 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+80911 INFO  2026-01-30 13:44:32659 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+80971 ERROR 2026-01-30 13:44:32719 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+80992 INFO  2026-01-30 13:44:32740 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+81046 ERROR 2026-01-30 13:44:32794 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+81078 ERROR 2026-01-30 13:44:32826 AttLogDao:224 - java.lang.NullPointerException
+81095 ERROR 2026-01-30 13:44:32843 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+81272 INFO  2026-01-30 13:44:3320 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+81305 ERROR 2026-01-30 13:44:3353 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+81316 INFO  2026-01-30 13:44:3364 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+81357 ERROR 2026-01-30 13:44:33105 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+81375 ERROR 2026-01-30 13:44:33123 AttLogDao:224 - java.lang.NullPointerException
+81384 ERROR 2026-01-30 13:44:33132 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+81564 INFO  2026-01-30 13:44:33312 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+81749 ERROR 2026-01-30 13:44:33497 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+82206 INFO  2026-01-30 13:44:33954 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+83630 ERROR 2026-01-30 13:44:35378 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+83674 ERROR 2026-01-30 13:44:35422 AttLogDao:224 - java.lang.NullPointerException
+83691 ERROR 2026-01-30 13:44:35439 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+83902 INFO  2026-01-30 13:44:35650 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+84083 ERROR 2026-01-30 13:44:35831 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+84232 INFO  2026-01-30 13:44:35980 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+84385 ERROR 2026-01-30 13:44:36133 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+84412 ERROR 2026-01-30 13:44:36160 AttLogDao:224 - java.lang.NullPointerException
+84438 ERROR 2026-01-30 13:44:36186 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+84543 INFO  2026-01-30 13:44:36291 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+84639 ERROR 2026-01-30 13:44:36387 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+84664 INFO  2026-01-30 13:44:36412 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+84813 ERROR 2026-01-30 13:44:36561 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+84826 ERROR 2026-01-30 13:44:36574 AttLogDao:224 - java.lang.NullPointerException
+84855 ERROR 2026-01-30 13:44:36603 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+86281 INFO  2026-01-30 13:44:3829 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+86676 ERROR 2026-01-30 13:44:38424 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+86739 INFO  2026-01-30 13:44:38487 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+87206 ERROR 2026-01-30 13:44:38954 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+87229 ERROR 2026-01-30 13:44:38977 AttLogDao:224 - java.lang.NullPointerException
+87260 ERROR 2026-01-30 13:44:398 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+89656 INFO  2026-01-30 13:44:41404 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+89660 INFO  2026-01-30 13:44:41408 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+90011 ERROR 2026-01-30 13:44:41759 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+90014 ERROR 2026-01-30 13:44:41762 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+90064 INFO  2026-01-30 13:44:41812 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+90091 INFO  2026-01-30 13:44:41839 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+90344 ERROR 2026-01-30 13:44:4292 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+90425 ERROR 2026-01-30 13:44:42173 DeviceInfoDao:430 - java.lang.NullPointerException
+90543 INFO  2026-01-30 13:44:42291 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+90560 ERROR 2026-01-30 13:44:42308 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+90580 ERROR 2026-01-30 13:44:42328 AttLogDao:224 - java.lang.NullPointerException
+90889 ERROR 2026-01-30 13:44:42637 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+90783 ERROR 2026-01-30 13:44:42531 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+91263 INFO  2026-01-30 13:44:4311 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+91827 INFO  2026-01-30 13:44:43575 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+91945 INFO  2026-01-30 13:44:43693 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+92639 ERROR 2026-01-30 13:44:44387 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+93123 ERROR 2026-01-30 13:44:44871 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+93222 INFO  2026-01-30 13:44:44970 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+93140 ERROR 2026-01-30 13:44:44888 DeviceInfoDao:406 - java.lang.NullPointerException
+93866 ERROR 2026-01-30 13:44:45614 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+93983 ERROR 2026-01-30 13:44:45731 AttLogDao:224 - java.lang.NullPointerException
+93990 ERROR 2026-01-30 13:44:45738 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+93994 ERROR 2026-01-30 13:44:45742 DeviceManager:122 - Error getting device list: java.lang.NullPointerException
+com.zk.exception.DaoException: java.lang.NullPointerException
+	at com.zk.dao.impl.DeviceInfoDao.fatchListWithCount(DeviceInfoDao.java:407)
+	at com.zk.manager.DeviceManager.getDeviceInfoListForPage(DeviceManager.java:114)
+	at com.zk.action.DeviceAction.deviceList(DeviceAction.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:441)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:280)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:243)
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:165)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:87)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:237)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:252)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:68)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:87)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:237)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:122)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:237)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:195)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:87)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:237)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:195)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:87)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:237)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:179)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:237)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:75)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:237)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:94)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:237)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:235)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:237)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:89)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:237)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:130)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:237)
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:267)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:237)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:126)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:237)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:138)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:87)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:237)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:165)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:237)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:237)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:179)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:237)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:176)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:237)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:52)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:488)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.NullPointerException
+	at com.zk.dao.BaseDao.getConnection(BaseDao.java:44)
+	at com.zk.dao.BaseDao.getConnection(BaseDao.java:67)
+	at com.zk.dao.impl.DeviceInfoDao.fatchListWithCount(DeviceInfoDao.java:352)
+	... 77 more
+94078 INFO  2026-01-30 13:44:45826 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+94275 INFO  2026-01-30 13:44:4623 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+94521 ERROR 2026-01-30 13:44:46269 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+94618 INFO  2026-01-30 13:44:46366 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+95039 ERROR 2026-01-30 13:44:46787 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+95040 ERROR 2026-01-30 13:44:46788 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+95115 INFO  2026-01-30 13:44:46863 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+95169 ERROR 2026-01-30 13:44:46917 DeviceInfoDao:330 - java.lang.NullPointerException
+95248 ERROR 2026-01-30 13:44:46996 DeviceManager:65 - com.zk.exception.DaoException: java.lang.NullPointerException
+95266 ERROR 2026-01-30 13:44:4714 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+95287 ERROR 2026-01-30 13:44:4735 AttLogDao:224 - java.lang.NullPointerException
+95293 ERROR 2026-01-30 13:44:4741 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+99249 INFO  2026-01-30 13:44:50997 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+99689 ERROR 2026-01-30 13:44:51437 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+99711 INFO  2026-01-30 13:44:51459 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+99816 ERROR 2026-01-30 13:44:51564 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+99845 ERROR 2026-01-30 13:44:51593 AttLogDao:224 - java.lang.NullPointerException
+99853 ERROR 2026-01-30 13:44:51601 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+114445 INFO  2026-01-30 13:45:06193 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+114562 ERROR 2026-01-30 13:45:06310 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+114631 INFO  2026-01-30 13:45:06379 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+114809 ERROR 2026-01-30 13:45:06557 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+114956 ERROR 2026-01-30 13:45:06704 AttLogDao:224 - java.lang.NullPointerException
+115283 ERROR 2026-01-30 13:45:0731 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+117840 INFO  2026-01-30 13:45:09588 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+118238 INFO  2026-01-30 13:45:09986 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+118319 ERROR 2026-01-30 13:45:1067 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+118334 INFO  2026-01-30 13:45:1082 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+118346 ERROR 2026-01-30 13:45:1094 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+118365 INFO  2026-01-30 13:45:10113 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+118406 ERROR 2026-01-30 13:45:10154 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+118408 ERROR 2026-01-30 13:45:10156 AttLogDao:224 - java.lang.NullPointerException
+118411 ERROR 2026-01-30 13:45:10159 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+120204 ERROR 2026-01-30 13:45:11952 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+120410 INFO  2026-01-30 13:45:12158 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+120397 ERROR 2026-01-30 13:45:12145 UserInfoDao:172 - java.lang.NullPointerException
+120456 INFO  2026-01-30 13:45:12204 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+120484 ERROR 2026-01-30 13:45:12232 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+120493 INFO  2026-01-30 13:45:12241 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+120589 ERROR 2026-01-30 13:45:12337 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+120619 ERROR 2026-01-30 13:45:12367 AttLogDao:224 - java.lang.NullPointerException
+120632 ERROR 2026-01-30 13:45:12380 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+120607 ERROR 2026-01-30 13:45:12355 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+120664 INFO  2026-01-30 13:45:12412 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+120855 ERROR 2026-01-30 13:45:12603 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+120860 ERROR 2026-01-30 13:45:12608 UserInfoDao:148 - java.lang.NullPointerException
+120862 ERROR 2026-01-30 13:45:12610 UserInfoManager:138 - com.zk.exception.DaoException: java.lang.NullPointerException
+120880 INFO  2026-01-30 13:45:12628 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+120935 ERROR 2026-01-30 13:45:12683 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+120945 INFO  2026-01-30 13:45:12693 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+120985 ERROR 2026-01-30 13:45:12733 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+121015 ERROR 2026-01-30 13:45:12763 DeviceInfoDao:330 - java.lang.NullPointerException
+121022 ERROR 2026-01-30 13:45:12770 DeviceManager:65 - com.zk.exception.DaoException: java.lang.NullPointerException
+122238 INFO  2026-01-30 13:45:13986 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+122625 ERROR 2026-01-30 13:45:14373 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+122630 INFO  2026-01-30 13:45:14378 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+122678 ERROR 2026-01-30 13:45:14426 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+122685 ERROR 2026-01-30 13:45:14433 AttLogDao:224 - java.lang.NullPointerException
+122688 ERROR 2026-01-30 13:45:14436 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+125227 INFO  2026-01-30 13:45:16975 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+125316 ERROR 2026-01-30 13:45:1764 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+125328 INFO  2026-01-30 13:45:1776 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+125412 ERROR 2026-01-30 13:45:17160 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+125420 ERROR 2026-01-30 13:45:17168 AttLogDao:224 - java.lang.NullPointerException
+125451 ERROR 2026-01-30 13:45:17199 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+129092 INFO  2026-01-30 13:45:20840 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+129180 ERROR 2026-01-30 13:45:20928 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+129196 INFO  2026-01-30 13:45:20944 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+129371 ERROR 2026-01-30 13:45:21119 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+129421 ERROR 2026-01-30 13:45:21169 AttLogDao:224 - java.lang.NullPointerException
+129485 ERROR 2026-01-30 13:45:21233 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+131251 INFO  2026-01-30 13:45:22999 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+131460 ERROR 2026-01-30 13:45:23208 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+131484 INFO  2026-01-30 13:45:23232 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+131560 ERROR 2026-01-30 13:45:23308 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+131569 ERROR 2026-01-30 13:45:23317 AttLogDao:224 - java.lang.NullPointerException
+131599 ERROR 2026-01-30 13:45:23347 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+134140 INFO  2026-01-30 13:45:25888 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+134197 ERROR 2026-01-30 13:45:25945 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+134210 INFO  2026-01-30 13:45:25958 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+134792 ERROR 2026-01-30 13:45:26540 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+134798 ERROR 2026-01-30 13:45:26546 AttLogDao:224 - java.lang.NullPointerException
+134801 ERROR 2026-01-30 13:45:26549 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+137213 INFO  2026-01-30 13:45:28961 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+137785 ERROR 2026-01-30 13:45:29533 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+137789 INFO  2026-01-30 13:45:29537 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+138171 ERROR 2026-01-30 13:45:29919 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+138192 ERROR 2026-01-30 13:45:29940 AttLogDao:224 - java.lang.NullPointerException
+138830 ERROR 2026-01-30 13:45:30578 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+140139 INFO  2026-01-30 13:45:31887 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+140248 ERROR 2026-01-30 13:45:31996 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+140287 INFO  2026-01-30 13:45:3235 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+140550 ERROR 2026-01-30 13:45:32298 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+140567 ERROR 2026-01-30 13:45:32315 AttLogDao:224 - java.lang.NullPointerException
+140570 ERROR 2026-01-30 13:45:32318 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+143123 INFO  2026-01-30 13:45:34871 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+143279 ERROR 2026-01-30 13:45:3527 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+143558 INFO  2026-01-30 13:45:35306 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+143965 ERROR 2026-01-30 13:45:35713 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+144017 ERROR 2026-01-30 13:45:35765 AttLogDao:224 - java.lang.NullPointerException
+144055 ERROR 2026-01-30 13:45:35803 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+146441 INFO  2026-01-30 13:45:38189 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+146773 ERROR 2026-01-30 13:45:38521 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+146780 INFO  2026-01-30 13:45:38528 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+146837 ERROR 2026-01-30 13:45:38585 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+146851 ERROR 2026-01-30 13:45:38599 AttLogDao:224 - java.lang.NullPointerException
+146868 ERROR 2026-01-30 13:45:38616 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+149201 INFO  2026-01-30 13:45:40949 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+149717 ERROR 2026-01-30 13:45:41465 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+149756 INFO  2026-01-30 13:45:41504 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+149827 ERROR 2026-01-30 13:45:41575 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+149854 ERROR 2026-01-30 13:45:41602 AttLogDao:224 - java.lang.NullPointerException
+149860 ERROR 2026-01-30 13:45:41608 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+154033 INFO  2026-01-30 13:45:45781 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+154126 ERROR 2026-01-30 13:45:45874 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+154151 INFO  2026-01-30 13:45:45899 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+154400 ERROR 2026-01-30 13:45:46148 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+154455 ERROR 2026-01-30 13:45:46203 AttLogDao:224 - java.lang.NullPointerException
+155095 ERROR 2026-01-30 13:45:46843 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+155215 INFO  2026-01-30 13:45:46963 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+155232 ERROR 2026-01-30 13:45:46980 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+155242 INFO  2026-01-30 13:45:46990 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+155297 ERROR 2026-01-30 13:45:4745 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+155345 ERROR 2026-01-30 13:45:4793 AttLogDao:224 - java.lang.NullPointerException
+155353 ERROR 2026-01-30 13:45:47101 AttLogManager:49 - com.zk.exception.DaoException: java.lang.NullPointerException
+172916 INFO  2026-01-30 13:46:04664 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+172950 ERROR 2026-01-30 13:46:04698 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+173000 ERROR 2026-01-30 13:46:04748 BaseDao:142 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+173004 ERROR 2026-01-30 13:46:04752 BaseDao:241 - Database connection test failed - connection is null or closed
+300803 INFO  2026-01-30 13:48:12551 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+300940 ERROR 2026-01-30 13:48:12688 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+300982 ERROR 2026-01-30 13:48:12730 BaseDao:142 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+300998 ERROR 2026-01-30 13:48:12746 BaseDao:241 - Database connection test failed - connection is null or closed
+308101 INFO  2026-01-30 13:48:19849 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:null
+308348 ERROR 2026-01-30 13:48:2096 BaseDao:111 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+308484 ERROR 2026-01-30 13:48:20232 BaseDao:142 - java.sql.SQLException: Access denied for user 'root'@'192.168.112.3' (using password: NO)
+308491 ERROR 2026-01-30 13:48:20239 BaseDao:241 - Database connection test failed - connection is null or closed
+13920 INFO  2026-01-30 13:49:49727 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/ROOT/WEB-INF/classes/config.xml
+13951 INFO  2026-01-30 13:49:49758 ConfigUtil:25 - Config.xml loaded successfully
+14116 INFO  2026-01-30 13:49:49923 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+20307 INFO  2026-01-30 13:49:56114 BaseDao:238 - Database connection test successful. Product: MySQL
+22287 INFO  2026-01-30 13:49:5894 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+23350 INFO  2026-01-30 13:49:59157 DeviceManager:116 - Dao returned 1 devices.
+23384 INFO  2026-01-30 13:49:59191 DeviceAction:122 - DeviceAction received 1 devices
+51996 INFO  2026-01-30 13:50:27803 BaseDao:238 - Database connection test successful. Product: MySQL
+52609 INFO  2026-01-30 13:50:28416 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+53017 INFO  2026-01-30 13:50:28824 DeviceManager:116 - Dao returned 1 devices.
+53024 INFO  2026-01-30 13:50:28831 DeviceAction:122 - DeviceAction received 1 devices
+96298 INFO  2026-01-31 05:50:05197 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/ROOT/WEB-INF/classes/config.xml
+96325 INFO  2026-01-31 05:50:05224 ConfigUtil:25 - Config.xml loaded successfully
+96448 INFO  2026-01-31 05:50:05347 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+97631 INFO  2026-01-31 05:50:06530 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+180853 INFO  2026-01-31 05:51:29752 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+181138 INFO  2026-01-31 05:51:3037 DeviceManager:116 - Dao returned 1 devices.
+181139 INFO  2026-01-31 05:51:3038 DeviceAction:122 - DeviceAction received 1 devices
+866310 INFO  2026-01-31 06:02:55209 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+866533 INFO  2026-01-31 06:02:55432 DeviceManager:116 - Dao returned 1 devices.
+866536 INFO  2026-01-31 06:02:55435 DeviceAction:122 - DeviceAction received 1 devices
+929734 INFO  2026-01-31 06:03:58633 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+930062 INFO  2026-01-31 06:03:58961 DeviceManager:116 - Dao returned 1 devices.
+930198 INFO  2026-01-31 06:03:5997 DeviceAction:122 - DeviceAction received 1 devices
+18903 INFO  2026-01-31 06:04:35905 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/ROOT/WEB-INF/classes/config.xml
+18905 INFO  2026-01-31 06:04:35907 ConfigUtil:25 - Config.xml loaded successfully
+18929 INFO  2026-01-31 06:04:35931 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+43407 INFO  2026-01-31 06:05:00409 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+43662 INFO  2026-01-31 06:05:00664 DeviceManager:116 - Dao returned 1 devices.
+43669 INFO  2026-01-31 06:05:00671 DeviceAction:122 - DeviceAction received 1 devices
+106000 INFO  2026-01-31 06:06:032 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+106081 INFO  2026-01-31 06:06:0383 DeviceManager:116 - Dao returned 1 devices.
+106085 INFO  2026-01-31 06:06:0387 DeviceAction:122 - DeviceAction received 1 devices
+166789 INFO  2026-01-31 06:07:03791 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+166848 INFO  2026-01-31 06:07:03850 DeviceManager:116 - Dao returned 1 devices.
+166849 INFO  2026-01-31 06:07:03851 DeviceAction:122 - DeviceAction received 1 devices
+227569 INFO  2026-01-31 06:08:04571 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+227717 INFO  2026-01-31 06:08:04719 DeviceManager:116 - Dao returned 1 devices.
+227720 INFO  2026-01-31 06:08:04722 DeviceAction:122 - DeviceAction received 1 devices
+4501 INFO  2026-01-31 06:08:407 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/ROOT/WEB-INF/classes/config.xml
+4506 INFO  2026-01-31 06:08:4012 ConfigUtil:25 - Config.xml loaded successfully
+4525 INFO  2026-01-31 06:08:4031 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+29891 INFO  2026-01-31 06:09:05397 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+30032 INFO  2026-01-31 06:09:05538 DeviceManager:116 - Dao returned 1 devices.
+30033 INFO  2026-01-31 06:09:05539 DeviceAction:122 - DeviceAction received 1 devices
+91239 INFO  2026-01-31 06:10:06745 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+91282 INFO  2026-01-31 06:10:06788 DeviceManager:116 - Dao returned 1 devices.
+91286 INFO  2026-01-31 06:10:06792 DeviceAction:122 - DeviceAction received 1 devices
+151648 INFO  2026-01-31 06:11:07154 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+151672 INFO  2026-01-31 06:11:07178 DeviceManager:116 - Dao returned 1 devices.
+151683 INFO  2026-01-31 06:11:07189 DeviceAction:122 - DeviceAction received 1 devices
+212041 INFO  2026-01-31 06:12:07547 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+212058 INFO  2026-01-31 06:12:07564 DeviceManager:116 - Dao returned 1 devices.
+212064 INFO  2026-01-31 06:12:07570 DeviceAction:122 - DeviceAction received 1 devices
+272452 INFO  2026-01-31 06:13:07958 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+272488 INFO  2026-01-31 06:13:07994 DeviceManager:116 - Dao returned 1 devices.
+272491 INFO  2026-01-31 06:13:07997 DeviceAction:122 - DeviceAction received 1 devices
+292075 INFO  2026-01-31 06:13:27581 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+292098 INFO  2026-01-31 06:13:27604 DeviceManager:116 - Dao returned 1 devices.
+292101 INFO  2026-01-31 06:13:27607 DeviceAction:122 - DeviceAction received 1 devices
+321379 INFO  2026-01-31 06:13:56885 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+321391 INFO  2026-01-31 06:13:56897 DeviceManager:116 - Dao returned 1 devices.
+321393 INFO  2026-01-31 06:13:56899 DeviceAction:122 - DeviceAction received 1 devices
+332982 INFO  2026-01-31 06:14:08488 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+332994 INFO  2026-01-31 06:14:08500 DeviceManager:116 - Dao returned 1 devices.
+332995 INFO  2026-01-31 06:14:08501 DeviceAction:122 - DeviceAction received 1 devices
+393472 INFO  2026-01-31 06:15:08978 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+393506 INFO  2026-01-31 06:15:0912 DeviceManager:116 - Dao returned 1 devices.
+393507 INFO  2026-01-31 06:15:0913 DeviceAction:122 - DeviceAction received 1 devices
+454369 INFO  2026-01-31 06:16:09875 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+454412 INFO  2026-01-31 06:16:09918 DeviceManager:116 - Dao returned 1 devices.
+454417 INFO  2026-01-31 06:16:09923 DeviceAction:122 - DeviceAction received 1 devices
+515103 INFO  2026-01-31 06:17:10609 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+515133 INFO  2026-01-31 06:17:10639 DeviceManager:116 - Dao returned 1 devices.
+515142 INFO  2026-01-31 06:17:10648 DeviceAction:122 - DeviceAction received 1 devices
+577700 INFO  2026-01-31 06:18:13206 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+577717 INFO  2026-01-31 06:18:13223 DeviceManager:116 - Dao returned 1 devices.
+577722 INFO  2026-01-31 06:18:13228 DeviceAction:122 - DeviceAction received 1 devices
+638547 INFO  2026-01-31 06:19:1453 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+638612 INFO  2026-01-31 06:19:14118 DeviceManager:116 - Dao returned 1 devices.
+638616 INFO  2026-01-31 06:19:14122 DeviceAction:122 - DeviceAction received 1 devices
+701532 INFO  2026-01-31 06:20:1738 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+701564 INFO  2026-01-31 06:20:1770 DeviceManager:116 - Dao returned 1 devices.
+701566 INFO  2026-01-31 06:20:1772 DeviceAction:122 - DeviceAction received 1 devices
+762301 INFO  2026-01-31 06:21:17807 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+762316 INFO  2026-01-31 06:21:17822 DeviceManager:116 - Dao returned 1 devices.
+762317 INFO  2026-01-31 06:21:17823 DeviceAction:122 - DeviceAction received 1 devices
+789652 INFO  2026-01-31 06:21:45158 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+789671 INFO  2026-01-31 06:21:45177 DeviceManager:116 - Dao returned 1 devices.
+789677 INFO  2026-01-31 06:21:45183 DeviceAction:122 - DeviceAction received 1 devices
+822842 INFO  2026-01-31 06:22:18348 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+822852 INFO  2026-01-31 06:22:18358 DeviceManager:116 - Dao returned 1 devices.
+822855 INFO  2026-01-31 06:22:18361 DeviceAction:122 - DeviceAction received 1 devices
+883199 INFO  2026-01-31 06:23:18705 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+883213 INFO  2026-01-31 06:23:18719 DeviceManager:116 - Dao returned 1 devices.
+883214 INFO  2026-01-31 06:23:18720 DeviceAction:122 - DeviceAction received 1 devices
+943666 INFO  2026-01-31 06:24:19172 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+943690 INFO  2026-01-31 06:24:19196 DeviceManager:116 - Dao returned 1 devices.
+943691 INFO  2026-01-31 06:24:19197 DeviceAction:122 - DeviceAction received 1 devices
+1006612 INFO  2026-01-31 06:25:22118 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1006666 INFO  2026-01-31 06:25:22172 DeviceManager:116 - Dao returned 1 devices.
+1006707 INFO  2026-01-31 06:25:22213 DeviceAction:122 - DeviceAction received 1 devices
+1067192 INFO  2026-01-31 06:26:22698 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1067203 INFO  2026-01-31 06:26:22709 DeviceManager:116 - Dao returned 1 devices.
+1067204 INFO  2026-01-31 06:26:22710 DeviceAction:122 - DeviceAction received 1 devices
+1131652 INFO  2026-01-31 06:27:27158 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1131664 INFO  2026-01-31 06:27:27170 DeviceManager:116 - Dao returned 1 devices.
+1131666 INFO  2026-01-31 06:27:27172 DeviceAction:122 - DeviceAction received 1 devices
+1192149 INFO  2026-01-31 06:28:27655 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1192164 INFO  2026-01-31 06:28:27670 DeviceManager:116 - Dao returned 1 devices.
+1192170 INFO  2026-01-31 06:28:27676 DeviceAction:122 - DeviceAction received 1 devices
+1253161 INFO  2026-01-31 06:29:28667 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1253169 INFO  2026-01-31 06:29:28675 DeviceManager:116 - Dao returned 1 devices.
+1253171 INFO  2026-01-31 06:29:28677 DeviceAction:122 - DeviceAction received 1 devices
+1313746 INFO  2026-01-31 06:30:29252 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1313755 INFO  2026-01-31 06:30:29261 DeviceManager:116 - Dao returned 1 devices.
+1313756 INFO  2026-01-31 06:30:29262 DeviceAction:122 - DeviceAction received 1 devices
+1374075 INFO  2026-01-31 06:31:29581 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1374099 INFO  2026-01-31 06:31:29605 DeviceManager:116 - Dao returned 1 devices.
+1374156 INFO  2026-01-31 06:31:29662 DeviceAction:122 - DeviceAction received 1 devices
+1439363 INFO  2026-01-31 06:32:34869 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1439380 INFO  2026-01-31 06:32:34886 DeviceManager:116 - Dao returned 1 devices.
+1439382 INFO  2026-01-31 06:32:34888 DeviceAction:122 - DeviceAction received 1 devices
+1499862 INFO  2026-01-31 06:33:35368 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1499885 INFO  2026-01-31 06:33:35391 DeviceManager:116 - Dao returned 1 devices.
+1499887 INFO  2026-01-31 06:33:35393 DeviceAction:122 - DeviceAction received 1 devices
+1560406 INFO  2026-01-31 06:34:35912 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1560417 INFO  2026-01-31 06:34:35923 DeviceManager:116 - Dao returned 1 devices.
+1560419 INFO  2026-01-31 06:34:35925 DeviceAction:122 - DeviceAction received 1 devices
+1620761 INFO  2026-01-31 06:35:36267 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1620773 INFO  2026-01-31 06:35:36279 DeviceManager:116 - Dao returned 1 devices.
+1620775 INFO  2026-01-31 06:35:36281 DeviceAction:122 - DeviceAction received 1 devices
+1654025 INFO  2026-01-31 06:36:09531 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1654040 INFO  2026-01-31 06:36:09546 DeviceManager:116 - Dao returned 1 devices.
+1654041 INFO  2026-01-31 06:36:09547 DeviceAction:122 - DeviceAction received 1 devices
+1681116 INFO  2026-01-31 06:36:36622 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1681129 INFO  2026-01-31 06:36:36635 DeviceManager:116 - Dao returned 1 devices.
+1681130 INFO  2026-01-31 06:36:36636 DeviceAction:122 - DeviceAction received 1 devices
+1741653 INFO  2026-01-31 06:37:37159 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1741664 INFO  2026-01-31 06:37:37170 DeviceManager:116 - Dao returned 1 devices.
+1741667 INFO  2026-01-31 06:37:37173 DeviceAction:122 - DeviceAction received 1 devices
+1782923 INFO  2026-01-31 06:38:18429 BaseDao:238 - Database connection test successful. Product: MySQL
+1782995 INFO  2026-01-31 06:38:18501 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1783007 INFO  2026-01-31 06:38:18513 DeviceManager:116 - Dao returned 1 devices.
+1783009 INFO  2026-01-31 06:38:18515 DeviceAction:122 - DeviceAction received 1 devices
+1801964 INFO  2026-01-31 06:38:37470 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1801974 INFO  2026-01-31 06:38:37480 DeviceManager:116 - Dao returned 1 devices.
+1801975 INFO  2026-01-31 06:38:37481 DeviceAction:122 - DeviceAction received 1 devices
+1835949 INFO  2026-01-31 06:39:11455 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1835991 INFO  2026-01-31 06:39:11497 DeviceManager:116 - Dao returned 1 devices.
+1835995 INFO  2026-01-31 06:39:11501 DeviceAction:122 - DeviceAction received 1 devices
+1839961 INFO  2026-01-31 06:39:15467 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1839963 INFO  2026-01-31 06:39:15469 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1839973 INFO  2026-01-31 06:39:15479 DeviceManager:116 - Dao returned 1 devices.
+1839979 INFO  2026-01-31 06:39:15485 DeviceAction:122 - DeviceAction received 1 devices
+1839984 INFO  2026-01-31 06:39:15490 DeviceManager:116 - Dao returned 1 devices.
+1840019 INFO  2026-01-31 06:39:15525 DeviceAction:122 - DeviceAction received 1 devices
+1844643 INFO  2026-01-31 06:39:20149 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1844652 INFO  2026-01-31 06:39:20158 DeviceManager:116 - Dao returned 0 devices.
+1844653 INFO  2026-01-31 06:39:20159 DeviceAction:122 - DeviceAction received 0 devices
+1858528 INFO  2026-01-31 06:39:3434 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1858535 INFO  2026-01-31 06:39:3441 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1858557 INFO  2026-01-31 06:39:3463 DeviceManager:116 - Dao returned 0 devices.
+1858561 INFO  2026-01-31 06:39:3467 DeviceAction:122 - DeviceAction received 0 devices
+1858565 INFO  2026-01-31 06:39:3471 DeviceManager:116 - Dao returned 0 devices.
+1858566 INFO  2026-01-31 06:39:3472 DeviceAction:122 - DeviceAction received 0 devices
+1862260 INFO  2026-01-31 06:39:37766 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1862310 INFO  2026-01-31 06:39:37816 DeviceManager:116 - Dao returned 0 devices.
+1862316 INFO  2026-01-31 06:39:37822 DeviceAction:122 - DeviceAction received 0 devices
+1924018 INFO  2026-01-31 06:40:39524 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1924031 INFO  2026-01-31 06:40:39537 DeviceManager:116 - Dao returned 0 devices.
+1924032 INFO  2026-01-31 06:40:39538 DeviceAction:122 - DeviceAction received 0 devices
+1984666 INFO  2026-01-31 06:41:40172 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+1984678 INFO  2026-01-31 06:41:40184 DeviceManager:116 - Dao returned 0 devices.
+1984679 INFO  2026-01-31 06:41:40185 DeviceAction:122 - DeviceAction received 0 devices
+2045531 INFO  2026-01-31 06:42:4137 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2045624 INFO  2026-01-31 06:42:41130 DeviceManager:116 - Dao returned 0 devices.
+2045625 INFO  2026-01-31 06:42:41131 DeviceAction:122 - DeviceAction received 0 devices
+2106711 INFO  2026-01-31 06:43:42217 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2107022 INFO  2026-01-31 06:43:42528 DeviceManager:116 - Dao returned 0 devices.
+2107099 INFO  2026-01-31 06:43:42605 DeviceAction:122 - DeviceAction received 0 devices
+2168061 INFO  2026-01-31 06:44:43567 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2168076 INFO  2026-01-31 06:44:43582 DeviceManager:116 - Dao returned 0 devices.
+2168079 INFO  2026-01-31 06:44:43585 DeviceAction:122 - DeviceAction received 0 devices
+2228919 INFO  2026-01-31 06:45:44425 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2229493 INFO  2026-01-31 06:45:44999 DeviceManager:116 - Dao returned 0 devices.
+2229499 INFO  2026-01-31 06:45:455 DeviceAction:122 - DeviceAction received 0 devices
+2290529 INFO  2026-01-31 06:46:4635 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2290545 INFO  2026-01-31 06:46:4651 DeviceManager:116 - Dao returned 0 devices.
+2290548 INFO  2026-01-31 06:46:4654 DeviceAction:122 - DeviceAction received 0 devices
+2351426 INFO  2026-01-31 06:47:46932 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2351435 INFO  2026-01-31 06:47:46941 DeviceManager:116 - Dao returned 0 devices.
+2351437 INFO  2026-01-31 06:47:46943 DeviceAction:122 - DeviceAction received 0 devices
+2412334 INFO  2026-01-31 06:48:47840 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+2412377 INFO  2026-01-31 06:48:47883 DeviceManager:116 - Dao returned 0 devices.
+2412379 INFO  2026-01-31 06:48:47885 DeviceAction:122 - DeviceAction received 0 devices
+1654 INFO  2026-01-31 06:49:52501 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/ROOT/WEB-INF/classes/config.xml
+1676 INFO  2026-01-31 06:49:52523 ConfigUtil:25 - Config.xml loaded successfully
+1754 INFO  2026-01-31 06:49:52601 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+3394 INFO  2026-01-31 06:49:54241 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+3468 INFO  2026-01-31 06:49:54315 DeviceManager:116 - Dao returned 0 devices.
+3469 INFO  2026-01-31 06:49:54316 DeviceAction:122 - DeviceAction received 0 devices
+69385 INFO  2026-01-31 06:51:00232 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+69481 INFO  2026-01-31 06:51:00328 DeviceManager:116 - Dao returned 0 devices.
+69485 INFO  2026-01-31 06:51:00332 DeviceAction:122 - DeviceAction received 0 devices
+130135 INFO  2026-01-31 06:52:00982 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+130155 INFO  2026-01-31 06:52:012 DeviceManager:116 - Dao returned 0 devices.
+130160 INFO  2026-01-31 06:52:017 DeviceAction:122 - DeviceAction received 0 devices
+190604 INFO  2026-01-31 06:53:01451 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+190621 INFO  2026-01-31 06:53:01468 DeviceManager:116 - Dao returned 0 devices.
+190626 INFO  2026-01-31 06:53:01473 DeviceAction:122 - DeviceAction received 0 devices
+228676 INFO  2026-01-31 06:53:39523 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+228694 INFO  2026-01-31 06:53:39541 DeviceManager:116 - Dao returned 0 devices.
+228695 INFO  2026-01-31 06:53:39542 DeviceAction:122 - DeviceAction received 0 devices
+251129 INFO  2026-01-31 06:54:01976 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+251137 INFO  2026-01-31 06:54:01984 DeviceManager:116 - Dao returned 0 devices.
+251138 INFO  2026-01-31 06:54:01985 DeviceAction:122 - DeviceAction received 0 devices
+311678 INFO  2026-01-31 06:55:02525 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+311692 INFO  2026-01-31 06:55:02539 DeviceManager:116 - Dao returned 0 devices.
+311693 INFO  2026-01-31 06:55:02540 DeviceAction:122 - DeviceAction received 0 devices
+372478 INFO  2026-01-31 06:56:03325 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+372495 INFO  2026-01-31 06:56:03342 DeviceManager:116 - Dao returned 0 devices.
+372497 INFO  2026-01-31 06:56:03344 DeviceAction:122 - DeviceAction received 0 devices
+380405 INFO  2026-01-31 06:56:11252 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+380415 INFO  2026-01-31 06:56:11262 DeviceManager:116 - Dao returned 0 devices.
+380417 INFO  2026-01-31 06:56:11264 DeviceAction:122 - DeviceAction received 0 devices
+382887 INFO  2026-01-31 06:56:13734 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+382899 INFO  2026-01-31 06:56:13746 DeviceManager:116 - Dao returned 0 devices.
+382901 INFO  2026-01-31 06:56:13748 DeviceAction:122 - DeviceAction received 0 devices
+384508 INFO  2026-01-31 06:56:15355 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+384521 INFO  2026-01-31 06:56:15368 DeviceManager:116 - Dao returned 0 devices.
+384523 INFO  2026-01-31 06:56:15370 DeviceAction:122 - DeviceAction received 0 devices
+426296 INFO  2026-01-31 06:56:57143 BaseDao:238 - Database connection test successful. Product: MySQL
+426341 INFO  2026-01-31 06:56:57188 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+426357 INFO  2026-01-31 06:56:57204 DeviceManager:116 - Dao returned 0 devices.
+426360 INFO  2026-01-31 06:56:57207 DeviceAction:122 - DeviceAction received 0 devices
+433344 INFO  2026-01-31 06:57:04191 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+433369 INFO  2026-01-31 06:57:04216 DeviceManager:116 - Dao returned 0 devices.
+433372 INFO  2026-01-31 06:57:04219 DeviceAction:122 - DeviceAction received 0 devices
+442172 INFO  2026-01-31 06:57:1319 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+442181 INFO  2026-01-31 06:57:1328 DeviceManager:116 - Dao returned 0 devices.
+442183 INFO  2026-01-31 06:57:1330 DeviceAction:122 - DeviceAction received 0 devices
+493836 INFO  2026-01-31 06:58:04683 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+493852 INFO  2026-01-31 06:58:04699 DeviceManager:116 - Dao returned 0 devices.
+493853 INFO  2026-01-31 06:58:04700 DeviceAction:122 - DeviceAction received 0 devices
+504855 INFO  2026-01-31 06:58:15702 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+505082 INFO  2026-01-31 06:58:15929 DeviceManager:116 - Dao returned 0 devices.
+505087 INFO  2026-01-31 06:58:15934 DeviceAction:122 - DeviceAction received 0 devices
+554633 INFO  2026-01-31 06:59:05480 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+554648 INFO  2026-01-31 06:59:05495 DeviceManager:116 - Dao returned 0 devices.
+554650 INFO  2026-01-31 06:59:05497 DeviceAction:122 - DeviceAction received 0 devices
+565680 INFO  2026-01-31 06:59:16527 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+565695 INFO  2026-01-31 06:59:16542 DeviceManager:116 - Dao returned 0 devices.
+565703 INFO  2026-01-31 06:59:16550 DeviceAction:122 - DeviceAction received 0 devices
+616656 INFO  2026-01-31 07:00:07503 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+616679 INFO  2026-01-31 07:00:07526 DeviceManager:116 - Dao returned 0 devices.
+616683 INFO  2026-01-31 07:00:07530 DeviceAction:122 - DeviceAction received 0 devices
+626431 INFO  2026-01-31 07:00:17278 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+626452 INFO  2026-01-31 07:00:17299 DeviceManager:116 - Dao returned 0 devices.
+626458 INFO  2026-01-31 07:00:17305 DeviceAction:122 - DeviceAction received 0 devices
+677687 INFO  2026-01-31 07:01:08534 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+677713 INFO  2026-01-31 07:01:08560 DeviceManager:116 - Dao returned 0 devices.
+677718 INFO  2026-01-31 07:01:08565 DeviceAction:122 - DeviceAction received 0 devices
+687686 INFO  2026-01-31 07:01:18533 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+687720 INFO  2026-01-31 07:01:18567 DeviceManager:116 - Dao returned 0 devices.
+687723 INFO  2026-01-31 07:01:18570 DeviceAction:122 - DeviceAction received 0 devices
+738194 INFO  2026-01-31 07:02:0941 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+738230 INFO  2026-01-31 07:02:0977 DeviceManager:116 - Dao returned 0 devices.
+738234 INFO  2026-01-31 07:02:0981 DeviceAction:122 - DeviceAction received 0 devices
+748310 INFO  2026-01-31 07:02:19157 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+748325 INFO  2026-01-31 07:02:19172 DeviceManager:116 - Dao returned 0 devices.
+748328 INFO  2026-01-31 07:02:19175 DeviceAction:122 - DeviceAction received 0 devices
+799529 INFO  2026-01-31 07:03:10376 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+799549 INFO  2026-01-31 07:03:10396 DeviceManager:116 - Dao returned 0 devices.
+799551 INFO  2026-01-31 07:03:10398 DeviceAction:122 - DeviceAction received 0 devices
+808939 INFO  2026-01-31 07:03:19786 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+808958 INFO  2026-01-31 07:03:19805 DeviceManager:116 - Dao returned 0 devices.
+808959 INFO  2026-01-31 07:03:19806 DeviceAction:122 - DeviceAction received 0 devices
+860850 INFO  2026-01-31 07:04:11697 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+860872 INFO  2026-01-31 07:04:11719 DeviceManager:116 - Dao returned 0 devices.
+860881 INFO  2026-01-31 07:04:11728 DeviceAction:122 - DeviceAction received 0 devices
+869866 INFO  2026-01-31 07:04:20713 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+869896 INFO  2026-01-31 07:04:20743 DeviceManager:116 - Dao returned 0 devices.
+869901 INFO  2026-01-31 07:04:20748 DeviceAction:122 - DeviceAction received 0 devices
+921475 INFO  2026-01-31 07:05:12322 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+921509 INFO  2026-01-31 07:05:12356 DeviceManager:116 - Dao returned 0 devices.
+921794 INFO  2026-01-31 07:05:12641 DeviceAction:122 - DeviceAction received 0 devices
+930386 INFO  2026-01-31 07:05:21233 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+930407 INFO  2026-01-31 07:05:21254 DeviceManager:116 - Dao returned 0 devices.
+930409 INFO  2026-01-31 07:05:21256 DeviceAction:122 - DeviceAction received 0 devices
+4035 INFO  2026-01-31 07:06:38154 ConfigUtil:20 - Loading config from: /usr/local/tomcat/webapps/ROOT/WEB-INF/classes/config.xml
+4040 INFO  2026-01-31 07:06:38159 ConfigUtil:25 - Config.xml loaded successfully
+4079 INFO  2026-01-31 07:06:38198 BaseDao:102 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+14336 INFO  2026-01-31 07:06:48455 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+14668 INFO  2026-01-31 07:06:48787 DeviceManager:116 - Dao returned 0 devices.
+14670 INFO  2026-01-31 07:06:48789 DeviceAction:122 - DeviceAction received 0 devices
+16374 INFO  2026-01-31 07:06:50493 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+17249 INFO  2026-01-31 07:06:51368 DeviceManager:116 - Dao returned 0 devices.
+17266 INFO  2026-01-31 07:06:51385 DeviceAction:122 - DeviceAction received 0 devices
+17477 INFO  2026-01-31 07:06:51596 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+17573 INFO  2026-01-31 07:06:51692 DeviceManager:116 - Dao returned 0 devices.
+17578 INFO  2026-01-31 07:06:51697 DeviceAction:122 - DeviceAction received 0 devices
+22358 INFO  2026-01-31 07:06:56477 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+22377 INFO  2026-01-31 07:06:56496 DeviceManager:116 - Dao returned 0 devices.
+22378 INFO  2026-01-31 07:06:56497 DeviceAction:122 - DeviceAction received 0 devices
+27386 INFO  2026-01-31 07:07:01505 BaseDao:238 - Database connection test successful. Product: MySQL
+27491 INFO  2026-01-31 07:07:01610 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+27503 INFO  2026-01-31 07:07:01622 DeviceManager:116 - Dao returned 0 devices.
+27507 INFO  2026-01-31 07:07:01626 DeviceAction:122 - DeviceAction received 0 devices
+36550 INFO  2026-01-31 07:07:10669 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+36572 INFO  2026-01-31 07:07:10691 DeviceManager:116 - Dao returned 0 devices.
+36573 INFO  2026-01-31 07:07:10692 DeviceAction:122 - DeviceAction received 0 devices
+97084 INFO  2026-01-31 07:08:11203 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+97107 INFO  2026-01-31 07:08:11226 DeviceManager:116 - Dao returned 0 devices.
+97108 INFO  2026-01-31 07:08:11227 DeviceAction:122 - DeviceAction received 0 devices
+157781 INFO  2026-01-31 07:09:11900 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+157820 INFO  2026-01-31 07:09:11939 DeviceManager:116 - Dao returned 0 devices.
+157823 INFO  2026-01-31 07:09:11942 DeviceAction:122 - DeviceAction received 0 devices
+219431 INFO  2026-01-31 07:10:13550 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+219446 INFO  2026-01-31 07:10:13565 DeviceManager:116 - Dao returned 0 devices.
+219447 INFO  2026-01-31 07:10:13566 DeviceAction:122 - DeviceAction received 0 devices
+280042 INFO  2026-01-31 07:11:14161 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+280086 INFO  2026-01-31 07:11:14205 DeviceManager:116 - Dao returned 0 devices.
+280087 INFO  2026-01-31 07:11:14206 DeviceAction:122 - DeviceAction received 0 devices
