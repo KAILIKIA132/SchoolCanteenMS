@@ -1927,3 +1927,21 @@ Caused by: java.lang.NullPointerException
 8586171 INFO  2026-01-31 09:29:40290 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
 8586205 INFO  2026-01-31 09:29:40324 DeviceManager:116 - Dao returned 0 devices.
 8586220 INFO  2026-01-31 09:29:40339 DeviceAction:122 - DeviceAction received 0 devices
+21029731 INFO  2026-01-31 12:57:03850 UploadProcess:63 - get request and make the device options :192.168.65.1;http://localhost:8080/iclock/cdata?options=all
+21030359 INFO  2026-01-31 12:57:04478 UploadProcess:71 - device is null or empty
+27714217 INFO  2026-01-31 14:48:28336 BaseDao:238 - Database connection test successful. Product: MySQL
+27714677 INFO  2026-01-31 14:48:28796 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+27714918 INFO  2026-01-31 14:48:2937 DeviceManager:116 - Dao returned 0 devices.
+27714922 INFO  2026-01-31 14:48:2941 DeviceAction:122 - DeviceAction received 0 devices
+27721312 INFO  2026-01-31 14:48:35431 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+27721328 INFO  2026-01-31 14:48:35447 DeviceManager:116 - Dao returned 0 devices.
+27721334 INFO  2026-01-31 14:48:35453 DeviceAction:122 - DeviceAction received 0 devices
+27739589 INFO  2026-01-31 14:48:53708 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+27739978 INFO  2026-01-31 14:48:5497 DeviceManager:116 - Dao returned 0 devices.
+27740136 INFO  2026-01-31 14:48:54255 DeviceAction:122 - DeviceAction received 0 devices
+27782878 INFO  2026-01-31 14:49:36997 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+27782917 INFO  2026-01-31 14:49:3736 DeviceManager:116 - Dao returned 0 devices.
+27782926 INFO  2026-01-31 14:49:3745 DeviceAction:122 - DeviceAction received 0 devices
+27801328 INFO  2026-01-31 14:49:55447 DeviceManager:113 - DeviceManager Calling fatchListWithCount with cond: [], startRec: 0, pageSize: 10
+27801374 INFO  2026-01-31 14:49:55493 DeviceManager:116 - Dao returned 0 devices.
+27801380 INFO  2026-01-31 14:49:55499 DeviceAction:122 - DeviceAction received 0 devices
