@@ -30,7 +30,7 @@ public class ExternalApiUtil {
 	 * Configure this in your config file or environment variable
 	 * Using host.docker.internal to access host machine from Docker container
 	 */
-	private static final String EXTERNAL_API_URL = "http://host.docker.internal:8002/api/meal-cards/generate-with-check";
+	private static final String EXTERNAL_API_URL = "http://10.35.4.5:8003/api/meal-cards/generate-with-check";
 	
 	/**
 	 * Get current time in Nairobi timezone
