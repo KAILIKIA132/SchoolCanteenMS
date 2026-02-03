@@ -111,10 +111,24 @@
 						});
 						if (temp.length > 0) {
 							temp = temp.substring(0, temp.length - 1);
+							
+							// Confirmation for user deletion
+							if (operate == "deleteUserServ") {
+								var userCount = temp.split(',').length;
+								if (!confirm("Are you sure you want to permanently delete " + userCount + " user(s)? This action cannot be undone.")) {
+									return;
+								}
+							}
+							
 							var url = "";
 							if ("deleteUserServ" == operate) {
 								url = "userAction!deleteUserServ.action?userId=" + temp;
 							} else if ("deleteUserDev" == operate) {
+								// Confirmation for device user deletion
+								var userCount = temp.split(',').length;
+								if (!confirm("Are you sure you want to delete " + userCount + " user(s) from the device? This action will remove user data from the device.")) {
+									return;
+								}
 								url = "userAction!deleteUserDev.action?userId=" + temp;
 							} else if ("deleteUserFpDev" == operate) {
 								url = "userAction!deleteUserFpDev.action?userId=" + temp;
