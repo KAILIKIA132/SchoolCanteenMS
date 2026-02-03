@@ -9,7 +9,13 @@ import java.util.Date;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
 import org.apache.log4j.Logger;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
 
 import com.zk.dao.impl.ApiVerificationReport;
 import com.zk.dao.impl.ApiVerificationReportDao;
@@ -26,11 +32,41 @@ public class ExternalApiUtil {
 	private static final java.util.TimeZone NAIROBI_TIMEZONE = java.util.TimeZone.getTimeZone("Africa/Nairobi");
 	
 	/**
-	 * Base URL for external API
-	 * Configure this in your config file or environment variable
-	 * Using host.docker.internal to access host machine from Docker container
+	 * Load external API URL from config.xml
+	 * @return External API URL string
 	 */
-	private static final String EXTERNAL_API_URL = "http://10.35.200.1:8003/api/meal-cards/generate-with-check";
+	private static String loadExternalApiUrl() {
+		try {
+			String configPath = ExternalApiUtil.class.getClassLoader().getResource("config.xml").getPath();
+			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			Document doc = builder.parse(configPath);
+			
+			NodeList externalApiNodes = doc.getElementsByTagName("externalapi");
+			if (externalApiNodes.getLength() > 0) {
+				Element externalApiElement = (Element) externalApiNodes.item(0);
+				NodeList urlNodes = externalApiElement.getElementsByTagName("url");
+				if (urlNodes.getLength() > 0) {
+					String url = urlNodes.item(0).getTextContent().trim();
+					logger.info("EXTERNAL API: Loaded URL from config: " + url);
+					return url;
+				}
+			}
+		} catch (Exception e) {
+			logger.warn("EXTERNAL API: Failed to load URL from config.xml, using default: " + e.getMessage());
+		}
+		
+		// Fallback to default URL
+		String defaultUrl = "http://10.35.200.1:8003/api/meal-cards/generate-with-check";
+		logger.warn("EXTERNAL API: Using fallback URL: " + defaultUrl);
+		return defaultUrl;
+	}
+	
+	/**
+	 * Base URL for external API
+	 * Read from config.xml file
+	 */
+	private static String EXTERNAL_API_URL = loadExternalApiUrl();
 	
 	/**
 	 * Get current time in Nairobi timezone
@@ -173,7 +209,7 @@ public class ExternalApiUtil {
 		logger.info("🚀 EXTERNAL API CALL INITIATED");
 		logger.info("═══════════════════════════════════════════════════════════");
 		logger.info("EXTERNAL API: User ID: " + userId);
-		logger.info("EXTERNAL API: URL: " + EXTERNAL_API_URL);
+		logger.info("EXTERNAL API: Current URL: " + EXTERNAL_API_URL);
 		logger.info("EXTERNAL API: Method: POST");
 		logger.info("EXTERNAL API: Timestamp (Nairobi/EAT): " + getNairobiTimeString());
 		

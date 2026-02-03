@@ -365,14 +365,22 @@ if (Test-Path \$ConfigXml) {
     [xml]\$xml = Get-Content \$ConfigXml
     \$xml.root.databaseconnect.user = "root"
     \$xml.root.databaseconnect.password = \$MySQLRootPassword
-    # Ensure URL points to localhost/correct port
-    \$currentUrl = \$xml.root.databaseconnect.url
-    if (\$currentUrl -match "mysql:3306") {
+    # Ensure database URL points to localhost/correct port
+    $currentDbUrl = $xml.root.databaseconnect.url
+    if ($currentDbUrl -match "mysql:3306") {
         # Fix docker hostname to localhost
-        \$xml.root.databaseconnect.url = \$currentUrl.Replace("mysql:3306", "localhost:\$MySQLPort")
+        $xml.root.databaseconnect.url = $currentDbUrl.Replace("mysql:3306", "localhost:$MySQLPort")
     }
-    \$xml.Save(\$ConfigXml)
-    Print-Msg "Updated config.xml with provided credentials." "Gray"
+        
+    # Update external API URL if needed (you can modify this to your desired URL)
+    $currentApiUrl = $xml.root.externalapi.url
+    if ($currentApiUrl -match "10.35.200.1:8003") {
+        # You can change this to your actual external API endpoint
+        # Example: $xml.root.externalapi.url = "http://your-server:port/api/endpoint"
+        Print-Msg "External API URL kept as: $currentApiUrl" "Gray"
+    }
+    $xml.Save($ConfigXml)
+    Print-Msg "Updated config.xml with provided credentials and API configuration." "Gray"
 } else {
     Write-Warning "config.xml not found at \$ConfigXml"
 }
