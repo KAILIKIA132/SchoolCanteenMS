@@ -203,7 +203,7 @@
 											onclick="operationNew();" />
 										<input type="button" class="btn content_input3"
 											value='<s:text name="sms.operate.return"/>'
-											onclick="location.href='<%=basePath+" userAction!userList.action"%>'" />
+											onclick="location.href='<%=basePath+"userAction!userList.action"%>'" />
 									</div>
 								</div>
 							</c:when>
@@ -294,7 +294,7 @@
 											onclick="operationEdit();" />
 										<input type="button" class="btn content_input3"
 											value='<s:text name="sms.operate.return"/>'
-											onclick="location.href='<%=basePath+" userAction!userList.action"%>'" />
+											onclick="location.href='<%=basePath+"userAction!userList.action"%>'" />
 									</div>
 								</div>
 							</c:when>

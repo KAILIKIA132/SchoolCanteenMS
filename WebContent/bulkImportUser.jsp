@@ -153,7 +153,7 @@
 							<div class="form-actions">
 								<input type="button" class="btn" value="Import Users" onclick="submitForm();" />
 								<input type="button" class="btn content_input3" value="Return"
-									onclick="location.href='<%=basePath+" userAction!userList.action"%>'" />
+									onclick="location.href='<%=basePath+"userAction!userList.action"%>'" />
 							</div>
 
 						</div>
