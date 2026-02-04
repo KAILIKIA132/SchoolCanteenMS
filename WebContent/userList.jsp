@@ -398,12 +398,14 @@
 							<td>${user.userPalmCount}</td>
 							<td>
 								<c:choose>
-									<c:when test="${not empty user.photoIdContent}">
-										<img src="data:image/jpeg;base64,${user.photoIdContent}" width="30" height="30" style="border-radius: 4px; object-fit: cover;" alt="User Photo" />
+									<c:when test="${user.userFaceCount > 0 || user.userFpCount > 0}">
+										<div style="width: 30px; height: 30px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 10px; color: white; border: 1px solid #5a67d8; font-weight: bold;">
+											BIO
+										</div>
 									</c:when>
 									<c:otherwise>
 										<div style="width: 30px; height: 30px; background-color: #e9ecef; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #6c757d; border: 1px solid #dee2e6;">
-										No Image
+											No Bio
 										</div>
 									</c:otherwise>
 								</c:choose>
