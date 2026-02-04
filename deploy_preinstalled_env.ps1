@@ -426,19 +426,18 @@ if (-not (Test-Path \$VenvDir)) {
 
 # Create a simple runner for the proxy
 \$ProxyBat = "\$ProjectPath\run_proxy.bat"
-@"@"
+@"
 @echo off
-call "\$VenvDir\Scripts\activate.bat"
-python "\$ProjectPath\proxy-api.py"
-"@
- | Out-File \$ProxyBat -Encoding ASCII
+call "$VenvDir\Scripts\activate.bat"
+python "$ProjectPath\proxy-api.py"
+"@ | Out-File $ProxyBat -Encoding ASCII
 
 Print-Msg "Deploy Complete!" "Green"
 Print-Msg "-------------------------------------------"
 Print-Msg "1. Restart Tomcat to load the new application."
-Print-Msg "2. Run '\$ProxyBat' to start the proxy listener."
+Print-Msg "2. Run '$ProxyBat' to start the proxy listener."
 Print-Msg "3. Access http://localhost:8080/pushdemo"
-"@ | Out-File -FilePath "deploy_preinstalled_env_updated.ps1" -Encoding ASCII
+"@
 
-# Now run the updated script:
-.\deploy_preinstalled_env_updated.ps1 -TomcatHome "C:\apache-tomcat-9.0.84" -MySQLRootPassword "Canteen@2026"
+# Note: Uncomment the following lines to automatically run the deployment
+# & "$ProjectPath\deploy_preinstalled_env_updated.ps1" -TomcatHome "C:\apache-tomcat-9.0.84" -MySQLRootPassword "Canteen@2026"
