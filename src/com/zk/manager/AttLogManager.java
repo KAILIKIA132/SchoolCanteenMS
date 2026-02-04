@@ -128,8 +128,10 @@ public class AttLogManager {
 				
 				// Debug: Check if deviceSn is null or empty
 				if (attLog.getDeviceSn() == null || attLog.getDeviceSn().isEmpty()) {
-					logger.warn("EXTERNAL API: ⚠️  WARNING - Device SN is NULL or EMPTY for verification!");
-					logger.warn("EXTERNAL API: This will cause camera_sn to be missing from external API payload");
+					logger.error("EXTERNAL API: ❌ ERROR - Device SN is NULL or EMPTY for verification!");
+					logger.error("EXTERNAL API: Cannot call external API without device serial number (camera_sn is REQUIRED)");
+					logger.error("EXTERNAL API: Skipping external API call for this verification");
+					continue; // Skip this verification and continue with others
 				}
 				
 				if (attLog.getUserPin() != null && !attLog.getUserPin().isEmpty()) {

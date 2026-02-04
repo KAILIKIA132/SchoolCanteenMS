@@ -169,6 +169,13 @@ public class ExternalApiUtil {
 			return;
 		}
 		
+		// Validate that deviceSn (camera_sn) is provided - it's required
+		if (deviceSn == null || deviceSn.isEmpty()) {
+			logger.warn("❌ EXTERNAL API: Cannot notify - deviceSn (camera_sn) is null or empty, this is REQUIRED");
+			logger.warn("EXTERNAL API: The external API requires camera_sn parameter with device serial number");
+			return;
+		}
+		
 		// Create final copies for lambda capture
 		final String finalUserId = userId;
 		final String finalVerificationTime = verificationTime;
@@ -264,13 +271,35 @@ public class ExternalApiUtil {
 			StringBuilder jsonBodyBuilder = new StringBuilder();
 			jsonBodyBuilder.append("{\"student_id\": \"").append(formattedStudentId).append("\", \"meal_type\": \"").append(mealType).append("\"");
 			
-			// Add camera_sn with device serial number (third parameter)
+			// Add camera_sn with device serial number (third parameter) - REQUIRED
 			logger.info("EXTERNAL API: Checking device SN for camera_sn - Value: '" + deviceSn + "' (null: " + (deviceSn == null) + ", empty: " + (deviceSn != null && deviceSn.isEmpty()) + ")");
 			if (deviceSn != null && !deviceSn.isEmpty()) {
 				jsonBodyBuilder.append(", \"camera_sn\": \"").append(deviceSn).append("\"");
 				logger.info("EXTERNAL API: Added camera_sn to payload with value: '" + deviceSn + "'");
 			} else {
-				logger.info("EXTERNAL API: deviceSn is null or empty, camera_sn will not be added to payload");
+				logger.warn("EXTERNAL API: ⚠️  ABORTING REQUEST - deviceSn is null or empty, camera_sn is REQUIRED for external API");
+				logger.warn("EXTERNAL API: Cannot send request without camera_sn parameter");
+				logger.warn("EXTERNAL API: Request will NOT be sent to avoid API errors");
+				
+				// Save a report indicating the request was aborted due to missing camera_sn
+				try {
+					ApiVerificationReport report = new ApiVerificationReport();
+					report.setUserPin(userId);
+					report.setUserName(userName != null ? userName : "");
+					report.setStudentId(formatStudentId(userId));
+					report.setVerificationTime(verificationTime != null ? convertToNairobiTime(verificationTime) : "");
+					report.setApiCallTime(getNairobiDate());
+					report.setMealType(getMealType());
+					report.setStatus("ABORTED");
+					report.setErrorMessage("Device serial number (camera_sn) is required but was null or empty");
+					report.setApiUrl(EXTERNAL_API_URL);
+					saveReport(report);
+					logger.info("EXTERNAL API: Abort report saved to database - Status: ABORTED, User: " + userId);
+				} catch (Exception ex) {
+					logger.error("Failed to save abort report to database: " + ex.getMessage());
+				}
+				
+				return; // Abort the API call if camera_sn is missing
 			}
 			jsonBodyBuilder.append("}");
 			String jsonBody = jsonBodyBuilder.toString();
