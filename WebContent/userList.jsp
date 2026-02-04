@@ -398,31 +398,12 @@
 							<td>${user.userPalmCount}</td>
 							<td>
 								<c:choose>
-									<c:when test="${user.userFaceCount > 0}">
-										<div style="width: 30px; height: 30px; border-radius: 4px; overflow: hidden; border: 1px solid #dee2e6;">
-											<div style="width: 100%; height: 100%; background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%); position: relative;">
-												<div style="position: absolute; top: 2px; left: 2px; width: 6px; height: 6px; background: rgba(255,255,255,0.8); border-radius: 50%;"></div>
-												<div style="position: absolute; top: 8px; left: 12px; width: 4px; height: 4px; background: rgba(255,255,255,0.6); border-radius: 50%;"></div>
-												<div style="position: absolute; bottom: 6px; right: 8px; width: 5px; height: 5px; background: rgba(255,255,255,0.7); border-radius: 50%;"></div>
-												<div style="position: absolute; top: 15px; left: 20px; width: 3px; height: 3px; background: rgba(255,255,255,0.5); border-radius: 50%;"></div>
-											</div>
-										</div>
-									</c:when>
-									<c:when test="${user.userFpCount > 0}">
-										<div style="width: 30px; height: 30px; border-radius: 4px; overflow: hidden; border: 1px solid #dee2e6;">
-											<div style="width: 100%; height: 100%; background: linear-gradient(45deg, #667eea 0%, #764ba2 100%); position: relative;">
-												<div style="position: absolute; top: 0; left: 5px; width: 20px; height: 2px; background: rgba(255,255,255,0.3);"></div>
-												<div style="position: absolute; top: 5px; left: 3px; width: 24px; height: 2px; background: rgba(255,255,255,0.2);"></div>
-												<div style="position: absolute; top: 10px; left: 2px; width: 26px; height: 2px; background: rgba(255,255,255,0.4);"></div>
-												<div style="position: absolute; top: 15px; left: 4px; width: 22px; height: 2px; background: rgba(255,255,255,0.3);"></div>
-												<div style="position: absolute; top: 20px; left: 1px; width: 28px; height: 2px; background: rgba(255,255,255,0.2);"></div>
-												<div style="position: absolute; top: 25px; left: 6px; width: 18px; height: 2px; background: rgba(255,255,255,0.3);"></div>
-											</div>
-										</div>
+									<c:when test="${not empty user.photoIdContent}">
+										<img src="data:image/jpeg;base64,${user.photoIdContent}" width="30" height="30" style="border-radius: 4px; object-fit: cover;" alt="User Photo" />
 									</c:when>
 									<c:otherwise>
 										<div style="width: 30px; height: 30px; background-color: #e9ecef; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #6c757d; border: 1px solid #dee2e6;">
-											No Bio
+											No Image
 										</div>
 									</c:otherwise>
 								</c:choose>
