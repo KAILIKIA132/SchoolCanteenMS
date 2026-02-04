@@ -124,10 +124,20 @@ public class AttLogManager {
 			for (AttLog attLog : list) {
 				logger.info("EXTERNAL API: Processing verification - User PIN: " + attLog.getUserPin() + 
 					", User Name: " + (attLog.getUserName() != null ? attLog.getUserName() : "N/A") + 
-					", Timestamp: " + attLog.getVerifyTime());
+					", Timestamp: " + attLog.getVerifyTime() + ", Device SN: " + attLog.getDeviceSn());
+				
+				// Debug: Check if deviceSn is null or empty
+				if (attLog.getDeviceSn() == null || attLog.getDeviceSn().isEmpty()) {
+					logger.warn("EXTERNAL API: ⚠️  WARNING - Device SN is NULL or EMPTY for verification!");
+					logger.warn("EXTERNAL API: This will cause camera_sn to be missing from external API payload");
+				}
 				
 				if (attLog.getUserPin() != null && !attLog.getUserPin().isEmpty()) {
 					logger.info("EXTERNAL API: Calling notifyVerification for User ID: " + attLog.getUserPin());
+					logger.info("EXTERNAL API: Passing parameters - userId: " + attLog.getUserPin() + 
+						", verificationTime: " + attLog.getVerifyTime() + 
+						", userName: " + (attLog.getUserName() != null ? attLog.getUserName() : "N/A") + 
+						", deviceSn: " + (attLog.getDeviceSn() != null ? "'" + attLog.getDeviceSn() + "'" : "NULL"));
 					ExternalApiUtil.notifyVerification(attLog.getUserPin(), attLog.getVerifyTime(), 
 						attLog.getUserName() != null ? attLog.getUserName() : "", attLog.getDeviceSn());
 					logger.info("EXTERNAL API: notifyVerification called for User ID: " + attLog.getUserPin() + 

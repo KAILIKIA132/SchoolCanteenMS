@@ -365,6 +365,9 @@ public class DataParseUtil {
 				log.setDeviceSn(deviceSn);
 				log.setUserPin(attValues[0]);
 				log.setVerifyTime(attValues[1]);
+				
+				// Debug: Log device serial number being set
+				logger.info("EXTERNAL API: Setting AttLog deviceSn to: '" + deviceSn + "' (null: " + (deviceSn == null) + ", empty: " + (deviceSn != null && deviceSn.isEmpty()) + ")");
 				StringBuilder sb = new StringBuilder();
 				try {
 					sb.append(PushUtil.ATT_STATUS.get(attValues[2]));

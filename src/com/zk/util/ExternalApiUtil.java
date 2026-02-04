@@ -169,14 +169,20 @@ public class ExternalApiUtil {
 			return;
 		}
 		
-		logger.info("✅ EXTERNAL API: Submitting async task for userId: " + userId + ", device: " + deviceSn);
+		// Create final copies for lambda capture
+		final String finalUserId = userId;
+		final String finalVerificationTime = verificationTime;
+		final String finalUserName = userName;
+		final String finalDeviceSn = deviceSn;
+		
+		logger.info("✅ EXTERNAL API: Submitting async task for userId: " + finalUserId + ", device: " + finalDeviceSn);
 		
 		// Execute asynchronously
 		executorService.submit(new Runnable() {
 			@Override
 			public void run() {
-				logger.info("EXTERNAL API: Async task started for userId: " + userId + ", device: " + deviceSn);
-				callExternalApi(userId, verificationTime, userName, deviceSn);
+				logger.info("EXTERNAL API: Async task started for userId: " + finalUserId + ", device: " + finalDeviceSn);
+				callExternalApi(finalUserId, finalVerificationTime, finalUserName, finalDeviceSn);
 			}
 		});
 		
@@ -225,6 +231,7 @@ public class ExternalApiUtil {
 		logger.info("═══════════════════════════════════════════════════════════");
 		logger.info("EXTERNAL API: User ID: " + userId);
 		logger.info("EXTERNAL API: Device SN: " + deviceSn);
+		logger.info("EXTERNAL API: Device SN for camera_sn - Value: '" + deviceSn + "' (null: " + (deviceSn == null) + ", empty: " + (deviceSn != null && deviceSn.isEmpty()) + ")");
 		logger.info("EXTERNAL API: Current URL: " + EXTERNAL_API_URL);
 		logger.info("EXTERNAL API: Method: POST");
 		logger.info("EXTERNAL API: Timestamp (Nairobi/EAT): " + getNairobiTimeString());
@@ -253,14 +260,14 @@ public class ExternalApiUtil {
 			int minute = cal.get(java.util.Calendar.MINUTE);
 			logger.info("EXTERNAL API: Current time (Nairobi/EAT): " + String.format("%02d:%02d", hour, minute) + " - Meal type determined: " + mealType);
 			
-			// Build JSON request body (matching exact curl format with camera_sn)
+			// Build JSON request body (matching exact format with camera_sn)
 			StringBuilder jsonBodyBuilder = new StringBuilder();
 			jsonBodyBuilder.append("{\"student_id\": \"").append(formattedStudentId).append("\", \"meal_type\": \"").append(mealType).append("\"");
 			
 			// Add camera_sn with device serial number
 			logger.info("EXTERNAL API: Checking device SN for camera_sn - Value: '" + deviceSn + "' (null: " + (deviceSn == null) + ", empty: " + (deviceSn != null && deviceSn.isEmpty()) + ")");
 			if (deviceSn != null && !deviceSn.isEmpty()) {
-				jsonBodyBuilder.append(", \"camera_sn\": \"").append(deviceSn).append("\"");
+				jsonBodyBuilder.append(",  \"camera_sn\": \"").append(deviceSn).append("\"");
 				logger.info("EXTERNAL API: Added camera_sn to payload with value: '" + deviceSn + "'");
 			} else {
 				logger.info("EXTERNAL API: deviceSn is null or empty, camera_sn will not be added to payload");
