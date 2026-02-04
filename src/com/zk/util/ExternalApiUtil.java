@@ -151,14 +151,16 @@ public class ExternalApiUtil {
 	 * @param userId The user ID (userPin) from the verification
 	 * @param verificationTime The verification timestamp
 	 * @param userName The user name from the verification
+	 * @param deviceSn The device serial number
 	 */
-	public static void notifyVerification(String userId, String verificationTime, String userName) {
+	public static void notifyVerification(String userId, String verificationTime, String userName, String deviceSn) {
 		logger.info("═══════════════════════════════════════════════════════════");
 		logger.info("🔔 EXTERNAL API CALL REQUESTED - notifyVerification()");
 		logger.info("═══════════════════════════════════════════════════════════");
 		logger.info("EXTERNAL API: User ID: " + userId);
 		logger.info("EXTERNAL API: Verification Time: " + verificationTime);
 		logger.info("EXTERNAL API: User Name: " + userName);
+		logger.info("EXTERNAL API: Device SN: " + deviceSn);
 		logger.info("═══════════════════════════════════════════════════════════");
 		
 		if (userId == null || userId.isEmpty()) {
@@ -166,18 +168,18 @@ public class ExternalApiUtil {
 			return;
 		}
 		
-		logger.info("✅ EXTERNAL API: Submitting async task for userId: " + userId);
+		logger.info("✅ EXTERNAL API: Submitting async task for userId: " + userId + ", device: " + deviceSn);
 		
 		// Execute asynchronously
 		executorService.submit(new Runnable() {
 			@Override
 			public void run() {
-				logger.info("EXTERNAL API: Async task started for userId: " + userId);
-				callExternalApi(userId, verificationTime, userName);
+				logger.info("EXTERNAL API: Async task started for userId: " + userId + ", device: " + deviceSn);
+				callExternalApi(userId, verificationTime, userName, deviceSn);
 			}
 		});
 		
-		logger.info("EXTERNAL API: Async task submitted for userId: " + userId);
+		logger.info("EXTERNAL API: Async task submitted for userId: " + userId + ", device: " + deviceSn);
 	}
 	
 	/**
@@ -186,7 +188,7 @@ public class ExternalApiUtil {
 	 * @param verificationTime The verification timestamp
 	 */
 	public static void notifyVerification(String userId, String verificationTime) {
-		notifyVerification(userId, verificationTime, null);
+		notifyVerification(userId, verificationTime, null, null);
 	}
 	
 	/**
@@ -194,7 +196,18 @@ public class ExternalApiUtil {
 	 * @param userId The user ID (userPin) from the verification
 	 */
 	public static void notifyVerification(String userId) {
-		notifyVerification(userId, null, null);
+		notifyVerification(userId, null, null, null);
+	}
+	
+	/**
+	 * Call external API when a verification occurs (backward compatibility with deviceSn)
+	 * @param userId The user ID (userPin) from the verification
+	 * @param verificationTime The verification timestamp
+	 * @param userName The user name from the verification
+	 * @param deviceSn The device serial number
+	 */
+	public static void notifyVerification(String userId, String verificationTime, String userName) {
+		notifyVerification(userId, verificationTime, userName, null);
 	}
 	
 	/**
@@ -203,12 +216,14 @@ public class ExternalApiUtil {
 	 * @param userId The user ID (student_id) to pass to the API
 	 * @param verificationTime The verification timestamp
 	 * @param userName The user name from verification
+	 * @param deviceSn The device serial number
 	 */
-	private static void callExternalApi(String userId, String verificationTime, String userName) {
+	private static void callExternalApi(String userId, String verificationTime, String userName, String deviceSn) {
 		logger.info("═══════════════════════════════════════════════════════════");
 		logger.info("🚀 EXTERNAL API CALL INITIATED");
 		logger.info("═══════════════════════════════════════════════════════════");
 		logger.info("EXTERNAL API: User ID: " + userId);
+		logger.info("EXTERNAL API: Device SN: " + deviceSn);
 		logger.info("EXTERNAL API: Current URL: " + EXTERNAL_API_URL);
 		logger.info("EXTERNAL API: Method: POST");
 		logger.info("EXTERNAL API: Timestamp (Nairobi/EAT): " + getNairobiTimeString());
@@ -237,8 +252,16 @@ public class ExternalApiUtil {
 			int minute = cal.get(java.util.Calendar.MINUTE);
 			logger.info("EXTERNAL API: Current time (Nairobi/EAT): " + String.format("%02d:%02d", hour, minute) + " - Meal type determined: " + mealType);
 			
-			// Build JSON request body (matching exact curl format)
-			String jsonBody = "{\"student_id\": \"" + formattedStudentId + "\", \"meal_type\": \"" + mealType + "\"}";
+			// Build JSON request body (matching exact curl format with camera_sn)
+			StringBuilder jsonBodyBuilder = new StringBuilder();
+			jsonBodyBuilder.append("{\"student_id\": \"").append(formattedStudentId).append("\", \"meal_type\": \"").append(mealType).append("\"");
+			
+			// Add camera_sn if deviceSn is available
+			if (deviceSn != null && !deviceSn.isEmpty()) {
+				jsonBodyBuilder.append(", \"camera_sn\": \"").append(deviceSn).append("\"");
+			}
+			jsonBodyBuilder.append("}");
+			String jsonBody = jsonBodyBuilder.toString();
 			logger.info("EXTERNAL API: Request body: " + jsonBody);
 			
 			// Write request body
@@ -307,6 +330,10 @@ public class ExternalApiUtil {
 			report.setApiCallTime(getNairobiDate());
 			report.setMealType(mealType);
 			report.setApiUrl(EXTERNAL_API_URL);
+			// Set device SN if available
+			if (deviceSn != null && !deviceSn.isEmpty()) {
+				report.setDeviceSn(deviceSn);
+			}
 			
 			// Check both HTTP status and API response success
 			boolean httpSuccess = (responseCode >= 200 && responseCode < 300);
@@ -371,6 +398,10 @@ public class ExternalApiUtil {
 				report.setStatus("FAILED");
 				report.setErrorMessage(e.getMessage());
 				report.setApiUrl(EXTERNAL_API_URL);
+				// Set device SN if available
+				if (deviceSn != null && !deviceSn.isEmpty()) {
+					report.setDeviceSn(deviceSn);
+				}
 				saveReport(report);
 			} catch (Exception ex) {
 				logger.error("Failed to save error report to database: " + ex.getMessage());

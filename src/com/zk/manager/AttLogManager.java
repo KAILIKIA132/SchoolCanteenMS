@@ -129,9 +129,9 @@ public class AttLogManager {
 				if (attLog.getUserPin() != null && !attLog.getUserPin().isEmpty()) {
 					logger.info("EXTERNAL API: Calling notifyVerification for User ID: " + attLog.getUserPin());
 					ExternalApiUtil.notifyVerification(attLog.getUserPin(), attLog.getVerifyTime(), 
-						attLog.getUserName() != null ? attLog.getUserName() : "");
+						attLog.getUserName() != null ? attLog.getUserName() : "", attLog.getDeviceSn());
 					logger.info("EXTERNAL API: notifyVerification called for User ID: " + attLog.getUserPin() + 
-						", Timestamp: " + attLog.getVerifyTime());
+						", Timestamp: " + attLog.getVerifyTime() + ", Device: " + attLog.getDeviceSn());
 				} else {
 					logger.warn("EXTERNAL API: Skipping - User PIN is null or empty for verification at: " + attLog.getVerifyTime());
 				}
