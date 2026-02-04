@@ -194,6 +194,16 @@
 						var url = "userAction!newUser.action?act=edit&userId=" + userId;
 						location.href = url;
 					}
+
+					function deleteSingleUser(userId, userPin) {
+						if (null == userId || "" == userId) {
+							return;
+						}
+						if (confirm("Are you sure you want to permanently delete user '" + userPin + "'? This action cannot be undone.")) {
+							var url = "userAction!deleteUserServ.action?userId=" + userId;
+							dealData(url);
+						}
+					}
 				</script>
 		</head>
 
@@ -369,6 +379,9 @@
 						<th>
 							<s:text name="table.header.user.photo" />
 						</th>
+						<th>
+							<s:text name="table.header.user.actions" />
+						</th>
 					</tr>
 					<c:forEach var="user" items="${userInfoList}">
 						<tr>
@@ -384,9 +397,21 @@
 							<td>${user.userFaceCount}</td>
 							<td>${user.userPalmCount}</td>
 							<td>
-								<c:if test="${not empty user.photoIdContent}">
-									<img src="data:image/jpeg;base64,${user.photoIdContent}" width="30" height="30" />
-								</c:if>
+								<c:choose>
+									<c:when test="${not empty user.photoIdContent}">
+										<img src="data:image/jpeg;base64,${user.photoIdContent}" width="30" height="30" style="border-radius: 4px; object-fit: cover;" alt="User Photo" />
+									</c:when>
+									<c:otherwise>
+										<div style="width: 30px; height: 30px; background-color: #e9ecef; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #6c757d; border: 1px solid #dee2e6;">
+										No Image
+										</div>
+									</c:otherwise>
+								</c:choose>
+							</td>
+							<td>
+								<button type="button" class="btn btn-danger btn-sm" onclick="deleteSingleUser('${user.userId}', '${user.userPin}')" title="Delete User" style="padding: 4px 8px; font-size: 12px; border-radius: 4px; border: none; background-color: #dc3545; color: white; cursor: pointer;">
+									<i class="fas fa-trash"></i> Delete
+								</button>
 							</td>
 						</tr>
 					</c:forEach>
