@@ -47,6 +47,14 @@
 				
 				<label style="margin-left: 20px;">User PIN:</label>
 				<input type="text" name="userPin" value="${userPinFilter}" placeholder="Filter by User PIN" />
+				
+				<label style="margin-left: 20px;">Device:</label>
+				<select name="deviceSn" id="deviceFilter" onchange="document.getElementById('filterForm').submit();" style="margin-left: 5px;">
+					<option value="" ${empty deviceSnFilter ? 'selected' : ''}>All Devices</option>
+					<c:forEach var="selDev" items="${devList}">
+						<option value="${selDev.deviceSn}" ${selDev.deviceSn == deviceSnFilter ? 'selected' : ''}>${selDev.deviceSn} (${selDev.ipAddress})</option>
+					</c:forEach>
+				</select>
 			</div>
 			
 			<div style="margin-top: 10px;">
@@ -71,6 +79,7 @@
 			<!-- Preserve current filters -->
 			<input type="hidden" name="status" value="${statusFilter}" />
 			<input type="hidden" name="userPin" value="${userPinFilter}" />
+			<input type="hidden" name="deviceSn" value="${deviceSnFilter}" />
 			<input type="hidden" name="startDate" value="${startDateFilter}" />
 			<input type="hidden" name="endDate" value="${endDateFilter}" />
 			
@@ -82,6 +91,7 @@
 				<label><input type="checkbox" name="columns" value="userPin" checked /> User PIN</label>
 				<label><input type="checkbox" name="columns" value="userName" checked /> User Name</label>
 				<label><input type="checkbox" name="columns" value="studentId" checked /> Student ID</label>
+				<label><input type="checkbox" name="columns" value="deviceSn" checked /> Device SN</label>
 				<label><input type="checkbox" name="columns" value="verificationTime" checked /> Verification Time</label>
 				<label><input type="checkbox" name="columns" value="apiCallTime" checked /> API Call Time</label>
 				<label><input type="checkbox" name="columns" value="mealType" checked /> Meal Type</label>
@@ -123,6 +133,7 @@
 				<th>User PIN</th>
 				<th>User Name</th>
 				<th>Student ID</th>
+				<th>Device SN</th>
 				<th>Verification Time</th>
 				<th>API Call Time</th>
 				<th>Meal Type</th>
@@ -140,6 +151,7 @@
 							<td>${report.userPin}</td>
 							<td>${fn:escapeXml(report.userName != null ? report.userName : '')}</td>
 							<td>${report.studentId}</td>
+							<td>${report.deviceSn}</td>
 							<td>${report.verificationTime}</td>
 							<td>
 								<fmt:setTimeZone value="Africa/Nairobi" />
@@ -188,7 +200,7 @@
 				</c:when>
 				<c:otherwise>
 					<tr>
-						<td colspan="9" style="text-align: center; padding: 20px;">
+						<td colspan="11" style="text-align: center; padding: 20px;">
 							No verification reports found.
 						</td>
 					</tr>
@@ -201,11 +213,11 @@
 	<c:if test="${totalPages > 1}">
 		<div style="margin-top: 20px; text-align: center;">
 			<c:if test="${currentPage > 1}">
-				<a href="<%=basePath%>verificationReportAction!reportList.action?page=${currentPage - 1}&status=${statusFilter}&userPin=${userPinFilter}&startDate=${startDateFilter}&endDate=${endDateFilter}" class="input_add">Previous</a>
+				<a href="<%=basePath%>verificationReportAction!reportList.action?page=${currentPage - 1}&status=${statusFilter}&userPin=${userPinFilter}&deviceSn=${deviceSnFilter}&startDate=${startDateFilter}&endDate=${endDateFilter}" class="input_add">Previous</a>
 			</c:if>
 			<span style="margin: 0 20px;">Page ${currentPage} of ${totalPages}</span>
 			<c:if test="${currentPage < totalPages}">
-				<a href="<%=basePath%>verificationReportAction!reportList.action?page=${currentPage + 1}&status=${statusFilter}&userPin=${userPinFilter}&startDate=${startDateFilter}&endDate=${endDateFilter}" class="input_add">Next</a>
+				<a href="<%=basePath%>verificationReportAction!reportList.action?page=${currentPage + 1}&status=${statusFilter}&userPin=${userPinFilter}&deviceSn=${deviceSnFilter}&startDate=${startDateFilter}&endDate=${endDateFilter}" class="input_add">Next</a>
 			</c:if>
 		</div>
 	</c:if>

@@ -28,8 +28,8 @@ public class ApiVerificationReportDao extends BaseDao implements IBaseDao<ApiVer
 	 */
 	public void add(ApiVerificationReport entity) throws DaoException {
 		String sql = "insert into api_verification_report(user_pin, user_name, student_id, verification_time, " +
-				"api_call_time, meal_type, status, response_code, response_message, error_message, api_url) " +
-				"values(?,?,?,?,?,?,?,?,?,?,?)";
+				"api_call_time, meal_type, status, response_code, response_message, error_message, api_url, device_sn) " +
+				"values(?,?,?,?,?,?,?,?,?,?,?,?)";
 		try {
 			PreparedStatement pst = getConnection().prepareStatement(sql);
 			int index = 1;
@@ -44,7 +44,8 @@ public class ApiVerificationReportDao extends BaseDao implements IBaseDao<ApiVer
 			pst.setString(index++, entity.getResponseMessage());
 			pst.setString(index++, entity.getErrorMessage());
 			pst.setString(index++, entity.getApiUrl());
-			
+			pst.setString(index++, entity.getDeviceSn());
+						
 			pst.executeUpdate();
 			pst.close();
 			
@@ -70,12 +71,12 @@ public class ApiVerificationReportDao extends BaseDao implements IBaseDao<ApiVer
 			String beforeLimit = cond.substring(0, limitIndex);
 			String afterLimit = cond.substring(limitIndex);
 			sql = "select report_id, user_pin, user_name, student_id, verification_time, api_call_time, " +
-					"meal_type, status, response_code, response_message, error_message, api_url " +
+					"meal_type, status, response_code, response_message, error_message, api_url, device_sn " +
 					"from api_verification_report where 1=1 " + beforeLimit + orderBy + " " + afterLimit;
 		} else {
 			// No LIMIT, add ORDER BY at the end
 			sql = "select report_id, user_pin, user_name, student_id, verification_time, api_call_time, " +
-					"meal_type, status, response_code, response_message, error_message, api_url " +
+					"meal_type, status, response_code, response_message, error_message, api_url, device_sn " +
 					"from api_verification_report where 1=1 " + cond + orderBy;
 		}
 		try {
@@ -98,6 +99,7 @@ public class ApiVerificationReportDao extends BaseDao implements IBaseDao<ApiVer
 				report.setResponseMessage(rs.getString("response_message"));
 				report.setErrorMessage(rs.getString("error_message"));
 				report.setApiUrl(rs.getString("api_url"));
+				report.setDeviceSn(rs.getString("device_sn"));
 				list.add(report);
 			}
 			rs.close();

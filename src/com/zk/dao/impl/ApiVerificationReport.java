@@ -23,6 +23,7 @@ public class ApiVerificationReport implements Serializable {
 	private String responseMessage;
 	private String errorMessage;
 	private String apiUrl;
+	private String deviceSn;
 
 	public int getReportId() {
 		return reportId;
@@ -110,6 +111,14 @@ public class ApiVerificationReport implements Serializable {
 
 	public void setErrorMessage(String errorMessage) {
 		this.errorMessage = errorMessage;
+	}
+
+	public String getDeviceSn() {
+		return deviceSn;
+	}
+
+	public void setDeviceSn(String deviceSn) {
+		this.deviceSn = deviceSn;
 	}
 
 	public String getApiUrl() {

@@ -245,11 +245,13 @@ CREATE TABLE `api_verification_report`  (
   `response_message` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL,
   `error_message` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL,
   `api_url` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `device_sn` varchar(30) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL COMMENT 'Device Serial Number',
   PRIMARY KEY (`report_id`) USING BTREE,
   INDEX `idx_user_pin`(`user_pin`) USING BTREE,
   INDEX `idx_verification_time`(`verification_time`) USING BTREE,
   INDEX `idx_status`(`status`) USING BTREE,
-  INDEX `idx_api_call_time`(`api_call_time`) USING BTREE
+  INDEX `idx_api_call_time`(`api_call_time`) USING BTREE,
+  INDEX `idx_device_sn`(`device_sn`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
@@ -302,6 +304,11 @@ DEALLOCATE PREPARE stmt;
 END
 ;;
 delimiter ;
+
+-- Add device_sn column to api_verification_report table if it doesn't exist
+ALTER TABLE api_verification_report 
+ADD COLUMN IF NOT EXISTS device_sn VARCHAR(30) NULL DEFAULT NULL COMMENT 'Device Serial Number',
+ADD INDEX IF NOT EXISTS idx_device_sn (device_sn);
 
 
 

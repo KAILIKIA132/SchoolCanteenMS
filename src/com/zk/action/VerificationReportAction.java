@@ -25,6 +25,8 @@ import org.apache.struts2.interceptor.ServletResponseAware;
 
 import com.zk.dao.impl.ApiVerificationReport;
 import com.zk.dao.impl.ApiVerificationReportDao;
+import com.zk.dao.impl.DeviceInfo;
+import com.zk.dao.impl.DeviceInfoDao;
 import com.zk.util.PagenitionUtil;
 
 public class VerificationReportAction implements ServletRequestAware, ServletResponseAware {
@@ -35,6 +37,7 @@ public class VerificationReportAction implements ServletRequestAware, ServletRes
 	private int successCount;
 	private int failedCount;
 	private int totalCount;
+	private List<DeviceInfo> devList;
 	
 	public void setServletRequest(HttpServletRequest request) {
 		this.request = request;
@@ -54,6 +57,7 @@ public class VerificationReportAction implements ServletRequestAware, ServletRes
 			String userPin = request.getParameter("userPin");
 			String startDate = request.getParameter("startDate");
 			String endDate = request.getParameter("endDate");
+			String deviceSn = request.getParameter("deviceSn");
 			String pageStr = request.getParameter("page");
 			int page = 1;
 			if (pageStr != null && !pageStr.isEmpty()) {
@@ -73,12 +77,20 @@ public class VerificationReportAction implements ServletRequestAware, ServletRes
 			if (userPin != null && !userPin.isEmpty()) {
 				cond.append(" and user_pin = '").append(userPin).append("'");
 			}
+			if (deviceSn != null && !deviceSn.isEmpty()) {
+				cond.append(" and device_sn = '").append(deviceSn).append("'");
+			}
 			if (startDate != null && !startDate.isEmpty()) {
 				cond.append(" and DATE(api_call_time) >= '").append(startDate).append("'");
 			}
 			if (endDate != null && !endDate.isEmpty()) {
 				cond.append(" and DATE(api_call_time) <= '").append(endDate).append("'");
 			}
+			
+			// Get device list for filter dropdown
+			DeviceInfoDao deviceDao = new DeviceInfoDao();
+			devList = deviceDao.query(" order by device_sn ");
+			deviceDao.close();
 			
 			// Get counts
 			ApiVerificationReportDao dao = new ApiVerificationReportDao();
@@ -98,8 +110,10 @@ public class VerificationReportAction implements ServletRequestAware, ServletRes
 			request.setAttribute("pageSize", pageSize);
 			request.setAttribute("statusFilter", status != null ? status : "ALL");
 			request.setAttribute("userPinFilter", userPin != null ? userPin : "");
+			request.setAttribute("deviceSnFilter", deviceSn != null ? deviceSn : "");
 			request.setAttribute("startDateFilter", startDate != null ? startDate : "");
 			request.setAttribute("endDateFilter", endDate != null ? endDate : "");
+			request.setAttribute("devList", devList);
 			
 			dao.close();
 		} catch (Exception e) {
@@ -139,6 +153,14 @@ public class VerificationReportAction implements ServletRequestAware, ServletRes
 	public void setTotalCount(int totalCount) {
 		this.totalCount = totalCount;
 	}
+		
+	public List<DeviceInfo> getDevList() {
+		return devList;
+	}
+	
+	public void setDevList(List<DeviceInfo> devList) {
+		this.devList = devList;
+	}
 	
 	/**
 	 * Export verification reports to Excel with selected columns
@@ -149,6 +171,7 @@ public class VerificationReportAction implements ServletRequestAware, ServletRes
 			// Get filter parameters
 			String status = request.getParameter("status");
 			String userPin = request.getParameter("userPin");
+			String deviceSn = request.getParameter("deviceSn");
 			String startDate = request.getParameter("startDate");
 			String endDate = request.getParameter("endDate");
 			
@@ -170,6 +193,9 @@ public class VerificationReportAction implements ServletRequestAware, ServletRes
 			}
 			if (userPin != null && !userPin.isEmpty()) {
 				cond.append(" and user_pin = '").append(userPin).append("'");
+			}
+			if (deviceSn != null && !deviceSn.isEmpty()) {
+				cond.append(" and device_sn = '").append(deviceSn).append("'");
 			}
 			if (startDate != null && !startDate.isEmpty()) {
 				cond.append(" and DATE(api_call_time) >= '").append(startDate).append("'");
@@ -207,6 +233,7 @@ public class VerificationReportAction implements ServletRequestAware, ServletRes
 				{"userPin", "User PIN"},
 				{"userName", "User Name"},
 				{"studentId", "Student ID"},
+				{"deviceSn", "Device SN"},
 				{"verificationTime", "Verification Time"},
 				{"apiCallTime", "API Call Time"},
 				{"mealType", "Meal Type"},
@@ -248,6 +275,9 @@ public class VerificationReportAction implements ServletRequestAware, ServletRes
 							break;
 						case "studentId":
 							cell.setCellValue(report.getStudentId() != null ? report.getStudentId() : "");
+							break;
+						case "deviceSn":
+							cell.setCellValue(report.getDeviceSn() != null ? report.getDeviceSn() : "");
 							break;
 						case "verificationTime":
 							cell.setCellValue(report.getVerificationTime() != null ? report.getVerificationTime() : "");
