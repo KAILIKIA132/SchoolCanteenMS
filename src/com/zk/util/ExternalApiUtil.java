@@ -260,14 +260,14 @@ public class ExternalApiUtil {
 			int minute = cal.get(java.util.Calendar.MINUTE);
 			logger.info("EXTERNAL API: Current time (Nairobi/EAT): " + String.format("%02d:%02d", hour, minute) + " - Meal type determined: " + mealType);
 			
-			// Build JSON request body (matching exact format with camera_sn)
+			// Build JSON request body with exactly 3 parameters as required by the API
 			StringBuilder jsonBodyBuilder = new StringBuilder();
 			jsonBodyBuilder.append("{\"student_id\": \"").append(formattedStudentId).append("\", \"meal_type\": \"").append(mealType).append("\"");
 			
-			// Add camera_sn with device serial number
+			// Add camera_sn with device serial number (third parameter)
 			logger.info("EXTERNAL API: Checking device SN for camera_sn - Value: '" + deviceSn + "' (null: " + (deviceSn == null) + ", empty: " + (deviceSn != null && deviceSn.isEmpty()) + ")");
 			if (deviceSn != null && !deviceSn.isEmpty()) {
-				jsonBodyBuilder.append(",  \"camera_sn\": \"").append(deviceSn).append("\"");
+				jsonBodyBuilder.append(", \"camera_sn\": \"").append(deviceSn).append("\"");
 				logger.info("EXTERNAL API: Added camera_sn to payload with value: '" + deviceSn + "'");
 			} else {
 				logger.info("EXTERNAL API: deviceSn is null or empty, camera_sn will not be added to payload");
