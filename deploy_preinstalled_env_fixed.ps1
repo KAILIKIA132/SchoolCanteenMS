@@ -38,7 +38,21 @@ param(
 )
 
 # Add MySQL to PATH at the start of the script
-$env:PATH += ";C:\Program Files\MySQL\MySQL Server 8.0\bin"
+$MySQLPaths = @(
+    "C:\Program Files\MySQL\MySQL Server 8.0\bin",
+    "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe",
+    "C:\Program Files (x86)\MySQL\MySQL Server 8.0\bin",
+    "C:\Program Files\MySQL\MySQL Server 5.7\bin",
+    "C:\Program Files (x86)\MySQL\MySQL Server 5.7\bin"
+)
+
+foreach ($path in $MySQLPaths) {
+    if (Test-Path $path) {
+        $env:PATH += ";$path"
+        Write-Host "Added MySQL path to environment: $path"
+        break
+    }
+}
 
 # --- configuration ---
 $ErrorActionPreference = "Stop"
@@ -66,11 +80,36 @@ try {
 }
 
 try {
-    # Test MySQL using the full path
-    & "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" --version
-    Print-Msg "Found mysql CLI." "Gray"
+    # Test MySQL availability
+    $mysqlTest = mysql --version 2>$null
+    if ($LASTEXITCODE -eq 0) {
+        Print-Msg "Found mysql CLI." "Gray"
+    } else {
+        # Try with full path
+        $mysqlPaths = @(
+            "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe",
+            "C:\Program Files\MySQL\MySQL Server 5.7\bin\mysql.exe",
+            "C:\Program Files (x86)\MySQL\MySQL Server 8.0\bin\mysql.exe"
+        )
+        
+        $mysqlFound = $false
+        foreach ($mysqlPath in $mysqlPaths) {
+            if (Test-Path $mysqlPath) {
+                & $mysqlPath --version 2>$null
+                if ($LASTEXITCODE -eq 0) {
+                    Print-Msg "Found mysql CLI at: $mysqlPath" "Gray"
+                    $mysqlFound = $true
+                    break
+                }
+            }
+        }
+        
+        if (-not $mysqlFound) {
+            Write-Error "MySQL client (mysql.exe) not found. Please ensure MySQL is installed and accessible."
+        }
+    }
 } catch {
-    Write-Error "MySQL client (mysql.exe) not found at expected path. Please ensure MySQL is installed and accessible."
+    Write-Error "MySQL client (mysql.exe) not found. Please ensure MySQL is installed and accessible."
 }
 
 # 2. Compile Java Source
@@ -120,24 +159,39 @@ Get-ChildItem -Path $SrcDir -Recurse -Include "*.xml", "*.properties" | ForEach-
 
 # 3. Setup Database
 Print-Msg "Step 3: Setting up Database..."
-# Use full path to MySQL executable
-$MySqlCmd = "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe -u root -p$MySQLRootPassword -P $MySQLPort"
+$MySqlCmd = "mysql -u root -p$MySQLRootPassword -P $MySQLPort"
 
 # Create Database if not exists
 Print-Msg "Creating database 'pushdemo'..." "Gray"
-cmd /c "echo CREATE DATABASE IF NOT EXISTS pushdemo DEFAULT CHARACTER SET utf8; | & $MySqlCmd"
+$createDbQuery = "CREATE DATABASE IF NOT EXISTS pushdemo DEFAULT CHARACTER SET utf8;"
+$result = echo $createDbQuery | cmd /c "$MySqlCmd"
+if ($LASTEXITCODE -ne 0) {
+    Write-Warning "Database creation may have failed. Continuing anyway..."
+} else {
+    Print-Msg "Database 'pushdemo' created successfully." "Gray"
+}
 
 # Run Init Scripts
 $InitScript = "$ProjectPath\docker\mysql\init\02-pushdemo-schema.sql"
 if (Test-Path $InitScript) {
     Print-Msg "Importing Schema ($InitScript)..." "Gray"
-    cmd /c "& $MySqlCmd pushdemo < `"$InitScript`""
+    $result = cmd /c "$MySqlCmd pushdemo < `"$InitScript`""
+    if ($LASTEXITCODE -ne 0) {
+        Write-Warning "Schema import may have failed. Check $InitScript exists and is accessible."
+    } else {
+        Print-Msg "Schema imported successfully." "Gray"
+    }
 }
 
 $AdminScript = "$ProjectPath\sql\create_admin_table.sql"
 if (Test-Path $AdminScript) {
     Print-Msg "Creating Admin Table ($AdminScript)..." "Gray"
-    cmd /c "& $MySqlCmd pushdemo < `"$AdminScript`""
+    $result = cmd /c "$MySqlCmd pushdemo < `"$AdminScript`""
+    if ($LASTEXITCODE -ne 0) {
+        Write-Warning "Admin table creation may have failed. Check $AdminScript exists and is accessible."
+    } else {
+        Print-Msg "Admin table created successfully." "Gray"
+    }
 }
 
 # 4. Configure Application
@@ -154,9 +208,11 @@ if (Test-Path $ConfigXml) {
         $xml.root.databaseconnect.url = $currentDbUrl.Replace("mysql:3306", "localhost:$MySQLPort")
     }
         
-    # Update external API URL if needed
+    # Update external API URL if needed (you can modify this to your desired URL)
     $currentApiUrl = $xml.root.externalapi.url
     if ($currentApiUrl -match "10.35.200.1:8003") {
+        # You can change this to your actual external API endpoint
+        # Example: $xml.root.externalapi.url = "http://your-server:port/api/endpoint"
         Print-Msg "External API URL kept as: $currentApiUrl" "Gray"
     }
     $xml.Save($ConfigXml)
@@ -169,6 +225,8 @@ if (Test-Path $ConfigXml) {
 Print-Msg "Step 5: Deploying to Tomcat..."
 $WebAppDir = "$TomcatHome\webapps\pushdemo"
 
+# Stop Tomcat (Recommended but optional, trying to do hot deploy if running)
+# We will just overwrite files.
 Print-Msg "Deploying artifacts to $WebAppDir..." "Gray"
 
 # Remove existing if exists to ensure clean deploy
@@ -180,9 +238,10 @@ New-Item -ItemType Directory -Path $WebAppDir | Out-Null
 Copy-Item -Path "$ProjectPath\WebContent\*" -Destination $WebAppDir -Recurse -Force
 
 Print-Msg "Ensuring MySQL Connector is in Tomcat Lib..."
-$ConnectorFile = Get-ChildItem $LibDir -Filter "mysql-connector-java*.jar" | Select-Object -First 1
+$ConnectorFile = Get-ChildItem $LibDir -Filter "mysql-connector-java*.jar" -ErrorAction SilentlyContinue | Select-Object -First 1
 if ($ConnectorFile) {
     Copy-Item $ConnectorFile.FullName -Destination "$TomcatHome\lib\" -Force
+    Print-Msg "Copied MySQL connector: $($ConnectorFile.Name)" "Gray"
 } else {
     Write-Warning "MySQL Connector JAR not found in $LibDir. Database connection may fail."
 }
@@ -195,7 +254,7 @@ if (-not (Test-Path $VenvDir)) {
         python -m venv $VenvDir
         Print-Msg "Virtual Environment created at $VenvDir" "Green"
     } catch {
-        Write-Warning "Failed to create Python venv. Is 'python' installed?"
+        Write-Warning "Failed to create Python venv. Is 'python' installed? Error: $($_.Exception.Message)"
     }
 } else {
     Print-Msg "Virtual Environment already exists." "Gray"
