@@ -257,7 +257,6 @@ public class UploadProcess {
 				+ request.getRemoteAddr()+";"
 				+ request.getRequestURL() + "?" + request.getQueryString());
 		logger.info("POST REQUEST - Table: " + table + ", Device SN: " + deviceSn);
-		logger.info("POST REQUEST - Device SN Details - null: " + (deviceSn == null) + ", empty: " + (deviceSn != null && deviceSn.isEmpty()) + ", length: " + (deviceSn != null ? deviceSn.length() : 0));
 		try {
 			/**update the device stamp for current table.*/
 			int re = updateDeviceStamp(deviceSn, request);

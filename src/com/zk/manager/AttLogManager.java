@@ -127,28 +127,17 @@ public class AttLogManager {
 					", Timestamp: " + attLog.getVerifyTime() + ", Device SN: " + attLog.getDeviceSn());
 				
 				// Debug: Check if deviceSn is null or empty
-				logger.info("EXTERNAL API: AttLog deviceSn details - Value: '" + attLog.getDeviceSn() + "', null: " + (attLog.getDeviceSn() == null) + ", empty: " + (attLog.getDeviceSn() != null && attLog.getDeviceSn().isEmpty()) + ", length: " + (attLog.getDeviceSn() != null ? attLog.getDeviceSn().length() : 0));
-				
 				if (attLog.getDeviceSn() == null || attLog.getDeviceSn().isEmpty()) {
-					logger.error("EXTERNAL API: ❌ ERROR - Device SN is NULL or EMPTY for verification!");
-					logger.error("EXTERNAL API: Cannot call external API without device serial number (camera_sn is REQUIRED)");
-					logger.error("EXTERNAL API: Skipping external API call for this verification");
-					continue; // Skip this verification and continue with others
+					logger.warn("EXTERNAL API: ⚠️  WARNING - Device SN is NULL or EMPTY for verification!");
+					logger.warn("EXTERNAL API: This will cause camera_sn to be missing from external API payload");
 				}
 				
 				if (attLog.getUserPin() != null && !attLog.getUserPin().isEmpty()) {
 					logger.info("EXTERNAL API: Calling notifyVerification for User ID: " + attLog.getUserPin());
-					logger.info("EXTERNAL API: 🔍 TRACING PARAMETERS BEING PASSED:");
-					logger.info("EXTERNAL API:   userId: '" + attLog.getUserPin() + "'");
-					logger.info("EXTERNAL API:   verificationTime: '" + attLog.getVerifyTime() + "'");
-					logger.info("EXTERNAL API:   userName: '" + (attLog.getUserName() != null ? attLog.getUserName() : "NULL") + "'");
-					logger.info("EXTERNAL API:   deviceSn: '" + (attLog.getDeviceSn() != null ? attLog.getDeviceSn() : "NULL") + "'");
-					logger.info("EXTERNAL API:   deviceSn details - null: " + (attLog.getDeviceSn() == null) + ", empty: " + (attLog.getDeviceSn() != null && attLog.getDeviceSn().isEmpty()) + ", length: " + (attLog.getDeviceSn() != null ? attLog.getDeviceSn().length() : 0));
-					
-					// Store the deviceSn value for verification
-					String deviceSnForLogging = attLog.getDeviceSn();
-					logger.info("EXTERNAL API: 📦 STORING deviceSn for verification: '" + deviceSnForLogging + "'");
-					
+					logger.info("EXTERNAL API: Passing parameters - userId: " + attLog.getUserPin() + 
+						", verificationTime: " + attLog.getVerifyTime() + 
+						", userName: " + (attLog.getUserName() != null ? attLog.getUserName() : "N/A") + 
+						", deviceSn: " + (attLog.getDeviceSn() != null ? "'" + attLog.getDeviceSn() + "'" : "NULL"));
 					ExternalApiUtil.notifyVerification(attLog.getUserPin(), attLog.getVerifyTime(), 
 						attLog.getUserName() != null ? attLog.getUserName() : "", attLog.getDeviceSn());
 					logger.info("EXTERNAL API: notifyVerification called for User ID: " + attLog.getUserPin() + 
