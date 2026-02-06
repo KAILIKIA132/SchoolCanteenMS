@@ -155,13 +155,24 @@ public class ExternalApiUtil {
 	 */
 	public static void notifyVerification(String userId, String verificationTime, String userName, String deviceSn) {
 		logger.info("═══════════════════════════════════════════════════════════");
-		logger.info("🔔 EXTERNAL API CALL REQUESTED - notifyVerification()");
+		logger.info("🔔 EXTERNAL API CALL REQUESTED - notifyVerification(4 params)");
 		logger.info("═══════════════════════════════════════════════════════════");
-		logger.info("EXTERNAL API: User ID: " + userId);
-		logger.info("EXTERNAL API: Verification Time: " + verificationTime);
-		logger.info("EXTERNAL API: User Name: " + userName);
-		logger.info("EXTERNAL API: Device SN: " + deviceSn);
-		logger.info("EXTERNAL API: Device SN for camera_sn - Value: '" + deviceSn + "' (null: " + (deviceSn == null) + ", empty: " + (deviceSn != null && deviceSn.isEmpty()) + ")");
+		logger.info("EXTERNAL API: 🔍 PARAMETERS RECEIVED BY notifyVerification:");
+		logger.info("EXTERNAL API:   userId: '" + userId + "'");
+		logger.info("EXTERNAL API:   verificationTime: '" + verificationTime + "'");
+		logger.info("EXTERNAL API:   userName: '" + userName + "'");
+		logger.info("EXTERNAL API:   deviceSn: '" + deviceSn + "'");
+		logger.info("EXTERNAL API:   deviceSn details - null: " + (deviceSn == null) + ", empty: " + (deviceSn != null && deviceSn.isEmpty()) + ", length: " + (deviceSn != null ? deviceSn.length() : 0));
+		
+		// Verify the deviceSn value matches what was passed from AttLogManager
+		logger.info("EXTERNAL API: 🔄 VERIFYING deviceSn integrity...");
+		
+		// Debug: Check the exact content of deviceSn
+		if (deviceSn != null) {
+			logger.info("EXTERNAL API: Device SN Hex dump: " + getHexDump(deviceSn));
+			logger.info("EXTERNAL API: Device SN Starts with "Device": " + deviceSn.startsWith("Device"));
+		}
+		
 		logger.info("═══════════════════════════════════════════════════════════");
 		
 		if (userId == null || userId.isEmpty()) {
@@ -171,8 +182,28 @@ public class ExternalApiUtil {
 		
 		// Validate that deviceSn (camera_sn) is provided - it's required
 		if (deviceSn == null || deviceSn.isEmpty()) {
-			logger.warn("❌ EXTERNAL API: Cannot notify - deviceSn (camera_sn) is null or empty, this is REQUIRED");
-			logger.warn("EXTERNAL API: The external API requires camera_sn parameter with device serial number");
+			logger.error("❌ EXTERNAL API: ABORTING - deviceSn (camera_sn) is null or empty, this is REQUIRED");
+			logger.error("EXTERNAL API: The external API requires camera_sn parameter with device serial number");
+			logger.error("EXTERNAL API: Current deviceSn value: " + (deviceSn == null ? "NULL" : "EMPTY STRING")); 
+			
+			// Save abort report
+			try {
+				ApiVerificationReport report = new ApiVerificationReport();
+				report.setUserPin(userId);
+				report.setUserName(userName != null ? userName : "");
+				report.setStudentId(formatStudentId(userId));
+				report.setVerificationTime(verificationTime != null ? convertToNairobiTime(verificationTime) : "");
+				report.setApiCallTime(getNairobiDate());
+				report.setMealType(getMealType());
+				report.setStatus("ABORTED");
+				report.setErrorMessage("Device serial number (camera_sn) is required but was null or empty");
+				report.setApiUrl(EXTERNAL_API_URL);
+				saveReport(report);
+				logger.info("EXTERNAL API: Abort report saved to database - Status: ABORTED, User: " + userId);
+			} catch (Exception ex) {
+				logger.error("Failed to save abort report to database: " + ex.getMessage());
+			}
+			
 			return;
 		}
 		
@@ -182,13 +213,21 @@ public class ExternalApiUtil {
 		final String finalUserName = userName;
 		final String finalDeviceSn = deviceSn;
 		
+		logger.info("EXTERNAL API: 📦 FINAL VARIABLES CAPTURED:");
+		logger.info("EXTERNAL API:   finalUserId: '" + finalUserId + "'");
+		logger.info("EXTERNAL API:   finalDeviceSn: '" + finalDeviceSn + "'");
+		logger.info("EXTERNAL API:   finalDeviceSn details - null: " + (finalDeviceSn == null) + ", empty: " + (finalDeviceSn != null && finalDeviceSn.isEmpty()) + ", length: " + (finalDeviceSn != null ? finalDeviceSn.length() : 0));
+		
 		logger.info("✅ EXTERNAL API: Submitting async task for userId: " + finalUserId + ", device: " + finalDeviceSn);
 		
 		// Execute asynchronously
 		executorService.submit(new Runnable() {
 			@Override
 			public void run() {
-				logger.info("EXTERNAL API: Async task started for userId: " + finalUserId + ", device: " + finalDeviceSn);
+				logger.info("EXTERNAL API: ⚡ ASYNC TASK EXECUTING");
+				logger.info("EXTERNAL API:   userId: '" + finalUserId + "'");
+				logger.info("EXTERNAL API:   deviceSn: '" + finalDeviceSn + "'");
+				logger.info("EXTERNAL API:   deviceSn details - null: " + (finalDeviceSn == null) + ", empty: " + (finalDeviceSn != null && finalDeviceSn.isEmpty()) + ", length: " + (finalDeviceSn != null ? finalDeviceSn.length() : 0));
 				callExternalApi(finalUserId, finalVerificationTime, finalUserName, finalDeviceSn);
 			}
 		});
@@ -202,6 +241,7 @@ public class ExternalApiUtil {
 	 * @param verificationTime The verification timestamp
 	 */
 	public static void notifyVerification(String userId, String verificationTime) {
+		logger.warn("⚠️  WARNING: notifyVerification(2 params) called - this will result in null deviceSn!");
 		notifyVerification(userId, verificationTime, null, null);
 	}
 	
@@ -210,6 +250,7 @@ public class ExternalApiUtil {
 	 * @param userId The user ID (userPin) from the verification
 	 */
 	public static void notifyVerification(String userId) {
+		logger.warn("⚠️  WARNING: notifyVerification(1 param) called - this will result in null deviceSn!");
 		notifyVerification(userId, null, null, null);
 	}
 	
@@ -221,6 +262,7 @@ public class ExternalApiUtil {
 	 * @param deviceSn The device serial number
 	 */
 	public static void notifyVerification(String userId, String verificationTime, String userName) {
+		logger.warn("⚠️  WARNING: notifyVerification(3 params) called - this will result in null deviceSn!");
 		notifyVerification(userId, verificationTime, userName, null);
 	}
 	
@@ -234,11 +276,14 @@ public class ExternalApiUtil {
 	 */
 	private static void callExternalApi(String userId, String verificationTime, String userName, String deviceSn) {
 		logger.info("═══════════════════════════════════════════════════════════");
-		logger.info("🚀 EXTERNAL API CALL INITIATED");
+		logger.info("🚀 EXTERNAL API CALL INITIATED - callExternalApi");
 		logger.info("═══════════════════════════════════════════════════════════");
-		logger.info("EXTERNAL API: User ID: " + userId);
-		logger.info("EXTERNAL API: Device SN: " + deviceSn);
-		logger.info("EXTERNAL API: Device SN for camera_sn - Value: '" + deviceSn + "' (null: " + (deviceSn == null) + ", empty: " + (deviceSn != null && deviceSn.isEmpty()) + ")");
+		logger.info("EXTERNAL API: 🔍 PARAMETERS RECEIVED BY callExternalApi:");
+		logger.info("EXTERNAL API:   userId: '" + userId + "'");
+		logger.info("EXTERNAL API:   verificationTime: '" + verificationTime + "'");
+		logger.info("EXTERNAL API:   userName: '" + userName + "'");
+		logger.info("EXTERNAL API:   deviceSn: '" + deviceSn + "'");
+		logger.info("EXTERNAL API:   deviceSn details - null: " + (deviceSn == null) + ", empty: " + (deviceSn != null && deviceSn.isEmpty()) + ", length: " + (deviceSn != null ? deviceSn.length() : 0));
 		logger.info("EXTERNAL API: Current URL: " + EXTERNAL_API_URL);
 		logger.info("EXTERNAL API: Method: POST");
 		logger.info("EXTERNAL API: Timestamp (Nairobi/EAT): " + getNairobiTimeString());
@@ -492,6 +537,20 @@ public class ExternalApiUtil {
 		} catch (Exception e) {
 			logger.error("Unexpected error saving verification report: " + e.getMessage(), e);
 		}
+	}
+	
+	/**
+	 * Get hex dump of string for debugging
+	 * @param str The string to dump
+	 * @return Hex representation of the string
+	 */
+	private static String getHexDump(String str) {
+		if (str == null) return "null";
+		StringBuilder sb = new StringBuilder();
+		for (char c : str.toCharArray()) {
+			sb.append(String.format("%02x ", (int)c));
+		}
+		return sb.toString().trim();
 	}
 	
 	/**
