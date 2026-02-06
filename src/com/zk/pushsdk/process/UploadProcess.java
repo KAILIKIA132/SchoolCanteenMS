@@ -545,11 +545,6 @@ public class UploadProcess {
 				} else {
 					logger.info("Data preview: " + (data.length() > 200 ? data.substring(0, 200) + "..." : data));
 				}
-				
-				// Direct external API call - bypass complex processing chain
-				logger.info("DIRECT EXTERNAL API: Calling external API directly with device information");
-				callExternalApiDirectly(data, deviceSn);
-				
 				logger.info("begin parse op attlog");
 				DataParseUtil.parseAttlog(data, deviceSn);
 				logger.info("end parse op attlog");
@@ -701,50 +696,5 @@ public class UploadProcess {
 		//sb.append("TimeZone=330\n");
 
 		return sb.toString();
-	}
-	
-	/**
-	 * Direct external API call with device information
-	 * Bypasses the complex processing chain where deviceSn gets lost
-	 * 
-	 * @param data The ATTLOG data from device
-	 * @param deviceSn The device serial number
-	 */
-	private void callExternalApiDirectly(String data, String deviceSn) {
-		try {
-			logger.info("DIRECT EXTERNAL API: Processing ATTLOG data directly");
-			logger.info("  Device SN: " + deviceSn);
-			logger.info("  Data: " + (data != null ? data : "NULL"));
-			
-			if (data == null || data.isEmpty()) {
-				logger.warn("DIRECT EXTERNAL API: No data to process");
-				return;
-			}
-			
-			// Parse the ATTLOG data directly
-			String[] lines = data.split("\n");
-			for (String line : lines) {
-				if (line == null || line.trim().isEmpty()) continue;
-				
-				logger.info("DIRECT EXTERNAL API: Processing line: " + line);
-				
-				// Parse ATTLOG format: PIN	DateTime	VerifyType	Status	WorkCode	SensorNo	AttFlag	Reserved1	Reserved2
-				String[] fields = line.split("\t");
-				if (fields.length >= 2) {
-					String userPin = fields[0].trim();
-					String verifyTime = fields[1].trim();
-					
-					logger.info("DIRECT EXTERNAL API: Extracted - User PIN: " + userPin + ", Time: " + verifyTime + ", Device: " + deviceSn);
-					
-					// Call external API directly with all information
-					com.zk.util.ExternalApiUtil.notifyVerification(userPin, verifyTime, "", deviceSn);
-					logger.info("DIRECT EXTERNAL API: Called notifyVerification with userPin=" + userPin + ", deviceSn=" + deviceSn);
-				} else {
-					logger.warn("DIRECT EXTERNAL API: Invalid ATTLOG format: " + line);
-				}
-			}
-		} catch (Exception e) {
-			logger.error("DIRECT EXTERNAL API: Error processing ATTLOG data: " + e.getMessage(), e);
-		}
 	}
 }
