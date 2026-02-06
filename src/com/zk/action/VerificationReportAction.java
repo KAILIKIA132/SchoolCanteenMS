@@ -25,7 +25,7 @@ import org.apache.struts2.interceptor.ServletResponseAware;
 
 import com.zk.dao.impl.ApiVerificationReport;
 import com.zk.dao.impl.ApiVerificationReportDao;
-import com.zk.dao.impl.DeviceInfo;
+import com.zk.pushsdk.po.DeviceInfo;
 import com.zk.dao.impl.DeviceInfoDao;
 import com.zk.util.PagenitionUtil;
 
@@ -89,7 +89,7 @@ public class VerificationReportAction implements ServletRequestAware, ServletRes
 			
 			// Get device list for filter dropdown
 			DeviceInfoDao deviceDao = new DeviceInfoDao();
-			devList = deviceDao.query(" order by device_sn ");
+			devList = deviceDao.fatchList(" order by device_sn ");
 			deviceDao.close();
 			
 			// Get counts

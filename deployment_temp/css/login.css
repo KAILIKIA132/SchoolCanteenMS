@@ -1,0 +1,105 @@
+body {
+    background-color: #f4f6f9;
+    background-image: linear-gradient(135deg, #f4f6f9 0%, #ffffff 100%);
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    text-align: center;
+    border-top: 4px solid #AB2328;
+    /* Crawford Red */
+}
+
+.login-container img {
+    margin-bottom: 1.5rem;
+}
+
+.login-container h2 {
+    color: #333;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #666;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #AB2328;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(171, 35, 40, 0.1);
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background: #AB2328;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: 600;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-login:hover {
+    background: #8a1c22;
+}
+
+.error-message {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    display: none;
+    border: 1px solid transparent;
+}
+
+.error-message.visible {
+    display: block;
+}
+
+.footer {
+    margin-top: 2.5rem;
+    color: #999;
+    font-size: 0.85rem;
+    border-top: 1px solid #eee;
+    padding-top: 1.5rem;
+}

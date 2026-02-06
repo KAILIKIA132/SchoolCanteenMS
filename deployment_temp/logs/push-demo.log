@@ -1,0 +1,99 @@
+34048 ERROR 2025-11-05 14:30:45884 BaseDao:102 - java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+34051 ERROR 2025-11-05 14:30:45887 BaseDao:102 - java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+34053 ERROR 2025-11-05 14:30:45889 DeviceInfoDao:391 - java.lang.NullPointerException
+34058 ERROR 2025-11-05 14:30:45894 BaseDao:102 - java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+34060 ERROR 2025-11-05 14:30:45896 BaseDao:102 - java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+34062 ERROR 2025-11-05 14:30:45898 DeviceInfoDao:367 - java.lang.NullPointerException
+34066 ERROR 2025-11-05 14:30:45902 BaseDao:102 - java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+34067 ERROR 2025-11-05 14:30:45903 BaseDao:102 - java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+34068 ERROR 2025-11-05 14:30:45904 DeviceInfoDao:297 - java.lang.NullPointerException
+34069 ERROR 2025-11-05 14:30:45905 DeviceManager:65 - com.zk.exception.DaoException: java.lang.NullPointerException
+3086 ERROR 2025-11-05 14:37:07705 BaseDao:102 - java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+3090 ERROR 2025-11-05 14:37:07709 BaseDao:102 - java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+3092 ERROR 2025-11-05 14:37:07711 DeviceInfoDao:391 - java.lang.NullPointerException
+3095 ERROR 2025-11-05 14:37:07714 BaseDao:102 - java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+3098 ERROR 2025-11-05 14:37:07717 BaseDao:102 - java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+3099 ERROR 2025-11-05 14:37:07718 DeviceInfoDao:367 - java.lang.NullPointerException
+3102 ERROR 2025-11-05 14:37:07721 BaseDao:102 - java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+3104 ERROR 2025-11-05 14:37:07723 BaseDao:102 - java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+3105 ERROR 2025-11-05 14:37:07724 DeviceInfoDao:297 - java.lang.NullPointerException
+3106 ERROR 2025-11-05 14:37:07725 DeviceManager:65 - com.zk.exception.DaoException: java.lang.NullPointerException
+41449 INFO  2025-11-06 06:21:26480 BaseDao:96 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+1832028 WARN  2025-11-06 06:51:1759 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace / and action name commandAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+2487100 INFO  2025-11-06 07:02:12131 UploadProcess:56 - get request and make the device options :192.168.65.1;http://localhost:8080/pushdemo/iclock/cdata?null
+2487105 INFO  2025-11-06 07:02:12136 UploadProcess:64 - device is null or empty
+2555139 INFO  2025-11-06 07:03:20170 UploadProcess:56 - get request and make the device options :192.168.65.1;http://10.177.162.98:8080/pushdemo/iclock/cdata?null
+2555144 INFO  2025-11-06 07:03:20175 UploadProcess:64 - device is null or empty
+2666006 INFO  2025-11-06 07:05:1137 UploadProcess:56 - get request and make the device options :192.168.65.1;http://localhost:8080/pushdemo/iclock/cdata?null
+2666017 INFO  2025-11-06 07:05:1148 UploadProcess:64 - device is null or empty
+4566119 WARN  2025-11-06 07:36:51150 Dispatcher:49 - Could not find action or result
+There is no Action mapped for namespace / and action name commandAction. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:178)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:61)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:47)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:478)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at com.zk.util.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:63)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:142)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:643)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:935)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1831)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.lang.Thread.run(Thread.java:750)
+4872929 INFO  2025-11-06 07:41:57960 UploadProcess:56 - get request and make the device options :192.168.65.1;http://localhost:8080/pushdemo/iclock/cdata?SN=TEST123456&options=all
+4947 INFO  2025-11-06 07:44:27143 UploadProcess:56 - get request and make the device options :192.168.65.1;http://localhost:8080/pushdemo/iclock/cdata?SN=TEST123456&options=all
+5078 INFO  2025-11-06 07:44:27274 BaseDao:96 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+5410 INFO  2025-11-06 07:44:27606 BaseDao:96 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+10384 INFO  2025-11-06 07:45:48858 UploadProcess:56 - get request and make the device options :192.168.65.1;http://localhost:8080/pushdemo/iclock/cdata?SN=TEST123456&options=all
+10915 INFO  2025-11-06 07:45:49389 BaseDao:96 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+12039 INFO  2025-11-06 07:45:50513 BaseDao:96 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+19863 INFO  2025-11-06 07:52:24420 UploadProcess:56 - get request and make the device options :192.168.65.1;http://localhost:8080/pushdemo/iclock/cdata?SN=TEST123456&options=all
+20812 INFO  2025-11-06 07:52:25369 BaseDao:96 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root
+22041 INFO  2025-11-06 07:52:26598 BaseDao:96 - jdbc:mysql://mysql:3306/pushdemo?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true user:root pass:root

@@ -1,0 +1,119 @@
+/* --- Navigation Menu (Crawford Style) --- */
+
+.top_menu {
+	flex-grow: 1;
+	margin-left: 40px;
+}
+
+#jsddm {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	gap: 5px;
+}
+
+#jsddm>li {
+	position: relative;
+	padding-bottom: 10px;
+	/* Bridge gap for hover */
+	margin-bottom: -10px;
+}
+
+#jsddm>li>a {
+	display: block;
+	padding: 10px 15px;
+	color: #444;
+	font-weight: 600;
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-size: 13px;
+	transition: all 0.3s;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+#jsddm>li>a:hover,
+#jsddm>li.active>a {
+	color: var(--primary-red);
+	background-color: rgba(171, 35, 40, 0.05);
+}
+
+/* Icons (using CSS placeholders or existing classes if possible, currently simple) */
+.menu_ico_Device,
+.menu_ico_Data,
+.menu_ico_Log,
+.menu_ico_System,
+.menu_ico_commands {
+	width: 20px;
+	height: 20px;
+	display: none;
+	/* Hide old icons for cleaner look, or update them */
+}
+
+/* Dropdown */
+#jsddm li ul {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 45px;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	background: #ffffff;
+	min-width: 200px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border-top: 3px solid var(--primary-red);
+	z-index: 2000;
+	transition: all 0.2s ease;
+	transform: translateY(10px);
+}
+
+#jsddm li:hover ul {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0);
+}
+
+#jsddm li ul li {
+	float: none;
+	display: block;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+#jsddm li ul li:last-child {
+	border-bottom: none;
+}
+
+#jsddm li ul li a {
+	display: block;
+	padding: 12px 20px;
+	color: #555;
+	font-weight: 500;
+	white-space: nowrap;
+	transition: bg 0.2s;
+}
+
+#jsddm li ul li a:hover {
+	background-color: #f9f9f9;
+	color: var(--primary-red);
+	padding-left: 25px;
+	/* Slight movement effect */
+}
+
+/* 3rd Level Menu (Flyout) */
+#jsddm li ul li ul {
+	display: none;
+	left: 100%;
+	top: 0;
+	border-left: 1px solid var(--border-color);
+	border-top: none;
+}
+
+#jsddm li ul li:hover ul {
+	display: block;
+	visibility: visible;
+	opacity: 1;
+}
