@@ -154,6 +154,18 @@ public class ExternalApiUtil {
 	 * @param deviceSn The device serial number
 	 */
 	public static void notifyVerification(String userId, String verificationTime, String userName, String deviceSn) {
+	    logger.info("EXTERNAL API: notifyVerification called with parameters:");
+	    logger.info("  userId: " + userId);
+	    logger.info("  verificationTime: " + verificationTime);
+	    logger.info("  userName: " + (userName != null ? "'" + userName + "'" : "NULL"));
+	    logger.info("  deviceSn: " + (deviceSn != null ? "'" + deviceSn + "'" : "NULL") + 
+	               " (null: " + (deviceSn == null) + ", empty: " + (deviceSn != null && deviceSn.isEmpty()) + ")");
+	        
+	    // Debug: Check if deviceSn is null or empty when received
+	    if (deviceSn == null || deviceSn.isEmpty()) {
+	        logger.warn("EXTERNAL API: ⚠️  WARNING - deviceSn is NULL or EMPTY when received in notifyVerification!");
+	        logger.warn("EXTERNAL API: This will result in camera_sn being missing from the API payload");
+	    }
 		logger.info("═══════════════════════════════════════════════════════════");
 		logger.info("🔔 EXTERNAL API CALL REQUESTED - notifyVerification()");
 		logger.info("═══════════════════════════════════════════════════════════");

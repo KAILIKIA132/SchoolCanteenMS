@@ -35,6 +35,11 @@ public class AttLogDao extends BaseDao implements IBaseDao<AttLog> {
 				"status, work_code, sensor_no, att_flag, device_sn, reserved1, reserved2, mask, temperature) " +
 				"values(?,?,?,?,?,?,?,?,?,?,?,?)";
 		try {
+			logger.info("AttLogDao.add() - Inserting AttLog record:");
+			logger.info("  User PIN: " + entity.getUserPin());
+			logger.info("  Verify Time: " + entity.getVerifyTime());
+			logger.info("  Device SN: '" + entity.getDeviceSn() + "' (null: " + (entity.getDeviceSn() == null) + ", empty: " + (entity.getDeviceSn() != null && entity.getDeviceSn().isEmpty()) + ")");
+			
 			PreparedStatement pst = getConnection().prepareStatement(sql);
 			int index = 1;
 			pst.setString(index++, entity.getUserPin());
@@ -263,6 +268,12 @@ public class AttLogDao extends BaseDao implements IBaseDao<AttLog> {
 				+ " mask=?, temperature=? "
 				+ " where user_pin=? and verify_type=? and verify_time=? and device_sn=? ";
 		try {
+			logger.info("AttLogDao.update() - Updating AttLog record:");
+			logger.info("  User PIN: " + entity.getUserPin());
+			logger.info("  Verify Time: " + entity.getVerifyTime());
+			logger.info("  Device SN: '" + entity.getDeviceSn() + "' (null: " + (entity.getDeviceSn() == null) + ", empty: " + (entity.getDeviceSn() != null && entity.getDeviceSn().isEmpty()) + ")");
+			logger.info("  WHERE clause Device SN: '" + entity.getDeviceSn() + "'");
+			
 			PreparedStatement pst = (PreparedStatement) getConnection()
 					.prepareStatement(sql);
 			int index = 1;

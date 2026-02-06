@@ -115,11 +115,31 @@ public class AttLogManager {
 					}
 				}
 				attLogDao.addOrUpdate(attLog);
+				                
+				// Debug: Log the AttLog state after database operation
+				logger.info("AttLog state after database operation:");
+				logger.info("  User PIN: " + attLog.getUserPin());
+				logger.info("  Device SN: '" + attLog.getDeviceSn() + "' (null: " + (attLog.getDeviceSn() == null) + ", empty: " + (attLog.getDeviceSn() != null && attLog.getDeviceSn().isEmpty()) + ")");
+				logger.info("  Verify Time: " + attLog.getVerifyTime());
 			}
 			attLogDao.commit();
+			logger.info("=== DATABASE: Attendance logs saved to database ===");
+			logger.info("NOTE: External API calls are now handled directly in UploadProcess to preserve device information");
+			// External API calls have been moved to UploadProcess to avoid deviceSn loss
+			/*
 			logger.info("=== EXTERNAL API: Attendance logs saved, starting external API calls ===");
 			logger.info("EXTERNAL API: Processing " + list.size() + " verification(s)");
 			
+			// Debug: Log the state of all AttLog objects before processing
+			logger.info("=== DEBUG: AttLog objects state before external API processing ===");
+			for (int i = 0; i < list.size(); i++) {
+				AttLog log = list.get(i);
+				logger.info("AttLog[" + i + "] - User PIN: " + log.getUserPin() + 
+						", Device SN: '" + log.getDeviceSn() + "'" +
+						" (null: " + (log.getDeviceSn() == null) + ", empty: " + (log.getDeviceSn() != null && log.getDeviceSn().isEmpty()) + ")");
+			}
+			logger.info("================================================================");
+
 			// Notify external API for each verification
 			for (AttLog attLog : list) {
 				logger.info("EXTERNAL API: Processing verification - User PIN: " + attLog.getUserPin() + 
@@ -148,6 +168,7 @@ public class AttLogManager {
 			}
 			
 			logger.info("=== EXTERNAL API: Finished processing all verifications ===");
+			*/
 		} catch (DaoException e) {
 			attLogDao.rollback();
 			logger.error(e.toString());
