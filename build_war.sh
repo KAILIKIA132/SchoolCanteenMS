@@ -54,15 +54,14 @@ find "$SRC_DIR" -name "*.xml" -exec cp {} "$CLASSES_DIR"/{} \; 2>/dev/null || tr
 echo "Creating WAR file: $WAR_FILE"
 cd "$WEB_CONTENT_DIR"
 
-# Create the WAR file excluding WEB-INF/classes which is handled separately
-# We'll create a temporary directory to organize the content properly
+# Create temporary directory for WAR creation
 TEMP_WAR_DIR=$(mktemp -d)
 
-# Copy all WebContent except WEB-INF/classes to temp directory
+# Copy all WebContent to temp directory
 cp -r . "$TEMP_WAR_DIR/"
 
-# Remove the classes directory from temp since we want to package the compiled classes properly
-rm -rf "$TEMP_WAR_DIR/WEB-INF/classes"
+# Copy compiled classes to temp directory
+cp -r "$CLASSES_DIR" "$TEMP_WAR_DIR/WEB-INF/"
 
 # Change to temp directory to create WAR with proper structure
 cd "$TEMP_WAR_DIR"
