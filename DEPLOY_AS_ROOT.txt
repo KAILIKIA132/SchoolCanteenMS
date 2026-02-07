@@ -1,0 +1,66 @@
+# Deploying School Canteen Management System as ROOT Application
+
+To deploy the School Canteen Management System to run at the root level (http://your-server:8080/ instead of http://your-server:8080/SchoolCanteenMS), follow these steps:
+
+## Method 1: Rename WAR file to ROOT.war (Recommended)
+
+1. Stop your Tomcat server if it's running:
+   ```bash
+   # On Windows
+   %CATALINA_HOME%\bin\shutdown.bat
+   
+   # On Linux/Mac
+   $CATALINA_HOME/bin/shutdown.sh
+   ```
+
+2. Navigate to your Tomcat webapps directory:
+   ```bash
+   cd %CATALINA_HOME%\webapps
+   # or on Linux/Mac
+   cd $CATALINA_HOME/webapps
+   ```
+
+3. Remove any existing ROOT application:
+   ```bash
+   # Delete the ROOT directory and ROOT.war if they exist
+   rmdir /s ROOT          # Windows
+   rm -rf ROOT ROOT.war   # Linux/Mac
+   ```
+
+4. Copy and rename your WAR file to ROOT.war:
+   ```bash
+   # From your project directory
+   copy SchoolCanteenMS.war %CATALINA_HOME%\webapps\ROOT.war
+   # or on Linux/Mac
+   cp SchoolCanteenMS.war $CATALINA_HOME/webapps/ROOT.war
+   ```
+
+5. Start your Tomcat server:
+   ```bash
+   # On Windows
+   %CATALINA_HOME%\bin\startup.bat
+   
+   # On Linux/Mac
+   $CATALINA_HOME/bin/startup.sh
+   ```
+
+## Method 2: Using Tomcat Context Configuration
+
+Alternatively, you can define the context in Tomcat's server.xml, but the above method is simpler and more commonly used.
+
+## Verification
+
+After deployment, your application will be accessible at:
+- Main application: http://your-server:8080/
+- Device communication endpoint: http://your-server:8080/iclock/cdata
+- Other action endpoints: http://your-server:8080/login.action, etc.
+
+## Important Notes
+
+- Make sure to backup any existing ROOT application before replacing it
+- Ensure your MySQL database is configured correctly with the settings:
+  - Host: localhost
+  - Database: pushdemo
+  - Username: root
+  - Password: Canteen@2026
+- The device communication endpoint will remain at /iclock/* as required by the hardware devices
