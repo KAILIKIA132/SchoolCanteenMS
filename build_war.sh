@@ -47,8 +47,8 @@ rm sources.txt
 
 # Copy resource files (properties, xml) to classes directory
 echo "Copying resource files..."
-find "$SRC_DIR" -name "*.properties" -exec cp {} "$CLASSES_DIR"/{} \; 2>/dev/null || true
-find "$SRC_DIR" -name "*.xml" -exec cp {} "$CLASSES_DIR"/{} \; 2>/dev/null || true
+find "$SRC_DIR" -name "*.properties" -exec cp {} "$CLASSES_DIR"/ \; 2>/dev/null || true
+find "$SRC_DIR" -name "*.xml" -exec cp {} "$CLASSES_DIR"/ \; 2>/dev/null || true
 
 # Create WAR file
 echo "Creating WAR file: $WAR_FILE"

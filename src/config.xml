@@ -12,7 +12,7 @@
     	<ver>2</ver>
     </option>
     <externalapi>
-        <url>http://10.35.200.1:8003/api/meal-cards/generate-with-check</url>
+        <url>http://10.35.4.5:8003/api/meal-cards/generate-with-check</url>
     </externalapi>
 </root>
 
