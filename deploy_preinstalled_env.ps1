@@ -156,7 +156,7 @@
 
 # # 5. Deploy to Tomcat
 # Print-Msg "Step 5: Deploying to Tomcat..."
-# $WebAppDir = "$TomcatHome\webapps\pushdemo"
+# $WebAppDir = "$TomcatHome\webapps\ROOT"
 
 # # Stop Tomcat (Recommended but optional, trying to do hot deploy if running)
 # # We will just overwrite files.

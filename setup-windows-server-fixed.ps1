@@ -305,25 +305,13 @@ function Install-Tomcat {
 }
 
 # Function to clone and setup project
-function Setup-Project {
-    Write-Log "Cloning project from $GitUrl..."
-    
-    # Remove existing directory if it exists
-    if (Test-Path $InstallPath) {
-        Write-Log "Removing existing installation directory..."
-        Remove-Item -Path $InstallPath -Recurse -Force
+    # Skip cloning, use local WAR
+    Write-Log "Using local SchoolCanteenMS.war..."
+    if (-not (Test-Path "$PSScriptRoot\SchoolCanteenMS.war")) {
+        Write-Error "SchoolCanteenMS.war not found in script directory!"
+        exit 1
     }
-    
-    # Clone repository
-    try {
-        git clone $GitUrl $InstallPath
-        Set-Location $InstallPath
-        Write-Log "Project cloned successfully"
-    }
-    catch {
-        Write-Log "Failed to clone repository: $($_.Exception.Message)" "ERROR"
-        throw
-    }
+
     
     # Setup Python virtual environment
     Write-Log "Setting up Python virtual environment..."
@@ -395,49 +383,37 @@ function Setup-Database {
 
 # Function to configure application
 function Configure-Application {
-    Write-Log "Configuring application..."
+    Write-Log "Deploying application..."
     
-    # Update config.xml with MySQL credentials
-    $configPath = "$InstallPath\WebContent\WEB-INF\classes\config.xml"
-    if (Test-Path $configPath) {
-        [xml]$config = Get-Content $configPath
-        $config.root.databaseconnect.user = "root"
-        $config.root.databaseconnect.password = $MySQLRootPassword
-        $config.Save($configPath)
-        Write-Log "Updated config.xml with MySQL credentials"
-    }
-    
-    # Copy MySQL connector to Tomcat lib
-    $mysqlConnector = "$InstallPath\WebContent\WEB-INF\lib\mysql-connector-java-8.0.33.jar"
-    if (Test-Path $mysqlConnector) {
-        Copy-Item $mysqlConnector "$TomcatInstallPath\lib\" -Force
-        Write-Log "MySQL connector copied to Tomcat lib directory"
-    }
-    else {
-        Write-Log "MySQL connector not found. Downloading..." "WARN"
-        try {
-            $connectorUrl = "https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.33/mysql-connector-java-8.0.33.jar"
-            Invoke-WebRequest -Uri $connectorUrl -OutFile "$TomcatInstallPath\lib\mysql-connector-java-8.0.33.jar" -UseBasicParsing
-            Write-Log "MySQL connector downloaded and installed"
-        }
-        catch {
-            Write-Log "Failed to download MySQL connector: $($_.Exception.Message)" "ERROR"
-            throw
-        }
-    }
-    
-    # Deploy application to Tomcat
+    # Deploy WAR to Tomcat as ROOT
     $webappsPath = "$TomcatInstallPath\webapps"
-    $appPath = "$webappsPath\pushdemo"
+    $appPath = "$webappsPath\ROOT"
+    $warSource = "$PSScriptRoot\SchoolCanteenMS.war"
     
     if (Test-Path $appPath) {
         Remove-Item $appPath -Recurse -Force
     }
+    if (Test-Path "$webappsPath\ROOT.war") {
+        Remove-Item "$webappsPath\ROOT.war" -Force
+    }
     
-    Copy-Item "$InstallPath\WebContent" $appPath -Recurse -Force
-    Write-Log "Application deployed to Tomcat"
+    Copy-Item $warSource "$webappsPath\ROOT.war" -Force
+    Write-Log "Application deployed to Tomcat as ROOT"
     
-    Write-Log "Application configuration completed"
+    # Copy MySQL connector if needed
+    $mysqlConnectorUrl = "https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.33/mysql-connector-java-8.0.33.jar"
+    $connectorDest = "$TomcatInstallPath\lib\mysql-connector-java-8.0.33.jar"
+    
+    if (-not (Test-Path $connectorDest)) {
+        Write-Log "Downloading MySQL connector..."
+        try {
+            Invoke-WebRequest -Uri $mysqlConnectorUrl -OutFile $connectorDest -UseBasicParsing
+            Write-Log "MySQL connector installed"
+        }
+        catch {
+            Write-Log "Failed to download MySQL connector matches: $($_.Exception.Message)" "WARN"
+        }
+    }
 }
 
 # Function to create startup scripts
@@ -583,7 +559,7 @@ try {
     Write-Host "Tomcat Path: $TomcatInstallPath"
     Write-Host "Python Virtual Environment: $PythonPath"
     Write-Host ""
-    Write-Host "Access the application at: http://localhost:8080/pushdemo"
+    Write-Host "Access the application at: http://localhost:8080/"
     Write-Host ""
     Write-Host "Startup Scripts:"
     Write-Host "  - $InstallPath\start-services.bat"
