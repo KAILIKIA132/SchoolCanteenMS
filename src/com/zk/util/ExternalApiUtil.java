@@ -57,7 +57,7 @@ public class ExternalApiUtil {
 		}
 		
 		// Fallback to default URL
-		String defaultUrl = "http://10.35.200.1:8003/api/meal-cards/generate-with-check";
+		String defaultUrl = "http://75.119.132.10:3005/api/device/identify";
 		logger.warn("EXTERNAL API: Using fallback URL: " + defaultUrl);
 		return defaultUrl;
 	}
@@ -227,21 +227,9 @@ public class ExternalApiUtil {
 			connection.setRequestProperty("Content-Type", "application/json");
 			connection.setDoOutput(true);
 			
-			logger.info("EXTERNAL API: Connection configured, formatting student ID...");
-			
-			// Format student_id with leading zeros (3 digits: 001, 002, etc.)
-			String formattedStudentId = formatStudentId(userId);
-			logger.info("EXTERNAL API: Student ID formatted - Original: " + userId + ", Formatted: " + formattedStudentId);
-			
-			// Determine meal type based on current time in Nairobi
-			String mealType = getMealType();
-			java.util.Calendar cal = getNairobiTime();
-			int hour = cal.get(java.util.Calendar.HOUR_OF_DAY);
-			int minute = cal.get(java.util.Calendar.MINUTE);
-			logger.info("EXTERNAL API: Current time (Nairobi/EAT): " + String.format("%02d:%02d", hour, minute) + " - Meal type determined: " + mealType);
-			
-			// Build JSON request body (matching exact curl format)
-			String jsonBody = "{\"student_id\": \"" + formattedStudentId + "\", \"meal_type\": \"" + mealType + "\", \"camera_sn\": \"" + (deviceSn != null ? deviceSn : "") + "\"}";
+			// Build JSON request body for the new API:
+			// {"device_serial":"AZK-001","identity_number":"ID100001","name":"Alice Mwangi"}
+			String jsonBody = "{\"device_serial\":\"" + (deviceSn != null ? deviceSn : "") + "\",\"identity_number\":\"" + userId + "\",\"name\":\"" + (userName != null ? userName : "") + "\"}";
 			logger.info("EXTERNAL API: Request body: " + jsonBody);
 			
 			// Write request body
@@ -305,10 +293,10 @@ public class ExternalApiUtil {
 			ApiVerificationReport report = new ApiVerificationReport();
 			report.setUserPin(userId);
 			report.setUserName(userName != null ? userName : "");
-			report.setStudentId(formattedStudentId);
+			report.setStudentId(userId); // Store raw userId in studentId field for now
 			report.setVerificationTime(verificationTime != null ? convertToNairobiTime(verificationTime) : "");
 			report.setApiCallTime(getNairobiDate());
-			report.setMealType(mealType);
+			report.setMealType("N/A"); // Meal type no longer used by new API
 			report.setApiUrl(EXTERNAL_API_URL);
 			report.setDeviceSn(deviceSn);
 			
@@ -320,7 +308,7 @@ public class ExternalApiUtil {
 				logger.info("═══════════════════════════════════════════════════════════");
 				logger.info("✅ EXTERNAL API CALL SUCCESSFUL");
 				logger.info("═══════════════════════════════════════════════════════════");
-				logger.info("EXTERNAL API: Student ID: " + formattedStudentId + " (original: " + userId + ")");
+				logger.info("EXTERNAL API: User ID: " + userId);
 				logger.info("EXTERNAL API: HTTP Status Code: " + responseCode);
 				logger.info("EXTERNAL API: API Response Success: true");
 				logger.info("EXTERNAL API: Response Body: " + responseBody);
@@ -333,7 +321,7 @@ public class ExternalApiUtil {
 				logger.warn("═══════════════════════════════════════════════════════════");
 				logger.warn("⚠️  EXTERNAL API CALL FAILED OR RETURNED ERROR");
 				logger.warn("═══════════════════════════════════════════════════════════");
-				logger.warn("EXTERNAL API: Student ID: " + formattedStudentId + " (original: " + userId + ")");
+				logger.warn("EXTERNAL API: User ID: " + userId);
 				logger.warn("EXTERNAL API: HTTP Status Code: " + responseCode + (httpSuccess ? " (OK)" : " (ERROR)"));
 				logger.warn("EXTERNAL API: API Response Success: " + apiSuccess);
 				if (reason != null && !reason.isEmpty()) {
