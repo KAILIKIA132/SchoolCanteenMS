@@ -336,6 +336,35 @@ public class UserInfoManager {
 	}
 
 	/**
+	 * Reassign selected users (and their biometrics) to a destination device SN
+	 * in the server database. Required after a device-to-device transfer so the
+	 * user list, filters, and subsequent "Send User to Device" target the new device.
+	 *
+	 * @param userIds user primary keys
+	 * @param destSn destination device serial number
+	 * @return number of users reassigned, or -1 on failure
+	 */
+	public int reassignUsersToDevice(String[] userIds, String destSn) {
+		if (userIds == null || userIds.length == 0
+				|| destSn == null || destSn.isEmpty()) {
+			return -1;
+		}
+		UserInfoDao dao = new UserInfoDao();
+		try {
+			int n = dao.reassignDeviceSn(userIds, destSn);
+			dao.commit();
+			logger.info("reassignUsersToDevice: reassigned " + n + " user(s) to " + destSn);
+			return n;
+		} catch (DaoException e) {
+			logger.error("reassignUsersToDevice failed destSn=" + destSn, e);
+			dao.rollback();
+			return -1;
+		} finally {
+			dao.close();
+		}
+	}
+
+	/**
 	 * Delete a specific user palm template from server
 	 * 
 	 * @param userIds

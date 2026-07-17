@@ -284,9 +284,8 @@
 										<label class="form-label">
 											<s:text name="table.header.user.card" />:
 										</label>
-										<input type="text" id="userCard" value="${userInfo.mainCard }"
-											class="form-control" readonly="readonly" disabled="disabled"
-											style="background:#e9ecef" onfocus=this.blur() />
+										<input type="text" id="userCard" name="userCard" value="${userInfo.mainCard }"
+											class="form-control" />
 									</div>
 
 									<div class="form-actions">

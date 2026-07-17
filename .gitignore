@@ -1,0 +1,90 @@
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+.vscode/
+*.swp
+*~
+
+# Office lock / temp files
+~$*
+doc/~$*
+
+# Build outputs & packaged artifacts
+*.war
+*.zip
+build/
+temp_extract/
+out/
+target/
+sources.txt
+
+# Compiled class files outside WebContent deploy tree
+*.class
+!WebContent/WEB-INF/classes/**
+
+# Logs
+*.log
+*.log.*
+logs/
+WebContent/logs/
+WebContent/push-demo.log*
+tomcat_full.log
+compile.log
+compile_output.log
+
+# Local dumps / scratch data
+local_backup.sql
+learners.csv
+device_list_output.html
+seed_data.sql
+
+# ---------------------------------------------------------------------------
+# DESTRUCTIVE DB scripts — NEVER commit (wipe/recreate production data)
+# ---------------------------------------------------------------------------
+# Full schema wipe (DROP TABLE / DROP DATABASE)
+**/pushdemo.sql
+docker/mysql/init/
+docker/mysql/init/**
+**/02-pushdemo-schema.sql
+**/01-init.sql
+
+# Scripts that drop/truncate/import full schema on live installs
+setup-migration.bat
+clear-database.bat
+create-database-tables.bat
+import-database-schema.bat
+import-database.sh
+deploy_preinstalled_env.ps1
+deploy_preinstalled_env_fixed.ps1
+deploy_preinstalled_env*.ps1
+update_existing_install.ps1
+**/update_existing_install.ps1
+sql/force_reset_user.sql
+**/force_reset_user.sql
+
+# Any ad-hoc wipe/restore dumps
+*backup*.sql
+*_backup.sql
+*_wipe*.sql
+*_drop*.sql
+
+# Stray root compile / test artifacts
+HashTest.class
+HashTest.java
+servlet-api.jar
+/com/
+
+# Backup files
+*.bak
+*.orig
+*.tmp
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local env / secrets (keep templates)
+.env
+*.local.json

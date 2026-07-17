@@ -375,25 +375,28 @@ public class DeviceCommandManager {
 		DeviceCommandDao commandDao = new DeviceCommandDao();
 		List<UserInfo> userList = null;
 		List<PersonBioTemplate> bioTemplates = null;
-		DeviceInfo deviceInfo = null;
-		boolean isSupportFP = false;
-		boolean isSupportFace = false;
-		boolean isSupportUserPic = false;
-		boolean isSupportBioPhoto = false;
-		//boolean isSupportPalm=false;
-		logger.info("begin make cond");
-		/**get the device information from buffer*/
-		if (PushUtil.devMaps.containsKey(destSn)) {
-			deviceInfo = PushUtil.devMaps.get(destSn);
-			if (null == deviceInfo) {
-				return -1;
-			}
+		DeviceInfo deviceInfo = resolveDeviceInfo(destSn);
+		boolean isSupportFP = true;
+		boolean isSupportFace = true;
+		boolean isSupportUserPic = true;
+		boolean isSupportBioPhoto = true;
+		boolean isSupportBioData = true;
+		logger.info("begin make cond src=" + srcSn + " dest=" + destSn);
+		if (deviceInfo != null && deviceInfo.getDevFuns() != null
+				&& !deviceInfo.getDevFuns().isEmpty()) {
 			/**see what functions the device can support*/
 			isSupportFP = PushUtil.isDevFun(deviceInfo.getDevFuns(), DEV_FUNS.FP);
 			isSupportFace = PushUtil.isDevFun(deviceInfo.getDevFuns(), DEV_FUNS.FACE);
-			//isSupportPalm = PushUtil.isDevFun(deviceInfo.getDevFuns(), DEV_FUNS.PLAM);
 			isSupportUserPic = PushUtil.isDevFun(deviceInfo.getDevFuns(), DEV_FUNS.USERPIC);
 			isSupportBioPhoto = PushUtil.isDevFun(deviceInfo.getDevFuns(), DEV_FUNS.BIOPHOTO);
+			isSupportBioData = PushUtil.isDevFun(deviceInfo.getDevFuns(), DEV_FUNS.BIODATA);
+			// If device only reports BIODATA (common face devices), still send templates
+			if (!isSupportFP && !isSupportFace && !isSupportBioData) {
+				isSupportBioData = true;
+			}
+		} else {
+			logger.warn("createUpdateUserInfosCommandBySn: dest device " + destSn
+					+ " capabilities unknown; queueing all command types");
 		}
 		logger.info("end make cond and get user list");
 		try {
@@ -402,16 +405,19 @@ public class DeviceCommandManager {
 			sb.append(" and device_sn='").append(srcSn).append("' ");
 			userList = userInfoDao.fatchList(sb.toString());
 			logger.info("end get user list and get tmp list");
-			if (null == userList) {
+			if (null == userList || userList.isEmpty()) {
+				logger.warn("createUpdateUserInfosCommandBySn: no users for source sn=" + srcSn);
 				return -1;
 			}
 			
-			/**get the biometrics template from source device database*/
-			if (isSupportFP || isSupportFace) {
-				bioTemplates = templateDao.fatchList(sb.toString());
+			/** Always load biometrics for transfer; filter by capability when building cmds */
+			bioTemplates = templateDao.fatchList(sb.toString());
+			if (bioTemplates == null) {
+				bioTemplates = new ArrayList<PersonBioTemplate>();
 			}
 			
-			logger.info("end get tmp list and make user cmd");
+			logger.info("end get tmp list and make user cmd users=" + userList.size()
+					+ " bios=" + bioTemplates.size());
 			for (UserInfo userInfo : userList) {
 				/**create update user information command*/
 				 commandDao.add(DevCmdUtil.getUpdateUserCommand(userInfo, destSn));
@@ -430,15 +436,18 @@ public class DeviceCommandManager {
 			}
 			logger.info("end make user cmd and make bio tmp cmd");
 			
-			if(bioTemplates != null) { // to resolve the NullPointer exception
-				for (PersonBioTemplate personTemplate : bioTemplates) {
-					if (isSupportFP && Constants.BIO_TYPE_FP == personTemplate.getBioType()) {
-						/**create update user fingerprint template command*/
-						commandDao.add(DevCmdUtil.getUpdateFPCommand(personTemplate, destSn));
-					} else if (isSupportFace && Constants.BIO_TYPE_FACE == personTemplate.getBioType()) {
-						/**create update user face template command*/
-						commandDao.add(DevCmdUtil.getUpdateFaceCommand(personTemplate, destSn));
-					}
+			for (PersonBioTemplate personTemplate : bioTemplates) {
+				if (isSupportFP && Constants.BIO_TYPE_FP == personTemplate.getBioType()) {
+					/**create update user fingerprint template command*/
+					commandDao.add(DevCmdUtil.getUpdateFPCommand(personTemplate, destSn));
+				} else if (isSupportFace && Constants.BIO_TYPE_FACE == personTemplate.getBioType()) {
+					/**create update user face template command*/
+					commandDao.add(DevCmdUtil.getUpdateFaceCommand(personTemplate, destSn));
+				} else if (isSupportBioData
+						|| Constants.BIO_TYPE_FACE == personTemplate.getBioType()
+						|| !isSupportFP) {
+					/** Face / palm / other biometrics via BIODATA protocol */
+					commandDao.add(DevCmdUtil.getUpdateBiodataCommand(personTemplate, destSn));
 				}
 			}
 			
@@ -446,12 +455,42 @@ public class DeviceCommandManager {
 			commandDao.commit();
 			logger.info("end commit");
 		} catch (Exception e) {
-			e.printStackTrace();
+			logger.error("createUpdateUserInfosCommandBySn failed src=" + srcSn + " dest=" + destSn, e);
 			commandDao.rollback();
+			return -1;
 		} finally {
 			commandDao.close();
+			userInfoDao.close();
+			templateDao.close();
 		}
 		return 0;
+	}
+
+	/**
+	 * Resolve device info from in-memory cache, falling back to DB.
+	 * Puts DB result into cache when found so later lookups succeed.
+	 */
+	private DeviceInfo resolveDeviceInfo(String deviceSn) {
+		if (deviceSn == null || deviceSn.isEmpty()) {
+			return null;
+		}
+		DeviceInfo deviceInfo = PushUtil.devMaps.get(deviceSn);
+		if (deviceInfo != null) {
+			return deviceInfo;
+		}
+		DeviceInfoDao dao = new DeviceInfoDao();
+		try {
+			deviceInfo = dao.fatchDeviceInfoBySn(deviceSn);
+			if (deviceInfo != null) {
+				PushUtil.devMaps.put(deviceSn, deviceInfo);
+				logger.info("resolveDeviceInfo: loaded device " + deviceSn + " from DB into cache");
+			}
+		} catch (Exception e) {
+			logger.warn("resolveDeviceInfo: failed for sn=" + deviceSn + " : " + e.getMessage());
+		} finally {
+			dao.close();
+		}
+		return deviceInfo;
 	}
 	
 	
@@ -465,6 +504,9 @@ public class DeviceCommandManager {
 	 * @return
 	 */
 	public int createUpdateUserInfosCommandByIds(String[] userIds, String deviceSn) {
+		if (userIds == null || userIds.length == 0) {
+			return -1;
+		}
 		UserInfoDao userInfoDao = new UserInfoDao();
 		PersonBioTemplateDao bioTemplateDao = new PersonBioTemplateDao();
 		DeviceCommandDao commandDao = new DeviceCommandDao();
@@ -472,50 +514,69 @@ public class DeviceCommandManager {
 		List<PersonBioTemplate> bioTemplates = null;
 		DeviceInfo deviceInfo = null;
 		boolean haveDestSn = false;
-		boolean isSupportFP = false;
-		boolean isSupportFace = false;
-		boolean isSupportUserPic = false;
-		boolean isSupportBioPhoto = false;
-		boolean isSupportBioData = false;
-		/**get the target device information from buffer*/
-		//System.out.println(PushUtil.devMaps.containsKey(deviceSn));
+		// Default optimistic: queue all types when capabilities unknown
+		boolean isSupportFP = true;
+		boolean isSupportFace = true;
+		boolean isSupportUserPic = true;
+		boolean isSupportBioPhoto = true;
+		boolean isSupportBioData = true;
+		/**get the target device information from cache, then DB*/
 		if (null != deviceSn && !deviceSn.isEmpty()) {
-			deviceInfo = PushUtil.devMaps.get(deviceSn);
-			if (null == deviceInfo) {
-				return -1;
-			}
 			haveDestSn = true;
-			/**see what function the device is support*/
-			isSupportFP = PushUtil.isDevFun(deviceInfo.getDevFuns(), DEV_FUNS.FP);
-			isSupportFace = PushUtil.isDevFun(deviceInfo.getDevFuns(), DEV_FUNS.FACE);
-			isSupportUserPic = PushUtil.isDevFun(deviceInfo.getDevFuns(), DEV_FUNS.USERPIC);
-			isSupportBioPhoto = PushUtil.isDevFun(deviceInfo.getDevFuns(), DEV_FUNS.BIOPHOTO);
-			isSupportBioData = PushUtil.isDevFun(deviceInfo.getDevFuns(), DEV_FUNS.BIODATA);
-			//System.out.println("isSupportFace"+deviceInfo.getDevFuns());
+			deviceInfo = resolveDeviceInfo(deviceSn);
+			if (deviceInfo != null && deviceInfo.getDevFuns() != null
+					&& !deviceInfo.getDevFuns().isEmpty()) {
+				isSupportFP = PushUtil.isDevFun(deviceInfo.getDevFuns(), DEV_FUNS.FP);
+				isSupportFace = PushUtil.isDevFun(deviceInfo.getDevFuns(), DEV_FUNS.FACE);
+				isSupportUserPic = PushUtil.isDevFun(deviceInfo.getDevFuns(), DEV_FUNS.USERPIC);
+				isSupportBioPhoto = PushUtil.isDevFun(deviceInfo.getDevFuns(), DEV_FUNS.BIOPHOTO);
+				isSupportBioData = PushUtil.isDevFun(deviceInfo.getDevFuns(), DEV_FUNS.BIODATA);
+				// Face-only BIODATA devices often omit FACE bit — still send bio templates
+				if (!isSupportFP && !isSupportFace && !isSupportBioData) {
+					isSupportBioData = true;
+				}
+			} else {
+				logger.warn("createUpdateUserInfosCommandByIds: device " + deviceSn
+						+ " not in cache/DB or missing dev_funs; queueing all command types");
+			}
 		}
-		//System.out.println("isSupportFace "+isSupportFace);
 		try {
 			StringBuilder sb = new StringBuilder();
 			/**combine the condition*/
 			sb.append(" and user_id in(");
 			for (String userId : userIds) {
-				sb.append(userId);
+				if (userId == null || userId.trim().isEmpty()) {
+					continue;
+				}
+				sb.append(userId.trim());
 				sb.append(",");
+			}
+			if (sb.charAt(sb.length() - 1) != ',') {
+				logger.warn("createUpdateUserInfosCommandByIds: no valid user ids");
+				return -1;
 			}
 			sb.deleteCharAt(sb.length() - 1);
 			sb.append(")");
 			/**get the user basic information by condition*/
 			userInfos = userInfoDao.fatchList(sb.toString());
 
-			if (null == userInfos) {
+			if (null == userInfos || userInfos.isEmpty()) {
+				logger.warn("createUpdateUserInfosCommandByIds: no users found for ids");
 				return -1;
 			}
 
-			/**get the biometrics template list from database*/
-			if (!haveDestSn || (haveDestSn && (isSupportFP || isSupportFace))) {
-				bioTemplates = bioTemplateDao.fatchList(sb.toString());
-				//System.out.println(isSupportFace);
+			/**
+			 * Always load biometrics. Previous code only loaded when FP/FACE flags
+			 * were set, which skipped BIODATA-only face devices and then NPEd on
+			 * a null list — transfer never committed.
+			 */
+			bioTemplates = bioTemplateDao.fatchList(sb.toString());
+			if (bioTemplates == null) {
+				bioTemplates = new ArrayList<PersonBioTemplate>();
 			}
+
+			logger.info("createUpdateUserInfosCommandByIds: users=" + userInfos.size()
+					+ " bios=" + bioTemplates.size() + " destSn=" + deviceSn);
 
 			for (UserInfo userInfo : userInfos) {
 				/**create update user information command*/
@@ -527,14 +588,14 @@ public class DeviceCommandManager {
 						commandDao.add(DevCmdUtil.getUpdateUserPicCommand(userInfo, deviceSn));
 					}
 					/**create update user bio photo command*/
-					if ( null != userInfo.getPhotoIdName()
+					if (isSupportBioPhoto && null != userInfo.getPhotoIdName()
 							&& !userInfo.getPhotoIdName().isEmpty()) {
 						commandDao.add(DevCmdUtil.getUpdateBioPhotoCommand(userInfo, deviceSn));
 					}
 				} else {
 					/**if target device is not specify, need to check if user photo function is support in this device where the user belonging*/
 					String tempSn = userInfo.getDeviceSn();
-					DeviceInfo tempDev = PushUtil.devMaps.get(tempSn);
+					DeviceInfo tempDev = resolveDeviceInfo(tempSn);
 					if (null != tempDev
 							&& PushUtil.isDevFun(tempDev.getDevFuns(), DEV_FUNS.USERPIC)
 							&& null != userInfo.getPhotoIdName()
@@ -557,6 +618,13 @@ public class DeviceCommandManager {
 						/**create update user biodata command*/
 						commandDao.add(DevCmdUtil.getUpdateBioDataCommand(userInfo, deviceSn));
 					}
+					// Offline / unknown home device: still push photo when present
+					if (null == tempDev
+							&& null != userInfo.getPhotoIdName()
+							&& !userInfo.getPhotoIdName().isEmpty()) {
+						commandDao.add(DevCmdUtil.getUpdateUserPicCommand(userInfo, deviceSn));
+						commandDao.add(DevCmdUtil.getUpdateBioPhotoCommand(userInfo, deviceSn));
+					}
 				}
 			}
 
@@ -565,28 +633,25 @@ public class DeviceCommandManager {
 					if (isSupportFP && Constants.BIO_TYPE_FP == personTemplate.getBioType()) {
 						/**create update fingerprint template command*/
 						commandDao.add(DevCmdUtil.getUpdateFPCommand(personTemplate, deviceSn));
-					} 
-					/*else if (isSupportFace && Constants.BIO_TYPE_FACE == personTemplate.getBioType()) {
-						*//**create update face template command*//*
+					} else if (isSupportFace && Constants.BIO_TYPE_FACE == personTemplate.getBioType()) {
 						commandDao.add(DevCmdUtil.getUpdateFaceCommand(personTemplate, deviceSn));
-					}
-					else if (isSupportFace && Constants.BIO_TYPE_VF == personTemplate.getBioType()) {
-						*//**create update face template command*//*
-						commandDao.add(DevCmdUtil.getUpdateFaceCommand(personTemplate, deviceSn));
-					}*/
-					else if (isSupportBioData ) {
-						/**create update face template command*/
-						commandDao.add(DevCmdUtil.getUpdateBiodataCommand(personTemplate, deviceSn));
-					}
-					else {
-						/**create update face template command*/
+					} else if (isSupportBioData
+							|| Constants.BIO_TYPE_FACE == personTemplate.getBioType()
+							|| Constants.BIO_TYPE_FP != personTemplate.getBioType()) {
+						/** Face/palm/other via BIODATA; also fallback when flags incomplete */
 						commandDao.add(DevCmdUtil.getUpdateBiodataCommand(personTemplate, deviceSn));
 					}
 				} else {
 					/**if target device is not specify, need to check the device where user belonging*/
 					String tempSn = personTemplate.getDeviceSn();
-					DeviceInfo tempDev = PushUtil.devMaps.get(tempSn);
+					DeviceInfo tempDev = resolveDeviceInfo(tempSn);
 					if (null == tempDev) {
+						// Unknown home device: still queue biodata/FP so sendUserDev works offline
+						if (Constants.BIO_TYPE_FP == personTemplate.getBioType()) {
+							commandDao.add(DevCmdUtil.getUpdateFPCommand(personTemplate, deviceSn));
+						} else {
+							commandDao.add(DevCmdUtil.getUpdateBiodataCommand(personTemplate, deviceSn));
+						}
 						continue;
 					}
 					if (PushUtil.isDevFun(tempDev.getDevFuns(), DEV_FUNS.FP)
@@ -597,20 +662,25 @@ public class DeviceCommandManager {
 							&& Constants.BIO_TYPE_FACE == personTemplate.getBioType()) {
 						/**create update face template command*/
 						commandDao.add(DevCmdUtil.getUpdateFaceCommand(personTemplate, deviceSn));
-					}
-					  else if (PushUtil.isDevFun(tempDev.getDevFuns(), DEV_FUNS.BIODATA)) {
+					} else if (PushUtil.isDevFun(tempDev.getDevFuns(), DEV_FUNS.BIODATA)
+							|| Constants.BIO_TYPE_FACE == personTemplate.getBioType()
+							|| Constants.BIO_TYPE_FP != personTemplate.getBioType()) {
 						/**create update face template command*/
 						commandDao.add(DevCmdUtil.getUpdateBiodataCommand(personTemplate, deviceSn));
 					}
-				} 
 				}
-			
+			}
 
 			commandDao.commit();
-		} catch (DaoException e) {
+			logger.info("createUpdateUserInfosCommandByIds: committed commands for destSn=" + deviceSn);
+		} catch (Exception e) {
+			logger.error("createUpdateUserInfosCommandByIds failed destSn=" + deviceSn, e);
 			commandDao.rollback();
+			return -1;
 		} finally {
 			commandDao.close();
+			userInfoDao.close();
+			bioTemplateDao.close();
 		}
 		return 0;
 	}

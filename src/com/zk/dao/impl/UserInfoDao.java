@@ -316,6 +316,66 @@ public class UserInfoDao extends BaseDao implements IBaseDao<UserInfo> {
 	 * User basic info
 	 * @throws DaoException
 	 */	
+	/**
+	 * Reassign users to a destination device by primary key.
+	 * Handles pin conflicts on dest by removing the existing dest row first.
+	 * @param userIds comma-safe list of user_id values
+	 * @param destSn destination device serial number
+	 * @return number of users reassigned
+	 */
+	public int reassignDeviceSn(String[] userIds, String destSn) throws DaoException {
+		if (userIds == null || userIds.length == 0 || destSn == null || destSn.isEmpty()) {
+			return 0;
+		}
+		int count = 0;
+		try {
+			for (String idStr : userIds) {
+				if (idStr == null || idStr.trim().isEmpty()) {
+					continue;
+				}
+				int userId = Integer.parseInt(idStr.trim());
+				UserInfo user = fatch(userId);
+				if (user == null) {
+					continue;
+				}
+				String oldSn = user.getDeviceSn();
+				if (destSn.equals(oldSn)) {
+					count++;
+					continue;
+				}
+				// Conflict: same pin already exists on destination as a different row
+				UserInfo existing = fatch(user.getUserPin(), destSn);
+				if (existing != null && existing.getUserId() != user.getUserId()) {
+					// Drop conflicting dest user so transfer can own the pin on dest
+					Statement delSt = getConnection().createStatement();
+					delSt.executeUpdate("delete from pers_bio_template where user_id=" + existing.getUserId());
+					delSt.executeUpdate("delete from user_info where user_id=" + existing.getUserId());
+					delSt.close();
+					logger.info("reassignDeviceSn: removed conflicting pin=" + user.getUserPin()
+							+ " on dest=" + destSn + " oldUserId=" + existing.getUserId());
+				}
+				PreparedStatement pst = getConnection().prepareStatement(
+						"update user_info set device_sn=? where user_id=?");
+				pst.setString(1, destSn);
+				pst.setInt(2, userId);
+				pst.executeUpdate();
+				pst.close();
+
+				PreparedStatement bioPst = getConnection().prepareStatement(
+						"update pers_bio_template set device_sn=? where user_id=?");
+				bioPst.setString(1, destSn);
+				bioPst.setInt(2, userId);
+				bioPst.executeUpdate();
+				bioPst.close();
+				count++;
+			}
+		} catch (Exception e) {
+			logger.error("reassignDeviceSn failed destSn=" + destSn, e);
+			throw new DaoException(e);
+		}
+		return count;
+	}
+
 	public void update(UserInfo entity) throws DaoException {
 		String sql = "update user_info set user_pin=?, privilege=?, name=?, "
 				+ "password=?, face_group_id=?, acc_group_id=?, dept_id=?, "

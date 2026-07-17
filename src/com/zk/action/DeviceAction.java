@@ -566,8 +566,13 @@ public class DeviceAction implements ServletRequestAware,ServletResponseAware{
 	}
 	
 	/**
-	 * According to the list of device serial numbers from pages,transfer data of source device in the data server to specified new device.
+	 * According to the list of device serial numbers from pages, transfer data of
+	 * source device(s) in the data server to specified new device(s).
 	 * Corresponding to the "DATA UPDATE" command.
+	 * <p>
+	 * Note: previously multi-source SNs were passed as a single string
+	 * ({@code device_sn='A,B'}), which matched nothing. Each source is handled
+	 * separately. Single-destination transfers also reassign server-side ownership.
 	 * @return
 	 */
 	public String toNewDevice() {
@@ -575,20 +580,63 @@ public class DeviceAction implements ServletRequestAware,ServletResponseAware{
 		final String sn = request.getParameter("sn");
 		final String destSn = request.getParameter("destSn");
 		if (null == sn || "".equals(sn) || null == destSn || "".equals(destSn)) {
+			logger.warn("toNewDevice: missing sn or destSn");
 			return deviceList;
 		}
-		String[] sns = destSn.split(",");
-		for (final String deviceSn : sns) {
-			new Thread(new Runnable() {
-				public void run() {
-					logger.info("begin make cmd:" + deviceSn);
-					ManagerFactory.getCommandManager().createUpdateUserInfosCommandBySn(sn, deviceSn);
-					logger.info("end make cmd:" + deviceSn);
-				}
-			}).start();
+		final String[] sourceSns = sn.split(",");
+		final String[] destSns = destSn.split(",");
+		final java.util.List<String> sources = new java.util.ArrayList<String>();
+		final java.util.List<String> targets = new java.util.ArrayList<String>();
+		for (String s : sourceSns) {
+			if (s != null && !s.trim().isEmpty() && !sources.contains(s.trim())) {
+				sources.add(s.trim());
+			}
 		}
-		
-		
+		for (String s : destSns) {
+			if (s != null && !s.trim().isEmpty() && !targets.contains(s.trim())) {
+				targets.add(s.trim());
+			}
+		}
+		if (sources.isEmpty() || targets.isEmpty()) {
+			logger.warn("toNewDevice: empty source/dest after parse");
+			return deviceList;
+		}
+		logger.info("toNewDevice: sources=" + sources + " targets=" + targets);
+		new Thread(new Runnable() {
+			public void run() {
+				try {
+					for (String src : sources) {
+						for (String dest : targets) {
+							if (src.equals(dest)) {
+								continue;
+							}
+							logger.info("toNewDevice: copying users " + src + " -> " + dest);
+							int rc = ManagerFactory.getCommandManager()
+								.createUpdateUserInfosCommandBySn(src, dest);
+							logger.info("toNewDevice: queued " + src + " -> " + dest + " rc=" + rc);
+
+							// Single dest = transfer: reassign all source users to dest in DB
+							if (targets.size() == 1 && rc == 0) {
+								java.util.List<com.zk.pushsdk.po.UserInfo> users =
+									ManagerFactory.getUserInfoManager().fatchAllUser(src);
+								if (users != null && !users.isEmpty()) {
+									String[] ids = new String[users.size()];
+									for (int i = 0; i < users.size(); i++) {
+										ids[i] = String.valueOf(users.get(i).getUserId());
+									}
+									int n = ManagerFactory.getUserInfoManager()
+										.reassignUsersToDevice(ids, dest);
+									logger.info("toNewDevice: reassigned " + n
+											+ " user(s) from " + src + " to " + dest);
+								}
+							}
+						}
+					}
+				} catch (Exception e) {
+					logger.error("toNewDevice: transfer failed", e);
+				}
+			}
+		}).start();
 		return deviceList;
 	}
 	

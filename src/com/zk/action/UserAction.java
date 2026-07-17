@@ -209,40 +209,144 @@ public class UserAction implements ServletRequestAware,ServletResponseAware{
 		if (null == userIdStr || "".equals(userIdStr)) {
 			return "";
 		}
-		
+
 		new Thread(new Runnable() {
 			public void run() {
 				String[] ids = userIdStr.split(",");
 				ManagerFactory.getCommandManager().createUpdateUserInfosCommandByIds(ids, null);
 			}
 		}).start();
-		
+
+		return "userList";
+	}
+
+	/**
+	 * Push the selected users to EVERY connected device.
+	 * For each device currently in PushUtil.devMaps, queues a DATA UPDATE USERINFO
+	 * (plus photo / biophoto / biodata commands when the device supports them).
+	 * @return userList result
+	 */
+	public String sendUserAllDev() {
+		final String userIdStr = request.getParameter("userId");
+		if (null == userIdStr || "".equals(userIdStr)) {
+			return "";
+		}
+		new Thread(new Runnable() {
+			public void run() {
+				String[] ids = userIdStr.split(",");
+				java.util.Set<String> deviceSns = PushUtil.devMaps.keySet();
+				if (deviceSns == null || deviceSns.isEmpty()) {
+					logger.warn("sendUserAllDev: no connected devices found");
+					return;
+				}
+				logger.info("sendUserAllDev: pushing " + ids.length + " user(s) to " + deviceSns.size() + " device(s)");
+				for (String sn : deviceSns) {
+					try {
+						ManagerFactory.getCommandManager().createUpdateUserInfosCommandByIds(ids, sn);
+					} catch (Exception e) {
+						logger.error("sendUserAllDev: failed for device " + sn, e);
+					}
+				}
+			}
+		}).start();
 		return "userList";
 	}
 	
 	/**
-	 * Transmitting user data(user basic information/fingerprint/face/User photo) to the specified device,Corresponding to the "DATA UPDATE" command.
+	 * Transfer user data (basic info / fingerprint / face / photo) to the specified
+	 * device(s). Queues DATA UPDATE commands for the destination, reassigns server-side
+	 * device_sn when moving to a single destination, and removes the user from the
+	 * original device so the transfer is complete end-to-end.
 	 * @return
 	 */
 	public String toNewDevice() {
 		final String destSn = request.getParameter("destSn");
 		final String userIdStr = request.getParameter("userId");
 		if (null == userIdStr || "".equals(userIdStr) || null == destSn || "".equals(destSn)) {
-			return "";
+			logger.warn("toNewDevice: missing userId or destSn");
+			return "redirectToUserList";
 		}
-		
-		String[] destSns = destSn.split(",");
-		System.out.println("SN "+destSn);
-		for (final String deviceSn : destSns) {
-			new Thread(new Runnable() {
-				public void run() {
-					String[] ids = userIdStr.split(",");
-					ManagerFactory.getCommandManager().createUpdateUserInfosCommandByIds(ids, deviceSn);
+
+		final String[] ids = userIdStr.split(",");
+		final String[] destSns = destSn.split(",");
+		// Collect unique non-empty destination SNs
+		final java.util.List<String> targets = new java.util.ArrayList<String>();
+		for (String sn : destSns) {
+			if (sn != null && !sn.trim().isEmpty() && !targets.contains(sn.trim())) {
+				targets.add(sn.trim());
+			}
+		}
+		if (targets.isEmpty()) {
+			logger.warn("toNewDevice: no valid destSn after parse");
+			return "redirectToUserList";
+		}
+
+		// Capture original device associations for source cleanup (single-dest move)
+		final java.util.Map<String, String> userOriginalSn = new java.util.HashMap<String, String>();
+		for (String idStr : ids) {
+			if (idStr == null || idStr.trim().isEmpty()) continue;
+			try {
+				UserInfo u = ManagerFactory.getUserInfoManager()
+					.getUserInfoById(Integer.parseInt(idStr.trim()));
+				if (u != null && u.getDeviceSn() != null) {
+					userOriginalSn.put(idStr.trim(), u.getDeviceSn());
 				}
-			}).start();	
+			} catch (Exception e) {
+				logger.warn("toNewDevice: could not load user " + idStr + ": " + e.getMessage());
+			}
 		}
-		
-		return "";
+
+		logger.info("toNewDevice: transferring users [" + userIdStr + "] to devices " + targets);
+		new Thread(new Runnable() {
+			public void run() {
+				try {
+					// 1) Queue full user+bio push to every destination
+					for (String deviceSn : targets) {
+						int rc = ManagerFactory.getCommandManager()
+							.createUpdateUserInfosCommandByIds(ids, deviceSn);
+						logger.info("toNewDevice: queued dest=" + deviceSn + " rc=" + rc);
+					}
+
+					// 2) Single destination = true transfer: reassign server ownership
+					//    and delete from the original device(s). Multi-dest = copy only.
+					if (targets.size() == 1) {
+						String newSn = targets.get(0);
+						int reassigned = ManagerFactory.getUserInfoManager()
+							.reassignUsersToDevice(ids, newSn);
+						logger.info("toNewDevice: reassigned " + reassigned
+								+ " user(s) in DB to " + newSn);
+
+						// Remove from original devices (skip if same as dest)
+						java.util.Set<String> sourceSns = new java.util.HashSet<String>(
+								userOriginalSn.values());
+						for (String srcSn : sourceSns) {
+							if (srcSn == null || srcSn.isEmpty() || srcSn.equals(newSn)) {
+								continue;
+							}
+							// Only delete users whose original device was this src
+							java.util.List<String> idsOnSrc = new java.util.ArrayList<String>();
+							for (java.util.Map.Entry<String, String> e : userOriginalSn.entrySet()) {
+								if (srcSn.equals(e.getValue())) {
+									idsOnSrc.add(e.getKey());
+								}
+							}
+							if (!idsOnSrc.isEmpty()) {
+								int drc = ManagerFactory.getCommandManager()
+									.createDeleteUserCommandByIds(
+										idsOnSrc.toArray(new String[idsOnSrc.size()]), srcSn);
+								logger.info("toNewDevice: queued delete on source="
+										+ srcSn + " users=" + idsOnSrc.size() + " rc=" + drc);
+							}
+						}
+					} else {
+						logger.info("toNewDevice: multi-dest copy; keeping original device_sn");
+					}
+				} catch (Exception e) {
+					logger.error("toNewDevice: transfer failed", e);
+				}
+			}
+		}).start();
+		return "redirectToUserList";
 	}
 	
 	/**
@@ -419,6 +523,29 @@ public class UserAction implements ServletRequestAware,ServletResponseAware{
 			List<UserInfo> list = new ArrayList<UserInfo>();
 			list.add(info);
 			ManagerFactory.getUserInfoManager().createUserInfo(list);
+			// Auto-sync new user to every connected device
+			final String syncPin = userPin;
+			new Thread(new Runnable() {
+				public void run() {
+					try {
+						UserInfo saved = ManagerFactory.getUserInfoManager()
+							.getUserInfoByPinAndSn(syncPin, info.getDeviceSn());
+						if (saved == null) return;
+						String[] ids = new String[]{ String.valueOf(saved.getUserId()) };
+						java.util.Set<String> sns = PushUtil.devMaps.keySet();
+						if (sns == null || sns.isEmpty()) {
+							ManagerFactory.getCommandManager().createUpdateUserInfosCommandByIds(ids, null);
+							return;
+						}
+						for (String sn : sns) {
+							ManagerFactory.getCommandManager().createUpdateUserInfosCommandByIds(ids, sn);
+						}
+						logger.info("Auto-sync: queued new user " + syncPin + " to " + sns.size() + " device(s)");
+					} catch (Exception e) {
+						logger.error("Auto-sync failed for pin=" + syncPin, e);
+					}
+				}
+			}).start();
 			return "redirectToUserList";
 		} else if ("edit".equals(act)){
 			if (null == userName || userName.isEmpty()
@@ -427,14 +554,42 @@ public class UserAction implements ServletRequestAware,ServletResponseAware{
 			}
 			try{
 				int id = Integer.valueOf(userId);
-				UserInfo info = ManagerFactory.getUserInfoManager().getUserInfoById(id);
+				final UserInfo info = ManagerFactory.getUserInfoManager().getUserInfoById(id);
 				info.setName(userName);
 				info.setPrivilege(Integer.parseInt(privilege));
 				info.setCategory(Integer.parseInt(category));
+				// Card number is now editable from the form
+				if (userCard != null && !userCard.trim().isEmpty()) {
+					info.setMainCard(userCard.trim());
+				}
 				List<UserInfo> list = new ArrayList<UserInfo>();
 				list.add(info);
 				ManagerFactory.getUserInfoManager().createUserInfo(list);
-				return "redirectToUserList"; 
+
+				// Push the edit to every connected device so the change takes effect
+				new Thread(new Runnable() {
+					public void run() {
+						try {
+							String[] ids = new String[]{ String.valueOf(info.getUserId()) };
+							java.util.Set<String> sns = PushUtil.devMaps.keySet();
+							if (sns == null || sns.isEmpty()) {
+								ManagerFactory.getCommandManager()
+									.createUpdateUserInfosCommandByIds(ids, null);
+								return;
+							}
+							for (String sn : sns) {
+								ManagerFactory.getCommandManager()
+									.createUpdateUserInfosCommandByIds(ids, sn);
+							}
+							logger.info("editUser: pushed updated user " + info.getUserPin()
+								+ " to " + sns.size() + " device(s)");
+						} catch (Exception e) {
+							logger.error("editUser: post-edit sync failed", e);
+						}
+					}
+				}).start();
+
+				return "redirectToUserList";
 			} catch (NumberFormatException e) {
 				logger.error(e);
 				return "redirectToUserList";

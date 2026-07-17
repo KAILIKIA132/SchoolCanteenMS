@@ -242,7 +242,7 @@ public class PersonBioTemplateDao extends BaseDao implements
 	 */
 	public void update(PersonBioTemplate entity) throws DaoException {
 		String sql = (new StringBuilder()).
-		append("update pers_bio_template set user_id=?, user_pin=? device_sn=?, ").
+		append("update pers_bio_template set user_id=?, user_pin=?, device_sn=?, ").
 		append("valid=?, is_duress=?, bio_type=?, version=?, ").
 		append("data_format=?, template_no=?, template_no_index=?, ").
 		append("size=?, template_data=? ").

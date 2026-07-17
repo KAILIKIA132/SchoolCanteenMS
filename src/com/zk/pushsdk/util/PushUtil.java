@@ -235,11 +235,15 @@ public class PushUtil {
 	}
 	
 	/**
-	 * Gets device list from cache.
+	 * Gets device list from cache. Reloads from DB if cache is empty
+	 * (e.g. static init ran before the database was ready).
 	 * @return
 	 */
 	public static List<DeviceInfo> getDeviceList() {
 		try {
+			if (devMaps == null || devMaps.isEmpty()) {
+				iniDevice();
+			}
 			List<DeviceInfo> list = new ArrayList<DeviceInfo>();
 			if (devMaps != null && !devMaps.isEmpty()) {
 				for (Map.Entry<String, DeviceInfo> entry : devMaps.entrySet()) {
@@ -253,6 +257,30 @@ public class PushUtil {
 			// Return empty list on error
 			return new ArrayList<DeviceInfo>();
 		}
+	}
+
+	/**
+	 * Ensure a device SN is present in the cache (load from DB if missing).
+	 * @param deviceSn device serial number
+	 * @return DeviceInfo or null if not found
+	 */
+	public static DeviceInfo ensureDeviceInCache(String deviceSn) {
+		if (deviceSn == null || deviceSn.isEmpty()) {
+			return null;
+		}
+		DeviceInfo info = devMaps.get(deviceSn);
+		if (info != null) {
+			return info;
+		}
+		try {
+			info = ManagerFactory.getDeviceManager().getDeviceInfoBySn(deviceSn);
+			if (info != null) {
+				devMaps.put(deviceSn, info);
+			}
+		} catch (Exception e) {
+			// ignore — caller handles null
+		}
+		return info;
 	}
 	
 	public static String getDeviceOption() {

@@ -51,6 +51,17 @@
   	<url-pattern>/iclock/*</url-pattern>
   </servlet-mapping>
   
+  <!-- JSON REST API dispatcher -->
+  <servlet>
+    <servlet-name>ApiServlet</servlet-name>
+    <servlet-class>com.zk.servlet.ApiServlet</servlet-class>
+    <load-on-startup>5</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ApiServlet</servlet-name>
+    <url-pattern>/api/*</url-pattern>
+  </servlet-mapping>
+
   <!-- Configure struts2 filter and mapping -->
   <filter>
   	<filter-name>struts2</filter-name>

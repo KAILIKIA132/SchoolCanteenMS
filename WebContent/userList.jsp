@@ -16,34 +16,33 @@
 						$.ajax({
 							type: "POST",
 							url: url,
-							dataType: "json",
 							async: false,
-							/**
-							 success: function(data)
-							 {
-									  alert("operations are successfully");
-									  window.location.reload(); 
-							 },
-							 error:function (XMLHttpRequest, textStatus, errorThrown)
-							  {
-								  alert("The operation failed, please try again...");
-								  window.location.reload(); 
-							  }
-							 **/
+							complete: function(xhr) {
+								// Tolerate non-JSON / redirect responses
+							}
 						});
+						// brief success indicator
+						try {
+							sessionStorage.setItem('flashMsg', 'Operation queued successfully');
+						} catch(e) {}
 						window.location.reload();
 					}
 
 
-					var toNewDeviceDialogHtml = '<div class="win_box">'
+					var toNewDeviceDialogHtml = '<div class="win_box" style="padding:10px;">'
 						+ '<h2><s:text name="user.operate.move.userinfo2.newdevice"/></h2><hr />'
-						+ '<table border="0" cellpadding="0" cellspacing="0" class="push_tab1">'
-						+ '<th align="center"><s:text name="table.header.device.sn"/></th>'
+						+ '<p style="margin:6px 0 10px;color:#555;font-size:12px;">Select the destination device. Users (and biometrics/photos) will be pushed there and reassigned on the server. Selecting one destination also removes them from the original device.</p>'
+						+ '<div style="margin-bottom:8px;"><a href="javascript:void(0)" onclick="$(\'input[name=devSn]\').prop(\'checked\',true);return false;">Select all</a> &nbsp;|&nbsp; <a href="javascript:void(0)" onclick="$(\'input[name=devSn]\').prop(\'checked\',false);return false;">Clear</a></div>'
+						+ '<table border="0" cellpadding="0" cellspacing="0" class="push_tab1" style="width:100%;">'
+						+ '<tr><th></th><th align="left">Device SN</th><th align="left">Alias / IP</th></tr>'
 						+ '<c:forEach var="dev" items="${devList}">'
-						+ '<tr><td>'
-						+ '<input name="devSn" type="checkbox" value="${dev.deviceSn}">${dev.deviceSn}</input>'
-						+ '</td></tr>'
-						+ '</c:forEach></table></div>';
+						+ '<tr><td><input name="devSn" type="checkbox" value="${dev.deviceSn}" /></td>'
+						+ '<td>${dev.deviceSn}</td>'
+						+ '<td>${dev.aliasName != null ? dev.aliasName : (dev.deviceName != null ? dev.deviceName : "")} ${dev.ipAddress != null ? "(" : ""}${dev.ipAddress}${dev.ipAddress != null ? ")" : ""}</td>'
+						+ '</tr>'
+						+ '</c:forEach>'
+						+ '<c:if test="${empty devList}"><tr><td colspan="3" style="color:#c00;padding:8px;">No devices registered. Add/connect a device first, then try again.</td></tr></c:if>'
+						+ '</table></div>';
 
 					function procToNewDevice(v) {
 						if (1 == v) {
@@ -53,19 +52,28 @@
 								temp += ($(this).val() + ",");
 							});
 							temp = temp.substring(0, temp.length - 1);
+							if (!temp) {
+								alert('<s:text name="device.operate.warring1"/>');
+								window.location.reload();
+								return;
+							}
 
 							var obj = document.getElementsByName("devSn");
-							//alert(obj.length);
 							var destSn = '';
 							for (var i = 0; i < obj.length; i++) {
 								if (obj[i].checked) destSn += obj[i].value + ',';
 							}
-							if (destSn.length > 0) {
+							if (obj.length === 0) {
+								alert('No destination devices available. Register a device first.');
+							} else if (destSn.length > 0) {
 								destSn = destSn.substring(0, destSn.length - 1);
 								url = "userAction!toNewDevice.action?userId=" + temp + "&destSn=" + destSn;
+								try {
+									sessionStorage.setItem('flashMsg', 'User transfer queued to device(s). Check Device Commands for status.');
+								} catch (e) {}
 								dealData(url);
-							}
-							else {
+								return;
+							} else {
 								alert('<s:text name="dialog.hint.please.select.device"/>');
 							}
 
@@ -140,6 +148,10 @@
 								url = "userAction!deleteUserPlamDev.action?userId=" + temp;
 							} else if ("sendUserDev" == operate) {
 								url = "userAction!sendUserDev.action?userId=" + temp;
+							} else if ("sendUserAllDev" == operate) {
+								var userCount = temp.split(',').length;
+								if (!confirm("Push " + userCount + " user(s) to ALL connected devices?")) { return; }
+								url = "userAction!sendUserAllDev.action?userId=" + temp;
 							} else if ("deleteUserFaceServ" == operate) {
 								url = "userAction!deleteUserFaceServ.action?userId=" + temp;
 							} else if ("deleteUserPlamServ" == operate) {
@@ -208,6 +220,20 @@
 		</head>
 
 		<body>
+			<div id="flashHolder" style="position:fixed;top:80px;right:20px;z-index:9999;"></div>
+			<script>
+				(function(){
+					try {
+						var m = sessionStorage.getItem('flashMsg');
+						if (m) {
+							sessionStorage.removeItem('flashMsg');
+							var d = document.getElementById('flashHolder');
+							d.innerHTML = '<div style="background:#d4edda;color:#155724;border:1px solid #c3e6cb;border-radius:6px;padding:10px 16px;box-shadow:0 2px 6px rgba(0,0,0,0.1);font-size:13px;">'+m+'</div>';
+							setTimeout(function(){ d.innerHTML=''; }, 3500);
+						}
+					} catch(e) {}
+				})();
+			</script>
 
 			<!--------------------------å¤´éƒ¨å¼€å§‹------------------------------------------>
 			<%@ include file="top.jsp" %>
@@ -259,6 +285,9 @@
 											<ul>
 												<li><a onclick="operateUser('sendUserDev')" href="#">
 														<s:text name="user.operate.senduser2device" />‡
+													</a></li>
+												<li><a onclick="operateUser('sendUserAllDev')" href="#">
+														Sync User(s) to ALL Devices
 													</a></li>
 												<li><a id="toNewDeviceOpen" onclick="location.href='javascript:void()'"
 														href="#">
