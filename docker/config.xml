@@ -7,7 +7,7 @@
         <password>root</password>
     </databaseconnect>
     <option>
-    	<pagesize>10</pagesize>
+    	<pagesize>100</pagesize>
     	<monitorsize>10</monitorsize>
     	<ver>2</ver>
     </option>
